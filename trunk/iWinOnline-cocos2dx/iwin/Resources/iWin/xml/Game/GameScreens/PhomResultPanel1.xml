@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<GAME>
+		<Widget id="0" typeRes="layout" name = "result" idx_appear ="1" visible="0">		
+				<common_value>
+					<common 		name="anchor_point"			value="0_0"/>
+				</common_value>
+				<Widget id="0" typeRes="panel" name = "bg_lose" idx_appear ="1">		
+					<common_value>
+						<common 		name="source"				value="loginscreen/nine/white.9.png"/>
+						<common 		name="scale_9"				value="1"/>
+						<common 		name="use_nine_path"		value="1"/>
+						<common 		name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					<pos 			origin="60_0" />
+					<color 			origin="204_190_90_255" />
+					<Size 			origin="120_50" />
+				</Widget>
+				<Widget id="0" typeRes="panel" name = "bg_win" idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source"				value="loginscreen/nine/white.9.png"/>
+						<common 		name="scale_9"				value="1"/>
+						<common 		name="use_nine_path"		value="1"/>
+						<common 		name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					<pos 			origin="60_0" />
+					<color 			origin="255_10_10_255" />
+					<Size 			origin="120_50" />
+					<opacity 		origin="200" />
+				</Widget>
+				<Widget id="1" typeRes="font" 	name = "title_" idx_appear ="1">		
+					<template_value>
+						<template 		name="temp_text_1"/>						
+					</template_value>
+					<common_value>
+						<common 		name="source" 		value="0"/>
+					</common_value>
+					<pos 		origin = "60_25" 	/>
+					<color		origin="255_10_10_255"/>
+				</Widget>
+				<pos 			origin="0_0" />
+				<Size 			origin="120_50" />
+			</Widget>
+</GAME>

@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" typeRes="layout"  name = "emotion_board" 	idx_appear="1" 	visible="0">
+				<common_value>
+					<common			name="stick_screen"			value="1"/>
+					<common			name="casca_color"			value="0"/>
+					<common 		name="clipping_enable"	    value="0"/>
+					<common 		name="background_type" 		value="0"/>
+					<common 		name="anchor_point" 		value="0.5_1"/>
+					
+				</common_value>
+
+				<COMMAND>
+					<cmd id="0" name="ON_SHOW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION":"480_0",
+									"DESIGN":"960_540"
+								},
+								{
+									"SET_VISIBLE" : 1
+								},
+								{
+									"POSITION" : "480_270",
+									"DESIGN":"960_540",
+									"TIME"  : 0.5
+								}
+							]
+						}		
+					}					
+					</cmd>
+					<cmd id="1" name="ON_HIDE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION":"480_270",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION" : "480_0",
+									"DESIGN":"960_540",
+									"TIME"  : 0.5
+								},
+								{
+									"SET_VISIBLE" : 0
+								}
+							]
+						}		
+					}
+					</cmd>
+				</COMMAND>
+				
+				<pos 		origin = "480_0" 	/>
+				<Size 		origin = "960_270" 	/>
+			</Widget>
+
+</GAME>

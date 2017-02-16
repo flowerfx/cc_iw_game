@@ -1,0 +1,3543 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="8" typeRes="layout"  name = "taixiu_layout" 		idx_appear="1" >
+				<common_value>
+					<common			name="stick_screen"			value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="layout"  name = "tai_xiu_layout" 		idx_appear="1" 	visible="0">
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="swallow_touch"	 	value="1"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+							<opacity 	origin = "230" 	/>
+					</Widget>
+
+					<Widget id="1" typeRes="layout"  		name = "tai_xiu_panel" 					idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="casca_color"			value="0"/>
+							<common			name="casca_opacity"		value="1"/>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common 		name="anchor_point" 		value="0.5_0.5"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="layout"  		name = "taixiu_bet_layout" 			idx_appear="1" visible="0">
+							<common_value>
+								<common			name="casca_color"			value="0"/>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common 		name="anchor_point" 		value="1_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "panel_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgbetlayer.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_1"/>
+								</common_value>					
+								<pos 		origin = "90_230" 	/>
+								<Size 		origin = "180_230" 	/>
+							</Widget>
+							<Widget id="0" typeRes="panel" 			name = "panel_bg_ruby" 					idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgbetlayer_ruby.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_1"/>
+								</common_value>					
+								<pos 		origin = "90_230" 	/>
+								<Size 		origin = "180_230" 	/>
+							</Widget>
+							
+							<Widget id="1" typeRes="button" 			name = "full_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="max_bet_tx"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "46_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>
+								<pos 		origin = "80_225" 	/>
+								<Size 		origin = "92_40" 	/>
+							</Widget>
+							<Widget id="2" typeRes="button" 			name = "3quadter_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="3/4"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "46_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>
+								<pos 		origin = "80_180" 	/>
+								<Size 		origin = "92_40" 	/>
+							</Widget>
+							<Widget id="3" typeRes="button" 			name = "half_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_1"/>
+								</common_value>					
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="1/2"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "46_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>
+								<pos 		origin = "80_135" 	/>
+								<Size 		origin = "92_40" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 			name = "quadter_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="1/4"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<pos 		origin = "46_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>
+								<pos 		origin = "80_90" 	/>
+								<Size 		origin = "92_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="button" 			name = "plus_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnplus.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnplus.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnplus.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_1"/>
+								</common_value>					
+								<pos 		origin = "128_45" 	/>
+								<Size 		origin = "50_40" 	/>
+							</Widget>
+							<Widget id="6" typeRes="button" 			name = "div_bet_btn" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnsub.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnsub.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnsub.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_1"/>
+								</common_value>					
+								<pos 		origin = "124_45" 	/>
+								<Size 		origin = "50_40" 	/>
+							</Widget>
+							
+							<Widget id="7" typeRes="layout"  			name = "slider_bet_win_layout" 			idx_appear ="1" >
+								<common_value>
+									<common 		name="anchor_point" 		value="1_0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 			name = "bg" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgbetslider.9.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common 		name="scale_9" 			value="1"/>	
+										<common 		name="use_nine_path" 	value="1"/>	
+										<common 		name="anchor_point" 	value="0_0"/>
+									</common_value>					
+									<pos 		origin = "0_0" 		/>
+									<Size 		origin = "60_220" 	/>
+								</Widget>
+								<Widget id="1" typeRes="slider" 		name = "slider_bet_win" 			idx_appear ="2">		
+									<template_value>
+										<template name="temp_default_slider"/>
+									</template_value>
+									<common_value>
+										<common 		name="normal_ball" 			value="gamescreen-newgui-game-common/taixiu/win.png"/>
+										<common 		name="press_ball" 			value="gamescreen-newgui-game-common/taixiu/win.png"/>
+										<common 		name="disable_ball" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+										<common			name="size_ball"			value="40_40"/>
+										<common			name="origin_size_ball"		value="40_40"/>
+										<common			name="rotate_ball"			value="90.0"/>
+										<common			name="anchor_point"			value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "30_25" 	/>
+									<Size 		origin = "190_1" 	/>
+									<rotate 	origin = "-90" 		/>				
+								</Widget>
+								
+								<pos 		origin = "70_5" 	/>
+								<Size 		origin = "60_220" 	/>
+							</Widget>
+							<Widget id="8" typeRes="layout"  			name = "slider_bet_ruby_layout" 		idx_appear ="1" visible="0">
+								<common_value>
+									<common 		name="anchor_point" 		value="1_0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 			name = "bg" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgbetslider.9.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common 		name="scale_9" 			value="1"/>	
+										<common 		name="use_nine_path" 	value="1"/>	
+										<common 		name="anchor_point" 	value="0_0"/>
+									</common_value>					
+									<pos 		origin = "0_0" 		/>
+									<Size 		origin = "60_220" 	/>
+								</Widget>
+								<Widget id="1" typeRes="slider" 		name = "slider_bet_ruby" 			idx_appear ="2">		
+									<template_value>
+										<template name="temp_default_slider"/>
+									</template_value>
+									<common_value>
+										<common 		name="normal_ball" 			value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+										<common 		name="press_ball" 			value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+										<common 		name="disable_ball" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+										<common			name="size_ball"			value="41_35"/>									
+										<common			name="origin_size_ball"		value="41_35"/>
+										<common			name="rotate_ball"			value="90.0"/>
+										<common			name="anchor_point"			value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "30_25" 	/>
+									<Size 		origin = "190_1" 	/>
+									<rotate 	origin = "-90" 		/>				
+								</Widget>
+								
+								<pos 		origin = "70_5" 	/>
+								<Size 		origin = "60_220" 	/>
+							</Widget>
+							
+							<Widget id="9" 	typeRes="button" 			name = "taxiu_bet_tai_btn" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgtaibet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgtaibet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgtaibet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_1"/>						
+								</common_value>	
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_1"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="bet"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<pos 		origin = "90_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>	
+								<pos 		origin = "90_0" 	/>
+								<Size 		origin = "180_40" 	/>
+							</Widget>
+							<Widget id="10" typeRes="button" 			name = "taxiu_bet_xiu_btn" 				idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgxiubet.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgxiubet.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgxiubet.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_1"/>						
+								</common_value>	
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_1"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="Cược"/>
+										<common			name="state_scale"	value="2"/>
+									</common_value>
+									<pos 		origin = "90_20" 	/>
+									<color 		origin = "250_210_100_255" 	/>
+								</Widget>	
+								<pos 		origin = "90_0" 	/>
+								<Size 		origin = "180_40" 	/>
+							</Widget>
+							
+							
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW_TAI">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_ANCHOR" : "1_1"
+											},
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_POSITION" : "180_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540"
+											},
+											{
+												"POSITION" : "0_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE_TAI">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_POSITION" : "0_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540"
+											},
+											{
+												"POSITION" 	   : "180_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							
+								<cmd id = "2" name="ON_SHOW_XIU">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_ANCHOR" : "0_1"
+											},
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_POSITION" : "410_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540"
+											},
+											{
+												"POSITION" : "580_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "3" name="ON_HIDE_XIU">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_POSITION" : "580_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540"
+											},
+											{
+												"POSITION" 	   : "410_230",
+												"PARENT_STICK" : 0,
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							
+							</COMMAND>
+							
+							<pos 		origin = "0_230" 	/>
+							<Size 		origin = "180_230" 	/>
+						</Widget>
+
+						<Widget id="1" typeRes="panel" 		name = "logo_taixiu" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_top.png"/>
+								<common 		name="anchor_point" 	value="0.5_0"/>
+							</common_value>					
+							<pos 		origin = "290_200" 	/>
+							<Size 		origin = "324_70" 	/>
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="ON_SHOW" id="1">
+								{
+									"act0" : {
+										"squence_0" : [
+											{
+												"SET_OPACITY" : 0
+											},
+											{
+												"SET_POSITION" : "290_200",
+												"DESIGN" : "960_540"
+											}
+										]	
+									},
+									"act1" : {
+										"single_0" : 
+										{
+											"OPACITY" : 255,
+											"TIME"	  : 0.1
+										},
+										"single_1" : 
+										{
+											"POSITION" : "290_272",
+											"DESIGN"	 : "960_540",
+											"TIME"	  : 0.1
+										}
+									}
+								}
+								</cmd>
+								<cmd name="ON_HIDE" id="1">
+								{
+									"act0" : {
+										"squence_0" : [
+											{
+												"SET_OPACITY" : 0
+											},
+											{
+												"SET_POSITION" : "290_200",
+												"DESIGN" : "960_540"
+											}
+										]	
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						
+						<Widget id="2" typeRes="panel" 			name = "panel_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_mainbg.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "580_230" 	/>
+						</Widget>
+						<Widget id="3" typeRes="panel" 			name = "panel_bg_ruby" 					idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_mainbg_ruby.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "580_230" 	/>
+						</Widget>
+						
+						<Widget id="1" typeRes="layout" 		name = "left_top_bg" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "left_top_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_lefttop1.png"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "273_46" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_total_money_tai_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "50_23" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_money.png"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "10_23" 	/>
+								<Size 		origin = "34_34" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			name = "effect_icon" idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>									
+								<pos 		origin = "27_23" 	/>
+								<Size 		origin = "32_32" 	/>
+								<color 		origin = "255_250_10_255" 	/>
+								<COMMAND>
+										<cmd id="0" name="RUN_EFFECT">
+										{
+											"act0" : {
+												"squence" : [
+													{
+														"SET_VISIBLE" : 1
+													},
+													{
+														"SET_OPACITY" : 255
+													},
+													{
+														"SET_SIZE" : 	"32_32",
+														"DESIGN" 	   : "960_540"
+													}
+												]
+											},
+											"act1" : {
+												"single" : 
+												{
+													"SIZE" : "48_48",
+													"DESIGN"   : "960_540",
+													"TIME"     : 0.5
+												},
+												"single_1" : 
+												{
+													"OPACITY" : 0,
+													"TIME"     : 0.5
+												}
+											}
+										}
+										</cmd>
+								</COMMAND>
+								
+							</Widget>
+							
+							<pos 		origin = "0_230" 	/>
+							<Size 		origin = "275_46" 	/>
+						</Widget>
+						<Widget id="2" typeRes="layout" 		name = "right_top_bg" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="1_1"/>
+							</common_value>					
+							<Widget id="0" typeRes="panel" 			name = "right_top_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_righttop1.png"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "2_0" 	/>
+								<Size 		origin = "273_46" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_total_money_xiu_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "225_23" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_money.png"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "265_23" 	/>
+								<Size 		origin = "34_34" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			name = "effect_icon" idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>									
+								<pos 		origin = "248_23" 	/>
+								<Size 		origin = "32_32" 	/>
+								<color 		origin = "255_250_10_255" 	/>
+								<COMMAND>
+										<cmd id="0" name="RUN_EFFECT">
+										{
+											"act0" : {
+												"squence" : [
+													{
+														"SET_VISIBLE" : 1
+													},
+													{
+														"SET_OPACITY" : 255
+													},
+													{
+														"SET_SIZE" : 	"32_32",
+														"DESIGN" 	   : "960_540"
+													}
+												]
+											},
+											"act1" : {
+												"single" : 
+												{
+													"SIZE" : "48_48",
+													"DESIGN"   : "960_540",
+													"TIME"     : 0.5
+												},
+												"single_1" : 
+												{
+													"OPACITY" : 0,
+													"TIME"     : 0.5
+												}
+											}
+										}
+										</cmd>
+								</COMMAND>
+								
+							</Widget>
+							<pos 		origin = "580_230" 	/>
+							<Size 		origin = "275_46" 	/>
+						</Widget>
+						
+						<Widget id="3" typeRes="layout" 		name = "left_middle_bg" 			idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "left_middle_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_lefttop2.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "192_40" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_total_player_tai_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "50_20" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_user.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "10_20" 	/>
+								<Size 		origin = "34_26" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_183" 	/>
+							<Size 		origin = "192_40" 	/>
+						</Widget>
+						<Widget id="4" typeRes="layout" 		name = "right_middle_bg" 			idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="1_1"/>
+							</common_value>	
+							<Widget id="0" typeRes="panel" 			name = "right_middle_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_righttop2.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "192_40" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_total_player_xiu_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "140_20" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_user.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "180_20" 	/>
+								<Size 		origin = "34_26" 	/>
+							</Widget>
+							
+							<pos 		origin = "580_183" 	/>
+							<Size 		origin = "192_40" 	/>
+						</Widget>
+						
+						<Widget id="5" typeRes="layout" 		name = "tai_panel_bg" 				idx_appear ="1" >		
+							<common_value>
+									<common 		name="anchor_point" value="0_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "tai_panel_bg" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgtai.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "170_60" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			name = "tai_effect" 		idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbetboder.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "85_30" 	/>
+								<Size 		origin = "145_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ACTION">
+									{
+										"act0" : 
+										{
+											"repeat" : -1,
+											"squence" : [
+												{
+													"DELAY" : 0.1
+												},
+												{	
+													"COLOR" : "250_210_50_255",
+													"TIME"  : 0.4
+												},
+												{	
+													"DELAY" : 0.1
+												},
+												{	
+													"COLOR" : "255_10_10_255",
+													"TIME"  : 0.4
+												}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<Widget id="2" typeRes="button" 		name = "btn_choose_tai" 	idx_appear ="1" >		
+								<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btntai.png"/>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btntai_down.png"/>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btntai.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								
+								
+								<pos 		origin = "85_30" 	/>
+								<Size 		origin = "135_53" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_142" 	/>
+							<Size 		origin = "170_60" 	/>
+						</Widget>
+						<Widget id="6" typeRes="layout" 		name = "xiu_panel_bg" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="1_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "xiu_panel_bg" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_bkgxiu.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>
+									
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "170_60" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			name = "xiu_effect" 		idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnbetboder.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "85_30" 	/>
+								<Size 		origin = "145_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ACTION">
+									{
+										"act0" : 
+										{
+											"repeat" : -1,
+											"squence" : [
+												{
+													"DELAY" : 0.1
+												},
+												{	
+													"COLOR" : "250_210_50_255",
+													"TIME"  : 0.3
+												},
+												{	
+													"DELAY" : 0.1
+												},
+												{	
+													"COLOR" : "255_10_10_255",
+													"TIME"  : 0.3
+												}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<Widget id="2" typeRes="button" 		name = "btn_choose_xiu" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnxiu.png"/>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnxiu_down.png"/>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnxiu.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								
+								
+								<pos 		origin = "85_30" 	/>
+								<Size 		origin = "135_53" 	/>
+							</Widget>
+							<pos 		origin = "580_142" 	/>
+							<Size 		origin = "170_60" 	/>
+						</Widget>
+						
+						<Widget id="7" typeRes="layout" 		name = "left_input_bg" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_money.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "0_-15" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_bet_money_tai_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "30_-15" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "right_input_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_mymoney_tai.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>	
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "190_50" 	/>
+							</Widget>
+							
+							<Widget id="3" typeRes="text_field" 	name = "input_tai_txt"   idx_appear ="2">							
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="1.000"/>					
+									<common			name="anchor_point"	value="0_0.5"/>
+									<common			name="touch_zone"	value="150_50"/>
+									<common			name="text_area"	value="150_50"/>
+									<common			name="type_text"	value="2"/>
+									<common 		name="panel" 		value="gamescreen-newgui-game-common/taixiu/taixiu_mymoney_tai.png"/>
+								</common_value>
+								<pos 		origin = "10_25" 	/>
+							</Widget>
+							<pos 		origin = "13_80" 	/>
+							<Size 		origin = "190_50" 	/>
+						</Widget>
+						<Widget id="8" typeRes="layout" 		name = "right_input_bg" 			idx_appear ="1" >		
+							<common_value>	
+								<common 		name="anchor_point" value="1_1"/>
+							</common_value>	
+							<Widget id="0" typeRes="panel" 			name = "icon" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_total_money.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "190_-15" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 			name = "taixiu_bet_money_xiu_txt" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+								<template_value>
+										<template 		name="temp_text_0"/>						
+								</template_value>	
+								<pos 		origin = "160_-15" 	/>
+							</Widget>							
+							<Widget id="2" typeRes="panel" 			name = "right_input_bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_mymoney_xiu.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>	
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "190_50" 	/>
+							</Widget>
+							
+							<Widget id="3" typeRes="text_field" 	name = "input_xiu_txt"   idx_appear ="2">							
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="1.000"/>					
+									<common			name="anchor_point"			value="1_0.5"/>
+												
+									<common			name="touch_zone"			value="150_50"/>
+									<common			name="text_area"			value="150_50"/>
+									<common			name="type_text"			value="2"/>
+									<common 		name="panel" 				value="gamescreen-newgui-game-common/taixiu/taixiu_mymoney_xiu.png"/>
+								</common_value>
+								<pos 		origin = "180_25" 	/>
+							</Widget>
+							
+							
+							<pos 		origin = "567_80" 	/>
+							<Size 		origin = "190_50" 	/>
+						</Widget>
+						
+						<Widget id="9" typeRes="button" 		name = "btn_close_taixiu_panel" 	idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+								<common 		name="press" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+								<common 		name="disable" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+								<common 		name="scale_press" 		value="-0.05"/>	
+								<common 		name="use_atlas" 		value="1"/>	
+								<common 		name="anchor_point" 	value="0.5_0.5"/>
+							</common_value>					
+							<pos 		origin = "570_250" 	/>
+							<Size 		origin = "40_40" 	/>
+						</Widget>
+						
+						<Widget id="20" typeRes="panel" 		name = "bg_history" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_history.9.png"/>
+								<common			name="scale_9"			value="1"/>
+								<common			name="use_nine_path"	value="1"/>
+								<common 		name="use_atlas" 		value="1"/>	
+								<common 		name="anchor_point" 	value="0.5_1"/>
+							</common_value>
+							<Widget id="0" typeRes="layout" 		name = "his_iwin" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="layout" 		name = "newest_his" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="anchor_point" 	value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 		name = "win" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_newhistory.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "30_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "565.25_15" 	/>
+									<Size 		origin = "30_30" 	/>
+									<COMMAND>
+										<cmd id="0" name="REF">
+										{
+											"act0" : 
+											{
+												"squence_0" : 
+												[
+													{
+														"SET_SIZE" : "30_30",
+														"DESIGN"  : "960_540"
+													},
+													{
+														"SET_OPACITY" : 255
+													}
+												]
+											}
+										}
+										</cmd>
+										<cmd id="1" name="EFFECT">
+										{
+											"act0" : 
+											{
+												"repeat" : -1,
+												"squence_0" : 
+												[
+													{
+														"OPACITY" : 128,
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													},
+													{
+														"OPACITY" : 255 ,
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													}
+												],
+												"squence_1" : 
+												[
+													{
+														"SIZE" 	  : "35_35",
+														"DESIGN"  : "960_540",
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													},
+													{
+														"SIZE" 	  : "30_30",
+														"DESIGN"  : "960_540",
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													}
+												]
+											}
+										}
+										</cmd>
+									</COMMAND>
+								</Widget>
+							
+								<Widget id="1" typeRes="layout" 		name = "his_0" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="anchor_point" 	value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 		name = "tai" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_history_tai.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "20_20" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 		name = "xiu" 				idx_appear ="1" visible="0">		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_history_xiu.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "20_20" 	/>
+									</Widget>
+									<pos 		origin = "14.75_15" 	/>
+									<Size 		origin = "20_20" 	/>
+								</Widget>
+								<pos 		origin = "290_0" 	/>
+								<Size 		origin = "580_30" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout" 		name = "his_ruby" 					idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" 		name = "newest_his" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="anchor_point" 	value="0.5_0.5"/>
+									</common_value>
+									<Widget id="1" typeRes="panel" 		name = "ruby" 				idx_appear ="1" visible="1">		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_newhistory_ruby.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "30_30" 	/>
+									</Widget>
+									<pos 		origin = "565.25_15" />
+									<Size 		origin = "30_30" 	/>
+									<COMMAND>
+										<cmd id="0" name="REF">
+										{
+											"act0" : 
+											{
+												"squence_0" : 
+												[
+													{
+														"SET_SIZE" : "30_30",
+														"DESIGN"  : "960_540"
+													},
+													{
+														"SET_OPACITY" : 255
+													}
+												]
+											}
+										}
+										</cmd>
+										<cmd id="1" name="EFFECT">
+										{
+											"act0" :  
+											{
+												"repeat" : -1,
+												"squence_0" : 
+												[
+													{
+														"OPACITY" : 128,
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													},
+													{
+														"OPACITY" : 255 ,
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1
+													}
+												],
+												"squence_1" : 
+												[
+													{
+														"SIZE" 	  : "35_35",
+														"DESIGN"  : "960_540",
+														"TIME"	  : 0.3 
+													},
+													{
+														"DELAY" : 0.1 
+													},
+													{
+														"SIZE" 	  : "30_30",
+														"DESIGN"  : "960_540",
+														"TIME"	  : 0.3
+													},
+													{
+														"DELAY" : 0.1
+													}
+												]
+											}
+										}
+										</cmd>
+									</COMMAND>
+								</Widget>
+							
+								<Widget id="1" typeRes="layout" 		name = "his_0" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="anchor_point" 	value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 		name = "tai" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_history_tai_ruby.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "20_20" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 		name = "xiu" 				idx_appear ="1" visible="0">		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_history_xiu_ruby.png"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "20_20" 	/>
+									</Widget>
+									<pos 		origin = "14.75_15" 	/>
+									<Size 		origin = "20_20" 	/>
+								</Widget>
+								
+								<pos 		origin = "290_0" 	/>
+								<Size 		origin = "580_30" 	/>
+							</Widget>
+							
+							<pos 		origin = "290_0" 	/>
+							<Size 		origin = "580_30" 	/>
+						</Widget>
+						<Widget id="21" typeRes="panel" 		name = "bg_tool" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_tool.9.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>	
+								<Widget id="0" typeRes="button" 			name = "taixiu_btn_leaderboard" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnleader.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnleader.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnleader.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "90_20" 	/>
+									<Size 		origin = "40_40" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 			name = "taixiu_btn_showchart" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnchart.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnchart.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnchart.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "190_20" 	/>
+									<Size 		origin = "40_40" 	/>
+								</Widget>
+								<Widget id="2" typeRes="button" 			name = "taixiu_btn_myhistory" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmyhistory.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmyhistory.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmyhistory.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "290_20" 	/>
+									<Size 		origin = "40_40" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 			name = "taixiu_btn_match_history" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmatchhistory.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmatchhistory.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnmatchhistory.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "390_20" 	/>
+									<Size 		origin = "40_40" 	/>
+								</Widget>
+								<Widget id="4" typeRes="button" 			name = "taixiu_btn_help" 		idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnhelp.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnhelp.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/taixiu_btnhelp.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "490_20" 	/>
+									<Size 		origin = "40_40" 	/>
+								</Widget>
+								
+								<pos 		origin = "290_-30" 	/>
+								<Size 		origin = "580_40" 	/>
+						</Widget>
+						
+						<Widget id="25" typeRes="layout"  		name = "tai_xiu_top_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="casca_opacity"	    value="0"/>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common 		name="anchor_point" 		value="0.5_0"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="button" 		name = "left_panel_btn" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/left_none.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/left_none.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/left_none.png"/>
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0"/>
+								</common_value>	
+								
+									
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "100" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" 		name = "right_panel_btn" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/right_none.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/taixiu/right_none.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/taixiu/right_none.png"/>
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "100" 	/>
+							</Widget>
+							
+							
+							<Widget id="2" typeRes="panel" 			name = "left_panel_act" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/left_active.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "100" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			name = "right_panel_act" 		idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/right_active.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "100" 	/>
+							</Widget>
+							
+							
+							<Widget id="6" typeRes="panel" 			name = "icon_win" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>					
+								<pos 		origin = "30_22" 	/>
+								<Size 		origin = "34_34" 	/>
+							</Widget>
+							<Widget id="7" typeRes="panel" 			name = "icon_ruby" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>					
+								<pos 		origin = "470_22" 	/>
+								<Size 		origin = "34_29" 	/>
+							</Widget>
+							
+							<Widget id="8" typeRes="font" 			name = "taixiu_mymoney_txt" 	idx_appear ="1" >		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "80_22" 			/>
+								<color 		origin = "250_210_50_255" 	/>
+							</Widget>
+							
+							<Widget id="9" typeRes="font" 			name = "taixiu_myruby_txt" 		idx_appear ="1" >		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "420_22" 			/>
+								<color 		origin = "250_210_50_255" 	/>
+							</Widget>
+							
+							<pos 		origin = "290_230" 	/>
+							<Size 		origin = "500_42" 	/>
+						</Widget>
+						
+						
+						<Widget id="30" typeRes="layout"  		name = "tai_xiu_circle" 			idx_appear="1" >
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "circle_bg" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_circle_bg.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "111_111" 	/>
+								<Size 		origin = "222_222" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout"  		name = "circle_with_cd" idx_appear="1"  >
+								<common_value>
+									<common			name="casca_color"			value="0"/>
+									<common 		name="clipping_enable"	    value="0"/>
+									<common 		name="background_type" 		value="0"/>
+									<common 		name="anchor_point" 		value="0.5_0.5"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 			name = "bg" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_circle_wait.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "108_108" 	/>
+									<Size 		origin = "216_216" 	/>
+								</Widget>
+								<Widget id="1" typeRes="time_digital" 	name = "circle_time" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="00:59"/>					
+										<common    		name="font_idx"			value="8"/>	
+										<common			name="anchor_point"		value="0.5_0.5"/>
+										<common			name="bitmap_font" 		value="1"/>
+										<common			name="no_add_event"		value="0"/>
+									</common_value>
+									<pos 		origin = "108_108" 	/>
+									<Size 		origin = "70_70" 	/>
+									<color 		origin = "10_10_10_255" 	/>
+								</Widget>
+								<pos 		origin = "111_111" 	/>
+								<Size 		origin = "216_216" 	/>
+							</Widget>
+							<Widget id="2" typeRes="time_process"   name = "circle_time_process" idx_appear ="1" visible="0">		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_countdown.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="reserve" 		value="1"/>
+										<common			name="no_add_event"	 value="0"/>
+										<common 		name="update_invisible" value="1"/>
+									</common_value>
+									<pos 		origin = "111_111" 	/>
+									<Size 		origin = "236_236" 	/>
+							</Widget>	
+							<Widget id="3" typeRes="layout"  		name = "circle_result"  idx_appear="1" visible="0">
+								<common_value>
+									<common 		name="clipping_enable"	    value="1"/>
+									<common 		name="background_type" 		value="0"/>
+									<common 		name="anchor_point" 		value="0.5_0.5"/>
+								</common_value>
+								<Widget id="1" typeRes="panel" 			name = "circle_lac" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_circle_lac.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "108_108" 	/>
+									<Size 		origin = "216_216" 	/>
+								</Widget>
+								<Widget id="2" typeRes="panel" 			name = "circle_tai" 	idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_circle_tai.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "108_108" 	/>
+									<Size 		origin = "216_216" 	/>
+								</Widget>
+								<Widget id="3" typeRes="panel" 			name = "circle_xiu" 	idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_circle_xiu.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "108_108" 	/>
+									<Size 		origin = "216_216" 	/>
+								</Widget>
+								<Widget id="4" typeRes="layout"  		name = "result_taixiu" 	idx_appear ="1" visible="0">
+									<common_value>
+										<common 		name="anchor_point" 		value="0.5_0"/>
+									</common_value>
+									<Widget id="1" typeRes="panel" 			name = "res_tai" 		idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_resulttai.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common 		name="anchor_point" value="0.5_0"/>
+										</common_value>					
+										<pos 		origin = "51_0" 	/>
+										<Size 		origin = "102_34" 	/>
+									</Widget>
+									<Widget id="2" typeRes="panel" 			name = "res_xiu" 		idx_appear ="1" visible="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_resultxiu.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common 		name="anchor_point" value="0.5_0"/>
+										</common_value>					
+										<pos 		origin = "51_0" 	/>
+										<Size 		origin = "102_34" 	/>
+									</Widget>
+									<Widget id="3" typeRes="font" 			name = "res_taixiu_txt" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="0"/>
+											<common    		name="font_idx"		value="0"/>
+											<common			name="bitmap_font"  value="1"/>
+											<common 		name="anchor_point" value="0.5_0.5"/>
+										</common_value>
+											
+										<pos 		origin = "51_17" 	/>
+										<Size 		origin = "25_25" 	/>
+									</Widget>							
+							
+									<COMMAND>
+										<cmd id="0" name="ON_SHOW">
+										{
+											"act0" : {
+												"squence" : [
+													{
+														"SET_VISIBLE" : 1
+													},
+													{
+														"SET_OPACITY" : 0
+													},
+													{
+														"SET_POSITION" : "108_-20",
+														"DESIGN" 	   : "960_540"
+													}
+												]
+											},
+											"act1" : {
+												"single" : 
+												{
+													"POSITION" : "108_0",
+													"DESIGN"   : "960_540",
+													"TIME"     : 0.1
+												},
+												"single_1" : 
+												{
+													"OPACITY" : 255,
+													"TIME"     : 0.1
+												}
+											}
+										}
+										</cmd>
+										<cmd id="1" name="ON_HIDE">
+										{
+											"act0" : {
+												"squence" : [
+													{
+														"SET_OPACITY" : 0
+													},
+													{
+														"SET_VISIBLE" : 0
+													}
+												]
+											}
+										}
+										</cmd>
+									</COMMAND>
+									<pos 		origin = "108_0" 	/>
+									<Size 		origin = "102_34" 	/>
+								</Widget>
+								<Widget id="5" typeRes="layout"  		name = "result_dice" 	idx_appear ="1" >
+									<common_value>
+										<common			name="casca_color"			value="0"/>
+										<common 		name="clipping_enable"	    value="0"/>
+										<common 		name="background_type" 		value="0"/>
+										<common 		name="anchor_point" 		value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="animate"  		name = "dice1" 	idx_appear ="1" >
+										<common_value>
+											<common			name="source"				value="
+											gamescreen-newgui-game-common/taixiu/dice/dice7.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice8.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice9.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice10.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice11.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice12.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice1.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice2.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice3.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice4.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice5.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice6.png"/>
+											<common			name="multi_sprite"			value="1"/>
+											<common			name="begin_idx"			value="0"/>
+											<common			name="end_idx"				value="11"/>
+											<common			name="sprite_idx"			value="0"/>
+											<common			name="loop"					value="8"/>
+											<common			name="delay"				value="0.01"/>
+										</common_value>
+										<pos 		origin = "57_-100" 	/>
+										<Size 		origin = "70_70" 	/>
+										
+										<COMMAND>
+											<cmd id ="0" name="ON_SHOW">
+											{
+												"act0" : {
+													"squence" : [
+														{
+															"SET_POSITION" : "65_-100",
+															"DESIGN" 	   : "960_540"
+														},
+														{
+															"POSITION" 	   : "65_74",
+															"DESIGN" 	   : "960_540",
+															"TIME"		   : 0.25
+														}
+													]
+												}
+											}
+											</cmd>
+										</COMMAND>
+									</Widget>
+									<Widget id="1" typeRes="animate"  		name = "dice2" 	idx_appear ="1" >
+										<common_value>
+											<common			name="source"				value="
+											gamescreen-newgui-game-common/taixiu/dice/dice9.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice10.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice11.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice12.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice7.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice8.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice1.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice2.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice3.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice4.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice5.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice6.png"/>
+											<common			name="multi_sprite"			value="1"/>
+											<common			name="begin_idx"			value="0"/>
+											<common			name="end_idx"				value="11"/>
+											<common			name="sprite_idx"			value="0"/>
+											<common			name="loop"					value="12"/>
+											<common			name="delay"				value="0.012"/>
+											<common 		name="anchor_point" 		value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "114_-50" 	/>
+										<Size 		origin = "70_70" 	/>
+										
+										<COMMAND>
+											<cmd id = "0" name="ON_SHOW">
+											{
+												"act0" : {
+													"squence" : [
+														{
+															"SET_POSITION" : "114_-50",
+															"DESIGN" 	   : "960_540"
+														},
+														{
+															"POSITION" 	   : "114_140",
+															"DESIGN" 	   : "960_540",
+															"TIME"		   : 0.25
+														}
+													]
+												}
+											}
+											</cmd>
+										</COMMAND>
+									</Widget>
+									<Widget id="2" typeRes="animate"  		name = "dice3" 	idx_appear ="1" >
+										<common_value>
+											<common			name="source"				value="
+											gamescreen-newgui-game-common/taixiu/dice/dice11.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice12.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice7.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice8.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice9.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice10.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice1.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice2.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice3.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice4.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice5.png_
+											gamescreen-newgui-game-common/taixiu/dice/dice6.png"/>
+											<common			name="multi_sprite"			value="1"/>
+											<common			name="begin_idx"			value="0"/>
+											<common			name="end_idx"				value="11"/>
+											<common			name="sprite_idx"			value="0"/>
+											<common			name="loop"					value="16"/>
+											<common			name="delay"				value="0.015"/>
+										</common_value>
+										<pos 		origin = "171_-100" 	/>
+										<Size 		origin = "70_70" 	/>
+										
+										<COMMAND>
+											<cmd id = "0" name="ON_SHOW">
+											{
+												"act0" : {
+													"squence" : [
+														{
+															"SET_POSITION" : "160_-100",
+															"DESIGN" 	   : "960_540"
+														},
+														{
+															"POSITION" 	   : "160_74",
+															"DESIGN" 	   : "960_540",
+															"TIME"		   : 0.25
+														}
+													]
+												}
+											}
+											</cmd>
+										</COMMAND>
+									</Widget>
+									<pos 		origin = "111_111" 	/>
+									<Size 		origin = "216_216" 	/>
+								</Widget>
+								
+								<pos 		origin = "111_111" 	/>
+								<Size 		origin = "216_216" 	/>
+							</Widget>
+							
+							<pos 		origin = "290_115" 	/>
+							<Size 		origin = "222_222" 	/>
+						</Widget>
+						
+						<pos 		origin = "480_290" 	/>
+						<Size 		origin = "580_230" 	/>
+						<opacity 	origin = "0" 	/>
+						<COMMAND>
+							<cmd name="ON_SHOW" id="0">
+							{
+								"act0" : {
+									"squence" : [
+										{
+											"SET_POSITION" : "480_400",
+											"DESIGN"	   : "960_540"
+										},
+										{
+											"SET_SIZE" : "80_32",
+											"DESIGN"	   : "960_540"
+										},
+										{
+											"SET_OPACITY" : 0
+										},
+										{
+											"SET_VISIBLE" : 1
+										}
+									]			
+								},
+								"act1" : {
+									"squence_0" : [
+										{
+											"SIZE" 		: "580_230",
+											"DESIGN"	 : "960_540",
+											"TIME"		: 0.5
+										},
+										{
+											"SET_SIZE" : "580_230",
+											"DESIGN"   : "960_540"
+										}	
+									],
+									"squence_1" : [
+										{
+											"POSITION" 	: "480_100",
+											"DESIGN"	 : "960_540",
+											"TIME"		: 0.3
+										},
+										{
+											"POSITION" : "480_290",
+											"DESIGN"	: "960_540",
+											"TIME"		: 0.1
+										},
+										{
+											"SET_POSITION" : "480_290",
+											"DESIGN"	   : "960_540"
+										}
+									],
+									"single_0" : 
+									{
+											"OPACITY" : 255,
+											"TIME"	  : 0.5
+									}
+									
+								}
+							}
+							</cmd>
+						</COMMAND>
+						
+					</Widget>
+
+					<Widget id="2" typeRes="layout"  		name = "taixiu_user_bet_win" 			idx_appear="1"  visible="0">
+						<common_value>
+							<common 		name="anchor_point" 		value="0.5_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" 			name = "icon" 	  idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_0"/>
+							</common_value>	
+							<Widget id="0" typeRes="panel" 			name = "icon_win" 	  idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+								</common_value>	
+									
+								<pos 		origin = "20_20" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>	
+							<Widget id="1" typeRes="panel" 			name = "icon_ruby" 	  idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+								</common_value>	
+								<pos 		origin = "20_20" 	/>
+								<Size 		origin = "40_35" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "40_40" 	/>
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="SHOW" id="0">
+								{
+									"act0" : 
+									{
+										"single":
+										{
+											"OPACITY" : 255,
+											"TIME" 	  : 1.0
+										}
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<Widget id="1" typeRes="layout"  		name = "layout_txt" idx_appear="1"  >
+							<common_value>
+								<common 		name="anchor_point" 		value="0_0"/>
+							</common_value>
+								<Widget id="1" typeRes="font" 			name = "txt_name" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="1_0"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "-5_22" 	/>
+									<color 		origin = "250_210_10_255" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt_money" idx_appear ="1" >						
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="1_1"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "-5_18" 	/>
+									<color 		origin = "255_10_10_255" 	/>
+								</Widget>
+							<pos 		origin = "0_0" 	 />
+							<Size 		origin = "40_40" />
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="SHOW" id="0">
+								{
+									"act0" : 
+									{
+										"squence":
+										[
+											{
+												"OPACITY" : 255,
+												"TIME" 	  : 0.2
+											},
+											{
+												"DELAY" : 0.6
+											},
+											{
+												"OPACITY" : 0,
+												"TIME" 	  : 0.2
+											}
+										]
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "40_40" 	/>
+					</Widget>
+					
+					<Widget id="3" typeRes="layout" 		name = "layout_fly_user" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="4" typeRes="layout"  		name = "taixiu_leaderboard_layout" 		idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"			value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+						<Widget id="0" typeRes="layout"  		name = "taixiu_leaderboard_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			 name = "bg" 								idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "325_-20" 	/>
+								<Size 		origin = "650_360" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "title_bg" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="ranking"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "30_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="account"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "275_20" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="number_win_tx_win"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "540_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "txt3" idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="number_ruby_tx_win"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "540_20" 	/>
+								</Widget>
+								<pos 		origin = "325_340" 	/>
+								<Size 		origin = "650_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="list_view_table" name = "taixiu_list_player_leaderboard" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="inner_size" 			value="650_300"/>
+									<common 		name="direction" 			value="1"/> <!-- -1 none 0 is horizol 1 is vertical 3 is both -->
+									<common			name="anchor_point_list"	value="0.5_0"/>		
+									
+									<common 		name="background_type" 		value="0"/>			
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"			value="0.5_0"/>
+									<common			name="clipping_enable"		value="1"/>
+									<common			name="Percent_Scroll"		value="0_0.15"/>
+												
+									<common			name="size_child"			value="650_30"/>									
+									<common			name="no_add_event"			value="1"/>
+									<common			name="number_cell"			value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" name = "layout_player" idx_appear ="2" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>		
+										<common			name="stick_screen"			value="0"/>
+										<common			name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 	name = "bg_0" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg1.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "650_30" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 	name = "bg_1" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg2.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="casca_color"	value="0"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "650_30" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 	name = "stt_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "60_15" 	/>
+									</Widget>								
+									<Widget id="3" typeRes="font"	name = "title_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="player_name"/>					
+										</common_value>
+										<pos 		origin = "275_15" 	/>
+										<color 		origin = "250_200_75_255" 	/>
+									</Widget>										
+									<Widget id="4" typeRes="font" 	name = "number_win_id" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "540_15" 	/>
+										<color 		origin = "158_64_157_255" 	/>
+									</Widget>										
+																				
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "650_30" 	/>
+								</Widget>					
+										
+								<pos 		origin = "325_0" 	/>
+								<Size 		origin = "650_300" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_top_rank.png"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "325_340" 	/>
+								<Size 		origin = "345_67" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_lb_taixiu" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "650_340" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="font" 			 name = "txt0" 								idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="no_record"/>
+								</common_value>		
+								<pos 		origin = "325_170" 	/>
+							</Widget>
+							<Widget id="6" typeRes="panel" 			 name = "loading_circle" 	 				idx_appear ="1" visible="1">		
+								<common_value>	
+									<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "325_170" 	/>
+								<Size 		origin = "60_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "670_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "650_330",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "650_330",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "670_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "650_340" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="5" typeRes="layout"  		name = "taixiu_myhistory_layout" 		idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"			value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+
+						<Widget id="0" typeRes="layout"  		name = "taixiu_myhistory_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			 name = "bg" 						idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_-20" 	/>
+								<Size 		origin = "920_360" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "title_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="tx_ID"/>
+									</common_value>
+									<pos 		origin = "50_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="time"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "230_20" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="tx_choice"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "380_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "txt3" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="result_co"/>
+									</common_value>	
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "500_20" 	/>
+								</Widget>							
+								<Widget id="4" typeRes="font" 			name = "txt4" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="Bet"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "600_20" 	/>
+								</Widget>
+								<Widget id="5" typeRes="font" 			name = "txt5" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="tx_return"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "700_20" 	/>
+								</Widget>
+								<Widget id="6" typeRes="font" 			name = "txt6" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="receive"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "830_20" 	/>
+								</Widget>
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="list_view_table" name = "taixiu_list_myhistory" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="inner_size" 			value="920_300"/>
+									<common 		name="direction" 			value="1"/> <!-- -1 none 0 is horizol 1 is vertical 3 is both -->
+									<common			name="anchor_point_list"	value="0.5_0"/>
+												
+									<common 		name="background_type" 		value="0"/>			
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"			value="0.5_0"/>
+									<common			name="clipping_enable"		value="1"/>
+									<common			name="Percent_Scroll"		value="0_0.15"/>
+												
+									<common			name="size_child"			value="920_30"/>									
+									<common			name="no_add_event"			value="1"/>
+									<common			name="number_cell"			value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" name = "layout_player" idx_appear ="2" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>		
+										<common			name="stick_screen"			value="0"/>
+										<common			name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 	name = "bg_0" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg1.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "920_30" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 	name = "bg_1" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg2.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="casca_color"	value="0"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "920_30" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 	name = "phien_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+										</common_value>
+										<pos 		origin = "50_15" 	/>
+									</Widget>								
+									<Widget id="3" typeRes="font"	name = "time_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="player_name"/>					
+										</common_value>
+										<pos 		origin = "230_15" 	/>
+										<color 		origin = "230_180_120_255" 	/>
+									</Widget>										
+									<Widget id="4" typeRes="font" 	name = "bet_way_id" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+										</common_value>
+										<pos 		origin = "380_15" 	/>
+										<color 		origin = "220_7_86_255" 	/>
+									</Widget>										
+									<Widget id="5" typeRes="font" 	name = "result_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+										</common_value>
+										<pos 		origin = "500_15" 	/>
+										<color 		origin = "220_7_86_255" 	/>
+									</Widget>								
+									<Widget id="6" typeRes="font"	name = "bet_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="0"/>					
+										</common_value>
+										<pos 		origin = "600_15" 	/>
+										<color 		origin = "255_228_0_255" 	/>
+									</Widget>										
+									<Widget id="7" typeRes="font" 	name = "return_id" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+										</common_value>
+										<pos 		origin = "700_15" 	/>
+									</Widget>								
+									<Widget id="8" typeRes="font"	name = "receive_id" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="player_name"/>					
+										</common_value>
+										<pos 		origin = "830_15" 	/>
+									</Widget>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "920_30" 	/>
+								</Widget>					
+										
+								<pos 		origin = "460_0" 	/>
+								<Size 		origin = "920_300" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_top_history.png"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "345_67" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_history_taixiu" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "920_340" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="font" 			 name = "txt0" 						idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+										<common 		name="source" 		value="no_record"/>
+								</common_value>		
+								<pos 		origin = "480_170" 	/>
+							</Widget>
+							<Widget id="6" typeRes="panel" 			name = "loading_circle" 	 		idx_appear ="1" visible="1">		
+								<common_value>	
+									<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "460_170" 	/>
+								<Size 		origin = "60_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "920_330",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "920_330",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "920_340" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="6" typeRes="layout"  		name = "taixiu_matchhistory_layout" 	idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+						<Widget id="0" typeRes="layout"  		name = "taixiu_matchhistory_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			 name = "bg" 						idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_-20" 	/>
+								<Size 		origin = "920_360" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "title_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="casca_color" 		value="0"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="time"/>
+									</common_value>
+									<pos 		origin = "150_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="tx_choice"/>
+									</common_value>
+									<pos 		origin = "350_20" 	/>
+								</Widget>
+								<Widget id="1" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="nick"/>
+									</common_value>
+									<pos 		origin = "600_20" 	/>
+								</Widget>
+								<Widget id="1" typeRes="font" 			name = "txt3" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="bet"/>
+									</common_value>
+									<pos 		origin = "800_20" 	/>
+								</Widget>
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "920_80" 	/>		
+								<color 		origin = "150_150_150_255" 	/>
+							</Widget>
+							<Widget id="2" typeRes="panel" 			 name = "title_bg_top" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="Phiên(#211328)"/>
+									</common_value>
+									<pos 		origin = "150_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="Xỉu 4(2-1-1)"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "460_20" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>
+								<Widget id="2" typeRes="button" 		 name = "btn_cur_phien" 	idx_appear ="1" visible="0">		
+									<template_value>
+										<template 		name="temp_btn_yellow"/>						
+									</template_value>
+									<common_value>										
+										<common 		name="anchor_point" 	value="1_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="tx_cur_phien"/>
+										</common_value>
+										<pos 		origin = "100_15" 	/>
+									</Widget>		
+									<pos 		origin = "900_20" 	/>
+									<Size 		origin = "200_30" 	/>
+								</Widget>
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							
+							<Widget id="2" typeRes="list_view_table" name = "taixiu_list_history" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="inner_size" 			value="920_240"/>
+									<common 		name="direction" 			value="1"/> <!-- -1 none 0 is horizol 1 is vertical 3 is both -->
+									<common			name="anchor_point_list"	value="0.5_0"/>
+									<common 		name="vertical_fill_order"  value="1"/>
+									
+									<common			name="anchor_point"			value="0.5_1"/>
+									<common			name="clipping_enable"		value="1"/>
+									<common			name="Percent_Scroll"		value="0_0.15"/>
+												
+									<common			name="size_child"			value="920_30"/>									
+									<common			name="no_add_event"			value="1"/>
+									<common			name="number_cell"			value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" name = "layout_player" idx_appear ="2" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>		
+										<common			name="stick_screen"			value="0"/>
+										<common			name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 	name = "bg_0" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg1.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "920_30" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 	name = "bg_1" 			idx_appear ="2" 	visible ="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/taixiu_itembkg2.png"/>
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="scale_9"		value="1"/>
+											<common			name="casca_color"	value="0"/>
+											<common			name="anchor_point"	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "920_30" 	/>
+									</Widget>
+									<Widget id="0" typeRes="font" 	name = "txt0" idx_appear ="1" >		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="0"/>
+										</common_value>
+										<pos 		origin = "150_15" 	/>
+									</Widget>							
+									<Widget id="1" typeRes="font" 	name = "txt1" idx_appear ="1" >		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="0"/>
+										</common_value>
+										<pos 		origin = "350_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 	name = "txt2" idx_appear ="1" >		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="0"/>
+										</common_value>
+										<pos 		origin = "600_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 	name = "txt3" idx_appear ="1" >		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="0"/>
+										</common_value>
+										<pos 		origin = "800_15" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "920_30" 	/>
+								</Widget>					
+										
+								<pos 		origin = "460_260" 	/>
+								<Size 		origin = "920_240" 	/>
+							</Widget>
+							
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_top_lichsuphien.png"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "345_67" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_match_history_taixiu" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "920_340" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="font" 			 name = "txt0" 						idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+										<common 		name="source" 		value="no_record"/>
+								</common_value>		
+								<pos 		origin = "480_170" 	/>
+							</Widget>
+							<Widget id="6" typeRes="panel" 			name = "loading_circle" 	 		idx_appear ="1" visible="1">		
+								<common_value>	
+									<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "460_170" 	/>
+								<Size 		origin = "60_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							
+							<Widget id="7" typeRes="button" 		 name = "btn_his_left" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="press" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="disable" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "30_170" 	/>
+								<Size 		origin = "46_46" 	/>
+								<rotate 	origin = "-90" 	/>
+							</Widget>
+							<Widget id="8" typeRes="button" 		 name = "btn_his_right" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="press" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="disable" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "890_170" 	/>
+								<Size 		origin = "46_46" 	/>
+								<rotate 	origin = "90" 	/>
+							</Widget>
+							
+							
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "920_330",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "920_330",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_350",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<Widget id="7" typeRes="layout" 	name = "layout_tai_bottom" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0_0"/>
+								</common_value>
+								<Widget id="2" typeRes="panel" 			 name = "bg" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/thongketai_money.9.png"/>
+										<common 		name="use_nine_path" 	value="1"/>
+										<common 		name="scale_9" 			value="1"/>
+										<common 		name="stage_scale9" 	value="2"/>	
+										<common 		name="anchor_point" 	value="0_0"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "250_40" 	/>						
+								</Widget>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "60_20" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>							
+								
+								<pos 		origin = "5_-15" 	/>
+								<Size 		origin = "250_40" 	/>						
+							</Widget>
+							
+							<Widget id="8" typeRes="layout" 	name = "layout_xiu_bottom" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0_0"/>
+								</common_value>
+								<Widget id="2" typeRes="panel" 			 name = "bg" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/thongkexiu_money.9.png"/>
+										<common 		name="use_nine_path" 	value="1"/>
+										<common 		name="scale_9" 			value="1"/>
+										<common 		name="stage_scale9" 	value="2"/>	
+										<common 		name="anchor_point" 	value="0_0"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "250_40" 	/>						
+								</Widget>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "60_20" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>							
+								
+								<pos 		origin = "260_-15" 	/>
+								<Size 		origin = "250_40" 	/>						
+							</Widget>
+							
+							<Widget id="9" typeRes="layout" 	name = "layout_total_bottom" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0_0"/>
+								</common_value>
+								<Widget id="2" typeRes="panel" 			 name = "bg" 					idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/thongketotal_money.9.png"/>
+										<common 		name="use_nine_path" 	value="1"/>
+										<common 		name="scale_9" 			value="1"/>
+										<common 		name="stage_scale9" 	value="2"/>	
+										<common 		name="anchor_point" 	value="0_0"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "400_40" 	/>						
+								</Widget>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "135_20" 	/>
+									<color 		origin = "55_230_37" 	/>
+								</Widget>							
+								
+								<pos 		origin = "515_-15" 	/>
+								<Size 		origin = "400_40" 	/>						
+							</Widget>
+							
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "920_340" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+
+					<Widget id="7" typeRes="layout"  		name = "taixiu_chart_layout" 		idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+						<Widget id="0" typeRes="layout"  		name = "taixiu_chart_layout" 			idx_appear="1" >
+							<Widget id="0" typeRes="panel" 			 name = "bg" 						idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "420_0" 	/>
+								<Size 		origin = "840_400" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "title_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="tx_last_match"/>
+										<common 		name="anchor_point" value="0_0"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "30_32" 	/>
+								</Widget>
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="0_1"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "30_28" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>
+								<Widget id="2" typeRes="layout"  		name = "layout_check_dice" 			idx_appear="1" >
+									<common_value>					
+											<common			name="anchor_point"		value="1_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="check_box" name = "btn_check_dice1" 	idx_appear ="2">		
+										<template_value>
+											<template name="check_box_round"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"		value="0_0.5"/>
+											<common			name="touch_zone"		value="50_50"/>
+											<common			name="select"			value="1"/>
+										</common_value>
+										<pos 		origin = "0_30" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="0" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="tx_dice1"/>
+											<common 		name="anchor_point" value="0_0.5"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "50_30" 	/>
+										<color 		origin = "52_231_187" 	/>
+									</Widget>
+									<Widget id="1" typeRes="check_box" name = "btn_check_dice2" 	idx_appear ="2">		
+										<template_value>
+											<template name="check_box_round"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"		value="0_0.5"/>
+											<common			name="touch_zone"		value="50_50"/>
+											<common			name="select"			value="1"/>
+										</common_value>
+										<pos 		origin = "150_30" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="tx_dice2"/>
+											<common 		name="anchor_point" value="0_0.5"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "200_30" 	/>
+										<color 		origin = "254_255_133" 	/>
+									</Widget>
+									<Widget id="2" typeRes="check_box" name = "btn_check_dice3" 	idx_appear ="2">		
+										<template_value>
+											<template name="check_box_round"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"		value="0_0.5"/>
+											<common			name="touch_zone"		value="50_50"/>
+											<common			name="select"			value="1"/>
+										</common_value>
+										<pos 		origin = "300_30" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="tx_dice3"/>
+											<common 		name="anchor_point" value="0_0.5"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "350_30" 	/>
+										<color 		origin = "255_90_90" 	/>
+									</Widget>
+									<pos 		origin = "800_30" 	/>
+									<Size 		origin = "420_60" 	/>						
+								</Widget>
+								<pos 		origin = "420_400" 	/>
+								<Size 		origin = "840_60" 	/>						
+							</Widget>
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_top_chart.png"/>
+									<common 		name="use_atlas" 		value="1"/>	
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "420_400" 	/>
+								<Size 		origin = "345_71" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_chart_taixiu" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/taixiu/taixiu_close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "840_400" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="panel" 			 name = "node" 						idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+									<common 		name="casca_color" 		value="0"/>
+								</common_value>		
+								<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0_1"/>						
+									</template_value>	
+									<pos 		origin = "12_12" 	/>
+								</Widget>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "24_24" 	/>
+							</Widget>						
+							<Widget id="6" typeRes="panel" 			 name = "node_e" 					idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>		
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "10_10" 	/>
+							</Widget>						
+							<Widget id="7" typeRes="panel" 			 name = "line" 					idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="drig_line"/>						
+								</template_value>
+								<common_value>
+									<common			name="source"		value="white.png"/>
+									<common 		name="anchor_point" 	value="0_0"/>
+								</common_value>		
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "25_1" />
+							</Widget>						
+							
+							<Widget id="8" typeRes="layout"  		name = "dice_chart_layout" 			idx_appear="1" visible="0">
+								<common_value>
+									<common			name="anchor_point"	 	value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="layout"  		name = "dice_chart_top_layout" 		idx_appear="1" >
+									<common_value>
+										<common			name="anchor_point"	 	value="0.5_1"/>
+									</common_value>
+									<Widget id="0" name = "drig_normal" com ="GeneralWidget.DrigNormal" >		
+									</Widget>
+									
+									<Widget id="1" typeRes="font" 		name = "txt1" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="3"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-15_0" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 		name = "txt2" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="18"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-15_125" 	/>
+									</Widget>
+									
+									<Widget id="3" typeRes="layout"  	name = "dice_chart_top_detail_layout" 		idx_appear="1" >
+										<common_value>
+											<common			name="anchor_point"	 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "600_125" 	/>
+									</Widget>
+									<Widget id="4" typeRes="panel" 		name = "effect_icon" idx_appear ="1" visible="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+											<common 		name="anchor_point" value="0.5_0.5"/>
+										</common_value>									
+										<pos 		origin = "587.5_12.5" 	/>
+										<Size 		origin = "25_25" 	/>
+										<COMMAND>
+											<cmd id="0" name="RUN_EFFECT">
+												{
+													"act0" : 
+													{
+														"repeat" : -1,
+														"squence" : 
+														[
+															{
+																"SET_SIZE" : 	"25_25",
+																"DESIGN" 	   : "960_540"
+															},
+															{
+																"SIZE" : "36_36",
+																"DESIGN"   : "960_540",
+																"TIME"     : 0.5
+															}
+														],
+														"squence_1" : 
+														[
+															{
+																"SET_OPACITY" : 255
+															},
+															{
+																"OPACITY" : 0,
+																"TIME"     : 0.5
+															}
+														]
+													}
+												}
+											</cmd>
+										</COMMAND>
+									</Widget>
+									
+									<pos 		origin = "420_320" 	/>
+									<Size 		origin = "600_125" 	/>
+								</Widget>
+								<Widget id="0" typeRes="layout"  		name = "dice_chart_bot_layout" 		idx_appear="1" >
+									<common_value>
+										<common			name="anchor_point"	 	value="0.5_0"/>
+									</common_value>
+									<Widget id="0" name = "drig_normal" com ="GeneralWidget.DrigNormal" >		
+									</Widget>
+									<Widget id="0" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="1"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_0" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="2"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_25" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "txt3" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="3"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_50" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "txt4" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="4"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_75" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "txt5" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="5"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_100" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "txt6" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="6"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>	
+										<pos 		origin = "-10_125" 	/>
+									</Widget>
+									
+									<Widget id="3" typeRes="layout"  		name = "dice_chart_bot_dice1_layout" 		idx_appear="1" >
+										<common_value>
+											<common			name="anchor_point"	 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "600_125" 	/>
+										<color 		origin = "52_231_187" 	/>
+									</Widget>
+									<Widget id="3" typeRes="layout"  		name = "dice_chart_bot_dice2_layout" 		idx_appear="1" >
+										<common_value>
+											<common			name="anchor_point"	 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "600_125" 	/>
+										<color 		origin = "254_255_133" 	/>
+									</Widget>
+									<Widget id="3" typeRes="layout"  		name = "dice_chart_bot_dice3_layout" 		idx_appear="1" >
+										<common_value>
+											<common			name="anchor_point"	 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "600_125" 	/>
+										<color 		origin = "255_90_90" 	/>
+									</Widget>
+									<pos 		origin = "420_20" 	/>
+									<Size 		origin = "600_125" 	/>
+								</Widget>
+								<pos 		origin = "420_0" 	/>
+								<Size 		origin = "840_340" 	/>
+							</Widget>						
+							<Widget id="9" typeRes="layout"  		name = "detail_chart_layout" 		idx_appear="1" visible="0">
+								<common_value>
+									<common			name="anchor_point"	 	value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="layout"  		name = "table_bg" 		idx_appear="1" >
+									<Widget id="0" name = "drig_normal" com ="GeneralWidget.DrigBig" >		
+									</Widget>
+									<Widget id="1" typeRes="layout"  	name = "list_node" 		idx_appear="1" >
+										<pos 		origin = "300_150" 	/>
+										<Size 		origin = "600_300" 	/>
+									</Widget>
+									<Widget id="2" typeRes="panel" 		name = "thongketai_layout" 	idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/thongketai.png"/>
+											<common 		name="anchor_point" 	value="1_1"/>
+										</common_value>		
+										<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="0"/>
+												<common 		name="state_scale" 	value="2"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>	
+											<pos 		origin = "28_20" 	/>
+										</Widget>
+										<pos 		origin = "-15_300" 	/>
+										<Size 		origin = "55_77" 	/>
+									</Widget>
+									<Widget id="3" typeRes="panel" 		name = "thongkexiu_layout" 	idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/taixiu/thongketxiu.png"/>
+											<common 		name="anchor_point" 	value="1_1"/>
+										</common_value>		
+										<Widget id="0" typeRes="font" 			name = "txt" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="0"/>
+												<common 		name="state_scale" 	value="2"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>	
+											<pos 		origin = "28_20" 	/>
+										</Widget>
+										<pos 		origin = "-15_200" 	/>
+										<Size 		origin = "55_77" 	/>
+									</Widget>
+									
+									<Widget id="4" typeRes="panel" 		name = "effect_icon" idx_appear ="1" visible="0">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+											<common 		name="anchor_point" value="0.5_0.5"/>
+										</common_value>									
+										<pos 		origin = "587.5_12.5" 	/>
+										<Size 		origin = "25_25" 	/>
+										<COMMAND>
+											<cmd id="0" name="RUN_EFFECT">
+												{
+													"act0" : 
+													{
+														"repeat" : -1,
+														"squence" : 
+														[
+															{
+																"SET_SIZE" : 	"25_25",
+																"DESIGN" 	   : "960_540"
+															},
+															{
+																"SIZE" : "36_36",
+																"DESIGN"   : "960_540",
+																"TIME"     : 0.5
+															}
+														],
+														"squence_1" : 
+														[
+															{
+																"SET_OPACITY" : 255
+															},
+															{
+																"OPACITY" : 0,
+																"TIME"     : 0.5
+															}
+														]
+													}
+												}
+											</cmd>
+											<cmd id="1" name="SET_POS_TOTAL">
+											{
+												"act0" : 
+												{
+													"single" : 
+													{
+														"SET_POSITION" : "587.5_12.5",
+														"DESIGN" 	   : "960_540"
+													}
+												}
+											}
+											</cmd>
+											<cmd id="2" name="SET_POS_TOTAL_NEAR">
+											{
+												"act0" : 
+												{
+													"single" : 
+													{
+														"SET_POSITION" : "587.5_287.5",
+														"DESIGN" 	   : "960_540"
+													}
+												}
+											}
+											</cmd>
+										</COMMAND>
+									</Widget>
+									<pos 		origin = "420_170" 	/>
+									<Size 		origin = "600_300" 	/>
+								</Widget>
+								<pos 		origin = "420_0" 	/>
+								<Size 		origin = "840_340" 	/>
+							</Widget>
+							
+							<Widget id="10" typeRes="button" 		 name = "btn_chart_left" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="press" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="disable" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "30_200" 	/>
+								<Size 		origin = "46_46" 	/>
+								<rotate 	origin = "-90" 	/>
+							</Widget>
+							<Widget id="11" typeRes="button" 		 name = "btn_chart_right" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="press" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="disable" 			value="otherscreen/topup-screen/up.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+									<common 		name="anchor_point" 	value="0.5_0.5"/>
+								</common_value>					
+								<pos 		origin = "810_200" 	/>
+								<Size 		origin = "46_46" 	/>
+								<rotate 	origin = "90" 	/>
+							</Widget>
+							
+							
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "860_420",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "840_400",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "840_400",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "860_420",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "840_400" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>
+			</Widget>
+												
+</GAME>

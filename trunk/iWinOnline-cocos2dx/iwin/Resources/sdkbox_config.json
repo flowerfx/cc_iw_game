@@ -1,0 +1,92 @@
+{
+    "ios" : {
+        "Facebook" : {
+            "enabled" : true,
+            "debug" : false,
+            "facebook_id" : "315837181868526"
+        },
+        "sdkboxplay" : {
+            "enabled" : true,
+            "debug" : false,
+            "connect_on_start" : false,
+            "show_achievement_notification" : false,
+            "leaderboards" : [
+                {
+                    "id" : "ldb1",
+                    "name" : "ldb1"
+                }
+            ],
+            "achievements" : [
+                {
+                    "id" : "tengames",
+                    "name" : "ten-games",
+                    "incremental" : false
+                },
+                {
+                    "id" : "hunter",
+                    "name" : "hunter",
+                    "incremental" : false
+                },
+                {
+                    "id" : "craftsman",
+                    "name" : "craftsman",
+                    "incremental" : false
+                },
+                {
+                    "id" : "incremental",
+                    "name" : "incremental",
+                    "incremental" : true
+                },
+                {
+                    "id" : "hidden",
+                    "name" : "hidden",
+                    "incremental" : false
+                }
+            ]
+        }
+    },
+    "android" : {
+        "Facebook" : {
+            "enabled" : true,
+            "debug" : false,
+            "facebook_id" : "315837181868526"
+        },
+        "sdkboxplay" : {
+            "enabled" : true,
+            "debug" : false,
+            "connect_on_start" : false,
+            "show_achievement_notification" : false,
+            "leaderboards" : [
+                {
+                    "id" : "CgkI0sux8sMWEAIQAA",
+                    "name" : "ldb1"
+                }
+            ],
+            "achievements" : [
+                {
+                    "id" : "CgkI0sux8sMWEAIQAg",
+                    "name" : "ten-games",
+                    "incremental" : false
+                },
+                {
+                    "id" : "CgkI0sux8sMWEAIQAw",
+                    "name" : "hunter",
+                    "incremental" : false
+                },
+                {
+                    "id" : "CgkI0sux8sMWEAIQBA",
+                    "name" : "craftsman",
+                    "incremental" : false
+                },
+                {
+                    "id" : "CgkI0sux8sMWEAIQBQ",
+                    "name" : "incremental",
+                    "incremental" : true
+                }
+            ]
+        }
+    },
+    "playphone" : [
+        
+    ]
+}

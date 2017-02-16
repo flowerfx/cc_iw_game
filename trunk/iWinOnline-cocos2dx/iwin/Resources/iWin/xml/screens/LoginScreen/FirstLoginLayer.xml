@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="0" typeRes="layout"  name = "first_login_layout" 	idx_appear ="1" visible="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+						<Widget id="1" typeRes="panel" 	name = "line_sep" idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/line.png"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="anchor_point"	value="0.5_0"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							<pos 		origin = "320_330" 	/>
+							<Size 		origin = "600_1" 	/>
+							<opacity	origin = "255" 		/>
+						</Widget>
+						
+						<Widget id="2" typeRes="font" 		name = "login_type_title" idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+									<common 		name="source" 		value="login_wit"/>					
+									<common			name="anchor_point"	value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "320_340" 	/>
+						</Widget>
+						
+						
+						<Widget id="4" typeRes="button" 	name = "btn_login_fb" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/facebook.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/facebook.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/facebook.png"/>
+								
+								<common 		name="scale_press" 		value="-0.15"/>
+								<common			name="anchor_point"		value="0.5_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "320_200" 	/>
+							<Size 		origin = "104_104" 	/>
+						</Widget>
+						<Widget id="5" typeRes="button" 	name = "btn_login_iwin" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/iwin.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/iwin.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/iwin.png"/>
+								
+								<common 		name="scale_press" 		value="-0.15"/>
+								<common			name="anchor_point"		value="0.5_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "452_200" 	/>
+							<Size 		origin = "104_104" 	/>
+						</Widget>
+						<Widget id="6" typeRes="button" 	name = "btn_login_google" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/google.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/google.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/google.png"/>
+								
+								<common 		name="scale_press" 		value="-0.15"/>
+								<common			name="anchor_point"		value="0.5_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "188_200" 	/>
+							<Size 		origin = "104_104" 	/>
+						</Widget>
+						
+						<Widget id="7" typeRes="font" 		name = "title_fb" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Facebook"/>					
+								<common			name="anchor_point"	value="0.5_1"/>
+							</common_value>
+							<pos 		origin = "320_190" 	/>
+						</Widget>
+						<Widget id="8" typeRes="font" 		name = "title_iwin" idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Iwin"/>					
+								<common			name="anchor_point"	value="0.5_1"/>
+							</common_value>
+							<pos 		origin = "452_190" 	/>
+						</Widget>
+						<Widget id="9" typeRes="font" 		name = "title_gg" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Google"/>					
+								<common			name="anchor_point"	value="0.5_1"/>
+							</common_value>
+							<pos 		origin = "188_190" 	/>
+						</Widget>
+						
+						<Widget id="10" typeRes="button" 	name = "btn_custommer" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/ico_support.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/ico_support.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/ico_support.png"/>
+								
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="anchor_point"		value="0_1"/>
+							</common_value>
+							
+							
+							<pos 		origin = "-290_530" 	/>
+							<Size 		origin = "70_70" 	/>
+						</Widget>
+						
+						<Widget id="11" typeRes="layout" name = "title_img_layout" idx_appear ="2">		
+							<common_value>
+								<common			name="anchor_point"	value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "320_50" 	/>
+							<Size 		origin = "634_60" 	/>
+						</Widget>
+						
+						<Widget id="12" typeRes="font" 		name = "title_gg" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0_2"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="iWin.me"/>					
+								<common			name="anchor_point"	value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "320_5" 	/>
+							<color		origin = "150_150_150_255" 	/>
+						</Widget>
+						
+						
+						<pos 		origin = "320_0" 	/>
+						<Size 		origin = "640_540" 	/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0": {
+									"squence":[
+										{
+											"SET_POSITION"	:	"1000_0",
+											
+											"DESIGN"		:	"960_540"
+										},
+										{
+											"SET_VISIBLE"	: 	1
+										}
+									]
+								},
+								"act1":{
+									"single_0" : {	
+										"POSITION":"320_0",
+										
+										"DESIGN":"960_540",
+										"STYLE":0, 
+										"TIME":0.15
+									}	
+								}		
+							}
+							</cmd>		
+						</COMMAND>	
+				</Widget>
+																
+</GAME>

@@ -1,0 +1,225 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="5" name="body_history" 		typeRes="layout">
+                <common_value>
+					<common name="stick_screen" value="1"/>
+                    <common name="anchor_point" value="0.0_0.0"/>
+                </common_value>
+                <Size origin="960_440"/>
+                <Widget id="0" name="Image_5" typeRes="panel">
+                    <template_value>
+						<template name="scale9"/>
+					</template_value>
+					<common_value>
+						<common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0.0_0.0"/>
+                        <common name="source" value="otherscreen/winfree-screen/bg_price.9.png"/>
+                    </common_value>
+                    <Size origin="941_411"/>
+                    <pos origin="9_19"/>
+                </Widget>
+                <Widget id="1" name="panel_history_item" typeRes="layout" visible="0">
+                    <common_value>
+						<common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0.0_0.0"/>
+                    </common_value>
+                    <Size origin="934_54"/>
+                    <Widget id="0" name="lbl_time" typeRes="font">
+                        <template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+                            <common name="source" value="time"/>
+                        </common_value>
+                        <pos origin="160_30"/>
+                    </Widget>
+                    <Widget id="1" name="lbl_item" typeRes="font">
+                         <template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+                            <common name="source" value="type_card"/>
+                        </common_value>
+                        <pos origin="448_29"/>
+                    </Widget>
+                    <Widget id="2" name="lbl_status" typeRes="font">
+                         <template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+                            <common name="source" value="status"/>
+                        </common_value>
+                        <pos origin="776_29"/>
+                    </Widget>
+                    <Widget id="3" name="btn_detail" typeRes="button">
+						<template_value>
+							<template name="temp_btn_blue"/>
+						</template_value>
+						<common_value>
+                            <common name="anchor_point" value="0.5_0.5"/>
+                        </common_value>
+                        <Size origin="76_39"/>
+                        <Widget id="0" name="Text_5" typeRes="font">
+                            <template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+						   <common_value>
+                                <common name="source" value="detail1"/>
+                            </common_value>
+                            <pos origin="37_21"/>
+                        </Widget>
+                        <pos origin="889_27"/>
+                        <color origin="255_255_255_255"/>
+                    </Widget>
+                    <Widget id="4" name="btn_cancel" typeRes="button">
+                        <template_value>
+							<template 		name="temp_btn_red"/>						
+						</template_value>
+                        <Size origin="76_39"/>
+                        <Widget id="0" name="Text_5" typeRes="font">
+                             <template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+                                <common name="source" value="cancel"/>
+                            </common_value>
+                            <pos origin="37_21"/>
+                        </Widget>
+                        <pos origin="890_27"/>
+                        <color origin="255_255_255_255"/>
+                    </Widget>
+                    <pos origin="0_0"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+                <Widget id="2" idx_appear="4" name="tableview_board" typeRes="list_view_table">
+                    <common_value>
+                        <common name="inner_size" value="960_360"/>
+                        <common name="direction" value="1"/>
+                        <common name="anchor_point_list" value="0_0"/>
+                        <common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0_0"/>
+                        <common name="clipping_enable" value="1"/>
+                        <common name="size_child" value="960_54"/>
+                        <common name="no_add_event" value="1"/>
+                        <common name="number_cell" value="0"/>
+                    </common_value>
+                    <Widget id="1" name="panel_history_item" typeRes="layout">
+                        
+            
+                        <common_value>
+                            
+							<common name="stick_screen" value="1"/>
+                            <common name="anchor_point" value="0.0_0.0"/>
+                            
+            
+                        </common_value>
+                        
+            
+                        <Size origin="960_54"/>
+                        
+            
+                        <Widget id="0" name="lbl_time" typeRes="font">                      
+							 <template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>                                               
+                                <common name="source" value="time"/>        
+                            </common_value>
+                            <pos origin="140_30"/>
+                        </Widget>
+                        <Widget id="1" name="lbl_item" typeRes="font">
+							 <template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>      
+                                <common name="source" value="type_card"/>
+                            </common_value>
+                            <pos origin="448_29"/>
+                        </Widget>
+                        <Widget id="2" name="lbl_status" typeRes="font">
+							 <template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>
+								<common name="source" value="status"/>
+                            </common_value>
+                            <pos origin="776_29"/>
+                        </Widget>
+                        <Widget id="3" name="btn_detail" typeRes="button">
+                            <template_value>
+								<template name="temp_btn_blue"/>
+							</template_value>
+							<common_value>
+                                <common name="anchor_point" value="0.5_0.5"/>
+							</common_value>
+                            <Size origin="76_39"/>
+                            <Widget id="0" name="Text_5" typeRes="font">
+								 <template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+                                <common_value>
+                                    <common name="source" value="detail1"/>
+                                </common_value>
+                                <pos origin="37_21"/>
+                            </Widget>
+                            <pos origin="889_27"/>
+                        </Widget>
+                        <Widget id="4" name="btn_cancel" typeRes="button">
+                            <template_value>
+								<template 		name="temp_btn_red"/>						
+							</template_value>
+                            <Size origin="76_39"/>
+                            <Widget id="0" name="Text_5" typeRes="font">
+								 <template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+                                <common_value>                                                           
+                                    <common name="source" value="cancel"/>                   
+                                </common_value>  
+								<pos origin="37_21"/>
+                            </Widget>
+                            
+                
+                            <pos origin="890_27"/>
+                        </Widget>                                   
+                        <pos origin="0_0"/>   
+                    </Widget>
+                    <pos origin="0_0"/>
+                    <Size origin="960_360"/>
+                </Widget>
+                
+
+                <Widget id="2" name="text1" typeRes="font">
+                    <template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+                        <common name="source" value="time"/>
+                    </common_value>
+                    <pos origin="105_408"/>
+                    <color origin="255_236_0_255"/>
+                </Widget>
+                <Widget id="3" name="text2" typeRes="font">
+                    <template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+                        <common name="source" value="type_card"/>
+                    </common_value>
+                    <pos origin="455_412"/>
+                    <color origin="255_236_0_255"/>
+                </Widget>
+                <Widget id="4" name="text3" typeRes="font">
+                    <template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+                        <common name="source" value="status"/>
+                    </common_value>
+                    <pos origin="826_409"/>
+                    <color origin="255_236_0_255"/>
+                </Widget>
+                <pos origin="0_0"/>
+                <color origin="255_255_255_255"/>
+            </Widget>
+</GAME>

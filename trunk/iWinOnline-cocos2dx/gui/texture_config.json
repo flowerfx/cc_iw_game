@@ -1,0 +1,17 @@
+{
+  "inputFoder": "C:/Users/tuandq/Desktop/gui/",
+  "outputFoder": "C:/Users/tuandq/Desktop/gui_out/",
+  "screenSizes": [
+    "240320", "320480","480800", "640960"
+  ],
+   "packFolders": [
+    "background", "logo","loginscreen", "loadingscreen","mainscreen","gamescreen-binh-screen","gamescreen-Cards",
+	"gamescreen-cotuong-screen","gamescreen-game-common","gamescreen-newgui-game-common","otherscreen"
+  ],
+    "screenSizes_optimize": [
+     "240320", "320480","480800","640960"
+  ],
+   "optimize_colors": [
+    "256", "256", "256"
+  ]
+}

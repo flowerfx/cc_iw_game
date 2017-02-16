@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<GAME>
+		<Widget id="1" typeRes="layout"  name = "mini_button_layout" 	idx_appear="1" 	visible="0">
+					<common_value>
+						<common 		name="anchor_point" 		value="0.5_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="button" 	name = "taixiu_event_btn" idx_appear ="1" >		
+						<common_value>
+							<common 		name="source" 		value="loadingscreen/btn_eventcircle.png"/>
+							<common 		name="press" 		value="loadingscreen/btn_eventcircle.png"/>
+							<common 		name="scale_press" 	value="-0.00"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common 		name="anchor_point" value="0_0"/>
+							<common 		name="no_add_event" value="1"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "72_72" 	/>
+						<opacity 	origin = "128" 	/>
+					</Widget>
+				
+					
+					<Widget id="1" typeRes="layout" 	name = "event_list_layout" 	  idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="anchor_point" value="0.5_0.5"/>
+							<common 		name="update_invisible" value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 	name = "bg" idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loadingscreen/bg_vong.png"/>
+							</common_value>					
+							<pos 		origin = "99_99" 	/>
+							<Size 		origin = "198_198" 	/>
+						</Widget>
+						
+						<Widget id="1" typeRes="button" name = "btn_taixiu" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="loadingscreen/icon_taixiu.png"/>
+									<common 		name="press" 		value="loadingscreen/icon_taixiu.png"/>
+									<common 		name="disable" 		value="loadingscreen/icon_taixiu.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "167_99" 	/>
+								<Size 		origin = "45_54" 	/>
+						</Widget>
+						<Widget id="2" typeRes="button" name = "btn_mini_poker" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="loadingscreen/icon_nohu.png"/>
+									<common 		name="press" 		value="loadingscreen/icon_nohu.png"/>
+									<common 		name="disable" 		value="loadingscreen/icon_nohu.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "99_36" 	/>
+								<Size 		origin = "43_60" 	/>
+						</Widget>
+						<Widget id="2" typeRes="layout" 	name = "taixiu_timer" 	  idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "taixiu_panel_timer" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="loadingscreen/taixiu_bettime.png"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "47_20" 	/>
+							</Widget>
+							<Widget id="0" typeRes="panel" 			name = "taixiu_panel_timer_res" idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="loadingscreen/taixiu_showtime.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "47_20" 	/>
+							</Widget>
+							<Widget id="2" typeRes="time_digital" 	name = "title_time" 		idx_appear ="1" >		
+								<template_value>
+									<template 		name="temp_text_0_2"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="00:59"/>					
+									<common			name="no_add_event"		value="1"/>
+								</common_value>
+								<pos 		origin = "23_10" 	/>
+							</Widget>
+							<pos 		origin = "185_99" 	/>
+							<Size 		origin = "47_20" 	/>
+						</Widget>
+				
+						
+						<pos 		origin = "36_36" 	/>
+						<Size 		origin = "198_198" 	/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_SIZE" : "0_0",
+											"DESIGN"   : "960_540"
+										},
+										{
+											"SET_VISIBLE" : 1
+										},
+										{
+											"SIZE" : "198_198",
+											"DESIGN"   : "960_540",
+											"TIME" : 0.2
+										}
+										
+									]
+								}
+							}
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_SIZE" : "198_198",
+											"DESIGN"   : "960_540"
+										},									
+										{
+											"SIZE" 	   : "0_0",
+											"DESIGN"   : "960_540",
+											"TIME"     : 0.2
+										},
+										{
+											"SET_VISIBLE" : 0
+										}
+										
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+				
+					<pos 		origin = "190_490" 	/>
+					<Size 		origin = "72_72" 	/>
+		</Widget>
+</GAME>

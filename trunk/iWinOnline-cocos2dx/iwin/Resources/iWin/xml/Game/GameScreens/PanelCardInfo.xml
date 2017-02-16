@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="2" typeRes="layout" name = "layout_card" idx_appear ="1" >
+			<common_value>
+					<common			name="anchor_point"	 		value="0.5_0"/>
+			</common_value>
+			
+			<Widget id="0" typeRes="layout" name = "contain_card" idx_appear ="1" >
+				<common_value>
+						<common			name="anchor_point"	 		value="0.5_0"/>
+				</common_value>
+				<pos 		origin = "125_0" />
+				<Size 		origin = "250_100" 	/>
+				
+				<COMMAND>
+					<cmd id="0" name="SCALE_SMALL">
+					{
+						"act0" : {
+							"squence" :[ 
+								
+								{
+									"CONTENT_SIZE": 1,
+									"SET_SIZE" : "180_100",
+									"DESIGN" : "960_540"
+								},
+								{
+									"SET_POSITION" : "125_0",
+									"DESIGN" : "960_540"
+								}
+							]
+						}
+					}
+					</cmd>
+					<cmd id="1" name="SCALE_NORMAL">
+					{
+						"act0" : {
+							"squence" :[ 
+								{
+									"CONTENT_SIZE": 1,
+									"SET_SIZE" : "340_100",
+									"DESIGN" : "960_540"
+								},
+								{
+									"SET_POSITION" : "125_0",
+									"DESIGN" : "960_540"
+								}
+							]
+						}
+					}
+					</cmd>
+				</COMMAND>
+			</Widget>
+			
+			<Widget id="1" typeRes="button"   name = "btn_judge_card" 	idx_appear ="1" visible="0">
+					<common_value>
+					  <common 		name="source" 	value="gamescreen-newgui-game-common/xet_bai.png"/>
+					  <common 		name="press" 		value="0"/>
+					  <common 		name="disable" 		value="0"/>
+					  <common 		name="use_atlas" 	value="1"/>
+					  <common			name="stick_screen"	value="0"/>
+					  <common			name="scale_9"		value="0"/>
+
+					  <common 		name="scale_press" 	value="1"/>
+					  <common			name="use_nine_path"	value="1"/>
+					  <common			name="anchor_point"	value="0.5_0.5"/>
+				
+					</common_value>
+					
+					<pos 		origin = "125_20" 	/>
+					<Size 		origin = "150_40" 	/>
+			</Widget>
+			
+			<Widget id="1" typeRes="panel"  name = "panel_info"   idx_appear ="1" visible="0">
+				<common_value>
+						<common 		name="source"	    value="mainscreen/newgui-mainscreen/bg_scores.png"/>
+						<common			name="scale_9"		value="1"/>
+						<common			name="use_nine_path" value="1"/>	
+						<common			name="anchor_point"	 value="0.5_0"/>
+				</common_value>
+				
+				<Widget id="0" typeRes="font" name = "text_info" idx_appear ="1">
+					<template_value>
+						<template name="temp_text_0_1"/>
+					</template_value>
+					<common_value>						
+						<common 		name="source" 		value="0"/>					
+					</common_value>
+					<pos 		origin = "60_15" 	/>
+					<color 		origin = "255_250_10_255" 	/>
+				</Widget>
+				
+				<pos 		origin = "125_0" />
+				<Size 		origin = "120_30" 	/>		
+			</Widget>
+			
+			<pos 		origin = "480_70" />
+			<Size 		origin = "250_100" 	/>	
+		</Widget>
+</GAME>

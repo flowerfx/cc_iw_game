@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="1" typeRes="layout"  name = "top_panel" 			idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/red6.9.png"/>
+						<common 		name="scale_9" 		value="1"/>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="3"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="casca_color"	value="0"/>
+						<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="button" name = "btn_back" idx_appear ="2">		
+						<common_value>
+								
+							<common 		name="source" 		value="loginscreen/login-screen/back.png"/>
+							<common 		name="press" 		value="loginscreen/login-screen/back.png"/>
+							<common 		name="disable" 		value="loginscreen/login-screen/back.png"/>
+							<common 		name="scale_press" 	value="0.02"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="1_0.5"/>
+							<common	name="touch_zone"	value="50_50"/>
+						</common_value>					
+						<pos 		origin = "40_30" 	/>
+						<Size 		origin = "25_40" 	/>					
+					</Widget>
+					<Widget id="1" typeRes="font" name = "title_1" idx_appear ="2" visible="0">		
+						<template_value>
+							<template name="temp_text_0_1"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="profile"/>					
+							<common			name="anchor_point"		value="0_0.5"/>
+						</common_value>
+						<pos 		origin = "67_30" 	/>
+					</Widget>		
+					
+					<Widget id="2" typeRes="panel"  name = "bg_off" idx_appear ="2">		
+							<template_value>
+								<template name="scale9"/>
+							</template_value>
+							<common_value>					
+								<common			name="source"			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+							</common_value>
+							
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "560_40" 	/>
+							<opacity 	origin = "100" 	/>
+					</Widget>		
+					
+					<Widget id="3" typeRes="panel"  name = "bg_info_on" idx_appear ="2" visible="1">		
+							<common_value>					
+								<common			name="source"		value="mainscreen/newgui-game-icon/leftchoose.png"/>
+								<common			name="anchor_point"	value="1_0.5"/>	
+								<common			name="scale_9"		value="0"/>
+							</common_value>
+							
+							<pos 		origin = "360_30" 	/>
+							<Size 		origin = "160_40" 	/>
+					</Widget>		
+					<Widget id="3" typeRes="button" name = "btn_info" 	idx_appear ="2">		
+							<common_value>					
+								<common			name="press"		value="mainscreen/newgui-game-icon/leftchoose.png"/>
+								<common			name="disable"		value="mainscreen/newgui-game-icon/leftchoose.png"/>
+								<common			name="anchor_point"	value="1_0.5"/>	
+								<common 		name="scale_press" 	value="-0.00"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<Widget id="1" typeRes="font" name = "title_" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0_1"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="profile"/>					
+								</common_value>
+								<pos 		origin = "80_20" 	/>
+							</Widget>		
+							<pos 		origin = "360_30" 	/>
+							<Size 		origin = "160_40" 	/>
+					</Widget>		
+					
+					<Widget id="4" typeRes="panel"  name = "bg_achieve_on" idx_appear ="2" visible="0">		
+							<common_value>
+								<common			name="source"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="anchor_point"	value="1_0.5"/>	
+								<common 		name="scale_press" 	value="-0.05"/>
+							</common_value>
+
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "120_40" 	/>
+					</Widget>
+					<Widget id="4" typeRes="button" name = "btn_achieve" idx_appear ="2">		
+							<common_value>
+								<common			name="press"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="disable"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="anchor_point"	value="1_0.5"/>	
+								<common 		name="scale_press" 	value="-0.00"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<Widget id="1" typeRes="font" name = "title_" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0_1"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="achievement"/>					
+								</common_value>
+								<pos 		origin = "60_20" 	/>
+							</Widget>	
+							
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "120_40" 	/>
+					</Widget>
+					
+					<Widget id="5" typeRes="panel"  name = "bg_history_on" idx_appear ="2" visible="0">		
+							<common_value>					
+								<common			name="source"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="anchor_point"	value="0_0.5"/>	
+								<common 		name="scale_press" 	value="-0.05"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "120_40" 	/>
+					</Widget>		
+					<Widget id="5" typeRes="button" name = "btn_history" 	idx_appear ="2">		
+							<common_value>					
+								<common			name="press"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="disable"		value="otherscreen/winfree-screen/bg_tab_middle_on.png"/>
+								<common			name="anchor_point"	value="0_0.5"/>	
+								<common 		name="scale_press" 	value="-0.00"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<Widget id="1" typeRes="font" name = "title_" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0_1"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="history"/>					
+								</common_value>
+								<pos 		origin = "60_20" 	/>
+							</Widget>		
+					
+							
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "120_40" 	/>
+					</Widget>		
+					
+					<Widget id="6" typeRes="panel"  name = "bg_otp_on" idx_appear ="2" visible="0">		
+							<common_value>					
+								<common			name="source"		value="mainscreen/newgui-game-icon/rightchoose.png"/>
+								<common			name="anchor_point"	value="0_0.5"/>	
+								<common 		name="scale_press" 	value="-0.05"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<pos 		origin = "600_30" 	/>
+							<Size 		origin = "160_40" 	/>
+					</Widget>		
+					<Widget id="6" typeRes="button" name = "btn_otp" 	idx_appear ="2">		
+							<common_value>					
+								<common			name="press"		value="mainscreen/newgui-game-icon/rightchoose.png"/>
+								<common			name="disable"		value="mainscreen/newgui-game-icon/rightchoose.png"/>
+								<common			name="anchor_point"	value="0_0.5"/>	
+								<common 		name="scale_press" 	value="-0.00"/>
+								<common			name="scale_9"		value="1"/>
+							</common_value>
+							
+							<Widget id="1" typeRes="font" name = "title_" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0_1"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="security"/>					
+								</common_value>
+								<pos 		origin = "80_20" 	/>
+							</Widget>		
+					
+							
+							<pos 		origin = "600_30" 	/>
+							<Size 		origin = "160_40" 	/>
+					</Widget>		
+					
+					<pos 		origin = "0_480" 	/>
+					<Size 		origin = "960_60" 	/>
+				</Widget>
+																
+</GAME>

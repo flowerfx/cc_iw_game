@@ -1,0 +1,421 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="25" typeRes="layout"  	name = "gift_player_layout" 	idx_appear="1" visible="0">
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="swallow_touch"	value="1"/>
+					</common_value>
+						
+					<Widget id="0" typeRes="panel" 	name = "bg" 			idx_appear ="1" >		
+						<common_value>
+							<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+						<opacity	origin = "245"		/>
+					</Widget>
+				
+					<Widget id="1" typeRes="layout" name = "gift_player" 	idx_appear="1" >
+						<common_value>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="casca_color"			value="0"/>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+						</common_value>
+							<Widget id="0" typeRes="panel"  name="gift_win_panel" 	idx_appear = "1">
+									<template_value>
+											<template name="scale9"/>
+										</template_value>
+									<common_value>
+										<common 		name="source" 				value="default-window.9.png"/>
+										<common 		name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "800_450"  />
+							</Widget>
+							<Widget id="1" typeRes="layout"  name="title_layout" 	idx_appear = "1">
+								<common_value>
+									<common 		name="anchor_point" 		value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "400_450" 	/>
+								<Size 		origin = "800_50"  />
+								<Widget id="1" typeRes="layout"  name="title_dec_0" 	idx_appear = "1" >
+									<common_value>
+										<common 		name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="button" name ="btn_select_gift_0" idx_appear ="2">		
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common			name="press"			value="loginscreen/nine/yellow2.9.png"/>
+											<common			name="scale_press"		value="0.00"/>
+											<common			name="anchor_point"		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel"  name="bg_hl" 		idx_appear ="1">
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="loginscreen/nine/yellow2.9.png"/>
+											<common 		name="anchor_point" 		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50"  />
+									</Widget>
+									<Widget id="2" typeRes="font" 	name = "_title" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_gift"/>
+										</common_value>
+										<pos 		origin = "100_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "200_50"  />
+								</Widget>
+								<Widget id="2" typeRes="layout"  name="title_dec_1" 	idx_appear = "1" >
+									<common_value>
+										<common 		name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="button" name ="btn_select_gift_1" idx_appear ="2">		
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common			name="press"			value="loginscreen/nine/yellow2.9.png"/>
+											<common			name="scale_press"		value="0.00"/>
+											<common			name="anchor_point"		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel"  name="bg_hl" 		idx_appear ="1" visible="0">
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="loginscreen/nine/yellow2.9.png"/>
+											<common 		name="anchor_point" 		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50"  />
+									</Widget>
+									<Widget id="2" typeRes="font" 	name = "_title" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_gift"/>
+										</common_value>
+										<pos 		origin = "100_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "200_0" 	/>
+									<Size 		origin = "200_50"  />
+								</Widget>
+								<Widget id="3" typeRes="layout"  name="title_dec_2" 	idx_appear = "1" >
+									<common_value>
+										<common 		name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="button" name ="btn_select_gift_2" idx_appear ="2">		
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common			name="press"			value="loginscreen/nine/yellow2.9.png"/>
+											<common			name="scale_press"		value="0.00"/>
+											<common			name="anchor_point"		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel"  name="bg_hl" 		idx_appear ="1"  visible="0">
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="loginscreen/nine/yellow2.9.png"/>
+											<common 		name="anchor_point" 		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50"  />
+									</Widget>
+									<Widget id="2" typeRes="font" 	name = "_title" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_gift"/>
+										</common_value>
+										<pos 		origin = "100_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "400_0" 	/>
+									<Size 		origin = "200_50"  />
+								</Widget>
+								<Widget id="4" typeRes="layout"  name="title_dec_3" 	idx_appear = "1" >
+									<common_value>
+										<common 		name="anchor_point" 		value="0_0"  visible="0"/>
+									</common_value>
+									<Widget id="0" typeRes="button" name ="btn_select_gift_3" idx_appear ="2">		
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common			name="press"			value="loginscreen/nine/yellow2.9.png"/>
+											<common			name="scale_press"		value="0.00"/>
+											<common			name="anchor_point"		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel"  name ="bg_hl" 		idx_appear ="1"  visible="0">
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="loginscreen/nine/yellow3.9.png"/>
+											<common 		name="anchor_point" 		value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "200_50"  />
+									</Widget>
+									<Widget id="2" typeRes="font" 	name ="_title" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_gift"/>
+										</common_value>
+										<pos 		origin = "100_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "600_0" 	/>
+									<Size 		origin = "200_50"  />
+								</Widget>
+							
+							</Widget>
+							<Widget id="2" typeRes="layout"  name="items_layout" 	idx_appear = "1">
+								<common_value>
+										<common 		name="anchor_point" 		value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="scroll_view"  name="list_item" 	idx_appear = "1">
+									<common_value>
+										<common 		name="inner_size" 			value="800_330"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										<common 		name="background_type" 		value="0"/>			
+										<common			name="anchor_point"			value="0_0"/>
+										<common			name="scrollbar_enable"		value="1"/>
+										<common			name="bounce_enable"		value="1"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "800_330"  />
+								</Widget>
+								
+								<Widget id="1" typeRes="layout"  name="item" 	idx_appear = "1" visible="0">
+									<common_value>
+										<common 		name="anchor_point" 		value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel"  name="bg" 	idx_appear = "1">
+										<common_value>
+											<common 		name="source" 			value="default-round-transperent.9.png"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path"	value="1"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "110_100"  />
+									</Widget>
+									<Widget id="1" typeRes="panel"  name="bg_hl" 	idx_appear = "1" visible="0">
+										<common_value>
+											<common 		name="source" 			value="loginscreen/nine/yellow1.9.png"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path"	value="1"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "110_100"  />
+									</Widget>
+									<Widget id="2" typeRes="button"  name="btn_select" 	idx_appear = "1" >
+										<common_value>
+											<common 		name="press" 			value="loginscreen/nine/yellow1.9.png"/>
+											<common 		name="scale_press" 		value="0.00"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path"	value="1"/>
+											<common 		name="anchor_point" 	value="0_0"/>
+											<common 		name="no_add_event" 	value="1"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "110_100"  />
+									</Widget>
+									<Widget id="3" typeRes="layout"  name="img_layout" 	idx_appear = "1">
+										<common_value>
+											<common 		name="anchor_point" 	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "55_50" 	/>
+										<Size 		origin = "40_40"  />
+									</Widget>
+									
+									<Widget id="4" typeRes="font" 	name = "title_name" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0_1"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="name"/>
+											<common 		name="anchor_point" 	value="0.5_1"/>
+										</common_value>
+										<pos 		origin = "55_95" 	/>
+									</Widget>
+									<Widget id="5" typeRes="font" 	name = "title_price" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0_1"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="0"/>
+											<common 		name="anchor_point" 	value="0.5_0"/>
+										</common_value>
+										<pos 		origin = "55_5" 	/>
+										<color 		origin = "255_210_10_255" 	/>
+									</Widget>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "110_100"  />
+								</Widget>
+								
+								<pos 		origin = "400_395" 	/>
+								<Size 		origin = "800_330"  />
+							</Widget>
+							
+								<Widget id="6" typeRes="button" name ="btn_gift_one" 	idx_appear ="2">		
+									<template_value>
+										<template name="temp_btn_yellow"/>
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"		value="1_0"/>
+									</common_value>
+									
+									<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_gift"/>
+										</common_value>
+										<pos 		origin = "75_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "300_10" 	/>
+									<Size 		origin = "150_50" 	/>
+								</Widget>
+								<Widget id="7" typeRes="button" name ="btn_gift_all" 	idx_appear ="2">		
+									<template_value>
+											<template name="temp_btn_yellow"/>
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"		value="0.5_0"/>
+									</common_value>
+									
+									<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="send_to_all"/>
+										</common_value>
+										<pos 		origin = "75_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "400_10" 	/>
+									<Size 		origin = "150_50" 	/>
+								</Widget>						
+								<Widget id="8" typeRes="button" name ="btn_close_gift" 	idx_appear ="2">		
+									<template_value>
+										<template name="temp_btn_red"/>
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>
+									
+									<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+												<common 		name="source" 			value="cancel"/>
+										</common_value>
+										<pos 		origin = "75_25" 	/>
+									</Widget>
+									
+									<pos 		origin = "500_10" 	/>
+									<Size 		origin = "150_50" 	/>
+								</Widget>						
+							
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "800_450" 	/>
+						<COMMAND>
+								<cmd id="0" name="ON_SHOW">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0
+											},
+											{
+												"SIZE":"820_470",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"800_450",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.12
+											}
+										]
+									}		
+								}					
+								</cmd>
+								<cmd id="1" name="ON_HIDE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SIZE":"820_470",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"0_0",
+												"DESIGN":"960_340",
+												"STICK": 0,
+												"TIME":0.15
+											}
+										]
+									}		
+								}
+								</cmd>
+						</COMMAND>
+					</Widget>
+						
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+			
+</GAME>

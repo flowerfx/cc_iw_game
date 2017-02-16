@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0"  typeRes="layout" 	name = "effect_hl" 	idx_appear ="1" visible="0">		
+						<common_value>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="anchor_point"			value="0_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" name = "hl_grow" 	idx_appear ="1" >		
+							<template_value>
+								<template name="HL"/>
+							</template_value>
+							<common_value>										
+								<common			name="stick_screen"	 value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "100_80" 	/>						
+						</Widget>						
+						<Widget id="1" typeRes="panel" name = "line_glow_1" idx_appear ="1" >		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-tienlen-screen/vachsang.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="0"/>
+										<common			name="use_nine_path" value="0"/>
+										<common			name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "0_88" 	/>
+									<Size 		origin = "140_14" 	first="140_0"/>
+									<opacity	origin = "0"/>
+									<COMMAND>
+										<cmd id="0" name="MOVE">
+												{
+													"act0" : { 
+														"repeat" : -1,
+														"squence_0" :
+														[
+															{
+																"SET_SIZE" : "140_0",
+																"DESIGN"   : "960_540"
+															},
+															{
+																"SIZE"  : "140_24" ,
+																"STICK" : 0,
+																"DESIGN": "960_540",
+																"TIME"	: 1
+															},
+															{
+																"SIZE"  : "140_0" ,
+																"STICK" : 0,
+																"DESIGN": "960_540",
+																"TIME"	: 2
+															}
+														],
+														"squence_1":
+														[
+															{
+																"OPACITY" : 255,
+																"TIME"	  : 1
+															},
+															{
+																"DELAY" : 1.5
+															},
+															{
+																"OPACITY" : 0,
+																"TIME"	  : 0.5
+															}
+														],
+														"squence_2":
+														[
+															{
+																"SET_POSITION" : "-50_88",
+																"FORCE"	   	   : 1,
+																"DESIGN"   	   : "960_540"
+															},
+															{
+																"POSITION" : "143_88",
+																"FORCE"	   : 1,
+																"DESIGN"   : "960_540",
+																"STYLE"	   : 0,
+																"TIME"     : 3.0
+															}
+														]
+													}
+												}
+										</cmd>
+									</COMMAND>
+								</Widget>
+						<Widget id="2" typeRes="panel" name = "line_glow_2" idx_appear ="1" >		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-tienlen-screen/vachsang.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="0"/>
+										<common			name="use_nine_path" value="0"/>
+										<common			name="anchor_point" value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "243_0" 	/>
+									<Size 		origin = "140_14" 	first="140_0"/>
+									<opacity	origin = "0"/>
+									<COMMAND>
+										<cmd id="0" name="MOVE">
+												{
+													"act0" : { 
+														"repeat" : -1,
+														"squence_0" :
+														[
+															{
+																"SET_SIZE" : "140_0",
+																"DESIGN"   : "960_540"
+															},
+															{
+																"SIZE"  : "140_24" ,
+																"STICK" : 0,
+																"DESIGN": "960_540",
+																"TIME"	: 1
+															},
+															{
+																"SIZE"  : "140_0" ,
+																"STICK" : 0,
+																"DESIGN": "960_540",
+																"TIME"	: 2
+															}
+														],
+														"squence_1":
+														[
+															{
+																"OPACITY" : 255,
+																"TIME"	  : 1
+															},
+															{
+																"DELAY" : 1.5
+															},
+															{
+																"OPACITY" : 0,
+																"TIME"	  : 0.5
+															}
+														],
+														"squence_2":
+														[
+															{
+																"SET_POSITION" : "293_0",
+																"FORCE"	   	   : 1,
+																"DESIGN"   	   : "960_540"
+															},
+															{
+																"POSITION" : "73_0",
+																"FORCE"	   : 1,
+																"DESIGN"   : "960_540",
+																"STYLE"	   : 0,
+																"TIME"     : 3.0
+															}
+														]
+													}
+												}
+										</cmd>
+									</COMMAND>
+								</Widget>	
+						<Widget id="3" typeRes="panel" name = "star_glow" 	idx_appear ="1" >		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-tienlen-screen/sao_flare.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "10_80" 	/>
+									<Size 		origin = "80_80" 	first="20_20"/>
+									<COMMAND>
+										<cmd id="0" name="ROTATE">
+										{
+											"act0" : { 
+												"repeat" : -1,
+												"squence_0" :
+												[
+													{
+														"SET_SIZE" : "20_20",
+														"DESIGN"   : "960_540"
+													},
+													{
+														"SIZE"  : "80_80" ,
+														"STICK" : 0,
+														"DESIGN": "960_540",
+														"TIME"	: 1.0
+													},
+													{
+														"SIZE"  : "20_20" ,
+														"STICK" : 0,
+														"DESIGN": "960_540",
+														"TIME"	: 1.0
+													}
+												],
+												"squence_1":
+												[
+													{
+														"ROTATE" : 360,
+														"TIME"	 : 2.0,
+														"STYLE"	 : 1
+													}
+												]
+											}
+										}
+										</cmd>
+									</COMMAND>
+								</Widget>	
+						<pos 		origin = "37_100" 	/>
+						<Size 		origin = "100_80" 	/>
+					</Widget>		
+				
+</GAME>

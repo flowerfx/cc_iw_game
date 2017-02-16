@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="8" typeRes="layout" name = "countdown_change_server" 			idx_appear ="1" visible ="0">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0.5"/>
+						<common			name="swallow_touch"		value="1"/>
+					</common_value>
+						<Widget id="0" typeRes="panel" 	name = "bg" 	idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+									<common			name="stick_screen"	value="1"/>
+								</common_value>
+								<pos 		origin = "480_270" 	/>
+								<Size 		origin = "960_540" 	/>
+								<opacity	origin = "160"		/>
+						</Widget>
+						<Widget id="1" typeRes="layout" name = "countdown_change_server" 	idx_appear ="1">		
+						<common_value>
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>	
+							<Widget id="0" typeRes="panel" name = "circle_black" idx_appear ="1">
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/vongngoai.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "42_42" 	/>
+									<Size 		origin = "108_108" 	/>
+							</Widget>			
+							<Widget id="1" typeRes="time_process" name = "progress_1" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/hinhtronvangmo.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+										<common			name="move_from_zero" value="1"/>
+									</common_value>
+									<pos 		origin = "42_42" 	/>
+									<Size 		origin = "86_86" 	/>
+							</Widget>
+							<Widget id="2" typeRes="time_process" name = "progress_2" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/iwin_loading_new_xoay.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+										<common			name="move_from_zero" value="1"/>
+										<common			name="no_add_event"	value="1"/>
+									</common_value>
+									<pos 		origin = "42_42" 	/>
+									<Size 		origin = "84_84" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" name = "circle_front" idx_appear ="1">
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/iwin_loading_new_bg.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "42_42" 	/>
+									<Size 		origin = "76_76" 	/>
+							</Widget>
+							<Widget id="4" typeRes="panel" name = "circle_text" idx_appear ="1">
+									<common_value>							
+										<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/vongso.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "42_42" 	/>
+									<Size 		origin = "28_28" 	/>
+							</Widget>
+							<Widget id="5" typeRes="panel" name = "panel_text" idx_appear ="1">
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/titlebackground.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point" value="0.5_0"/>
+								</common_value>
+								<pos 		origin = "42_98" 	/>
+								<Size 		origin = "300_30" 	/>
+							</Widget>
+							<Widget id="6" typeRes="font" name = "timer_txt" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_name"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0"/>					
+								</common_value>
+								<pos 		origin = "42_42" 	/>
+							</Widget>
+							<Widget id="7" typeRes="font" name = "timer_text" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_1"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="connecting_to_serve"/>					
+									<common			name="anchor_point"	value="0.5_0"/>			
+								</common_value>
+								<pos 		origin = "42_100" 	/>
+							</Widget>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "84_84" 	/>					
+					</Widget>	
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>					
+				</Widget>
+														
+</GAME>

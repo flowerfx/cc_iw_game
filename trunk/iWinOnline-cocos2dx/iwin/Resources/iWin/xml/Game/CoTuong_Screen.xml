@@ -1,0 +1,1209 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<game id="16" name="CO_TUONG" design="960_540">
+		<player id="0">
+			<common name="value_pos"	value="20_20"	/>
+			<common name="anchor_point" value="0_0"		/>
+			<common name="pos_tex1" 	value="10_-50"	/>
+			<common name="pos_chat"     value="100_10"	/>
+			<common name="quote_timer"     value="100_10"	/>
+			<common name="pos_text_bonus"	value="150_50"	/>
+		</player>
+		<player id="1">
+			<common name="value_pos"	value="20_410"	/>
+			<common name="anchor_point" value="0_1"		/>
+			<common name="pos_tex1" 	value="10_-30"	/>
+			<common name="pos_chat"     value="100_10"	/>
+			<common name="quote_timer"     value="100_10"	/>
+			<common name="pos_text_bonus"	value="100_0"	/>
+		</player>
+	</game>
+	
+	<MenuWidget name="CoTuong" designSize="960_540">
+		<Widget id="0" typeRes="layout" name="custom_root" idx_appear="1" >
+			<common_value>							
+				<common			name="stick_screen"	value="1"/>
+				<common			name="anchor_point"	 value="0_0"/>
+			</common_value>
+			<Widget id="0" typeRes="panel" name = "quote0" idx_appear ="1">		
+				<common_value>							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/countdown.png"/>				
+					<common			name="scale_9"		value="1"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="1"/>
+					<common			name="use_nine_path" value="1"/>
+					<common			name="anchor_point"	 value="0.5_0.5"/>
+				</common_value>	
+				<Widget id="1" typeRes="font" name = "time" idx_appear ="2">		
+					<template_value>
+							<template name="temp_text_0_1"/>
+					</template_value>
+					<common_value>
+						<common 		name="source" 			value="99:99"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "25_15" 	/>
+				</Widget>
+				<pos origin="135_170"	/>			
+				<Size origin="50_30" />
+			</Widget>
+			<Widget id="0" typeRes="panel" name = "quote1" idx_appear ="1">		
+				<common_value>							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/countdown.png"/>				
+					<common			name="scale_9"		value="1"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="1"/>
+					<common			name="use_nine_path" value="1"/>
+					<common			name="anchor_point"	 value="0.5_0.5"/>
+				</common_value>	
+				<Widget id="1" typeRes="font" name = "time" idx_appear ="2">		
+					<template_value>
+							<template name="temp_text_0_1"/>
+					</template_value>
+					<common_value>
+						<common 		name="source" 			value="99:99"/>
+					</common_value>
+					<pos 		origin = "25_15" 	/>
+				</Widget>
+				<pos origin="135_480"	/>			
+				<Size origin="50_30" />
+			</Widget>
+			<Widget id="0" typeRes="layout" name = "layout_copho" idx_appear ="5" >		
+				<common_value>
+					<common 		name="background_type" 		value="0"/>		
+					<common			name="stick_screen"			value="1"/>
+					<common			name="casca_color"			value="0"/>
+					<common			name="casca_opacity"		value="0"/>
+					<common			name="anchor_point"		   value="0_0"/>
+				</common_value>	
+				<Widget id="0" typeRes="panel" name = "panel_copho" idx_appear ="1">		
+					<common_value>							
+						<common 		name="source" 		value="loginscreen/nine/red10.png"/>				
+						<common			name="scale_9"		value="1"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="use_nine_path" value="1"/>
+						<common			name="anchor_point"	 value="0.0_0.0"/>
+					</common_value>	
+					<Widget id="1" typeRes="font" name = "title" idx_appear ="2">		
+						<template_value>
+							<template name="temp_text_0_3"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="co_pho"/>
+						</common_value>
+						<pos 		origin = "52_500" 	/>
+					</Widget>
+
+					<Widget id="1" typeRes="list_view_table" name = "list_step" idx_appear ="4">		
+						<common_value>
+							<common 		name="inner_size" 			value="305_430"/>
+							<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+							<common			name="anchor_point_list"	value="0_0"/>
+								
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="clipping_enable"		value="1"/>
+							<common			name="Percent_Scroll"		value="0_0.15"/>
+							
+							<common			name="size_child"			value="305_20"/>
+							<common			name="no_add_event"			value="1"/>
+							<common			name="number_cell"			value="0"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" name = "layout_slot" idx_appear ="5" >		
+							<common_value>
+								<common 		name="background_type" 		value="0"/>		
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="anchor_point"		   value="0_0"/>
+							</common_value>	
+							<Widget id="1" typeRes="font" name = "content_left" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="reward"/>
+									<common			name="anchor_point"		value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "0_10" 	/>
+							</Widget>	
+							<Widget id="2" typeRes="font" name = "content_mid" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="reward"/>					
+									<common			name="anchor_point"		value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "40_10" 	/>
+							</Widget>	
+							<Widget id="3" typeRes="font" name = "content_right" idx_appear ="2">		
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="reward"/>					
+									<common			name="anchor_point"		value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "100_10" 	/>
+							</Widget>	
+							<pos origin="0_0" />
+							<Size origin="295_20" />
+						</Widget>
+						<pos origin="0_50" />
+						<Size origin="305_430" />
+					</Widget>
+					<COMMAND>
+						<cmd id="0" name="SHOW">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY":255 
+									}
+								]
+							}		
+						}	
+						</cmd>
+						<cmd id="1" name="HIDE">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY": 255
+									},
+									{
+										"OPACITY":0,
+										"STYLE":0, 
+										"TIME":0.15
+									}
+								]
+							}		
+						}	
+						</cmd>	
+					</COMMAND>	
+					
+					<pos origin="0_0" />
+					<Size origin="305_700" />
+					<opacity origin="0" />
+				</Widget>
+				<Widget id="0" typeRes="button" name = "btn_copho" idx_appear ="1">		
+						<common_value>
+									
+							<common 		name="source" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="press" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="disable" 		value="otherscreen/pickroom-screen/back.png"/>
+							
+							<common 		name="scale_press" 	value="-0.05"/>
+										
+							<common 		name="use_atlas" 		value="1"/>	
+							<common			name="stick_screen"		value="0"/>
+							<common			name="anchor_point"		value="0.5_0.5"/>
+							<common			name="no_add_event"		value="1"/>
+							<common			name="touch_zone"		value="50_50"/>
+						</common_value>
+						<pos origin="152_20" />
+						<Size origin="28_43" />
+						<rotate origin="-90"  />
+						<COMMAND>
+							<cmd id="0" name="SHOW">
+							{
+								"act0": {
+									"squence":[
+										{
+											"SET_ROTATE": -90 
+										},
+										{
+											"ROTATE": 180,
+											"TIME": 0.5,
+											"STYLE": 1
+										}
+									]
+								}		
+							}	
+							</cmd>
+							<cmd id="1" name="HIDE">
+							{
+								"act0": {
+									"squence":[
+										{
+											"SET_ROTATE": 90 
+										},
+										{
+											"ROTATE": 180,
+											"TIME": 0.5,
+											"STYLE": 1
+										}
+									]
+								}		
+							}	
+							</cmd>	
+						</COMMAND>	
+				</Widget>
+
+				<COMMAND>
+					<cmd id="0" name="SHOW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_VISIBLE": 1
+								},
+								{
+									"SET_POSITION":"0_500",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"0_-60",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.3
+								},
+								{
+									"POSITION":"0_0",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.3
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="HIDE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION":"0_60",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"0_500",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.3
+								}
+							]
+						}		
+					}	
+					</cmd>	
+				</COMMAND>
+				<pos origin="0_500" />
+				<Size origin="305_540" />
+			</Widget>	
+			<Widget id="0" typeRes="panel" name = "last_step" idx_appear ="2">		
+				<common_value>							
+					<common 		name="source" 		value="loginscreen/nine/red10.png"/>				
+					<common			name="scale_9"		value="1"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="1"/>
+					<common			name="use_nine_path" value="1"/>
+					<common			name="anchor_point"	 value="0_0"/>
+				</common_value>	
+				<Widget id="1" typeRes="font" name = "content" idx_appear ="2">		
+					<common_value>
+						<common 		name="source" 			value="co_pho"/>					
+						<common    		name="font_idx"			value="0"/>	
+						<common			name="anchor_point"		value="0.5_0.5"/>
+						
+						<common			name="bitmap_font"  	value="5"/>
+					</common_value>
+					<pos 		origin = "152_25" 	/>
+					<Size 		origin = "30_30" 	/>
+				</Widget>
+				<COMMAND>
+					<cmd id="0" name="SHOW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION": "0_540",
+									"DESIGN" 	   : "960_540"
+								},
+								{
+									"POSITION": "0_490",
+									"DESIGN" 	   : "960_540",
+									"TIME": 0.5,
+									"STYLE": 0 
+								},
+								{
+									"DELAY" : 0.5
+								},
+								{
+									"POSITION": "0_540",
+									"DESIGN" 	   : "960_540",
+									"TIME": 0.5,
+									"STYLE": 0 
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="HIDE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION": "0_490" 
+								},
+								{
+									"POSITION": "0_540",
+									"TIME": 0.5,
+									"STYLE": 1
+								}
+							]
+						}		
+					}	
+					</cmd>	
+				</COMMAND>	
+				<pos 		origin = "0_540" 	/>
+				<Size 		origin = "305_50" 	/>			
+			</Widget>
+			<Widget id="0" typeRes="panel" name = "board_bg" idx_appear ="1">		
+				<common_value>							
+					<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>				
+					<common			name="scale_9"		value="1"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="0"/>
+					<common			name="use_nine_path" value="1"/>
+					<common         name="content_size"		value="1"/>
+					<common			name="anchor_point"	 value="0.0_0.0"/>
+				</common_value>	
+
+				<Widget id="0" typeRes="panel" name = "banco_win" idx_appear ="1" visible="1">		
+					<common_value>							
+						<common 		name="source" 		value="gamescreen-cotuong-screen/banco1.png"/>				
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"	 value="0.0_0.0"/>
+					</common_value>						
+					<Widget id ="0" typeRes="font" 	name = "center_bet" idx_appear ="1" visible="0">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="result"/>
+						</common_value>
+						<pos 		origin = "230_230" 	/>
+						<color		origin = "100_100_100_255"/>
+						<opacity 	origin = "120" />
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "txt_chieu_tuong" idx_appear ="1" visible="0">		
+						<template_value>
+							<template name="temp_text_name"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="checkmate"/>
+						</common_value>
+						<pos 		origin = "230_230" 	/>
+						<COMMAND>
+							<cmd id="0" name="ACTION">
+									{
+										"act0" : 
+										{
+											"repeat"  : 3,
+											"squence" : [
+												{
+													"SET_COLOR" : "0_0_0_255"
+												},
+												{
+													"COLOR" : "255_0_0_255",
+													"TIME"	: 1
+												},
+												{
+													"COLOR" : "0_0_0_255",
+													"TIME"	: 1
+												}
+											]
+										}
+									}
+							</cmd>
+						</COMMAND>	
+					</Widget>
+					<pos origin="64_40"	/>			
+					<Size origin="412_460" />
+				</Widget>
+				<Widget id="0" typeRes="layout" name="banco_ruler" idx_appear="1" >
+					<common_value>							
+						<common			name="stick_screen"			value="0"/>
+						<common			name="anchor_point"	 		value="0_0"/>
+					</common_value>
+					<Widget id ="0" typeRes="font" 	name = "number_10" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="10"/>
+						</common_value>
+						<pos 		origin = "20_40" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_9" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="9"/>
+						</common_value>
+						<pos 		origin = "20_91" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_8" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="8"/>
+						</common_value>
+						<pos 		origin = "20_142" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_7" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="7"/>
+						</common_value>
+						<pos 		origin = "20_193" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_6" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="6"/>
+						</common_value>
+						<pos 		origin = "20_244" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_5" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="5"/>
+						</common_value>
+						<pos 		origin = "20_295" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_4" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="4"/>
+						</common_value>
+						<pos 		origin = "20_346" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_3" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="3"/>
+						</common_value>
+						<pos 		origin = "20_397" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_2" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="2"/>
+						</common_value>
+						<pos 		origin = "20_448" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_1" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<opacity 	origin="255"/>
+						<common_value>
+							<common 		name="source" 		value="1"/>	
+						</common_value>
+						<pos 		origin = "20_500" 	/>
+					</Widget>
+
+					<Widget id ="0" typeRes="font" 	name = "number_i" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="I"/>
+						</common_value>
+						<pos 		origin = "93_520" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_h" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="H"/>					
+							<common    		name="font_idx"		value="11"/>
+						</common_value>
+						<pos 		origin = "144_520" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_g" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="G"/>
+						</common_value>
+						<pos 		origin = "195_520" 	/>
+					</Widget>
+					<Widget id ="0" typeRes="font" 	name = "number_f" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="F"/>						
+						</common_value>
+						<pos 		origin = "246_520" 	/>
+					</Widget>					
+					<Widget id ="0" typeRes="font" 	name = "number_e" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="E"/>						
+						</common_value>
+						<pos 		origin = "297_520" 	/>
+					</Widget>					
+					<Widget id ="0" typeRes="font" 	name = "number_d" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="D"/>					
+						</common_value>
+						<pos 		origin = "348_520" 	/>
+					</Widget>					
+					<Widget id ="0" typeRes="font" 	name = "number_c" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="C"/>						
+						</common_value>
+						<pos 		origin = "399_520" 	/>
+					</Widget>					
+					<Widget id ="0" typeRes="font" 	name = "number_b" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="B"/>						
+						</common_value>
+						<pos 		origin = "450_520" 	/>
+					</Widget>					
+					<Widget id ="0" typeRes="font" 	name = "number_a" idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_co_tuong"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="A"/>					
+						</common_value>
+						<pos 		origin = "501_520" 	/>
+					</Widget>	
+					<pos origin="0_0"	/>			
+					<Size origin="540_540" />
+					<opacity origin="0" />
+					<COMMAND>
+						<cmd id="0" name="SHOW">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY": 0 
+									},
+									{
+										"OPACITY": 255,
+										"TIME": 0.2
+									}
+								]
+							}		
+						}	
+						</cmd>
+						<cmd id="1" name="HIDE">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY": 255 
+									},
+									{
+										"OPACITY": 0,
+										"TIME": 0.2
+									}
+								]
+
+							}		
+						}	
+						</cmd>
+					</COMMAND>	
+				</Widget>		
+				<pos 		origin = "305_0" 	/>
+				<Size 		origin = "540_540" 	/>
+				<color origin="226_198_168_255" />
+			</Widget>
+			<Widget id="3"  typeRes="button" 	name = "btn_chat" 				idx_appear ="1">		
+				<common_value>
+					<common 		name="source" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+					<common 		name="press" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+					<common 		name="disable" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+					<common 		name="scale_press" 	value="-0.05"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="0"/>
+					<common			name="anchor_point"	value="0.5_0.5"/>
+				</common_value>
+							
+				<pos 		origin = "910_50" 	/>
+				<Size 		origin = "68_50" 	/>					
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_xinhoa" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="press" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="disable" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="gamescreen-game-common/icon_xinhoa.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "34_34" 	/>
+					<Size 		origin = "54_40" 	/>	
+				</Widget>	
+				<pos 		origin = "910_125" 	/>
+				<Size 		origin = "68_68" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_play" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/play.png"/>
+					<common 		name="press" 		value="gamescreen-cotuong-screen/play.png"/>
+					<common 		name="disable" 		value="gamescreen-cotuong-screen/play.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<pos 		origin = "910_50" 	/>
+				<Size 		origin = "68_68" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_close" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="otherscreen/winfree-screen/ico_iwin_close.png"/>
+					<common 		name="press" 		value="otherscreen/winfree-screen/ico_iwin_close.png"/>
+					<common 		name="disable" 		value="otherscreen/winfree-screen/ico_iwin_close.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<pos 		origin = "910_500" 	/>
+				<Size 		origin = "40_40" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_pause" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/pause.png"/>
+					<common 		name="press" 		value="gamescreen-cotuong-screen/pause.png"/>
+					<common 		name="disable" 		value="gamescreen-cotuong-screen/pause.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<pos 		origin = "910_50" 	/>
+				<Size 		origin = "68_68" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_xinthua" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="press" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="disable" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="gamescreen-game-common/icon_xinthua.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "34_34" 	/>
+					<Size 		origin = "35_39" 	/>	
+				</Widget>		
+				<pos 		origin = "910_200" 	/>
+				<Size 		origin = "68_68" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_ruong" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="press" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					<common 		name="disable" 		value="gamescreen-cotuong-screen/bg-button.png"/>
+					
+					<common 		name="scale_press" 	value="-0.05"/>
+								
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="0"/>
+					<common			name="anchor_point"		value="0.5_0.5"/>
+				</common_value>
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="gamescreen-game-common/ruong.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "34_34" 	/>
+					<Size 		origin = "40_41" 	/>	
+				</Widget>		
+				<pos 		origin = "910_275" 	/>
+				<Size 		origin = "68_68" 	/>
+				<COMMAND>
+					<cmd id="0" name="SET_DISABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":128
+								},
+								{
+									"SET_COLOR":"255_255_255_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="SET_ENABLE">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_OPACITY":255
+								},
+								{
+									"SET_COLOR":"255_167_38_255"
+								}
+							]
+						}		
+					}	
+					</cmd>
+				</COMMAND>				
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_touch_screen" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="press" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="disable" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="1"/>
+					<common			name="anchor_point"		value="0_0"/>
+				</common_value>
+				
+				<pos 		origin = "0_0" 	/>
+				<Size 		origin = "960_540" 	/>
+				<opacity 	origin = "0" />
+			</Widget>
+			<Widget id="0" typeRes="button" name = "btn_clear_board" idx_appear ="1" visible="0">		
+				<common_value>
+							
+					<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="press" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="disable" 		value="loginscreen/nine/whitepixel.png"/>
+					<common 		name="use_atlas" 		value="1"/>	
+					<common			name="stick_screen"		value="1"/>
+					<common			name="anchor_point"		value="0_0"/>
+				</common_value>
+				
+				<pos 		origin = "0_0" 	/>
+				<Size 		origin = "960_540" 	/>
+				<opacity 	origin = "0" />
+			</Widget>
+			<Widget id="0" typeRes="panel" name = "panel_eat_pieces_bot" idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/progress_bg.9.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="scale_9"			value="1"/>
+						<common			name="use_nine_path"	value="1"/>
+						<common			name="anchor_point"	 value="0.5_0.0"/>
+					</common_value>
+					<pos 		origin = "575_0" 	/>
+					<Size 		origin = "540_128" 	/>	
+					<COMMAND>
+					<cmd id="0" name="SHOW_1ROW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_VISIBLE": 1
+								},
+								{
+									"SET_POSITION":"575_-128",
+									
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"575_-64",
+									
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="HIDE_1ROW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION":"575_-64",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"575_-128",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								{
+									"SET_VISIBLE": 0 
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="0" name="SHOW_2ROW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_VISIBLE": 1
+								},
+								{
+									"SET_POSITION":"575_-128",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"575_0",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								}
+							]
+						}		
+					}	
+					</cmd>
+					<cmd id="1" name="HIDE_2ROW">
+					{
+						"act0": {
+							"squence":[
+								{
+									"SET_POSITION":"575_0",
+									"DESIGN":"960_540"
+								},
+								{
+									"POSITION":"575_-128",
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								{
+									"SET_VISIBLE": 0 
+								}
+							]
+						}		
+					}	
+					</cmd>					
+				</COMMAND>	
+			</Widget>
+			<Widget id="0" typeRes="panel" name = "panel_eat_pieces_top" idx_appear ="1" visible="0">		
+				<common_value>
+					<common 		name="source" 		value="loginscreen/nine/progress_bg.9.png"/>
+					<common 		name="use_atlas" 	value="1"/>	
+					<common			name="stick_screen"	value="1"/>
+					<common			name="scale_9"			value="1"/>
+					<common			name="use_nine_path"	value="1"/>
+					<common			name="anchor_point"	 value="0.5_0.0"/>
+				</common_value>
+				<pos 		origin = "575_540" 	/>
+				<Size 		origin = "540_128" 	/>	
+				<COMMAND>
+				<cmd id="0" name="SHOW_1ROW">
+				{
+					"act0": {
+						"squence":[
+							{
+								"SET_VISIBLE": 1
+							},
+							{
+								"SET_POSITION":"575_668",
+								"DESIGN":"960_540"
+							},
+							{
+								"POSITION":"575_604",
+								"DESIGN":"960_540",
+								"STYLE":0, 
+								"TIME":0.15
+							}
+						]
+					}		
+				}	
+				</cmd>
+				<cmd id="1" name="HIDE_1ROW">
+				{
+					"act0": {
+						"squence":[
+							{
+								"SET_POSITION":"575_604",
+								"DESIGN":"960_540"
+							},
+							{
+								"POSITION":"575_668",
+								"DESIGN":"960_540",
+								"STYLE":0, 
+								"TIME":0.15
+							},
+							{
+								"SET_VISIBLE": 0 
+							}
+						]
+					}		
+				}	
+				</cmd>
+				<cmd id="2" name="SHOW_2ROW">
+				{
+					"act0": {
+						"squence":[
+							{
+								"SET_VISIBLE": 1
+							},
+							{
+								"SET_POSITION":"575_668",
+								"DESIGN":"960_540"
+							},
+							{
+								"POSITION":"575_540",
+								"DESIGN":"960_540",
+								"STYLE":0, 
+								"TIME":0.15
+							}
+						]
+					}		
+				}	
+				</cmd>
+				<cmd id="3" name="HIDE_2ROW">
+				{
+					"act0": {
+						"squence":[
+							{
+								"SET_POSITION":"575_540",
+								"DESIGN":"960_540"
+							},
+							{
+								"POSITION":"575_668",
+								"DESIGN":"960_540",
+								"STYLE":0, 
+								"TIME":0.15
+							},
+							{
+								"SET_VISIBLE": 0 
+							}
+						]
+					}		
+				}	
+				</cmd>
+			</COMMAND>	
+			</Widget>
+
+			<pos 		origin = "0_0" 	/>
+			<Size 		origin = "960_540" 	/>	
+		</Widget>
+	</MenuWidget>
+</GAME>

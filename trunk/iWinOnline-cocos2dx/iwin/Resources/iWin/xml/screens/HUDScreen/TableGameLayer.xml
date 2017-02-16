@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0"  typeRes="layout" 	name = "panel_game_screen" 		idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="0"/>
+					</common_value>
+					<Widget id="0" typeRes="panel" name = "bg_table_win" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/mat_ban.png"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "872_432" 	/>
+					</Widget>
+					<Widget id="1" typeRes="panel" name = "bg_table_ruby" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/mat_ban_ruby.png"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "872_432" 	/>
+					</Widget>
+					
+					<Widget id="2"  typeRes="layout" 	name = "panel_detail" 		idx_appear ="1">		
+						<common_value>
+							<common			name="stick_screen"			value="0"/>
+						</common_value>
+					<Widget id="2" typeRes="panel" name = "game_logo_win" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-game-common/banchoi_logo_win.png"/>
+							<common 		name="anchor_point" value="1_0.5" />
+						</common_value>
+						<pos 		origin = "160_30" 	/>
+						<Size 		origin = "134_60" 	/>	
+					</Widget>	
+					<Widget id="3" typeRes="panel" name = "game_logo_ruby" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-game-common/banchoi_logo.png"/>
+							<common 		name="anchor_point" value="1_0.5" />
+						</common_value>
+						<pos 		origin = "160_30" 	/>
+						<Size 		origin = "134_60" 	/>	
+					</Widget>	
+					<Widget id="4" typeRes="font" 	name = "game_name" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_1_1"/>						
+						</template_value>
+						<common_value>
+								<common 		name="source" 		value="Game Name"/>					
+								<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "170_32" 	/>
+						<opacity    origin="150" />
+					</Widget>
+					<Widget id="5" typeRes="font" 	name = "min_bet_tx" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0_4"/>						
+						</template_value>
+						<common_value>
+								<common 		name="source" 		value="minium_be"/>					
+								<common			name="anchor_point"	value="0_1"/>
+						</common_value>
+						<pos 		origin = "170_26" 	/>
+						<opacity    origin="150" />
+					</Widget>
+					<Widget id="5" typeRes="font" 	name = "min_bet" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0_4"/>						
+						</template_value>
+						<common_value>
+								<common 		name="source" 		value="0"/>					
+								<common			name="anchor_point"	value="0_1"/>
+						</common_value>
+						<pos 		origin = "320_26" 	/>
+						<opacity    origin="150" />
+					</Widget>
+					<Widget id="6" typeRes="font" 	name = "other_text" idx_appear ="1" visible="0">		
+						<template_value>
+							<template 		name="temp_text_0_4"/>						
+						</template_value>
+						<common_value>
+								<common 		name="source" 		value="Playing Time 40 sec"/>												
+								<common			name="anchor_point"	value="0_1"/>
+						</common_value>
+						<pos 		origin = "150_-25" 	/>
+						<opacity    origin="150" />
+					</Widget>
+						<pos 		origin = "362_190" 	/>
+						<Size 		origin = "480_60" 	/>
+					</Widget>
+						
+					
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "872_432" 	first="724_360"/>
+				</Widget>
+				
+</GAME>

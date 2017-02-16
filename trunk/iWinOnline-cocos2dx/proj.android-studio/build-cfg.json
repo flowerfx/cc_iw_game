@@ -1,0 +1,14 @@
+{
+    "ndk_module_path" :[
+        "../cocos2dx-lib",
+        "../cocos2dx-lib/cocos",
+        "../cocos2dx-lib/external",
+        "../lib"
+    ],
+    "copy_resources": [
+        {
+            "from": "../iwin/Resources",
+            "to": ""
+        }
+    ]
+}

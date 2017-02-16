@@ -1,0 +1,12 @@
+			if(document.HasMember("%s"))
+			{
+				const rapidjson::Value& c|field_name| = document["|field_name|"];
+				rapidjson::StringBuffer buffer|field_name|;
+				buffer|field_name|.Clear();
+				rapidjson::Writer<rapidjson::StringBuffer> writer|field_name|(buffer|field_name|);
+				c|field_name|.Accept(writer|field_name|);
+				const char* json|field_name| = buffer|field_name|.GetString();
+				|field_type| d|field_name|;
+				d|field_name|.toData(json|field_name|);
+				set%s(d|field_name|);
+			}

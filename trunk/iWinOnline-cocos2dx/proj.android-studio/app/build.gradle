@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
+    defaultConfig {
+        applicationId "iwin.vn.full"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 489 
+        versionName "5.1.8"
+        jackOptions{
+            enabled true
+        }
+    }
+    sourceSets.main {
+        java.srcDir "src"
+        res.srcDir "res"
+        jniLibs.srcDir "libs"
+        manifest.srcFile "AndroidManifest.xml"
+        assets.srcDir "assets"
+    }
+    signingConfigs {
+        release {
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                storeFile file(RELEASE_STORE_FILE)
+                storePassword RELEASE_STORE_PASSWORD
+                keyAlias RELEASE_KEY_ALIAS
+                keyPassword RELEASE_KEY_PASSWORD
+            }
+            keyAlias 'mecorp'
+            keyPassword 'androidkey4me'
+            storeFile file('D:/Projects/git/iWinOnline_git/proj.android-studio/keystore/MECorp_Android_KeyStore.keystore')
+            storePassword 'androidkey4me'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                signingConfig signingConfigs.release
+            }
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v4'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':libcocos2dx')
+    compile project(':facebook_lib')
+    compile project(':gps')
+}

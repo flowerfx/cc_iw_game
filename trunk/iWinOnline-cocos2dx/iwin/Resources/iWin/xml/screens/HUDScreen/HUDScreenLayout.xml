@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="5" typeRes="layout" 	name = "hud_screen_layout" 		idx_appear ="1">		
+					<common_value>	
+						<common			name="stick_screen"		value="1"/>
+						<common			name="anchor_point"		value="0_0"/>
+					</common_value>
+				
+					<Widget id="0"  name = "effect_hl" 	com ="HUDScreen.HighLightLayer" visible="0">		
+					</Widget>		
+				
+					
+					<Widget id="0" typeRes="layout" 	name = "btn_purchase_win" 		idx_appear ="1">		
+						<common_value>	
+							<common			name="stick_screen"		value="0"/>
+							<common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						
+							<Widget id="0" typeRes="button" name = "btn_purchase_win" 	idx_appear ="1">		
+								<common_value>	
+									<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+									<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+									<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+												
+									<common 		name="scale_press" 		value="-0.00"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path" 	value="1"/>
+									<common			name="anchor_point"		value="0_0"/>
+									<common			name="stage_scale9"		value="2"/>
+								</common_value>	
+								<pos 		origin = "0_0" 			/>
+								<Size 		origin = "240_30" 			/>	
+							</Widget>
+							<Widget id="1" typeRes="font" 	name = "title_" 			idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="10.000"/>					
+								</common_value>
+								<pos 		origin = "120_15" 	/>
+							</Widget>								
+							<Widget id="2" typeRes="panel" 	name = "ico_iwin" 			idx_appear ="1">		
+								<common_value>	
+									<common 		name="source" 			value="otherscreen/new-lobby/ico_winchip.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "2_15" 	/>
+								<Size 		origin = "26_26" 	/>					
+							</Widget>
+							<Widget id="3" typeRes="panel" 	name = "ico_add" 			idx_appear ="1">		
+								<common_value>	
+									<common 		name="source" 			value="gamescreen-newgui-game-common/cong.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "238_15" 	/>
+								<Size 		origin = "26_26" 	/>
+								<color 		origin = "255_210_10_255" 	/>
+							</Widget>
+										
+						<pos 		origin = "10_5" 			/>
+						<Size 		origin = "240_30" 			/>	
+					</Widget>
+							
+					<Widget id="1" typeRes="layout" 	name = "btn_purchase_ruby" 		idx_appear ="1" visible="0">		
+						<common_value>	
+							<common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="button" name = "btn_purchase_ruby" 	idx_appear ="1">		
+								<common_value>	
+									<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+									<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+									<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+												
+									<common 		name="scale_press" 		value="-0.00"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path" 	value="1"/>
+									<common			name="anchor_point"		value="0_0"/>
+									<common			name="stage_scale9"		value="2"/>
+								</common_value>	
+								<pos 		origin = "0_0" 			/>
+								<Size 		origin = "240_30" 			/>	
+						</Widget>				
+						<Widget id="1" typeRes="font"   name = "title_" 			idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="10.000"/>					
+							</common_value>
+							<pos 		origin = "120_15" 	/>
+						</Widget>							
+						<Widget id="2" typeRes="panel"  name = "ico_ruby" 			idx_appear ="1">		
+							<common_value>	
+								<common 		name="source" 			value="otherscreen/new-lobby/ico_diamond.png"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "2_15" 	/>
+							<Size 		origin = "30_22" 	/>					
+						</Widget>
+						<Widget id="3" typeRes="panel"  name = "ico_add" 			idx_appear ="1">		
+							<common_value>	
+								<common 		name="source" 			value="gamescreen-newgui-game-common/cong.png"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="1_0.5"/>
+							</common_value>
+							<pos 		origin = "238_15" 	/>
+							<Size 		origin = "26_26" 	/>
+							<color 		origin = "255_10_10_255" 	/>
+						</Widget>
+									
+						<pos 		origin = "10_5" 	/>
+						<Size 		origin = "240_30" 	/>
+					</Widget>
+						
+					<Widget id="2"  typeRes="font" 		name = "name_title" 			idx_appear ="1">		
+						<template_value>
+								<template 		name="temp_text_name"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="10.000"/>					
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "15_35" 	/>
+						<color 		origin = "255_255_255_255" 	/>
+						
+					</Widget>
+					<Widget id="3"  typeRes="button" 	name = "btn_chat" 				idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+							<common 		name="press" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+							<common 		name="disable" 		value="gamescreen-newgui-game-common/btn_chat.png"/>
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+									
+						<pos 		origin = "270_5" 	/>
+						<Size 		origin = "75_55" 	/>					
+					</Widget>
+					<Widget id="4" typeRes="button" 	name = "btn_quick_play" 		idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_btn_red"/>						
+							</template_value>
+							<common_value>
+								<common			name="anchor_point"	value="1_0.5"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="quick_play"/>
+								</common_value>
+								<pos 		origin = "75_25" 	/>
+							</Widget>
+							
+							<pos 		origin = "940_30" 	/>
+							<Size 		origin = "150_50" 	/>
+					</Widget>
+					
+					<Widget id="5" typeRes="font"   	name = "txt_wait_player" 		idx_appear ="1"  visible="0">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="wait_others"/>
+						</common_value>
+						<pos 		origin = "480_30" 	/>
+						<COMMAND>
+							<cmd id="0" name="ACTION">
+									{
+										"act0" : 
+										{
+											"repeat"  : -1,
+											"squence" : [
+												{
+													"SET_COLOR" : "255_255_255_255"
+												},
+												{
+													"COLOR" : "0_0_0_255",
+													"TIME"	: 1
+												},
+												{
+													"COLOR" : "255_255_255_255",
+													"TIME"	: 1
+												}
+											]
+										}
+									}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					
+					<Widget id="6" typeRes="button" 	name = "btn_in_game_menu" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/btn_menu.png"/>
+							<common 		name="press" 		value="gamescreen-newgui-game-common/btn_menu.png"/>
+							<common 		name="disable" 		value="gamescreen-newgui-game-common/btn_menu.png"/>
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common			name="anchor_point"	value="1_1"/>
+						</common_value>
+						<pos 		origin = "950_530" 	/>
+						<Size 		origin = "54_54" 	/>					
+					</Widget>		
+	
+					<Widget id="7" typeRes="layout" 	name = "top_left_layout" 		idx_appear ="1">		
+						<common_value>
+							<common			name="anchor_point"			value="0_1"/>
+						</common_value>
+						
+						<Widget id="1" typeRes="panel" name = "icon_wifi_0" idx_appear ="1" visible ="0">		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-newgui-game-common/ico_wifi1.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+								</common_value>
+								<pos 		origin = "23_76" 	/>
+								<Size 		origin = "29_27" 	/>					
+						</Widget>
+						<Widget id="2" typeRes="panel" name = "icon_wifi_1" idx_appear ="1" visible ="0">		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-newgui-game-common/ico_wifi2.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+								</common_value>
+								<pos 		origin = "23_76" 	/>
+								<Size 		origin = "29_27" 	/>					
+						</Widget>
+						<Widget id="3" typeRes="panel" name = "icon_wifi_2" idx_appear ="1" visible ="1">		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-newgui-game-common/ico_wifi3.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+								</common_value>
+								<pos 		origin = "23_76" 	/>
+								<Size 		origin = "29_27" 	/>					
+						</Widget>					
+						<pos 		origin = "10_530" 	/>
+						<Size 		origin = "189_96" 	/>
+					</Widget>
+					
+					<Widget id="8" typeRes="layout" 	name = "layout_gift_send" 		idx_appear ="1">		
+						<common_value>
+							<common			name="anchor_point"			value="0_1"/>
+						</common_value>
+					</Widget>	
+					
+					<pos 		origin = "0_0" 		/>
+					<Size 		origin = "960_540" 	/>	
+				</Widget>
+
+</GAME>

@@ -1,0 +1,222 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<game id="3" name="BAI_CAO" design="960_540">
+		<player id="0">
+			<common name="value_pos"		value="20_20"	/>
+			<common name="anchor_point" 	value="0_0"		/>
+			<common name="pos_tex1" 		value="10_-50"	/>
+			<common name="pos_text_bonus"	value="150_50"	/>
+			<common name="pos_chat"     	value="100_10"	/>
+			<common name="rotate_control" 	value="0"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="500_-25"	/>
+			
+		</player>
+		<player id="1">
+			<common name="value_pos"		value="20_330"	/>
+			<common name="anchor_point" 	value="0_1"		/>
+			<common name="pos_tex1" 		value="10_-30"	/>
+			<common name="pos_chat"     	value="100_10"	/>
+			<common name="pos_text_bonus"	value="100_0"	/>
+			<common name="rotate_control" 	value="-90"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="170_-30"	/>
+		</player>
+		<player id="2">
+			<common name="value_pos"		value="380_465"	/>
+			<common name="anchor_point" 	value="0_1"		/>
+			<common name="pos_tex1" 		value="95_40"	/>
+			<common name="pos_chat"     	value="100_10"	/>
+			<common name="pos_text_bonus"	value="120_-50"	/>
+			<common name="rotate_control" 	value="0"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="60_-60"	/>
+		</player>
+		<player id="3">
+			<common name="value_pos"		value="950_330"	/>
+			<common name="anchor_point" 	value="1_1"		/>
+			<common name="pos_tex1" 		value="100_-30"	/>
+			<common name="pos_chat"     	value="-10_10"	/>
+			<common name="pos_text_bonus"	value="-100_0"/>
+			<common name="rotate_control" 	value="0"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="-80_-30"	/>
+		</player>
+		<player id="4">
+			<common name="value_pos"		value="950_50"	/>
+			<common name="anchor_point" 	value="1_0"		/>
+			<common name="pos_tex1" 		value="68_-30"	/>
+			<common name="pos_tex2" 		value="68_-32"	/>
+			<common name="pos_chat"     	value="100_10"	/>
+			<common name="pos_text_bonus"	value="-100_100"/>
+			<common name="rotate_control" 	value="90"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="-100_-10"/>
+		</player>
+		<player id="5">
+			<common name="value_pos"		value="680_465"	/>
+			<common name="anchor_point" 	value="1_1"		/>
+			<common name="pos_tex1" 		value="-30_40"	/>
+			<common name="pos_tex2" 		value="-30_38"	/>
+			<common name="pos_chat"     	value="100_10"	/>
+			<common name="pos_text_bonus"	value="50_0"	/>
+			<common name="rotate_control" 	value="0"		/>
+			<!--private-->
+			<common name="pos_contain_card" value="-100_-50"	/>
+		</player>
+
+	</game>
+
+	<MenuWidget name="BAICAO" designSize="960_540">
+	
+			
+		<Widget id="0" typeRes="layout" name = "back_panel_card" idx_appear ="1">		
+			<common_value>							
+				<common 		name="clipping_enable"	    value="0"/>
+				<common 		name="background_type" 		value="0"/>
+				<common			name="stick_screen"			value="1"/>
+				<common			name="anchor_point"	 		value="0_1"/>
+				<common			name="zorder"				value="500"/>
+			</common_value>
+			
+				<Widget id="0" typeRes="panel" name = "bg" idx_appear ="1">		
+					<common_value>							
+						<common 		name="source" 		value="gamescreen-newgui-game-common/bkg_btn_bar.9.png"/>				
+						<common			name="scale_9"		value="1"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="use_nine_path" value="1"/>
+						<common			name="anchor_point"	 value="0.5_0.5"/>
+					</common_value>	
+					<pos 		origin = "480_30" 	/>
+					<Size 		origin = "960_60" 	/>
+				</Widget>
+							
+				<Widget id="4" typeRes="layout" name = "layout_btn_game_baicao" idx_appear ="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="0"/>
+						<common			name="anchor_point"			value="1_0.5"/>
+					</common_value>
+										
+					<Widget id="1" typeRes="button" name = "btn_bet_money" 		idx_appear ="2" visible="0">		
+						<template_value>
+							<template 		name="temp_btn_yellow"/>						
+						</template_value>
+						<common_value>
+							<common			name="anchor_point"	value="1_0.5"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="bet"/>	
+							</common_value>
+							<pos 		origin = "75_25" 	/>
+							<color		origin = "0_0_0_255" />
+						</Widget>
+						
+						<pos 		origin = "555_30" 	/>
+						<Size 		origin = "150_50" 	/>
+					</Widget>
+					
+					<Widget id="2" typeRes="button" name = "btn_rub_card" 		idx_appear ="2" visible="0">		
+						<template_value>
+							<template 		name="temp_btn_yellow"/>						
+						</template_value>
+						<common_value>
+							<common			name="anchor_point"	value="0_0.5"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="rub_card"/>					
+							</common_value>
+							<pos 		origin = "75_25" 	/>
+							<color		origin = "0_0_0_255" />
+						</Widget>
+						
+						<pos 		origin = "400_30" 	/>
+						<Size 		origin = "150_50" 	/>
+					</Widget>
+
+					<pos 		origin = "950_30" 	/>
+					<Size 		origin = "560_60" 	/>	
+				</Widget>
+							
+				<Widget id="5" typeRes="button" name = "btn_invite_player" idx_appear ="2" visible="0">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="0_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="invite_other_people"/>					
+						</common_value>
+						<pos 		origin = "125_25" 	/>
+						<color		origin = "0_0_0_255" />
+					</Widget>
+					
+					<pos 		origin = "323_30" 	/>
+					<Size 		origin = "250_50" 	/>
+				</Widget>													
+				
+					
+			<pos 		origin = "0_60" 	/>
+			<Size 		origin = "960_60" 	/>
+			<opacity	origin = "230"		/>
+		</Widget>
+			
+		<Widget id="1" name = "sp_slider_bet" com ="GameScreens.SliderBet" visible="0">
+		</Widget>
+			
+		<Widget id="2" name = "layout_card" com ="GameScreens.PanelCardInfo" >
+		</Widget>
+		
+		<Widget id="3" typeRes="layout" name = "lb_bet_win_0" idx_appear ="1"visible="0">	
+			<Widget id="0" name = "icon_bet" com ="GameScreens.BetMoneyLayout" >
+			</Widget>
+			<pos 		origin = "480_200" 	/>
+			<Size 		origin = "120_30" 	/>
+		</Widget>
+		<Widget id="4" typeRes="layout" name = "lb_bet_win_1" idx_appear ="1"visible="0">	
+			<Widget id="0" name = "icon_bet" com ="GameScreens.BetMoneyLayout" >
+			</Widget>
+			<common_value>							
+				<common			name="anchor_point"	 		value="0_0.5"/>
+			</common_value>
+			<pos 		origin = "100_250" 	/>
+			<Size 		origin = "120_30" 	/>
+		</Widget>
+		<Widget id="5" typeRes="layout" name = "lb_bet_win_2" idx_appear ="1"visible="0">	
+			<Widget id="0" name = "icon_bet" com ="GameScreens.BetMoneyLayout" >
+			</Widget>
+			<pos 		origin = "480_380" 	/>
+			<Size 		origin = "120_30" 	/>
+		</Widget>
+		<Widget id="6" typeRes="layout" name = "lb_bet_win_3" idx_appear ="1"visible="0">	
+			<Widget id="0" name = "icon_bet" com ="GameScreens.BetMoneyLayout" >
+			</Widget>
+			<common_value>							
+				<common			name="anchor_point"	 		value="1_0.5"/>
+			</common_value>
+			<pos 		origin = "870_250" 	/>
+			<Size 		origin = "120_30" 	/>
+		</Widget>
+	
+	</MenuWidget>
+
+</GAME>

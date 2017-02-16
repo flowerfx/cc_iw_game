@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" name="Image_4" 			typeRes="layout">
+                    <common_value>
+                    	<common name="scale_9" 					value="1"/>
+                        <common name="clipping_enable" 			value="1"/>
+                        <common name="use_nine_path" 			value="1"/>
+                        <common name="background_type" 			value="3"/>
+                        <common name="anchor_point" 			value="0_0"/>
+                        <common name="source" 					value="loadingscreen/textfieldbgbrow.9.png"/>
+                    </common_value>
+					<COMMAND>
+						<cmd id="0" name="FOCUS">
+						{
+							"act0": {
+								"single" : {
+									"SET_SIZE" : "940_56",
+									"9SCALE" : 1,
+									"DESIGN" : "960_540"
+								}
+							}
+						}
+						</cmd>
+						<cmd id="1" name="DEFOCUS">
+						{
+							"act0": {
+								"single" : {
+									"SET_SIZE" : "300_56",
+									"9SCALE" : 1,
+									"DESIGN" : "960_540"
+								}
+							}
+						}
+						</cmd>
+					</COMMAND>
+					<Widget id="3" name="textfield_chat" 	typeRes="text_field">
+						<template_value>
+							<template 		name="temp_textfield_0"/>						
+						</template_value>
+						<common_value>
+							<common name="source" 				value="chat"/>
+							<common name="touch_zone" 			value="800_30"/>
+							<common name="anchor_point" 		value="0_0.5"/>
+							<common	name="text_area"			value="800_30"/>
+							<common name="panel"				value="loadingscreen/textfieldbgbrow.9.png"/>
+						</common_value>
+						<pos origin="40_28"/>
+						<COMMAND>
+							<cmd id="0" name="RESET_POS">
+							{
+								"act0":{
+									"single" : {
+										"SET_POSITION" : "40_28",
+										"DESIGN"	   :  "960_540"
+									}
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					<Widget id="4" name="btn_emotion" 		typeRes="button">
+						<common_value>
+							<common name="scale_press" 	value="-0.05"/>
+							<common name="anchor_point" value="0_0.5"/>
+							<common name="disable" 		value="otherscreen/new-lobby/btn_emo.png"/>
+							<common name="press" 		value="otherscreen/new-lobby/btn_emo_active.png"/>
+							<common name="source" 		value="otherscreen/new-lobby/btn_emo.png"/>
+						</common_value>
+						<Size 	origin="30_30"/>
+						<pos 	origin="5_28"/>
+					</Widget>
+					<Widget id="5" name="btn_send" 			typeRes="button">
+						<common_value>
+							<common name="scale_press" 		value="-0.05"/>
+							<common name="anchor_point" 	value="1_0.5"/>
+							<common name="disable" 			value="otherscreen/new-lobby/btn_lobbychat_send.png"/>
+							<common name="press" 			value="otherscreen/new-lobby/btn_lobbychat_send.png"/>
+							<common name="source" 			value="otherscreen/new-lobby/btn_lobbychat_send.png"/>
+						</common_value>
+						<Size origin="30_32"/>
+						<pos origin="300_28"/>
+						<COMMAND>
+							<cmd id="0" name="DEFOCUS_POS">
+							{
+								"act0": {
+									"single" : {
+										"SET_POSITION" : "280_28",
+										"DESIGN" : 		"960_540"
+									}
+								}
+							}
+							</cmd>
+							<cmd id="1" name="FOCUS_POS">
+							{
+								"act0": {
+									"single" : {
+										"SET_POSITION" : "925_28",
+										"DESIGN" : "960_540"
+									}
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					<Widget id="6" name="btn_clear_text" 	typeRes="button" visible="0">
+						<common_value>													
+							<common 		name="source" 		value="close_button.png"/>
+							<common 		name="press" 		value="close_button.png"/>
+							<common 		name="disable" 		value="close_button.png"/>
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common			name="anchor_point"	value="1_0.5"/>
+						</common_value>
+						<pos 		origin = "890_28" 	/>
+						<Size 		origin = "30_30" 	/>
+						<opacity	origin = "128"		/>
+					</Widget>
+					
+					<Size origin="300_56"/>
+                    <pos origin="-1_0"/>
+                </Widget>
+																
+</GAME>

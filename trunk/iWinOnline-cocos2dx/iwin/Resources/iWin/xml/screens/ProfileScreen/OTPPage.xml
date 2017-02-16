@@ -1,0 +1,370 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="3" typeRes="layout" name = "page_OTP" idx_appear ="3" visible="0">		
+								<common_value>
+									<common			name="stick_screen"			value="1"/>	
+									<common			name="anchor_point"			value="0_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 	name = "title" 				idx_appear ="2">		
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="secu_setup"/>					
+										<common			name="anchor_point"	value="0_1"/>
+										<common			name="AreaSize"		value="620_0"/>
+									</common_value>
+									<pos 		origin = "20_420" 	/>
+								</Widget>
+								<Widget id="1" typeRes="layout" name = "layout_method_otp" 	idx_appear ="3" visible="0">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_1"/>
+									</common_value>
+								<Widget id="1" typeRes="layout" name = "layout_phone_otp" 	idx_appear ="3">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_1"/>
+									</common_value>
+									<Widget id="0" typeRes="check_box" 	name = "btn_select_phone" 			idx_appear ="2">		
+										<template_value>
+											<template name="check_box_def"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"				value="1_0.5"/>	
+										</common_value>
+										<pos 		origin = "40_20" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 		name = "title_" 					idx_appear ="2">
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="phone_number"/>	
+											<common			name="anchor_point"		value="0_0.5"/>	
+										</common_value>
+										<pos 		origin = "60_20" 	/>
+									</Widget>
+									<Widget id="2" typeRes="button" 	name = "btn_active_phone_otp" 		idx_appear ="2" visible="0">		
+										<template_value>
+											<template name="temp_btn_blue"/>
+										</template_value>
+										<common_value>
+											<common			name="anchor_point"		value="1_0.5"/>
+										</common_value>
+												
+										<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6" visible="1">		
+											<template_value>
+												<template name="temp_text_0_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="active"/>					
+												<common			name="anchor_point"	value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "60_25" 	/>
+										</Widget>		
+										<pos 		origin = "560_20" 	/>
+										<Size 		origin = "120_50" 	/>					
+									</Widget>
+									<Widget id="2" typeRes="button" 	name = "btn_deactive_phone_otp" 	idx_appear ="2" visible="0">		
+										<template_value>
+											<template name="temp_btn_red"/>
+										</template_value>
+										<common_value>
+											<common			name="anchor_point"		value="1_0.5"/>
+										</common_value>
+												
+										<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6" visible="1">		
+											<template_value>
+												<template name="temp_text_0_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="cancel_otp"/>					
+												<common			name="anchor_point"	value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "60_25" 	/>
+										</Widget>		
+										<pos 		origin = "560_20" 	/>
+										<Size 		origin = "120_50" 	/>					
+									</Widget>
+											
+									<pos 		origin = "280_230" 	/>
+									<Size 		origin = "560_40" 	/>
+								</Widget>
+								<Widget id="2" typeRes="layout" name = "layout_email_otp" 	idx_appear ="3">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_1"/>
+									</common_value>
+									<Widget id="0" typeRes="check_box" 	name = "btn_select_email" 			idx_appear ="2">		
+										<template_value>
+											<template name="check_box_def"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"				value="1_0.5"/>	
+										</common_value>
+										<pos 		origin = "40_20" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 		name = "title_" 					idx_appear ="2">
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="Email"/>	
+											<common			name="anchor_point"		value="0_0.5"/>	
+										</common_value>
+										<pos 		origin = "60_20" 	/>
+									</Widget>
+											
+									<pos 		origin = "280_170" 	/>
+									<Size 		origin = "560_40" 	/>
+								</Widget>
+								<Widget id="3" typeRes="layout" name = "layout_gg_otp" 		idx_appear ="3">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_1"/>
+									</common_value>
+									<Widget id="0" typeRes="check_box" 	name = "btn_select_gg" 			idx_appear ="2">		
+										<template_value>
+											<template name="check_box_def"/>
+										</template_value>	
+										<common_value>					
+											<common			name="anchor_point"				value="1_0.5"/>	
+										</common_value>
+										<pos 		origin = "40_20" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 		name = "title_" 					idx_appear ="2">
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="Google Authentication App"/>	
+											<common			name="anchor_point"		value="0_0.5"/>	
+										</common_value>
+										<pos 		origin = "60_20" 	/>
+									</Widget>
+									<Widget id="2" typeRes="button" 	name = "btn_active_gg_otp" 			idx_appear ="2"visible="0">		
+										<template_value>
+											<template name="temp_btn_blue"/>
+										</template_value>
+										<common_value>
+											<common			name="anchor_point"		value="1_0.5"/>
+										</common_value>
+												
+										<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6" visible="1">		
+											<template_value>
+												<template name="temp_text_0_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="active"/>					
+												<common			name="anchor_point"	value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "60_25" 	/>
+										</Widget>		
+										<pos 		origin = "560_20" 	/>
+										<Size 		origin = "120_50" 	/>					
+									</Widget>
+									<Widget id="2" typeRes="button" 	name = "btn_deactive_gg_otp" 		idx_appear ="2" visible="0">		
+										<template_value>
+											<template name="temp_btn_red"/>
+										</template_value>
+										<common_value>
+											<common			name="anchor_point"		value="1_0.5"/>
+										</common_value>
+												
+										<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6" visible="1">		
+											<template_value>
+												<template name="temp_text_0_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="cancel_otp"/>					
+												<common			name="anchor_point"	value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "60_25" 	/>
+										</Widget>		
+										<pos 		origin = "560_20" 	/>
+										<Size 		origin = "120_50" 	/>					
+									</Widget>
+											
+									<pos 		origin = "280_110" 	/>
+									<Size 		origin = "560_40" 	/>
+								</Widget>
+								<Widget id="4" typeRes="layout" name = "layout_app_otp" 	idx_appear ="3">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_1"/>
+									</common_value>
+									<Widget id="1" typeRes="font" 		name = "title_" 					idx_appear ="2">
+										<template_value>
+											<template name="temp_text_0_1"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="free_app_otp"/>	
+											<common			name="anchor_point"		value="0_0.5"/>	
+										</common_value>
+										<pos 		origin = "60_20" 	/>
+										<color 		origin = "255_250_0_255" 	/>
+									</Widget>
+									<Widget id="2" typeRes="button" 	name = "btn_download_app_otp" 			idx_appear ="2">		
+										<template_value>
+											<template name="temp_btn_blue"/>
+										</template_value>
+										<common_value>
+											<common			name="anchor_point"		value="1_0.5"/>
+										</common_value>
+												
+										<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6" visible="1">		
+											<template_value>
+												<template name="temp_text_0_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="download"/>					
+												<common			name="anchor_point"	value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "60_25" 	/>
+										</Widget>		
+										<pos 		origin = "560_20" 	/>
+										<Size 		origin = "120_50" 	/>					
+									</Widget>
+											
+									<pos 		origin = "280_50" 	/>
+									<Size 		origin = "560_40" 	/>
+								</Widget>
+									<pos 		origin = "350_340" 	/>
+									<Size 		origin = "560_240" 	/>
+								</Widget>
+								<Widget id="2" typeRes="button" name = "btn_active_otp" 	idx_appear ="2">		
+									<template_value>
+											<template name="temp_btn_yellow"/>
+									</template_value>
+									<common_value>
+											<common			name="anchor_point"		value="0.5_1"/>
+									</common_value>
+												
+									<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="active_otp"/>					
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "80_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>		
+									<pos 		origin = "350_280" 	/>
+									<Size 		origin = "160_50" 	/>	
+									
+								</Widget>
+								<Widget id="3" typeRes="button" name = "btn_deactive_otp" 	idx_appear ="2" visible="0">		
+									<template_value>
+											<template name="temp_btn_yellow"/>
+									</template_value>
+									<common_value>
+											<common			name="anchor_point"		value="0.5_1"/>
+									</common_value>
+												
+									<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="6">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="off_otp"/>					
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "80_25" 	/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>		
+									<pos 		origin = "350_60" 	/>
+									<Size 		origin = "160_50" 	/>	
+									
+								</Widget>
+								<Widget id="4" typeRes="panel" 	name = "loading_circle" 	idx_appear ="1" visible="1">		
+										<common_value>	
+											<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+											<common			name="stick_screen"		value="0"/>
+											<common			name="anchor_point"		value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "350_240" 	/>
+										<Size 		origin = "60_60" 	/>
+										<COMMAND>
+											<cmd id="0" name="ROTATE">
+											{
+												"act0" : {
+													"repeat" : -1,
+													"squence":[
+														{
+															"ROTATE" : 360,
+															"TIME"	 : 0.5,
+															"STYLE"	 : 1
+														}
+													]
+												}
+											}
+											</cmd>
+										</COMMAND>
+								</Widget>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "700_480" 	/>
+								<COMMAND>
+									<cmd id="0" name="MOVE_LEFT">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"0_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"-1000_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												},
+												{
+													"SET_VISIBLE" : 0 
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="1" name="MOVE_MIDDLE">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"-1000_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"0_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="2" name="SET_POS">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"0_0",
+													"DESIGN"	  :	"960_540"
+												}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>										
+</GAME>

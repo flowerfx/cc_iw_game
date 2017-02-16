@@ -1,0 +1,428 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="4" name="panel_right_lobby" typeRes="layout" visible="0">
+                <common_value>
+                    <common name="stick_screen" 		value="1"/>
+					<common	name="clipping_enable" 		value="1"/>
+                    <common name="anchor_point" 		value="0.0_0.0"/>
+                </common_value>
+				
+                <Widget id="0" name="Image_5" typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" 				value="1"/>
+                        <common name="use_nine_path" 		value="1"/>
+                        <common name="stick_screen" 		value="1"/>
+                        <common name="anchor_point" 		value="0_0"/>
+                        <common name="source" 				value="otherscreen/new-lobby/chat_bg.9.png"/>
+                    </common_value>
+                    <Size origin="630_460"/>
+                    <pos origin="0_0"/>
+                </Widget>
+                <Widget id="1" typeRes="layout"  name = "layout_pull_update" 	  idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="background_type" 		value="0"/>	
+						<common			name="stick_screen"			value="1"/>	
+						<common 		name="clipping_enable"	    value="0"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					<Widget id="0" typeRes="font"  name = "txt_pull_update" idx_appear ="1" visible="1">		
+						<common_value>
+							<common 		name="source" 		value="pull_down_to_refresh"/>					
+							<common    		name="font_idx"		value="0"/>	
+							<common			name="anchor_point"	value="0_0.5"/>
+							<common			name="bitmap_font"  value="1"/>
+						</common_value>
+						<pos 		origin = "40_15" 			/>
+						<Size 		origin = "17_17" 			/>
+						<color 		origin = "200_200_200_255" 	/>
+					</Widget>
+					<Widget id="1" typeRes="font"  name = "txt_release_update" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="release_to_refresh"/>					
+							<common    		name="font_idx"		value="0"/>	
+							<common			name="anchor_point"	value="0_0.5"/>
+							<common			name="bitmap_font"  value="1"/>
+						</common_value>
+						<pos 		origin = "40_15" 			/>
+						<Size 		origin = "17_17" 			/>
+						<color 		origin = "200_200_200_255" 	/>
+					</Widget>
+					<Widget id="2" typeRes="panel" 	name = "arrow" idx_appear ="1" >		
+						<common_value>
+							<common			name="source"				value="gamescreen-game-common/arrow.png"/>
+							<common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>
+						<pos 		origin = "15_15" 	/>
+						<Size 		origin = "30_30" 	/>
+						<color 		origin = "230_230_230_255" 	/>
+					</Widget>
+										
+					<COMMAND>
+						<cmd id="0" name="ORIGIN_POS">
+						{
+							"act0" : {
+								"single_0":{
+									"SET_POSITION" : "315_470",
+									
+									"DESIGN"	   : "960_540"
+								}
+							}
+						}
+						</cmd>
+					</COMMAND>
+										
+					<pos 		origin = "315_470" 	/>
+					<Size 		origin = "100_30" 	/>
+				</Widget>
+				
+				<Widget id="2" typeRes="list_view_table"	name="scrollview_bet" idx_appear ="1" visible="0">
+                    <common_value>
+                        <common name="inner_size" 			value="630_450"/>
+						
+						<common name="direction" 			value="1"/>                       			
+                        <common name="anchor_point_list"	value="0_0"/>                        							                     						
+                        <common name="stick_screen" 		value="1"/>
+
+                        <common name="anchor_point" 		value="0_0"/>
+                        <common name="clipping_enable" 		value="0"/>
+                        <common name="size_child" 			value="630_150"/>
+                        <common name="no_add_event" 		value="1"/>
+                        <common name="number_cell" 			value="0"/>
+						<common	name="Percent_Scroll"		value="0_0.15"/>
+                    </common_value>
+					
+					<Widget id="0" name="set3_item_bet" 	typeRes="layout" >
+						<common_value>
+							<common name="anchor_point" value="0.0_0.0"/>
+						</common_value>
+						<Widget id="0" name="panel_item_bet_0" 	typeRes="layout" >
+							<common_value>
+								<common name="anchor_point" value="0_0.5"/>
+							</common_value>
+							
+							<Widget id="0" name="Image_6" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.0_0.0"/>
+									<common name="source" value="otherscreen/new-lobby/lobby_item_bg.png"/>
+								</common_value>
+								<Size origin="165_116"/>
+								<pos origin="0_0"/>
+							</Widget>
+							<Widget id="1" name="lbl_count_board" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="87_52"/>
+							</Widget>
+							<Widget id="2" name="Image_7" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countlistboard.png"/>
+								</common_value>
+								<Size origin="24_21"/>
+								<pos origin="72_53"/>
+							</Widget>
+							<Widget id="3" name="Image_14" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/line_sang_vang.png"/>
+								</common_value>
+								<Size origin="143_1"/>
+								<pos origin="82_34"/>
+							</Widget>
+							<Widget id="4" name="lbl_count_user" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="86_17"/>
+							</Widget>
+							<Widget id="5" name="Image_7_0" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countuser.png"/>
+								</common_value>
+								<Size origin="21_19"/>
+								<pos origin="72_17"/>
+							</Widget>
+							<Widget id="6" name="icon_coin" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" 		value="3"/>
+									<common name="anchor_point" 		value="0.5_0.5"/>
+									<common name="source" 				value="otherscreen/new-lobby/ico_winchip.png"/>
+								</common_value>
+								<Size origin="30_30"/>
+								<pos origin="27_95"/>
+							</Widget>
+							<Widget id="7" name="icon_ruby" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_diamond.png"/>
+								</common_value>
+								<Size origin="38_30"/>
+								<pos origin="27_94"/>
+							</Widget>
+							<Widget id="8" name="lbl_money" 			typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="1100000000"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="43_94"/>
+								<color origin="255_255_10_255"/>
+							</Widget>
+							<Size origin="165_116"/>
+							<pos origin="30_75"/>
+						</Widget>
+						<Widget id="1" name="panel_item_bet_1" 	typeRes="layout" >
+							<common_value>
+								<common name="anchor_point" value="0.5_0.5"/>
+							</common_value>
+							
+							<Widget id="0" name="Image_6" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.0_0.0"/>
+									<common name="source" value="otherscreen/new-lobby/lobby_item_bg.png"/>
+								</common_value>
+								<Size origin="165_116"/>
+								<pos origin="0_0"/>
+							</Widget>
+							<Widget id="1" name="lbl_count_board" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="87_52"/>
+							</Widget>
+							<Widget id="2" name="Image_7" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countlistboard.png"/>
+								</common_value>
+								<Size origin="24_21"/>
+								<pos origin="72_53"/>
+							</Widget>
+							<Widget id="3" name="Image_14" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/line_sang_vang.png"/>
+								</common_value>
+								<Size origin="143_1"/>
+								<pos origin="82_34"/>
+							</Widget>
+							<Widget id="4" name="lbl_count_user" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="86_17"/>
+							</Widget>
+							<Widget id="5" name="Image_7_0" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countuser.png"/>
+								</common_value>
+								<Size origin="21_19"/>
+								<pos origin="72_17"/>
+							</Widget>
+							<Widget id="6" name="icon_coin" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" 		value="3"/>
+									<common name="anchor_point" 		value="0.5_0.5"/>
+									<common name="source" 				value="otherscreen/new-lobby/ico_winchip.png"/>
+								</common_value>
+								<Size origin="30_30"/>
+								<pos origin="27_95"/>
+							</Widget>
+							<Widget id="7" name="icon_ruby" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_diamond.png"/>
+								</common_value>
+								<Size origin="38_30"/>
+								<pos origin="27_94"/>
+							</Widget>
+							<Widget id="8" name="lbl_money" 			typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="1100000000"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="43_94"/>
+								<color origin="255_255_10_255"/>
+							</Widget>
+							<Size origin="165_116"/>
+							<pos origin="315_75"/>
+						</Widget>
+						<Widget id="2" name="panel_item_bet_2" 	typeRes="layout" >
+							<common_value>
+								<common name="anchor_point" value="1_0.5"/>
+							</common_value>
+							
+							<Widget id="0" name="Image_6" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.0_0.0"/>
+									<common name="source" value="otherscreen/new-lobby/lobby_item_bg.png"/>
+								</common_value>
+								<Size origin="165_116"/>
+								<pos origin="0_0"/>
+							</Widget>
+							<Widget id="1" name="lbl_count_board" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="bitmap_font" value="1"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="87_52"/>
+							</Widget>
+							<Widget id="2" name="Image_7" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countlistboard.png"/>
+								</common_value>
+								<Size origin="24_21"/>
+								<pos origin="72_53"/>
+							</Widget>
+							<Widget id="3" name="Image_14" 				typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/line_sang_vang.png"/>
+								</common_value>
+								<Size origin="143_1"/>
+								<pos origin="82_34"/>
+							</Widget>
+							<Widget id="4" name="lbl_count_user" 		typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0_1"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="10"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="86_17"/>
+							</Widget>
+							<Widget id="5" name="Image_7_0" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_countuser.png"/>
+								</common_value>
+								<Size origin="21_19"/>
+								<pos origin="72_17"/>
+							</Widget>
+							<Widget id="6" name="icon_coin" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" 		value="3"/>
+									<common name="anchor_point" 		value="0.5_0.5"/>
+									<common name="source" 				value="otherscreen/new-lobby/ico_winchip.png"/>
+								</common_value>
+								<Size origin="30_30"/>
+								<pos origin="27_95"/>
+							</Widget>
+							<Widget id="7" name="icon_ruby" 			typeRes="panel">
+								<common_value>
+									<common name="background_type" value="3"/>
+									<common name="anchor_point" value="0.5_0.5"/>
+									<common name="source" value="otherscreen/new-lobby/ico_diamond.png"/>
+								</common_value>
+								<Size origin="38_30"/>
+								<pos origin="27_94"/>
+							</Widget>
+							<Widget id="8" name="lbl_money" 			typeRes="font">
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common name="source" value="1100000000"/>
+									<common name="anchor_point" value="0.0_0.5"/>
+								</common_value>
+								<pos origin="43_94"/>
+								<color origin="255_255_10_255"/>
+							</Widget>
+							<Size origin="165_116"/>
+							<pos origin="600_75"/>
+						</Widget>
+					
+						<Size 	origin="630_150"/>
+						<pos 	origin="0_0"/>
+					</Widget>
+					
+                    <Size origin="630_450"/>
+                    <pos origin="0_0"/>
+                </Widget>
+				
+				<Widget id="3" typeRes="panel" 	name = "loading_circle" 	 	  idx_appear ="1" visible="1">		
+					<common_value>	
+						<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+						<common			name="stick_screen"		value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "315_230" 	/>
+					<Size 		origin = "60_60" 	/>
+					<COMMAND>
+						<cmd id="0" name="ROTATE">
+						{
+							"act0" : {
+								"repeat" : -1,
+								"squence":[
+									{
+										"ROTATE" : 360,
+										"TIME"	 : 0.5,
+										"STYLE"	 : 1
+									}
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>
+				</Widget>
+								
+				<Widget id="4" typeRes="font"  name = "txt_none_player" 		 idx_appear ="1" visible="0">		
+					<template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+						<common 		name="source" 		value="no_table_found"/>					
+					</common_value>
+					<pos 		origin = "315_230" 			/>
+					<color 		origin = "200_200_200_255" 	/>
+				</Widget>
+				
+				
+				<Size origin="630_460"/>
+				<pos origin="323_10"/>
+            </Widget>															
+</GAME>

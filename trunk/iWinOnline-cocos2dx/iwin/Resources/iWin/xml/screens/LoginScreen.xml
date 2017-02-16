@@ -1,0 +1,410 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<MenuWidget name="login_screen" 	designSize="960_540">
+		<fade_process max_idx_first="2">
+			<sound_click value="SFX_CLICK" delayTime="0.0" loop ="1"/>
+			<time_process id="0" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+			<time_process id="1" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+			<time_process id="2" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+		</fade_process>
+			
+		<Widget id="0" typeRes="layer_widget" name="background_login_screen" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/bkg.png"/>
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<Widget id="1" typeRes="panel" name = "background_texture_girl" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/bkg_girl.png"/>
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"	value="0_0"/>
+						<common			name="state_scale"	value="1"/>
+					</common_value>
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "407_542" 	/>
+					<opacity	origin = "255" first="0"/>
+					<COMMAND>
+						<cmd id="0" name="FADE_IN">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY":0
+									},
+									{
+										"SET_POSITION":"-100_0",
+										
+										"DESIGN":"960_540"
+									}
+								]
+							},
+							"act1":{
+								"single_1" : {	
+									"POSITION":"0_0",
+									
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.1
+								}			
+							}		
+						}
+						</cmd>
+						<cmd id="1" name="FADE_OUT">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY":255
+									},
+									{
+										"SET_POSITION":"0_0",
+										
+										"DESIGN":"960_540"
+									}
+								]
+							},
+							"act1":{
+								"single_1" : {	
+									"POSITION":"-100_0",
+									
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								"single_2":{
+									"OPACITY":0,
+									"TIME":0.1
+								}			
+							}		
+						}						
+						</cmd>
+					</COMMAND>
+				</Widget>
+				<Widget id="2" typeRes="particle"   name = "bouble_particle" 	idx_appear ="1" >		
+					<common_value>
+						<common 		name="source" 			value="Anims/bong.png"/>
+						<common			name="plist"			value="Anims/bb_particle.plist"/>	
+						<common 		name="use_atlas" 		value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+		</Widget>
+		<Widget id="1" typeRes="layer_widget" name="main_login_screen" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"		value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+				
+				<Widget id="0" typeRes="panel" 	name = "panel_logo" idx_appear ="2">		
+					<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/logo.png"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="anchor_point"	value="0.5_0"/>
+					</common_value>
+					<pos 		origin = "640_330" 	/>
+					<Size 		origin = "304_269" 	/>
+					<opacity	origin = "255" 		first="0"/>
+					<COMMAND>
+						<cmd id="0" name="FADE_IN">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_VISIBLE" : 1
+									},
+									{
+										"SET_OPACITY":0
+									},
+									{
+										"SET_POSITION":"640_600",
+										
+										"DESIGN":"960_540"
+									}
+								]
+							},
+							"act1":{
+								"single_1" : {	
+									"POSITION":"640_330",
+									
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.1
+								}			
+							}		
+						}
+						</cmd>
+						<cmd id="1" name="FADE_OUT">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_OPACITY":255
+									},
+									{
+										"SET_POSITION":"640_330",
+										
+										"DESIGN":"960_540"
+									}
+								]
+							},
+							"act1":{
+								"single_1" : {	
+									"POSITION":"640_600",
+									
+									"DESIGN":"960_540",
+									"STYLE":0, 
+									"TIME":0.15
+								},
+								"single_2":{
+									"OPACITY":0,
+									"TIME":0.1
+								}			
+							}		
+						}						
+						</cmd>
+					</COMMAND>
+				</Widget>
+						
+				<Widget id="1" name = "first_login_layout" 	com="LoginScreen.FirstLoginLayer">		
+				</Widget>
+				
+				<Widget id="2" name = "login_layout" 		com="LoginScreen.LoginLayer">		
+				</Widget>
+				
+				<!-- this is login layout OTP -->
+				<Widget id="3" name = "otp_login_layout" 	com="LoginScreen.OTPLayer">					
+				</Widget>
+				<!-- end login layout OTP -->
+
+				<Widget id="2" name = "register_layout" 	com="LoginScreen.RegisterLayer">
+				</Widget>
+				
+				<Widget id="3" name = "forget_pass_layout" 	com="LoginScreen.ForgetPassLayer">		
+				</Widget>
+				
+				<Widget id="4" typeRes="check_box" name = "btn_sound" 			idx_appear ="1">		
+					<common_value>
+							
+						<common 		name="source" 				value="loginscreen/login-screen/ico_sound.png"/>
+						<common 		name="select" 				value="loginscreen/login-screen/ico_sound_off.png"/>
+						<common 		name="cross" 				value="loginscreen/login-screen/ico_sound_off.png"/>
+						<common 		name="backgrounddisable" 	value="loginscreen/login-screen/ico_sound.png"/>
+						<common 		name="frontCrossDisabled" 	value="loginscreen/login-screen/ico_sound_off.png"/>
+						
+						<common			name="stick_screen"	value="0"/>
+						<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					
+					<pos 		origin = "10_10" 	/>
+					<Size 		origin = "60_60" 	/>					
+				</Widget>
+				
+				<Widget id="5" name = "panel_choose_server" com="GeneralWidget.ChooseServerLayer">											
+				</Widget>		
+				
+				<Widget id="6" name = "btn_server" 			com="GeneralWidget.BtnServer">											
+				</Widget>
+				
+				<Widget id="15" typeRes="layout" name = "notice_pass_layout" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+					</common_value>		
+							
+					<Widget id="1" typeRes="panel" 	name = "panel_contain" idx_appear ="1">		
+						<common_value>
+								<common 		name="source" 		value="mainscreen/newgui-mainscreen/bkg_player_info.9.png"/>
+								
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="casca_opacity"	value="0"/>
+						</common_value>
+						<Widget id="1" typeRes="font" 	name = "notice_content" idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Mật khẩu của bạn quá đơn giản, để bảo vệ tài khoản , \nbạn vui lòng đổi mật khẩu để tiếp tục!"/>					
+								<common			name="anchor_point"	value="0_1"/>
+							</common_value>
+							<pos 		origin = "15_365" 	/>
+						</Widget>
+
+						<Widget id="2" typeRes="panel" 	name = "panel_old_pass" idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+							</common_value>
+							<pos 		origin = "350_272" 	/>
+							<Size 		origin = "660_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_old_pass" idx_appear ="2">		
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Mật khẩu cũ"/>					
+									<common			name="anchor_point"	value="0_0.5"/>	
+									<common			name="pass_input"	value="1"/>
+								</common_value>
+								<pos 		origin = "10_25" 	/>
+							</Widget>
+
+						</Widget>
+						<Widget id="3" typeRes="panel" 	name = "panel_new_pass" idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+							</common_value>
+							<pos 		origin = "350_202" 	/>
+							<Size 		origin = "660_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_new_pass" idx_appear ="2">		
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Mật khẩu mới"/>					
+									<common			name="anchor_point"	value="0_0.5"/>
+									<common			name="pass_input"	value="1"/>							
+								</common_value>
+								<pos 		origin = "10_25" 	/>
+							</Widget>
+						</Widget>
+						<Widget id="4" typeRes="panel" 	name = "panel_confirm_new_pass" idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+							</common_value>
+							<pos 		origin = "350_132" 	/>
+							<Size 		origin = "660_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_confirm_new_pass" idx_appear ="2">		
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Nhập lại mật khẩu mới"/>						
+									<common			name="anchor_point"	value="0_0.5"/>
+									<common			name="pass_input"	value="1"/>
+								</common_value>
+								<pos 		origin = "10_25" 	/>
+							</Widget>
+
+						</Widget>
+						
+						<Widget id="5" typeRes="button" name = "agree_btn" idx_appear ="1">		
+							<common_value>
+							
+								<common 		name="source" 		value="loginscreen/nine/white.9.png"/>
+								<common 		name="press" 		value="loginscreen/nine/white.9.png"/>
+								<common 		name="disable" 		value="loginscreen/nine/white.9.png"/>
+								
+								<common 		name="scale_press" 	value="-0.25"/>															
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="use_nine_path"		value="1"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">
+								<template_value>
+									<template 		name="temp_text_black"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="agree"/>					
+								</common_value>								
+								<pos 		origin = "118_25" 	/>
+							</Widget>
+							
+							<pos 		origin = "540_30" 	/>
+							<Size 		origin = "236_50" 	/>
+							<color		origin = "255_167_38_255"/>
+						</Widget>
+						<pos 		origin = "350_210" 	/>
+						<Size 		origin = "700_420" 	/>
+					</Widget>			
+					
+					<Widget id="2" typeRes="panel" 	name = "panel_header" idx_appear ="1">		
+						<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/tabbutton.9.png"/>
+								
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+						</common_value>
+						<Widget id="0" typeRes="font" name = "title_notice" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Thông báo"/>						
+							</common_value>
+							<pos 		origin = "350_25" 	/>
+						</Widget>
+						<pos 		origin = "350_425" 	/>
+						<Size 		origin = "700_50" 	/>
+					</Widget>			
+					
+					<Widget id="3" typeRes="panel" 	name = "panel_line" idx_appear ="1">		
+						<common_value>
+								<common 		name="source" 		value="otherscreen/pickroom-screen/bottomline.png"/>
+								
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+						</common_value>
+						<pos 		origin = "350_401" 	/>
+						<Size 		origin = "700_3" 	/>
+					</Widget>			
+					
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "700_450" 	/>
+					<opacity 	origin = "245" 	/>
+				</Widget>
+
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+		</Widget>	
+	</MenuWidget>
+
+</GAME>

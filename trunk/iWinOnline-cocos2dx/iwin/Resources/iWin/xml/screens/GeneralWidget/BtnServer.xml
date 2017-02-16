@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" 	typeRes="layout" name = "btn_server" 						idx_appear ="1" visible ="1">		
+					<common_value>
+						<common			name="anchor_point"	value="1_1"/>
+					</common_value>
+
+					<Widget id="0" typeRes="button" name = "btn_server" idx_appear ="2">		
+							<common_value>
+								<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_server.png"/>
+								<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_server.png"/>
+								<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_server.png"/>
+								
+								<common 		name="scale_press" 	value="-0.05"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								
+								<common			name="touch_zone"	value="40_40"/>
+								<common			name="touch_anchor"	value="1_1"/>
+							</common_value>
+							<pos 		origin = "19_19" 	/>
+							<Size 		origin = "38_38" 	/>
+					</Widget>
+					
+					<Widget id="1" typeRes="font" name = "name_server" idx_appear ="2">		
+							<template_value>
+									<template name="temp_text_0_1"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="Kim Khanh"/>					
+								<common			name="anchor_point"	value="0.5_1"/>
+							</common_value>
+							<pos 		origin = "19_-8" 	/>
+					</Widget>		
+						
+					<pos 		origin = "930_520" 	/>
+					<Size 		origin = "38_38" 	/>					
+				</Widget>									
+</GAME>

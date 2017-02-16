@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" typeRes="layout" name = "top_panel" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/red6.9.png"/>
+						<common 		name="scale_9" 		value="1"/>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="3"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="casca_color"	value="0"/>
+						<common			name="anchor_point"	value="0.5_0"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="button" name = "btn_back" idx_appear ="2">		
+						<common_value>
+								
+							<common 		name="source" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="press" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="disable" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="scale_press" 	value="0.02"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="1_0.5"/>
+							<common	name="touch_zone"	value="50_50"/>
+						</common_value>					
+						<pos 		origin = "40_30" 	/>
+						<Size 		origin = "25_40" 	/>					
+					</Widget>
+					
+					<Widget id="1" typeRes="font" name = "title_1" idx_appear ="2">		
+						<template_value>
+							<template 		name="temp_text_menu"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="Tiến Lên Miền Nam"/>					
+							<common			name="anchor_point"	value="0_0.5"/>
+						</common_value>
+						<pos 		origin = "67_30" 	/>
+					</Widget>		
+								
+					<Widget id="3" typeRes="button" name = "btn_top_rich" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_btn_yellow"/>						
+							</template_value>
+							<common_value>
+								<common			name="stick_screen"		value="1"/>
+								<common			name="anchor_point"		value="1_0.5"/>
+							</common_value>
+							<Widget id="1" typeRes="font" name = "title_1" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="richest"/>					
+								</common_value>
+								<pos 		origin = "60_25" 	/>
+								<color 		origin = "10_10_10_255" 	/>
+							</Widget>		
+							<pos 		origin = "825_30" 	/>
+							<Size 		origin = "120_50" 	/>							
+					</Widget>
+					
+					<Widget id="4" typeRes="button" name = "btn_top_player" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_btn_yellow"/>						
+							</template_value>
+							<common_value>
+								<common			name="stick_screen"		value="1"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>							
+							<Widget id="1" typeRes="font" name = "title_1" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="strongest"/>					
+								</common_value>
+								<pos 		origin = "60_25" 	/>
+								<color 		origin = "10_10_10_255" 	/>
+							</Widget>							
+							<pos 		origin = "830_30" 	/>
+							<Size 		origin = "120_50" 	/>
+					</Widget>
+					
+					<pos 		origin = "480_480" 	/>
+					<Size 		origin = "960_60" 	/>
+				</Widget>
+																			
+</GAME>

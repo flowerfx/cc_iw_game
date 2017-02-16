@@ -1,0 +1,580 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="5"  typeRes="layout" name = "bottom_menu" 						idx_appear ="1" visible ="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="casca_opacity"		value="0"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+						<Widget id="0" typeRes="panel" name = "back_panel" idx_appear ="1">		
+							<common_value>							
+								<common 		name="source" 			value="loginscreen/nine/blackpixel.png"/>				
+								<common			name="scale_9"			value="1"/>
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="stick_screen"		value="1"/>
+								<common			name="anchor_point"		value="0_0"/>
+								<common			name="casca_opacity"	value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_75" 	/>
+							<opacity	origin = "200"		/>
+						</Widget>
+						
+						<Widget id="0" typeRes="panel" name = "panel_name" idx_appear ="1">		
+							<common_value>							
+								<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_name.png"/>				
+								<common			name="scale_9"			value="1"/>
+								<common			name="use_nine_path"	value="1"/>
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="anchor_point"		value="0_0"/>
+							</common_value>
+							<Widget id="0" typeRes="font"   name = "title_username" 	idx_appear ="1">		
+								<template_value>
+									<template name="temp_text_name"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="user_name"/>					
+									<common			name="anchor_point"		value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "25_12" 	/>
+								<color 		origin = "255_255_255_255" 	/>
+							</Widget>
+					
+							<pos 		origin = "100_45" 	/>
+							<Size 		origin = "350_24" 	/>
+						</Widget>
+						
+						<Widget id="1" typeRes="button" name = "btn_avatar" idx_appear ="1">		
+							<common_value>
+								<common			name="casca_color"		value="0"/>
+								<common			name="casca_opacity"	value="0"/>
+								
+								<common 		name="source" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>
+								<common 		name="press" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>
+								<common 		name="disable" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>
+								
+								<common 		name="scale_press" 	value="-0.02"/>
+								
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								<common			name="anchor_point"	value="0_0"/>
+								<common			name="content_size"	value="1"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="panel_clipping" name = "avatar_default" idx_appear ="1" visible = "1">		
+								<common_value>							
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point" value="0.5_0.5"/>
+									<common			name="state_scale"	value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="panel" name = "bg_avatar" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="stencil"		value="1"/>
+										<common			name="anchor_point"	value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "48_48" 	/>
+									<Size 		origin = "96_96" 	/>
+								</Widget>
+								
+								<Widget id="1" typeRes="panel" name = "avatar_default" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="mainscreen/icon/avatar_default.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+									</common_value>
+									<pos 		origin = "48_48" 	/>
+									<Size 		origin = "74_82" 	/>
+								</Widget>
+								
+								<pos 		origin = "50_50" 	/>
+								<Size 		origin = "96_96" 	/>
+							</Widget>
+						
+							<pos 		origin = "10_10" 	/>
+							<Size 		origin = "100_100" 	/>
+						</Widget>	
+						
+						<Widget id="2" typeRes="layout" name = "panel_list_btn" idx_appear ="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="stick_screen"			value="1"/>
+								<common			name="anchor_point"			value="1_0"/>
+							</common_value>			
+							<Widget id="0" typeRes="button" name = "btn_award" 		idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_tab_doithuong.png"/>
+									<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_tab_doithuong.png"/>
+									<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_tab_doithuong.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" name = "circle_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/bg_circle_doithuong.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0.5"/>
+										<common			name="state_scale"		value="2"/>
+									</common_value>
+
+									<pos 		origin = "30_30" 	/>
+									<Size 		origin = "108_108" 	/>					
+								</Widget>
+								<Widget id="1" typeRes="panel" name = "icon_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_domvang.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0"/>
+										<common			name="state_scale"		value="2"/>
+									</common_value>
+
+									<pos 		origin = "30_-5" 	/>
+									<Size 		origin = "100_40" 	/>					
+								</Widget>
+								<Widget id="3" typeRes="panel" name = "icon_star" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_laplanh.png"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+										<common			name="state_scale"		value="2"/>
+									</common_value>
+									<COMMAND>
+										<cmd id="0" name="ROTATE">
+										{
+											"act0" : { 
+												"repeat" : -1,
+												"squence_0" :
+												[
+													{
+														"SET_SIZE" : "10_10",
+														"DESIGN"   : "960_540"
+													},
+													{
+														"SIZE"  : "46_46" ,
+														"STICK" : 0,
+														"DESIGN": "960_540",
+														"TIME"	: 1.0
+													},
+													{
+														"SIZE"  : "10_10" ,
+														"STICK" : 0,
+														"DESIGN": "960_540",
+														"TIME"	: 1.0
+													}
+												],
+												"squence_1":
+												[
+													{
+														"ROTATE" : 360,
+														"TIME"	 : 2.0,
+														"STYLE"	 : 1
+													}
+												]
+											}
+										}
+										</cmd>
+									</COMMAND>
+									<pos 		origin = "54_54" 	/>
+									<Size 		origin = "36_36" 	/>					
+								</Widget>
+								
+								<COMMAND>
+									<cmd id="0" name="POS_1">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "10_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+									<cmd id="1" name="POS_2">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "-70_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+								
+								<pos 		origin = "-70_37" 	/>
+								<Size 		origin = "60_60" 	/>					
+							</Widget>						
+							
+							<Widget id="1" typeRes="layout" name = "btn_friend" 		idx_appear ="1">		
+								<common_value>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>	
+								
+								<Widget id="0" typeRes="button" name = "btn_friend" 		idx_appear ="1">		
+									<common_value>
+										<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_tab_banbe.png"/>
+										<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_tab_banbe.png"/>
+										<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_tab_banbe.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point"	value="0_0"/>
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "60_60" 	/>					
+								</Widget>
+								<Widget id="1" typeRes="layout" name = "icon_number" 		idx_appear ="1" visible="0">		
+									<common_value>	
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" name = "icon_number" 			idx_appear ="1" >		
+										<common_value>	
+											<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_chop_xanh.png"/>
+										</common_value>
+										<pos 		origin = "20_20" 	/>
+										<Size 		origin = "30_30" 	/>					
+									</Widget>
+									<Widget id="1" typeRes="font"   name = "title_" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0_1"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="0"/>					
+										</common_value>
+										<pos 		origin = "20_20" 	/>
+									</Widget>
+									<pos 		origin = "55_55" 	/>
+									<Size 		origin = "40_40" 	/>					
+								</Widget>
+								<Widget id="2" typeRes="panel" name = "icon_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_domvang.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0"/>
+									</common_value>
+
+									<pos 		origin = "30_-5" 	/>
+									<Size 		origin = "100_40" 	/>					
+								</Widget>
+								
+								<COMMAND>
+									<cmd id="0" name="POS_1">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "90_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+									<cmd id="1" name="POS_2">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "10_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+								
+								<pos 		origin = "10_37" 	/>
+								<Size 		origin = "60_60" 	/>					
+							</Widget>
+							<Widget id="2" typeRes="layout" name = "btn_event" 		idx_appear ="1">		
+								<common_value>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<Widget id="0" typeRes="button" name = "btn_event" 			idx_appear ="1">		
+									<common_value>
+											
+										<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_tab_khuyenmai.png"/>
+										<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_tab_khuyenmai.png"/>
+										<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_tab_khuyenmai.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point"	value="0_0"/>
+									</common_value>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "60_60" 	/>					
+								</Widget>
+								<Widget id="1" typeRes="layout" name = "icon_number" 		idx_appear ="1" visible="0">		
+									<common_value>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" name = "icon_number" idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_chop_xanh.png"/>
+										</common_value>
+										<pos 		origin = "20_20" 	/>
+										<Size 		origin = "30_30" 	/>					
+									</Widget>
+									<Widget id="1" typeRes="font"   name = "title_" 	idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0_1"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="0"/>					
+										</common_value>
+										<pos 		origin = "20_20" 	/>
+										<color 		origin = "255_255_255_255" 	/>
+									</Widget>
+									<pos 		origin = "55_55" 	/>
+									<Size 		origin = "40_40" 	/>					
+								</Widget>
+								<Widget id="2" typeRes="panel" name = "icon_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_domvang.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0"/>
+									</common_value>
+
+									<pos 		origin = "30_-5" 	/>
+									<Size 		origin = "100_40" 	/>					
+								</Widget>
+								
+								<COMMAND>
+									<cmd id="0" name="POS_1">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "90_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+								<pos 		origin = "90_37" 	/>
+								<Size 		origin = "60_60" 	/>					
+							</Widget>
+							
+							
+							<Widget id="3" typeRes="button" name = "btn_leaderboard" 	idx_appear ="1">		
+								<common_value>
+										
+									<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_tab_thuong.png"/>
+									<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_tab_thuong.png"/>
+									<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_tab_thuong.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<Widget id="1" typeRes="panel" name = "icon_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_domvang.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0"/>
+										<common			name="state_scale"		value="2"/>
+									</common_value>
+
+									<pos 		origin = "30_-5" 	/>
+									<Size 		origin = "100_40" 	/>					
+								</Widget>
+								<COMMAND>
+									<cmd id="0" name="POS_1">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "170_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+															
+								
+								<pos 		origin = "170_37" 	/>
+								<Size 		origin = "60_60" 	/>					
+							</Widget>
+							<Widget id="4" typeRes="button" name = "btn_setting" 		idx_appear ="1">		
+								<common_value>
+										
+									<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_tab_caidat.png"/>
+									<common 		name="press" 		value="mainscreen/newgui-mainscreen/ico_tab_caidat.png"/>
+									<common 		name="disable" 		value="mainscreen/newgui-mainscreen/ico_tab_caidat.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<Widget id="1" typeRes="panel" name = "icon_hl" 			idx_appear ="1" >		
+									<common_value>
+											
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/ico_domvang.png"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="anchor_point"		value="0.5_0"/>
+										<common			name="state_scale"		value="2"/>
+									</common_value>
+
+									<pos 		origin = "30_-5" 	/>
+									<Size 		origin = "100_40" 	/>					
+								</Widget>
+								<COMMAND>
+									<cmd id="0" name="POS_1">
+									{
+										"act0" : {
+											"single" :{
+												"SET_POSITION" : "250_37",
+												
+												"DESIGN"	   : "960_540"	
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+								<pos 		origin = "250_37" 	/>
+								<Size 		origin = "60_60" 	/>					
+							</Widget>
+															
+							<pos 		origin = "950_0" 	/>
+							<Size 		origin = "320_74" 	/>
+						</Widget>
+								
+						<Widget id="3" typeRes="layout" name = "btn_purchase_win" 	idx_appear ="1" visible="0">		
+								<common_value>	
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0_0"/>
+								</common_value>
+								<Widget id="0" typeRes="button" name = "btn_purchase_win" 	idx_appear ="1">		
+										<common_value>	
+											<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+											<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+											<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+											
+											<common 		name="scale_press" 		value="-0.00"/>
+											<common			name="stick_screen"		value="0"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path" 	value="1"/>
+											<common			name="anchor_point"		value="0_0.5"/>
+											<common			name="stage_scale9"		value="2"/>
+										</common_value>																			
+										<pos 		origin = "0_20" 			/>
+										<Size 		origin = "240_30" 			/>	
+								</Widget>
+								
+								<Widget id="0" typeRes="font" name = "title_" 		idx_appear ="1">		
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="10.000"/>					
+									</common_value>
+									<pos 		origin = "120_20" 	/>
+								</Widget>
+								
+								<Widget id="1" typeRes="panel" name = "ico_iwin" 	idx_appear ="1">		
+									<common_value>	
+										<common 		name="source" 			value="otherscreen/new-lobby/ico_winchip.png"/>
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "2_20" 	/>
+									<Size 		origin = "30_30" 	/>					
+								</Widget>
+
+								<Widget id="2" typeRes="panel" name = "ico_add" 	idx_appear ="1">		
+									<common_value>	
+										<common 		name="source" 			value="gamescreen-newgui-game-common/cong.png"/>
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "238_20" 	/>
+									<Size 		origin = "30_30" 	/>
+									<color 		origin = "255_210_10_255" 	/>
+								</Widget>
+								
+								<pos 		origin = "115_5" 			/>
+								<Size 		origin = "240_40" 			/>	
+						</Widget>
+						
+						<Widget id="4" typeRes="layout" name = "btn_purchase_ruby" 	idx_appear ="1" visible="0">		
+								<common_value>								
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0_0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="button" name = "btn_purchase_ruby" 	idx_appear ="1" >		
+									<common_value>	
+										<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+										<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+										<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_moneystt.9.png"/>
+										
+										<common 		name="scale_press" 		value="-0.00"/>
+										<common			name="stick_screen"		value="0"/>
+										<common			name="scale_9"			value="1"/>
+										<common			name="use_nine_path" 	value="1"/>
+										<common			name="anchor_point"		value="0_0.5"/>
+										<common			name="stage_scale9"		value="2"/>
+									</common_value>
+									<pos 		origin = "0_20" 		/>
+									<Size 		origin = "240_30" 	/>
+								</Widget>
+								
+								<Widget id="0" typeRes="font" name = "title_" 				idx_appear ="1">		
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="10.000"/>					
+									</common_value>
+									<pos 		origin = "120_20" 	/>
+								</Widget>
+								
+								<Widget id="1" typeRes="panel" name = "ico_ruby" 			idx_appear ="1">		
+									<common_value>	
+										<common 		name="source" 			value="otherscreen/new-lobby/ico_diamond.png"/>
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "2_20" 	/>
+									<Size 		origin = "38_29" 	/>					
+								</Widget>
+
+								<Widget id="2" typeRes="panel" name = "ico_add" 			idx_appear ="1">		
+									<common_value>	
+										<common 		name="source" 			value="gamescreen-newgui-game-common/cong.png"/>
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "238_20" 	/>
+									<Size 		origin = "30_30" 	/>
+									<color 		origin = "255_10_10_255" 	/>
+								</Widget>
+								
+								<pos 		origin = "115_5" 	/>
+								<Size 		origin = "240_40" 	/>
+						</Widget>
+											
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_75" 	/>
+				</Widget>
+															
+</GAME>

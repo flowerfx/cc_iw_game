@@ -1,0 +1,68 @@
+
+background.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bg_city_1
+  rotate: false
+  xy: 243, 268
+  size: 240, 215
+  orig: 240, 215
+  offset: 0, 0
+  index: -1
+Bg_city_2
+  rotate: false
+  xy: 1, 270
+  size: 240, 213
+  orig: 240, 213
+  offset: 0, 0
+  index: -1
+bkg
+  rotate: false
+  xy: 660, 243
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+bkg_girl
+  rotate: false
+  xy: 485, 251
+  size: 173, 232
+  orig: 173, 232
+  offset: 0, 0
+  index: -1
+mainbg
+  rotate: false
+  xy: 1, 26
+  size: 360, 240
+  orig: 360, 240
+  offset: 0, 0
+  index: -1
+newbg
+  rotate: false
+  xy: 363, 1
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+newbgwin
+  rotate: false
+  xy: 685, 1
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+
+background2.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bkg_portrait
+  rotate: false
+  xy: 1, 1
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1

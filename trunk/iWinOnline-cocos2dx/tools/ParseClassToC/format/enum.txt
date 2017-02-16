@@ -1,0 +1,12 @@
+#ifndef _|classname|_H_
+#define _|classname|_H_
+#include <string>
+namespace iwinmesage
+{
+	class %s
+	{
+	public:
+		%s
+	};
+}
+#endif

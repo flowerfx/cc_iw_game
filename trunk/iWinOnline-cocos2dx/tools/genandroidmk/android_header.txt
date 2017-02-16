@@ -1,0 +1,15 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2dx-lib)
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2dx-lib/external)
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2dx-lib/cocos)
+$(call import-add-path,$(LOCAL_PATH)/../../../lib)
+$(call import-add-path,$(LOCAL_PATH)/sdkboxlib)
+
+LOCAL_MODULE := cocos2dcpp_shared
+
+LOCAL_MODULE_FILENAME := libcocos2dcpp
+
+LOCAL_SRC_FILES := \

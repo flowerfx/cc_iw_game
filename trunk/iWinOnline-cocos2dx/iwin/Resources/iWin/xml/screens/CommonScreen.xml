@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<GAME>
+    <MenuWidget designSize="960_540" name="common_screen">
+        <fade_process max_idx_first="0">
+			<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+			<time_process id="0" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+		</fade_process>
+		
+        <Widget id="1" typeRes="layer_widget" name="common_screen" idx_appear ="0">
+			<common_value>
+				<common			name="stick_screen"		value="1"/>
+				<common			name="root"				value="1"/>
+			</common_value>
+			
+			<Widget id="0" name	="emotion_board"  			com="CommonScreen.EmotionBoard">
+			</Widget>
+			<Widget id="1" name ="leaderboard_layer" 		com="CommonScreen.LeaderboardLayer">			
+			</Widget>
+			<Widget id="2" name ="change_pass_layout" 		com="CommonScreen.ChangePassLayer">			
+			</Widget>
+			<Widget id="3" name ="layout_anoun_server"  	com="CommonScreen.AnnouceServerLayer"> 		
+			</Widget>
+			<Widget id="4" name ="layout_info_player" 		com="CommonScreen.InfoPlayerLayer">		
+			</Widget>
+			<Widget id="5" name ="confirm_layout" 			com="CommonScreen.ConfirmCodeLayer">
+			</Widget>	
+			<Widget id="6" name ="banner_invite_layout" 	com="CommonScreen.BannerInviteLayer">
+			</Widget>
+			<Widget id="7" name ="layout_crilce"			com="CommonScreen.LuckyCircleLayer">
+			</Widget>
+			<Widget id="8" name ="taixiu_layout" 			com="CommonScreen.TaiXiuLayer">
+			</Widget>
+			<Widget id="8" name ="mini_poker_layout" 		com="CommonScreen.MiniPokerLayer">
+			</Widget>
+			<Widget id="9" name ="mini_button_layout" 		com="CommonScreen.MiniBtnLayer">
+			</Widget>
+			<Widget id="10" name = "tutorial_layer" 		com="CommonScreen.TutorialLayer">						
+			</Widget>
+			<Widget id="11"name = "toast_layer" 		    com="CommonScreen.ToastLayer">		
+			</Widget>
+			<Widget id="12"name = "bonus_layer" 		    com="CommonScreen.BonusLayer">		
+			</Widget>
+			<Widget id="13"name = "loading_circle_layer" 	com="CommonScreen.LoadingCircleLayer">		
+			</Widget>
+			<Widget id="14" name = "dialog_screen" 			com="CommonScreen.DialogLayer">		
+			</Widget>
+			
+		<pos 		origin = "480_270" 	/>
+		<Size 		origin = "960_540" 	/>	
+		</Widget>
+		
+		
+		
+	</MenuWidget>
+</GAME>

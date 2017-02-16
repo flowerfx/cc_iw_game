@@ -1,0 +1,340 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="11" typeRes="layout" 	name = "panel_in_game_menu" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common			name="source"				value="loginscreen/nine/bkg_toast.9.png"/>				
+						<common 		name="background_type" 		value="3"/>
+						<common 		name="scale_9" 				value="1"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="1_0"/>
+					</common_value>		
+			
+					<pos 		origin = "1350_0" 	/>
+					<Size 		origin = "320_540" 	/>
+					<opacity 	origin = "245" 	/>
+						<Widget id="0" typeRes="list_view" 		name = "list_ui" 		idx_appear ="2">		
+							<common_value>
+								<common 		name="inner_size" 			value="350_540"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										
+								<common 		name="background_type" 		value="0"/>			
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="clipping_enable"		value="0"/>
+								<common			name="anchor_point"			value="0_0"/>
+								
+								<common			name="bounce_enable"		value="1"/>
+							</common_value>
+									
+							<Widget id="0" typeRes="layout" name = "layout_setting" idx_appear ="5" >		
+								<common_value>
+									<common 		name="background_type" 		value="0"/>		
+									<common			name="stick_screen"			value="1"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="not_default_layout"		value="1"/>
+									<common			name="clipping_enable"		value="0"/>
+									<common			name="anchor_point"		value="1_1"/>
+								</common_value>
+								<Widget id="4" typeRes="button" name = "setting_ui_btn" idx_appear ="2">		
+									<common_value>
+										
+										<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>
+																	
+										<common			name="casca_color"		value="0"/>
+										<common			name="casca_opacity"	value="0"/>
+									
+										<common 		name="scale_press" 		value="-0.01"/>
+								
+										<common 		name="use_atlas" 		value="1"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>
+									
+									<Widget id="5" typeRes="font" 	name = "_name" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+												<common 		name="source" 		value="setting"/>					
+												<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "70_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "320_60" 	/>
+								</Widget>
+															
+								<Widget id="10" typeRes="panel" name = "symbol" idx_appear ="2">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/ico_caidat.png"/>					
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "45_30" 	/>
+										<Size 		origin = "44_40" 	/>
+								</Widget>					
+																		
+								<Widget id="19" typeRes="panel" 	name = "bot_line" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 		value="loginscreen/nine/line_xam.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="1_1"/>
+									</common_value>
+									<pos 		origin = "320_0" 	/>
+									<Size 		origin = "320_2" 	/>
+								</Widget>
+								<Widget id="20" typeRes="panel" 	name = "top_line" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 		value="loginscreen/nine/line_xam.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="1_1"/>
+									</common_value>
+									<pos 		origin = "320_60" 	/>
+									<Size 		origin = "320_2" 	/>
+								</Widget>
+								
+								<pos 		origin = "350_540" 	/>
+								<Size 		origin = "320_60" 	/>
+							</Widget>
+							
+							<Widget id="1" typeRes="layout" name = "layout_chat" idx_appear ="5" >		
+								<common_value>
+									<common 		name="background_type" 		value="0"/>		
+									<common			name="stick_screen"			value="1"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="not_default_layout"		value="1"/>
+									<common			name="clipping_enable"		value="0"/>
+									<common			name="anchor_point"		value="1_1"/>
+								</common_value>
+								<Widget id="4" typeRes="button" name = "chat_ui_btn" idx_appear ="6">		
+									<common_value>
+										<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>
+										<common 		name="scale_press" 		value="-0.01"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>
+									
+									<Widget id="5" typeRes="font" 	name = "_name" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+												<common 		name="source" 		value="chat_friend"/>					
+												<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "70_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "320_60" 	/>
+								</Widget>
+															
+								<Widget id="10" typeRes="panel" name = "symbol" idx_appear ="2">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/ico_chat.png"/>					
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "45_30" 	/>
+										<Size 		origin = "44_40" 	/>
+								</Widget>					
+																		
+								<Widget id="19" typeRes="panel" 	name = "bot_line" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 		value="loginscreen/nine/line_xam.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="1_0"/>
+									</common_value>
+									<pos 		origin = "320_0" 	/>
+									<Size 		origin = "320_2" 	/>
+								</Widget>
+											
+								<pos 		origin = "350_480" 	/>
+								<Size 		origin = "320_60" 	/>
+							</Widget>
+							
+							<Widget id="2" typeRes="layout" name = "layout_guide" idx_appear ="5" >		
+								<common_value>	
+									<common			name="stick_screen"			value="1"/>
+									<common			name="not_default_layout"		value="1"/>
+									<common			name="anchor_point"		value="1_1"/>
+								</common_value>
+								<Widget id="4" typeRes="button" name = "guide_ui_btn" idx_appear ="6">		
+									<common_value>
+										<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>
+										<common 		name="scale_press" 		value="-0.01"/>
+								
+										<common 		name="use_atlas" 		value="1"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>
+									
+									<Widget id="5" typeRes="font" 	name = "_name" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+												<common 		name="source" 		value="guide"/>					
+												<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "70_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "320_60" 	/>
+								</Widget>
+															
+								<Widget id="10" typeRes="panel" name = "symbol" idx_appear ="2">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/ico_huongdan.png"/>					
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "45_30" 	/>
+										<Size 		origin = "44_32" 	/>
+								</Widget>					
+																		
+								<Widget id="19" typeRes="panel" 	name = "bot_line" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 		value="loginscreen/nine/line_xam.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="1_0"/>
+									</common_value>
+									<pos 		origin = "320_0" 	/>
+									<Size 		origin = "320_2" 	/>
+								</Widget>
+											
+								<pos 		origin = "350_420" 	/>
+								<Size 		origin = "320_60" 	/>
+							</Widget>
+							
+							<Widget id="3" typeRes="layout" name = "layout_quit" idx_appear ="5" >		
+								<common_value>	
+									<common			name="stick_screen"			value="1"/>
+									<common			name="not_default_layout"		value="1"/>
+									<common			name="anchor_point"		value="1_1"/>
+								</common_value>
+								<Widget id="4" typeRes="button" name = "quit_ui_btn" idx_appear ="6">		
+									<common_value>
+										
+										<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>
+										<common 		name="scale_press" 		value="-0.01"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>
+									
+									<Widget id="5" typeRes="font" 	name = "_name" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+												<common 		name="source" 		value="quit"/>	
+												<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "70_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "320_60" 	/>
+								</Widget>
+															
+								<Widget id="10" typeRes="panel" name = "symbol" idx_appear ="2">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/ico_thoat.png"/>					
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "45_30" 	/>
+										<Size 		origin = "44_32" 	/>
+								</Widget>					
+																		
+								<Widget id="19" typeRes="panel" 	name = "bot_line" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 		value="loginscreen/nine/line_xam.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="1_0"/>
+									</common_value>
+									<pos 		origin = "320_0" 	/>
+									<Size 		origin = "320_2" 	/>
+								</Widget>
+											
+								<pos 		origin = "350_420" 	/>
+								<Size 		origin = "320_60" 	/>
+							</Widget>
+							
+							<pos 		origin = "50_0" 	/>
+							<Size 		origin = "350_440" 	/>
+						</Widget>
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_VISIBLE" : 1
+									},
+									{
+										"SET_POSITION":"1350_0",
+										"DESIGN":"960_540"
+									},
+									{
+										"POSITION":"960_0",
+										"DESIGN":"960_540",
+										"STYLE":0, 
+										"TIME":0.15
+									}
+								]
+							}		
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0": {
+								"squence":[
+									{
+										"SET_POSITION":"960_0",
+										"DESIGN":"960_540"
+									},
+									{
+										"POSITION":"1350_0",
+										"DESIGN":"960_540",
+										"STYLE":0, 
+										"TIME":0.15
+									},
+									{
+										"SET_VISIBLE" : 0
+									}
+								]
+							}		
+						}						
+						</cmd>
+					</COMMAND>
+				</Widget>
+				
+</GAME>

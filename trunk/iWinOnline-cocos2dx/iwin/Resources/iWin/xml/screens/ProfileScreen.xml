@@ -1,0 +1,91 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+		<MenuWidget name="profile_screen" 	designSize="960_540">
+			<fade_process max_idx_first="0">
+				<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+				<time_process id="0" val="0.0">
+					<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+				</time_process>
+			</fade_process>
+			
+			<Widget id="0" typeRes="layer_widget" name="main_background" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/mainbg.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			<Widget id="1" typeRes="layer_widget" name="profile_screen" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="layout"  name = "main_profile_layout"   idx_appear ="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="anchor_point"			value="0_1"/>
+					</common_value>
+
+						<Widget id="0" name = "left_layout" com="ProfileScreen.LeftDetailUser">	
+						</Widget>
+						<Widget id="1" typeRes="layout" name = "page_profile_" idx_appear ="1">		
+							<common_value>
+								<common 		name="background_type" 		value="0"/>	
+								<common			name="stick_screen"			value="1"/>	
+								<common 		name="clipping_enable"	    value="0"/>
+								<common			name="anchor_point"			value="0_0"/>
+							</common_value>
+						
+							<Widget id="0" name = "page_profile_name" 		com="ProfileScreen.ProfilePage">
+							</Widget>
+							<Widget id="1" name = "page_profile_achieve" 	com="ProfileScreen.AchievementPage">		
+							</Widget>
+							<Widget id="2" name = "page_trans_history" 		com="ProfileScreen.HistoryPage">		
+							</Widget>
+							<Widget id="3" name = "page_OTP" 				com="ProfileScreen.OTPPage">		
+							</Widget>
+							
+							
+							<pos 		origin = "260_0" 	/>
+							<Size 		origin = "700_480" 	/>
+						</Widget>
+										
+					<pos 		origin = "0_480" 	/>
+					<Size 		origin = "960_480" 	/>
+					
+					
+				</Widget>
+				
+				<Widget id="1" name = "top_panel" 			com="ProfileScreen.TopLayer">						
+				</Widget>		
+				<Widget id="2" name = "layout_edit_profile" com="ProfileScreen.EditProfileLayer">						
+				</Widget>					
+				<Widget id="3" name = "shop_avatar_layout" 	com="ProfileScreen.ShopAvatarLayer">
+				</Widget>			
+				<Widget id="4" name = "gift_win_layout" 	com="ProfileScreen.TransferWinLayer">
+				</Widget>
+				<Widget id="5" name = "active_otp_layout" 	com="ProfileScreen.ActiveOtpLayer">
+				</Widget>
+				
+			
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+		</MenuWidget>
+</GAME>

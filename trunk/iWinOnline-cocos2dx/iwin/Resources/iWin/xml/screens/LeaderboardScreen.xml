@@ -1,0 +1,184 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<MenuWidget name="leaderboard_screen" 	designSize="960_540">
+		<fade_process max_idx_first="0">
+			<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+			<time_process id="0" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+		</fade_process>
+			
+			<Widget id="0" typeRes="layer_widget" name="main_background" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/mainbg.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			<Widget id="1" typeRes="layer_widget" name="leaderboard_ui" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"	value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="layout" name = "main_leaderboard_layout" idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					<Widget id="0" typeRes="layout" name = "leaderboard" idx_appear ="1" >		
+						<common_value>
+							<common 		name="clipping_enable"	    value="1"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>	
+						
+						<Widget name = "world_leaderboard" com="LeaderboardScreen.LeaderboardPlayerLayer" >		
+						</Widget>
+						
+						<Widget name = "friend_leaderboard" com="LeaderboardScreen.LeaderboardFriendLayer" >		
+						</Widget>
+
+						
+						<pos 		origin = "220_0" 	/>
+						<Size 		origin = "740_540" 	/>
+					</Widget>
+
+					<Widget name = "left_layout" com="LeaderboardScreen.LeftLayer">		
+					</Widget>
+					
+					<Widget id="2" typeRes="layout" name = "layout_info_bar" idx_appear ="5">		
+						<common_value>		
+							<common 		name="source" 				value="otherscreen/pickroom-screen/bkg_mainbar.9.png"/>					
+							<common 		name="use_atlas" 			value="1"/>	
+							<common 		name="background_type" 		value="3"/>	
+							<common			name="stick_screen"			value="1"/>	
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="scale_9"	    		value="1"/>
+							<common 		name="use_nine_path"	    value="1"/>
+							<common 		name="anchor_point"	    	value="0_1"/>
+						</common_value>
+											
+						<Widget id="0" typeRes="font" name = "str_1" idx_appear ="5">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="personal"/>					
+							</common_value>
+							<pos 		origin = "110_15" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font" name = "str_2" idx_appear ="5">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="account"/>					
+							</common_value>
+							<pos 		origin = "370_15" 	/>
+						</Widget>
+						<Widget id="2" typeRes="font" name = "str_3" idx_appear ="5">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="leve"/>					
+							</common_value>
+							<pos 		origin = "690_15" 	/>
+						</Widget>
+						<Widget id="3" typeRes="font" name = "str_4" idx_appear ="5">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="asset"/>					
+							</common_value>
+							<pos 		origin = "870_15" 	/>
+						</Widget>
+						<pos 		origin = "0_480" 	/>
+						<Size 		origin = "960_30" 	/>
+					</Widget>
+								
+					<pos 		origin = "1000_0" 	/>
+					<Size 		origin = "960_540" 	/>
+					
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "1000_0",
+										
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"SET_VISIBLE" : 1
+									},
+									{
+										"POSITION"     : "0_0",
+										
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									}
+								]
+							}
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "0_0",
+										
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"POSITION"     : "1000_0",
+										
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									},
+									{
+										"SET_VISIBLE" : 0
+									}
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>
+				</Widget>
+				
+				<Widget name="list_game_leaderboard" com="LeaderboardScreen.ListLeadboardLayer">		
+				</Widget>					
+				<Widget name="top_panel" com="LeaderboardScreen.TopLayer">		
+				</Widget>
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+	</MenuWidget>
+</GAME>

@@ -1,0 +1,8 @@
+include ':libcocos2dx'
+project(':libcocos2dx').projectDir = new File(settingsDir, '../cocos2dx-lib/cocos/platform/android/libcocos2dx')
+include ':facebook_lib'
+project(':facebook_lib').projectDir = new File(settingsDir, 'app/libs/facebook_lib')
+include ':gps'
+project(':gps').projectDir = new File(settingsDir, 'app/libs/gps')
+include ':iWinOnline'
+project(':iWinOnline').projectDir = new File(settingsDir, 'app')

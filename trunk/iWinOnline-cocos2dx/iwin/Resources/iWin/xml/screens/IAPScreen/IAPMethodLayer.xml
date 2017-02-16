@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" 	typeRes="layout" name = "layout_iap_method" idx_appear ="1">		
+					<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					<Widget id="0" typeRes="layout" name = "payment_method_item" idx_appear ="2" visible="0" >		
+						<common_value>
+							<common 		name="background_type" 		value="0"/>		
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="casca_opacity"		value="0"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" name = "img_bg" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "0_1" 	/>
+							<Size 		origin = "150_128" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "20"		/>
+						</Widget>
+						<Widget id="2" typeRes="layout" name = "icon_payment" idx_appear ="1">		
+							<common_value>
+								<common 		name="background_type" 		value="0"/>		
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+			
+							<pos 		origin = "75_65" 	/>
+							<Size 		origin = "75_65" 	/>	
+						</Widget>	
+						<Widget id="0" typeRes="panel" name = "img_bg_selected" idx_appear ="2" visible="0" >					
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "0_1" 	/>
+							<Size 		origin = "150_128" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "50"		/>
+						</Widget>
+						<Widget id="1" typeRes="font" name = "lbl_method_name" idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_iap"/>						
+								</template_value>
+								<common_value>
+										<common 		name="source" 		value="0"/>					
+								</common_value>
+								<pos 		origin = "75_25" 	/>
+						</Widget>	
+						<Widget id="7" typeRes="button" name = "btn_payment_method" idx_appear ="5">		
+								<common_value>
+									<common			name="press"		value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>
+									
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common			name="scale_9"		value="1"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="1"/>
+									<common			name="no_add_event"	value="1"/>
+									<common			name="anchor_point"	value="0_0"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "150_130" 	/>
+						</Widget>	
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "150_130" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" name = "choose_payment_method_bg" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "150_480" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "0"		/>
+					</Widget>
+					<Widget id="1" typeRes="list_view" name = "list_choose_payment_method" idx_appear ="4">		
+						<common_value>
+							<common 		name="inner_size" 			value="150_480"/>
+							<common 		name="direction" 			value="1"/> 
+							<common 		name="background_type" 		value="0"/>			
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="casca_opacity"		value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="scroll_event"			value="1"/>
+							<common 		name="clipping_enable" 		value="1"/>	
+							
+							<common			name="bounce_enable"		value="1"/>
+						</common_value>
+						
+									
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "150_480" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "150_480" 	/>
+				</Widget>															
+</GAME>

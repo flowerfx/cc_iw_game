@@ -1,0 +1,392 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" typeRes="layout" name = "top_panel" idx_appear ="2">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/red6.9.png"/>
+						<common 		name="scale_9" 		value="1"/>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="3"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+						<common			name="casca_color"	value="0"/>
+						<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="button" name = "btn_back" idx_appear ="2">		
+						<common_value>
+								
+							<common 		name="source" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="press" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="disable" 		value="otherscreen/pickroom-screen/back.png"/>
+							<common 		name="scale_press" 	value="0.02"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="1_0.5"/>
+							<common	name="touch_zone"	value="50_50"/>
+						</common_value>					
+						<pos 		origin = "40_30" 	/>
+						<Size 		origin = "25_40" 	/>					
+					</Widget>
+
+					<Widget id="0" typeRes="button" name = "btn_help" idx_appear ="2">		
+						<common_value>
+								
+							<common 		name="source" 		value="mainscreen/icon/ico_question.png"/>
+							<common 		name="press" 		value="mainscreen/icon/ico_question.png"/>
+							<common 		name="disable" 		value="mainscreen/icon/ico_question.png"/>
+							<common 		name="scale_press" 	value="0.02"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0_0.5"/>
+						</common_value>					
+						<pos 		origin = "900_30" 	/>
+						<Size 		origin = "40_40" 	/>					
+					</Widget>
+					
+					
+					<Widget id="4" typeRes="layout" name = "btn_change_award" idx_appear ="2">		
+							<common_value>
+								<common			name="stick_screen"		value="1"/>
+								<common			name="anchor_point"		value="1_0.5"/>
+							</common_value>	
+							<Widget id="4" typeRes="button" name = "btn_change_award" idx_appear ="2">		
+									<template_value>
+										<template 		name="temp_btn_yellow"/>						
+										<template 		name="scale9"/>	
+									</template_value>
+									<common_value>
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+									</common_value>														
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "120_40" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" name = "title_1" idx_appear ="2">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="reward"/>					
+									</common_value>
+									<pos 		origin = "60_20" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" name = "hl_grow" 		idx_appear ="1" >		
+								<template_value>
+									<template name="HL"/>
+								</template_value>
+								<common_value>	
+									<common			name="stick_screen"		value="1"/>				
+								</common_value>
+								<pos 		origin = "60_20" 	/>
+								<Size 		origin = "140_58" 	/>						
+							</Widget>						
+							<Widget id="4" typeRes="panel" name = "line_glow_1"		idx_appear ="1" >		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-tienlen-screen/vachsang.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="anchor_point" value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "0_40" 	/>
+								<Size 		origin = "70_14" 	first="70_14"/>
+								<opacity	origin = "0"/>
+								<COMMAND>
+									<cmd id="0" name="MOVE">
+											{
+												"act0" : { 
+													"repeat" : -1,
+													"squence_0" :
+													[
+														{
+															"SET_SIZE" : "70_0",
+															"DESIGN"   : "960_540"
+														},
+														{
+															"SIZE"  : "70_14" ,
+															"STICK" : 0,
+															"DESIGN": "960_540",
+															"TIME"	: 1
+														},
+														{
+															"SIZE"  : "70_0" ,
+															"STICK" : 0,
+															"DESIGN": "960_540",
+															"TIME"	: 2
+														}
+													],
+													"squence_1":
+													[
+														{
+															"OPACITY" : 255,
+															"TIME"	  : 0.75
+														},
+														{
+															"DELAY" : 1
+														},
+														{
+															"OPACITY" : 0,
+															"TIME"	  : 0.3
+														}
+													],
+													"squence_2":
+													[
+														{
+															"SET_POSITION" : "-20_40",
+															"DESIGN"   	   : "960_540"
+														},
+														{
+															"POSITION" : "120_40",
+															"DESIGN"   : "960_540",
+															"STYLE"	   : 0,
+															"TIME"     : 3
+														}
+													]
+												}
+											}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<Widget id="5" typeRes="panel" name = "line_glow_2" 	idx_appear ="1" >		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-tienlen-screen/vachsang.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="scale_9"		value="0"/>
+									<common			name="use_nine_path" value="0"/>
+									<common			name="anchor_point" value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "180_0" 	/>
+								<Size 		origin = "70_14" 	first="70_0"/>
+								<opacity	origin = "0"/>
+								<COMMAND>
+									<cmd id="0" name="MOVE">
+											{
+												"act0" : { 
+													"repeat" : -1,
+													"squence_0" :
+													[
+														{
+															"SET_SIZE" : "70_0",
+															"DESIGN"   : "960_540"
+														},
+														{
+															"SIZE"  : "70_14" ,
+															"STICK" : 0,
+															"DESIGN": "960_540",
+															"TIME"	: 1
+														},
+														{
+															"SIZE"  : "70_0" ,
+															"STICK" : 0,
+															"DESIGN": "960_540",
+															"TIME"	: 2
+														}
+													],
+													"squence_1":
+													[
+														{
+															"OPACITY" : 255,
+															"TIME"	  : 0.75
+														},
+														{
+															"DELAY" : 1
+														},
+														{
+															"OPACITY" : 0,
+															"TIME"	  : 0.3
+														}
+													],
+													"squence_2":
+													[
+														{
+															"SET_POSITION" : "140_0",
+															"DESIGN"   	   : "960_540"
+														},
+														{
+															"POSITION" : "-10_0",
+															"DESIGN"   : "960_540",
+															"STYLE"	   : 0,
+															"TIME"     : 3
+														}
+													]
+												}
+											}
+									</cmd>
+								</COMMAND>
+							</Widget>	
+							<Widget id="6" typeRes="panel" name = "star_glow" 		idx_appear ="1" >		
+								<common_value>							
+									<common 		name="source" 		value="gamescreen-tienlen-screen/sao_flare.png"/>				
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "5_30" 	/>
+								<Size 		origin = "60_60" 	first="10_10"/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : { 
+											"repeat" : -1,
+											"squence_0" :
+											[
+												{
+													"SET_SIZE" : "10_10",
+													"DESIGN"   : "960_540"
+												},
+												{
+													"SIZE"  : "60_60" ,
+													"STICK" : 0,
+													"DESIGN": "960_540",
+													"TIME"	: 1.0
+												},
+												{
+													"SIZE"  : "10_10" ,
+													"STICK" : 0,
+													"DESIGN": "960_540",
+													"TIME"	: 1.0
+												}
+											],
+											"squence_1":
+											[
+												{
+													"ROTATE" : 360,
+													"TIME"	 : 2.0,
+													"STYLE"	 : 1
+												}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>	
+							
+							<pos 		origin = "850_30" 	/>
+							<Size 		origin = "120_40" 	/>
+					</Widget>
+					
+					
+					<Widget id="2" typeRes="button" name = "btn_win" idx_appear ="2" visible="0">		
+							<common_value>
+								<common 		name="source" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="press" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="disable" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common 		name="use_nine_path"	    		value="0"/>	
+								<common 		name="use_atlas" 	value="1"/>
+								<common 		name="anchor_point" value="1_0.5" />
+							
+							</common_value>
+							<pos 		origin = "380_30" 	/>
+							<Size 		origin = "100_50" 	/>
+							<rotate 	origin = "180" />
+										
+					</Widget>	
+
+					<Widget id="2" typeRes="button" name = "btn_ruby" idx_appear ="2" visible="0">		
+							<common_value>
+								<common 		name="source" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="press" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="disable" 					value="otherscreen/winfree-screen/bg_btnlichsu_off.9.png"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common 		name="use_nine_path"	    		value="0"/>	
+								<common 		name="use_atlas" 	value="1"/>
+								<common 		name="anchor_point" value="0_0.5" />
+								
+							</common_value>
+							<pos 		origin = "480_30" 	/>
+							<Size 		origin = "100_50" 	/>
+
+					</Widget>	
+
+					<Widget id="2" typeRes="layout" name = "group_win" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="1_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" name = "icon_select" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="otherscreen/winfree-screen/bg_btnlichsu_on.9.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0.5"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "100_25" 	/>
+							<Size 		origin = "100_50" 	/>
+							<rotate 	origin = "180" />
+						</Widget>
+						<Widget id="1" typeRes="font" name = "title" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Win"/>					
+								</common_value>
+								<pos 		origin = "50_25" 	/>
+						</Widget>							
+						<pos 		origin = "480_30"/>
+						<Size 		origin = "100_50" 	/>
+					</Widget>
+					<Widget id="2" typeRes="layout" name = "group_ruby" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" name = "icon_select" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="otherscreen/winfree-screen/bg_btnlichsu_on.9.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "100_50" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font" name = "title" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Ruby"/>					
+								</common_value>
+								<pos 		origin = "50_25" 	/>
+						</Widget>
+						<pos 		origin = "480_30"/>
+						<Size 		origin = "100_50" 	/>
+					</Widget>				
+					<Widget id="1" typeRes="font" name = "title_win" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_text_menu"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="topup"/>					
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "480_30" 	/>
+					</Widget>	
+					<Widget id="1" typeRes="font" name = "title_ruby" idx_appear ="2" visible="0">		
+							<template_value>
+								<template 		name="temp_text_menu"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="top_up_ruby"/>					
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "480_30" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_480" 	/>
+					<Size 		origin = "960_60" 	/>
+				</Widget>																
+</GAME>

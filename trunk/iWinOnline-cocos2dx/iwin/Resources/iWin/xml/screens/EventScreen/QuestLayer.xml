@@ -1,0 +1,525 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" typeRes="layout" name = "quest_" idx_appear ="3">		
+					<common_value>
+						<common 		name="background_type" 		value="0"/>	
+						<common			name="stick_screen"			value="1"/>	
+						<common 		name="clipping_enable"	    value="0"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+														
+					<Widget id="0" typeRes="list_view" name = "list_quest_sample" 	idx_appear ="4" visible="0">		
+						<common_value>
+							<common 		name="inner_size" 			value="825_480"/>
+							<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->											
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="bounce_enable"		value="1"/>
+							<common			name="Percent_Scroll"		value="0.25_0.25"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" name = "layout_" 			idx_appear ="1" >		
+								<common_value>								
+									<common 		name="background_type" 		value="0"/>	
+									<common 		name="clipping_enable" 		value="0"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="anchor_point"		    value="0_1"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 	name = "panel_background" 	idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="loginscreen/nine/red11.9.png"/>			
+										<common			name="scale_9"			value="1"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+										<common			name="use_nine_path"	value="1"/>
+										
+									</common_value>
+									<pos 		origin = "0_0" 		/>
+									<Size 		origin = "825_100" 	/>
+									<opacity 	origin = "180" 		/>
+								</Widget>
+								<Widget id="1" typeRes="panel" 	name = "icon" 				idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="loginscreen/nine/gray14.9.png"/>			
+										<common			name="scale_9"			value="1"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0_1"/>
+										<common			name="use_nine_path"	value="1"/>
+										
+										<common			name="casca_opacity"	value="0"/>
+									</common_value>
+									<pos 		origin = "10_90" 	/>
+									<Size 		origin = "80_80" 	/>
+									<opacity	origin = "0"		/>
+								</Widget>
+								<Widget id="2" typeRes="font" 	name = "title_" 			idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="quest_catalogue"/>					
+										<common			name="anchor_point"		value="0_1"/>
+										<common			name="aligneH"			value="0"/> <!-- 0 is left 1 is middle 2 is right-->
+										<common			name="aligneV"			value="0"/> <!-- 0 is top 1 is middle 2 is bot-->
+										<common			name="AreaSize"			value="520_0"/>
+									</common_value>
+									<pos 		origin = "100_90" 	/>
+									<color		origin = "250_210_10_255"/>
+								</Widget>
+								<Widget id="3" typeRes="font" 	name = "title_content" 		idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="quest_catalogue"/>						
+										<common			name="anchor_point"		value="0_1"/>
+										<common			name="aligneH"			value="0"/> <!-- 0 is left 1 is middle 2 is right-->
+										<common			name="aligneV"			value="0"/> <!-- 0 is top 1 is middle 2 is bot-->
+										<common			name="AreaSize"			value="520_0"/>
+									</common_value>
+									<pos 		origin = "100_60" 	/>
+								</Widget>
+								<Widget id="4" typeRes="button" name = "btn_action" 		idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_btn_blue"/>						
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"	value="1_0.5"/>
+									</common_value>
+									
+									<Widget id="2" typeRes="font" 		name = "title_" idx_appear ="1">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="action_name"/>					
+											</common_value>
+											<pos 		origin = "80_30" 	/>
+									</Widget>
+									<pos 		origin = "800_50" 	/>
+									<Size 		origin = "160_60" 	/>
+								</Widget>	
+						
+								<pos 		origin = "0_480" 	/>
+								<Size 		origin = "820_100" 	/>
+						</Widget>
+						<Widget id="1" typeRes="layout" name = "layout_progressbar" idx_appear ="1" visible="0">		
+								<common_value>								
+									<common 		name="background_type" 		value="0"/>	
+									<common 		name="clipping_enable" 		value="0"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="anchor_point"		    value="0_1"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel"  name = "progress_bar_panel" idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="loginscreen/nine/progress_bg.9.png"/>					
+										<common			name="anchor_point"		value="0_0"/>
+										<common			name="use_atlas"		value="1"/>
+										<common			name="stick_screen"	 	value="0"/>
+										<common			name="scale_9"			value="1"/>
+										<common			name="use_nine_path"	value="1"/>
+									</common_value>		
+										
+									<Widget id="1" typeRes="loading_bar" name = "progress_bar_value" idx_appear ="1">		
+										<common_value>
+											<common			name="source"			value="loginscreen/nine/progress_value.9.png"/>					
+											<common			name="anchor_point"		value="0_0"/>
+											<common			name="use_atlas"		value="1"/>
+											<common			name="stick_screen"	 	value="0"/>
+											<common			name="percent"			value="10.0"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path"	value="1"/>
+										</common_value>
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "160_20" 	/>
+									</Widget>		
+									<Widget id="2" typeRes="font" name = "title_percent_value" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0_1"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="1/5"		/>					
+										</common_value>
+										<pos 		origin = "80_10" 		/>
+										<color 		origin = "50_50_50_255" />
+									</Widget>
+											
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "160_20" 	/>
+								</Widget>
+								
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "160_20" 	/>
+						</Widget>
+						<Widget id="2" typeRes="layout" name = "layout_option_" 	idx_appear ="1" visible="0">		
+								<common_value>								
+									<common 		name="background_type" 		value="0"/>	
+									<common 		name="clipping_enable" 		value="0"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="anchor_point"		    value="0_1"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+									<Widget id="0" typeRes="font" 	name = "title_" 	 idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="Kéo"/>					
+											<common			name="anchor_point"		value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "50_30" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" name = "btn_select"  idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 		value="otherscreen/winfree-screen/ico_radio_uncheck.png"/>
+											<common 		name="press" 		value="otherscreen/winfree-screen/ico_radio_checked.png"/>
+											<common 		name="scale_press" 	value="0.0"/>
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+											<common			name="no_add_event"	value="1"/>
+										</common_value>
+										<pos 		origin = "40_30" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>	
+									<Widget id="2" typeRes="panel"  name = "icon_select" idx_appear ="1" visible="0">		
+										<common_value>
+											<common			name="source"			value="otherscreen/winfree-screen/ico_radio_checked.png"/>					
+											<common			name="anchor_point"		value="1_0.5"/>
+											<common			name="use_atlas"		value="1"/>
+											<common			name="stick_screen"	 	value="0"/>
+										</common_value>			
+										<pos 		origin = "40_30" 		/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>	
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "60_60" 	/>
+						</Widget>
+						<Widget id="3" typeRes="layout" name = "layout_time_bomb" 	idx_appear ="1" visible="0">		
+								<common_value>								
+									<common 		name="background_type" 		value="0"/>	
+									<common 		name="clipping_enable" 		value="0"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="anchor_point"		    value="1_0.5"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 	name = "icon_bomb_time" 	idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="otherscreen/winfree-screen/bkg_bom_duoi.9.png"/>			
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "40_35" 	/>
+									<Size 		origin = "76_70" 	/>
+								</Widget>
+								<Widget id="1" typeRes="time_process" name = "progress_2" idx_appear ="1">		
+									<common_value>							
+											<common 		name="source" 		value="gamescreen-newgui-game-common/countdown/iwin_loading_new_xoay.png"/>				
+											<common 		name="use_atlas" 	value="1"/>	
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point" value="0.5_0.5"/>
+											<common			name="move_from_zero" value="1"/>
+											<common			name="no_add_event"	value="1"/>
+											<common			name="reserve"		value="1"/>
+									</common_value>
+									<pos 		origin = "46_34" 	/>
+									<Size 		origin = "70_70" 	/>
+								</Widget>
+								<Widget id="2" typeRes="panel" 	name = "icon_bomb_time_1" 	idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="otherscreen/winfree-screen/bkg_bom_tren.png"/>			
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "46_34" 	/>
+									<Size 		origin = "56_56" 	/>
+								</Widget>
+								<Widget id="3" typeRes="time_digital" 	name = "title_" 			idx_appear ="1">		
+									<template_value>
+											<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="00:00"/>					
+										<common			name="no_add_event"		value="1"/>
+									</common_value>
+									<pos 		origin = "46_34" 	/>
+								</Widget>
+								
+								
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "80_70" 	/>
+						</Widget>
+						<Widget id="4" typeRes="layout" name = "layout_check_" 		idx_appear ="1" visible="0">		
+								<common_value>								
+									<common 		name="background_type" 		value="0"/>	
+									<common 		name="clipping_enable" 		value="0"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="anchor_point"		    value="0_1"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<Widget id="0" typeRes="font" 	name = "title_" 	 idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 			value="Kéo"/>					
+											<common			name="anchor_point"		value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "50_30" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" name = "btn_select"  idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 		value="otherscreen/winfree-screen/ico_checklist_uncheck.png"/>
+											<common 		name="press" 		value="otherscreen/winfree-screen/ico_checklist_checked.png"/>
+											<common 		name="scale_press" 	value="0.0"/>
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+											<common			name="no_add_event"	value="1"/>
+										</common_value>
+										<pos 		origin = "40_30" 	/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>	
+									<Widget id="2" typeRes="panel"  name = "icon_select" idx_appear ="1" visible="0">		
+										<common_value>
+											<common			name="source"			value="otherscreen/winfree-screen/ico_checklist_checked.png"/>					
+											<common			name="anchor_point"		value="1_0.5"/>
+											<common			name="use_atlas"		value="1"/>
+											<common			name="stick_screen"	 	value="0"/>
+										</common_value>			
+										<pos 		origin = "40_30" 		/>
+										<Size 		origin = "40_40" 	/>
+									</Widget>	
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "60_60" 	/>
+						</Widget>
+						<Widget id="5" typeRes="layout" name = "layout_money_" 		idx_appear ="1" visible="0">		
+							<common_value>								
+								<common 		name="background_type" 		value="0"/>	
+								<common 		name="clipping_enable" 		value="0"/>	
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="anchor_point"		    value="1_0.5"/>
+								<common			name="not_default_layout"	value="0"/>
+							</common_value>
+								<Widget id="0" typeRes="panel" 	name = "icon_win" 			idx_appear ="1">		
+									<common_value>
+										<common			name="source"			value="otherscreen/winfree-screen/ico_dongwin_ruybang_do.png"/>			
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+										
+									</common_value>
+									<pos 		origin = "60_50" 	/>
+									<Size 		origin = "100_100" 	/>
+								</Widget>
+								<Widget id="1" typeRes="panel" 	name = "icon_ruby" 			idx_appear ="1" visible="0">		
+									<common_value>
+										<common			name="source"			value="otherscreen/winfree-screen/ico_dongruby_ruybang_do.png"/>		
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "60_50" 	/>
+									<Size 		origin = "93_117" 	/>
+								</Widget>
+								<Widget id="2" typeRes="panel" 	name = "icon_ruybang" 		idx_appear ="1" visible="1">		
+									<common_value>
+										<common			name="source"			value="otherscreen/winfree-screen/bkg_ruybang_do.png"/>		
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0.5_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="font" 	name = "txt" 			idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="0"/>					
+											<common			name="state_scale"		value="2"/>
+										</common_value>
+										<pos 		origin = "62_20" 	/>
+									</Widget>
+								
+									<pos 		origin = "60_30" 	/>
+									<Size 		origin = "124_40" 	/>
+								</Widget>
+								<pos 		origin = "800_50" 	/>
+								<Size 		origin = "120_100" 	/>
+						</Widget>
+						<Widget id="6" typeRes="layout" name = "layout_texfield_" 	idx_appear ="1" visible="0">		
+							<common_value>								
+								<common			name="anchor_point"		    value="0_0"/>
+								<common			name="not_default_layout"	value="0"/>
+							</common_value>
+							<Widget id="2" typeRes="panel" 	name = "panel_input" 	idx_appear ="2">		
+								<common_value>
+									<common 		name="source" 			value="loginscreen/nine/textfieldchat.9.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common			name="anchor_point"		value="0_0"/>	
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "460_40" 	/>
+								<Widget id="0" typeRes="text_field" name = "text_input" idx_appear ="2">		
+									<template_value>
+										<template name="temp_textfield_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 				value="please_insert_name"/>					
+										<common			name="anchor_point"			value="0_0.5"/>	
+										<common			name="touch_zone"			value="420_30"/>
+										<common			name="text_area"			value="420_30"/>
+										<common 		name="panel"				value="loginscreen/nine/textfieldchat.9.png"/>
+										<common			name="no_add_event"			value="1"/>
+									</common_value>
+									<pos 		origin = "10_20" 	/>
+									<color 		origin = "10_10_10_255" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" name = "clear_text_input" idx_appear ="2" visible="1">		
+									<common_value>
+										<common 		name="source" 		value="close_button.png"/>
+										<common 		name="press" 		value="close_button.png"/>
+										<common 		name="disable" 		value="close_button.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>	
+										<common			name="anchor_point"	value="1_0.5"/>
+										<common			name="no_add_event"			value="1"/>
+									</common_value>
+									<pos 		origin = "455_20" 	/>
+									<Size 		origin = "30_30" 	/>
+									<opacity	origin = "128"		/>
+								</Widget>
+							</Widget>
+							<pos 		origin = "10_5" 	/>
+							<Size 		origin = "460_40" 	/>
+						</Widget>
+						
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "825_480" 	/>
+					</Widget>
+					
+					<Widget id="1" typeRes="list_view" name = "list_quest_" 	  	idx_appear ="4" visible="1">		
+						<common_value>
+							<common 		name="inner_size" 			value="825_480"/>
+							<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->											
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="bounce_enable"		value="1"/>
+							<common			name="Percent_Scroll"		value="0.25_0.25"/>
+						</common_value>
+						
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "825_480" 	/>
+					</Widget>
+					
+					<Widget id="2" typeRes="panel" 	   name = "loading_circle" 	  	idx_appear ="4" visible="1">		
+						<common_value>	
+							<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+							<common			name="stick_screen"		value="0"/>
+							<common			name="anchor_point"		value="0.5_0.5"/>
+						</common_value>
+						<pos 		origin = "412_270" 	/>
+						<Size 		origin = "80_80" 	/>
+						<COMMAND>
+							<cmd id="0" name="ROTATE">
+							{
+								"act0" : {
+									"repeat" : -1,
+									"squence":[
+										{
+											"ROTATE" : 360,
+											"TIME"	 : 0.5,
+											"STYLE"	 : 1
+										}
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					
+					<Widget id="3" typeRes="font"      name = "txt_none" 	  		idx_appear ="4" visible="0">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="Không có sự kiện nào"/>					
+						</common_value>
+						<pos 		origin = "315_230" 			/>
+						<color 		origin = "200_200_200_255" 	/>
+					</Widget>
+					
+					<Widget id="4" typeRes="layout"    name = "layout_pull_update"  idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="background_type" 		value="0"/>	
+							<common			name="stick_screen"			value="1"/>	
+							<common 		name="clipping_enable"	    value="0"/>
+							<common			name="anchor_point"			value="0.5_0"/>
+						</common_value>
+						<Widget id="0" typeRes="font"  name = "txt_pull_update" idx_appear ="1" visible="1">		
+							<common_value>
+								<common 		name="source" 		value="pull_down_to_refresh"/>					
+								<common    		name="font_idx"		value="0"/>	
+								<common			name="anchor_point"	value="0_0.5"/>
+								<common			name="bitmap_font"  value="1"/>
+							</common_value>
+							<pos 		origin = "40_15" 			/>
+							<Size 		origin = "17_17" 			/>
+							<color 		origin = "200_200_200_255" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font"  name = "txt_release_update" idx_appear ="1" visible="0">		
+							<common_value>
+								<common 		name="source" 		value="release_to_refresh"/>					
+								<common    		name="font_idx"		value="0"/>	
+								<common			name="anchor_point"	value="0_0.5"/>
+								<common			name="bitmap_font"  value="1"/>
+							</common_value>
+							<pos 		origin = "40_15" 			/>
+							<Size 		origin = "17_17" 			/>
+							<color 		origin = "200_200_200_255" 	/>
+						</Widget>
+						<Widget id="2" typeRes="panel" 	name = "arrow" idx_appear ="1" >		
+							<common_value>
+								<common			name="source"				value="gamescreen-game-common/arrow.png"/>
+								<common			name="anchor_point"			value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "15_15" 	/>
+							<Size 		origin = "30_30" 	/>
+							<color 		origin = "230_230_230_255" 	/>
+						</Widget>
+											
+						<COMMAND>
+							<cmd id="0" name="ORIGIN_POS">
+							{
+								"act0" : {
+									"single_0":{
+										"SET_POSITION" : "412_545",
+										
+										"DESIGN"	   : "960_540"
+									}
+								}
+							}
+							</cmd>
+						</COMMAND>
+											
+						<pos 		origin = "412_545" 	/>
+						<Size 		origin = "100_30" 	/>
+					</Widget>
+					
+				
+					<pos 		origin = "135_0" 	/>
+					<Size 		origin = "825_540" 	/>
+				</Widget>
+																		
+</GAME>

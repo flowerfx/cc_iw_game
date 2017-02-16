@@ -1,0 +1,546 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+		<MenuWidget name="main_screen" 		designSize="960_540">
+			<fade_process max_idx_first="0">
+				<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+				<time_process id="0" val="0.0">
+					<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+				</time_process>
+			</fade_process>
+			
+			<Widget id="0" typeRes="layer_widget" name="main_background" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_1" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/mainbg.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<Widget id="1" typeRes="panel" name = "background_2" idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source" 		value="mainscreen/newgui-game-icon/bgnew.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="2" typeRes="particle"   name = "bouble_particle" 	idx_appear ="1" >		
+					<common_value>
+						<common 		name="source" 			value="Anims/bong.png"/>
+						<common			name="plist"			value="Anims/bb_particle.plist"/>	
+						<common 		name="use_atlas" 		value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			<Widget id="1" typeRes="layer_widget" name="main_screen" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"		value="0"/>
+					<common			name="casca_opacity"	value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+				
+				<Widget id="0" typeRes="layout" name = "panel_info_game" 					idx_appear ="3" visible ="1">		
+					<common_value>
+						<common 		name="background_type" 		value="0"/>	
+						<common			name="stick_screen"			value="0"/>	
+						<common 		name="clipping_enable"	    value="0"/>
+						<common			name="anchor_point"			value="0_1"/>
+					</common_value>
+					<Widget id="0" typeRes="panel" name = "panel_1" idx_appear ="3">		
+						<common_value>
+							<common 		name="source" 				value="mainscreen/newgui-game-icon/bg_tong.png"/>
+							<common			name="use_atlas"			value="1"/>	
+							<common			name="stick_screen"			value="0"/>	
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "158_64" 	/>
+					</Widget>	
+					<Widget id="2" typeRes="panel" name = "icon_1" idx_appear ="3">		
+						<common_value>
+							<common 		name="source" 				value="mainscreen/newgui-game-icon/group_peoples.png"/>	
+							<common			name="stick_screen"			value="0"/>	
+							<common			name="not_default_layout"	value="1"/>
+							<common			name="anchor_point"			value="0_1"/>
+						</common_value>	
+						<pos 		origin = "4_60" 	/>
+						<Size 		origin = "28_22" 	/>
+					</Widget>
+					<Widget id="3" typeRes="panel" name = "icon_2" idx_appear ="3">		
+						<common_value>
+							<common 		name="source" 				value="mainscreen/newgui-game-icon/group_rooms.png"/>	
+							<common			name="stick_screen"			value="0"/>	
+							<common			name="not_default_layout"	value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>	
+						<pos 		origin = "4_4" 	/>
+						<Size 		origin = "23_22" 	/>
+					</Widget>
+					<Widget id="4" typeRes="font"   name = "number_player" 	idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_0_1"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="0"/>					
+							<common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						<pos 		origin = "40_40" 	/>
+					</Widget>
+					<Widget id="5" typeRes="font"   name = "number_room" 	idx_appear ="1">		
+						<template_value>
+							<template name="temp_text_0_1"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="0"/>					
+							<common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						<pos 		origin = "40_5" 	/>
+						<color		origin = "255_167_0_255" />
+					</Widget>						
+					<pos 		origin = "10_520" 	/>
+					<Size 		origin = "158_64" 	/>
+				</Widget>
+				<Widget id="1" 	name = "btn_server" com="GeneralWidget.BtnServer">											
+				</Widget>
+				<Widget id="2" 	name = "panel_list_btn_choose_game" com="MainScreen.TopLayer">		
+				</Widget>
+				<Widget id="3" name = "list_btn_choose_type_money" typeRes="layout" idx_appear="1">
+					<common_value>
+						<common			name="stick_screen"			value="0"/>
+						<common			name="anchor_point"			value="0.5_1"/>
+					</common_value>
+					<Widget id="0" 	typeRes="layout" name = "list_game_btn_win" idx_appear ="1" >		
+						<common_value>
+							<common			name="anchor_point"			value="0.5_1"/>
+						</common_value>
+						<pos 		origin = "150_-20" 	/>
+						<Size 		origin = "30_30" 	/>
+					</Widget>
+						
+					<Widget id="1" 	typeRes="layout" name = "list_game_btn_ruby" idx_appear ="1" visible="0">		
+						<common_value>
+							<common			name="anchor_point"			value="0.5_1"/>
+						</common_value>
+						<pos 		origin = "150_-20" 	/>
+						<Size 		origin = "30_30" 	/>
+					</Widget>
+					
+					<Widget id="2" typeRes="button" name = "btn_iwin_gamble"  idx_appear ="2" visible="0">		
+						<common_value>
+							<common 		name="disable" 		value="default-round.9.png"/>
+							<common 		name="scale_9" 		value="1"/>
+							<common 		name="scale_press" 	value="-0.00"/>
+							<common			name="anchor_point"	value="0_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="font" 	name = "title" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="card_games"/>					
+								<common			name="anchor_point"		value="0.5_0.5"/>								
+							</common_value>
+							<pos 		origin = "40_15" 			/>
+							<color 		origin = "255_220_10_255" 	/>
+						</Widget>
+								
+						<pos 		origin = "0_15" 	/>
+						<Size 		origin = "80_30" 	/>					
+					</Widget>
+					<Widget id="3"  typeRes="panel" name = "sao" idx_appear ="2" visible="0">		
+						<common_value>
+							<common			name="anchor_point"	value="0_0.5"/>
+							<common 		name="source" 		value="mainscreen/newgui-mainscreen/ico_sao.png"/>
+						</common_value>	
+						<pos 		origin = "0_15" 	/>
+						<Size 		origin = "8_8" 	/>					
+					</Widget>
+							
+					<pos 		origin = "480_530" 	/>
+					<Size 		origin = "300_38" 	/>
+				</Widget>
+				<Widget id="3" 	typeRes="layout" name = "list_game_panel" 					idx_appear ="1" visible ="1">		
+					<common_value>					
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+						<Widget id="0" typeRes="layout" name="layout_list_game_" 	idx_appear ="1">
+							<common_value>
+								<common			name="stick_screen"			value="1"/>
+								<common			name="anchor_point"			value="0_0"/>
+							</common_value>
+							<Widget id="0"  typeRes="list_view" name = "list_game_" 	idx_appear ="2">		
+								<common_value>
+									<common			name="inner_size"			value= "960_300"/>
+									<common 		name="direction" 			value="2"/> <!-- 0 is non 1 IS HORIZON 2 IS VERTICAL  -->
+									<common 		name="not_use_bounce" 		value="1"/> 
+									<common			name="stick_screen"			value="1"/>
+									<common			name="Percent_Scroll"		value="0.05_0.05"/>
+									<common			name="as_page_view"			value="1"/>
+									<common			name="magnetic_type"		value="2"/>
+									<common			name="gravity"				value="2"/>
+								</common_value>
+								
+								
+								<pos 		origin = "480_165" 	/>
+								<Size 		origin = "960_300" 	/>
+							</Widget>
+							
+							<Widget id="1"	typeRes="radio_btn"	name = "ratio_layer_"	idx_appear = "2" >
+								<common_value>
+									<common			name="off_state"		value= "mainscreen/newgui-mainscreen/ico_cham_den.png"/>
+									<common 		name="on_state" 		value= "mainscreen/newgui-mainscreen/ico_cham_trang.png"/>	
+									<common 		name="use_atlas" 		value="1"/> 
+									<common 		name="number" 			value="1"/> 
+									<common			name="delta_distance"	value="20.0"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0"/>
+								</common_value>
+								
+								<pos 		origin = "480_0" 	/>
+								<Size 		origin = "0_0" 	/>
+							</Widget>
+					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_330" 	/>
+						</Widget>				
+						<Widget id="1" typeRes="panel"  name="loading_circle"  		idx_appear ="1" visible="0">		
+							<common_value>	
+								<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+							</common_value>
+							<pos 		origin = "480_150" 	/>
+							<Size 		origin = "80_80" 	/>
+							<COMMAND>
+								<cmd id="0" name="ROTATE">
+								{
+									"act0" : {
+											"repeat" : -1,
+											"squence":[
+												{
+													"ROTATE" : 360,
+													"TIME"	 : 0.5,
+													"STYLE"	 : 1
+												}
+											]
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						
+					<pos 		origin = "0_120" 	/>
+					<Size 		origin = "960_330" 	/>
+				</Widget>
+				
+				<Widget id="4" 	typeRes="layout" name = "panel_notice_server" 				idx_appear ="1" visible ="1"> 		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+						
+					<Widget id="0" 	typeRes="layout" name = "layout_anoun_server" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="anchor_point"			value="1_0"/>
+						</common_value>
+						<Widget id="0" 	typeRes="panel" name = "panel_" 				idx_appear ="1" >		
+							<common_value>
+								<common			name="source"				value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 			value="1"/>	
+								<common 		name="scale_9" 				value="1"/>	
+								<common			name="use_nine_path"		value="0"/>
+								<common			name="stick_screen"			value="0"/>
+								<common			name="anchor_point"			value="0_0"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_30" 	/>
+							<opacity 	origin = "160" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font" 	name = "text_anounce" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="text_anounce"/>					
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+							<COMMAND>
+								<cmd id="0" name="ON_SHOW">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											{
+												"SET_POSITION" : "1000_15",
+												"DESIGN"       : "960_540"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="1" name="ON_HIDE">
+								{
+									"act0":
+									{
+										"single":
+											{
+												"SET_POSITION" : "1000_15",
+												"DESIGN"       : "960_540"
+											}
+										
+									}
+								}
+								</cmd>
+								<cmd id="2" name="ON_CONTINUE">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											{
+												"POSITION" : "-5000_15",
+												"DESIGN"   : "960_540",
+												"STYLE"	   : 3,
+												"TIME"	   : 40.0,
+												"FORCE"	   : 1
+											}
+										]
+									}
+								}
+								</cmd>
+								
+							</COMMAND>
+							<pos 		origin = "1000_15" 	/>
+						</Widget>
+						<Widget id="2" typeRes="button" name = "close_annouce_panel" 	idx_appear ="1" >		
+							<common_value>					
+								<common 		name="source" 				value="close_button.png"/>
+								<common 		name="press" 				value="close_button.png"/>
+								<common 		name="disable" 				value="close_button.png"/>
+								<common 		name="scale_press" 			value="-0.05"/>
+								<common			name="stick_screen"			value="0"/>
+								<common 		name="use_atlas" 			value="1"/>	
+								<common			name="anchor_point"			value="1_0.5"/>
+							</common_value>
+							<pos 		origin = "880_15" 	/>
+							<Size 		origin = "25_25" 	/>
+							<opacity	origin = "128"		/>
+						</Widget>	
+					
+						<pos 		origin = "960_75" 	/>
+						<Size 		origin = "960_30" 	/>
+						<opacity 	origin = "0" 	/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_OPACITY" : 0
+											},
+											{
+												"SET_POSITION" : "960_40",
+												"DESIGN"       : "960_540"
+											}
+										]
+									},
+									"act1":
+									{
+										"squence":
+										[
+											{
+												"POSITION" : "960_75",
+												"DESIGN"   : "960_540",
+												"STYLE"	   : 0,
+												"TIME"	   : 0.2
+											},
+											{
+												"SET_POSITION" : "960_75",
+												"DESIGN"   : "960_540"
+											}										
+										],
+										"single_1":
+										{
+												"OPACITY"  : 255,
+												"TIME"	   : 0.2
+										}
+									}
+								}
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											{
+												"SET_POSITION" : "960_75",
+												"DESIGN"       : "960_540"
+											},
+											{
+												"SET_OPACITY" : 255
+											}
+										]
+									},
+									"act1":
+									{
+										"single_0":
+										{
+											"POSITION" : "960_40",
+											"DESIGN"   : "960_540",
+											"STYLE"	   : 0,
+											"TIME"	   : 0.2
+										},
+										"single_1":
+										{
+											"OPACITY" 	: 0,
+											"TIME"	   	: 0.2
+										}
+									},
+									"act2":
+									{
+										"single":
+										{
+											"SET_VISIBLE" : 0
+										}
+									}
+									
+								}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					
+					<Widget id="1" typeRes="button" name = "btn_12" 		idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="mainscreen/newgui-mainscreen/icon_12.png"/>
+							<common 		name="press" 		value="mainscreen/newgui-mainscreen/icon_12.png"/>
+							<common 		name="disable" 		value="mainscreen/newgui-mainscreen/icon_12.png"/>
+							<common 		name="scale_press" 	value="-0.1"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="scale_9"		value="0"/>
+							<common			name="anchor_point"	value="1_0"/>
+						</common_value>		
+						<pos 		origin = "950_70" 	/>
+						<Size 		origin = "70_70" 	/>
+						<COMMAND>
+							<cmd id="0" name="SET_POS">
+								{
+									"act0":
+									{
+										"squence":
+										[
+
+											{
+												"SET_POSITION" : "950_70",
+												"DESIGN"       : "960_540",
+											}
+										]
+									}
+								}
+							</cmd>
+						</COMMAND>
+					</Widget>					
+					
+					<Widget id="2" 	typeRes="panel" name = "panel_notice_12" idx_appear ="1" visible="0">		
+						<common_value>
+							<common			name="source"				value="mainscreen/newgui-mainscreen/bkg_bangthongbao.9.png"/>
+							<common 		name="use_atlas" 			value="1"/>	
+							<common			name="stick_screen"			value="1"/>
+							<common 		name="scale_9" 				value="1"/>	
+							<common			name="use_nine_path"		value="1"/>
+							<common			name="anchor_point"			value="0.5_0.5"/>
+							<common 		name="swallow_touch" 		value="1"/>
+						</common_value>
+						<Widget id="5" typeRes="font" 	name = "text_notice" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0_1"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="games_for_players_over"/>					
+								<common			name="AreaSize"			value="580_70"/>
+								<common			name="aligneH"			value="1"/>
+								<common			name="aligneV"			value="1"/>
+							</common_value>
+							<pos 		origin = "300_40" 	/>
+						</Widget>
+						<pos 		origin = "480_270" />
+						<Size 		origin = "600_80" 	/>
+						<opacity	origin = "0"		/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0":
+								{
+									"squence":
+									[
+										{
+											"SET_VISIBLE" : 1
+										},
+										{
+											"SET_OPACITY" : 220
+										},
+										{
+											"DELAY" : 4
+										},
+										{
+											"OPACITY" : 0,
+											"TIME"	  : 0.5
+										},
+										{
+											"SET_VISIBLE" : 0
+										}
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="5"  name = "bottom_menu" 				com="MainScreen.BottomLayer">		
+				</Widget>		
+				<Widget id="6" 	name = "panel_setting" 				com="MainScreen.SettingLayer">
+				</Widget>
+				<Widget id="7" 	name = "panel_choose_server" 		com="GeneralWidget.ChooseServerLayer">											
+				</Widget>				
+				<Widget id="8"  name = "countdown_change_server" 	com="MainScreen.ChangeServerLayer">					
+				</Widget>
+				
+				
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			
+		</MenuWidget>
+</GAME>

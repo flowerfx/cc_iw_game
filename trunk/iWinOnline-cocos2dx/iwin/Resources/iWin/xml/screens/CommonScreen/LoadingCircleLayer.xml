@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<GAME>
+	<Widget id="10" 	typeRes="layout" name = "loading_circle_layer" 		idx_appear ="1" visible ="0">		
+		<common_value>
+			<common			name="anchor_point"	value="0_0"/>
+			<common			name="swallow_touch"value="1"/>
+			<common			name="stick_screen"	value="1"/>
+		</common_value>
+		<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+			<common_value>
+				<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+				<common 		name="anchor_point" value="0_0"/>
+				<common			name="stick_screen"	value="1"/>
+			</common_value>					
+			<pos 		origin = "0_0" 	/>
+			<Size 		origin = "960_540" 	/>
+			<opacity 	origin = "255" 	/>
+		</Widget>
+		<Widget id="1" typeRes="panel" 			name = "loading_circle" 	 			idx_appear ="1" >		
+			<common_value>	
+				<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+			</common_value>
+			<pos 		origin = "480_270" 	/>
+			<Size 		origin = "80_80" 	/>
+				<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+				</COMMAND>
+		</Widget>
+		<pos 		origin = "0_0" 	/>
+		<Size 		origin = "960_540" 	/>
+	</Widget>
+</GAME>

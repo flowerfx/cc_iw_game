@@ -1,0 +1,76 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<MenuWidget name="lobby_screen" 	designSize="960_540">
+			<fade_process max_idx_first="0">
+				<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+				<time_process id="0" val="0.0">
+					<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+				</time_process>
+			</fade_process>
+			<Widget id="0" typeRes="layer_widget" name="main_background" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/mainbg.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			<Widget id="1" typeRes="layer_widget" name="lobby_ui" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"	value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="layout" name = "main_lobby_layout" idx_appear ="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="casca_color"			value="0"/>
+					</common_value>
+					
+					<Widget id="0" name = "left_layout" com ="LobbyScreen.ListRoomLayer">		
+					</Widget>
+					
+					<Widget id="1" name = "right_layout" com ="LobbyScreen.ProfileLayer">		
+					</Widget>
+										
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="1" name = "top_panel" com ="LobbyScreen.TopLayer">		
+				</Widget>
+						
+				<Widget id="2" typeRes="panel" 	name = "background_texture" idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+						<common			name="stick_screen"	value="1"/>
+						<common			name="swallow_touch"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+					<opacity	origin = "245"		/>
+				</Widget>
+					
+				<Widget id="3"  name=  "create_room_layout" com="LobbyScreen.CreateRoomLayer" visible="0">
+				</Widget>
+					
+
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+	</MenuWidget>
+</GAME>

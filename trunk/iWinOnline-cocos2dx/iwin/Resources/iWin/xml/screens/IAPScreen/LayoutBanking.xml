@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" 	typeRes="layout" name = "layout_banking" idx_appear ="1" visible="0">		
+					<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+
+					<Widget id="0" typeRes="scroll_view" name = "scrollview_big" idx_appear ="2">		
+							<common_value>
+								<common 		name="inner_size" 			value="800_480"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+								
+								<common 		name="background_type" 		value="0"/>			
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="anchor_point"		value="0_0"/>
+								<common			name="clipping_enable"		value="1"/>
+								<common			name="bounce_enable"		value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "800_480" 	/>
+					</Widget>
+
+					
+					<pos 		origin = "160_0" 	/>
+					<Size 		origin = "800_480" 	/>
+				</Widget>	
+</GAME>

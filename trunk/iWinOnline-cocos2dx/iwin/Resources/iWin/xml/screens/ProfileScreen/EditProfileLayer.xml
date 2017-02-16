@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="2" typeRes="layout"  name = "layout_edit_profile" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common			name="anchor_point"			value="0_1"/>
+						<common 		name="swallow_touch" 		value="1"/>
+					</common_value>
+								
+					<Widget id="0"  typeRes="panel" 	name = "panel_bg" 					idx_appear ="1" >		
+						<common_value>		
+							<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_edit.9.png"/>	
+							<common			name="scale_9"			value="1"/>
+							<common			name="use_nine_path" 	value="1"/>	
+							<common 		name="use_atlas" 		value="1"/>	
+							<common			name="stick_screen"		value="0"/>
+							<common			name="anchor_point"		value="0_0"/>
+							<common			name="stage_scale9"		value="2"/>
+						</common_value>
+									
+									
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "350_250" 	/>
+					</Widget>
+					
+					<Widget id="1" 	typeRes="button" 	name = "take_avatar_camera_btn" 	idx_appear ="1">		
+						<common_value>
+							<common 		name="disable" 			value="default-round-yellow.9.png"/>
+							<common			name="stick_screen"		value="0"/>
+							<common			name="scale_9"			value="1"/>
+							<common 		name="scale_press" 		value="-0.05"/>							
+							<common			name="anchor_point"		value="0.5_1"/>
+						</common_value>
+								
+						<Widget id="0" typeRes="font" 		name = "title_" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="choose_avatar_camera"/>					
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "50_20" 	/>
+						</Widget>		
+						<Widget id="1"  typeRes="panel" 	name = "icon" 	idx_appear ="1" >		
+							<common_value>		
+								<common 		name="source" 			value="mainscreen/icon/icon_edit_camera.png"/>	
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+
+							<pos 		origin = "10_20" 	/>
+							<Size 		origin = "30_24" 	/>
+						</Widget>
+						<pos 		origin = "150_220" 	/>
+						<Size 		origin = "240_40" 	/>					
+					</Widget>
+					<Widget id="2" 	typeRes="button" 	name = "take_avatar_gallery_btn" 	idx_appear ="1">		
+						<common_value>
+							<common 		name="disable" 			value="default-round-yellow.9.png"/>
+							<common			name="stick_screen"		value="0"/>
+							<common			name="scale_9"			value="1"/>
+							<common 		name="scale_press" 		value="-0.05"/>							
+							<common			name="anchor_point"		value="0.5_1"/>
+						</common_value>
+								
+						<Widget id="0"  typeRes="font" 		name = "title_" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="choose_avatar_library"/>						
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "50_20" 	/>
+						</Widget>		
+						<Widget id="1"  typeRes="panel" 	name = "icon" 	idx_appear ="1" >		
+							<common_value>		
+								<common 		name="source" 			value="mainscreen/icon/icon_edit_photo.png"/>	
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+
+							<pos 		origin = "10_20" 	/>
+							<Size 		origin = "30_24" 	/>
+						</Widget>
+						<pos 		origin = "150_165" 	/>
+						<Size 		origin = "240_40" 	/>					
+					</Widget>		
+					<Widget id="3" 	typeRes="button" 	name = "take_avatar_shop_btn" 		idx_appear ="1">		
+						<common_value>
+							<common 		name="disable" 			value="default-round-yellow.9.png"/>
+							<common			name="stick_screen"		value="0"/>
+							<common			name="scale_9"			value="1"/>
+							<common 		name="scale_press" 		value="-0.05"/>							
+							<common			name="anchor_point"		value="0.5_1"/>
+						</common_value>
+								
+						<Widget id="0"  typeRes="font" 		name = "title_" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="choose_avatar_shop"/>					
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "50_20" 	/>
+						</Widget>		
+						<Widget id="1"  typeRes="panel" 	name = "icon" 	idx_appear ="1" >		
+							<common_value>		
+								<common 		name="source" 			value="mainscreen/icon/icon_edit_shop.png"/>	
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+
+							<pos 		origin = "10_20" 	/>
+							<Size 		origin = "26_28" 	/>
+						</Widget>
+						<pos 		origin = "150_110" 	/>
+						<Size 		origin = "240_40" 	/>					
+					</Widget>
+					<Widget id="4" 	typeRes="button" 	name = "change_pass_btn" 			idx_appear ="1">		
+						<common_value>
+							<common 		name="disable" 			value="default-round-yellow.9.png"/>
+							<common			name="stick_screen"		value="0"/>
+							<common			name="scale_9"			value="1"/>
+							<common 		name="scale_press" 		value="-0.05"/>							
+							<common			name="anchor_point"		value="0.5_1"/>
+						</common_value>
+								
+						<Widget id="0" typeRes="font" 		name = "title_" idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="change_password"/>					
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "50_20" 	/>
+						</Widget>		
+						<Widget id="1"  typeRes="panel" 	name = "icon" 	idx_appear ="1" >		
+							<common_value>		
+								<common 		name="source" 			value="mainscreen/icon/icon_edit_pass.png"/>	
+								<common 		name="use_atlas" 		value="1"/>	
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0.5"/>
+							</common_value>
+
+							<pos 		origin = "10_20" 	/>
+							<Size 		origin = "22_28" 	/>
+						</Widget>
+						<pos 		origin = "150_55" 	/>
+						<Size 		origin = "240_40" 	/>					
+					</Widget>		
+					
+					<pos 		origin = "190_450" 		/>
+					<Size 		origin = "350_250" 		/>
+					<opacity	origin = "255"	first="0"/>
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0":{
+								"squence":[
+								{
+									"SET_VISIBLE" : 1
+								},
+								{
+									"OPACITY" : 255,
+									"TIME"	  : 0.2
+								}
+								]
+							}
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0":{
+								"squence":[
+								{
+									"OPACITY" : 0,
+									"TIME"	  : 0.2
+								},
+								{
+									"SET_VISIBLE" : 0
+								}	
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>	
+				</Widget>
+				
+</GAME>

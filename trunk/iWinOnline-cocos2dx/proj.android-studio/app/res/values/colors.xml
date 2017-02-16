@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_color">#ffffff00</color>
+    <color name="text_color">#ff42210b</color>
+    <color name="list_item_color">#ffaa0000</color>
+    <color name="content_title_color">#ff960000</color>
+    <color name="text_gray_color">#ff808080</color>
+    <color name="notify_alert_title_color">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="dark_gray">#ff313131</color>
+    <color name="trans">#00000000</color>
+</resources>

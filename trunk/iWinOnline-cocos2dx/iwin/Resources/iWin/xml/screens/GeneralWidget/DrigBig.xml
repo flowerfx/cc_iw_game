@@ -1,0 +1,426 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" 	typeRes="layout" name = "drig_normal" 						idx_appear ="1" >		
+					<common_value>
+						<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_300" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_275" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_250" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_225" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_200" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_175" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_150" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_125" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_100" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_75" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_50" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_25" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0.5"/>
+						</common_value>		
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "600_1" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "25_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "50_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "75_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "100_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "125_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "150_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "175_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "200_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "225_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "250_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "275_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "300_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "325_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "350_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "375_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "400_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "425_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "450_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "475_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "500_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "525_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "550_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "575_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<Widget id="0" typeRes="panel" 			 name = "line1" 			idx_appear ="1" >		
+						<template_value>
+							<template 		name="drig_line"/>						
+						</template_value>
+						<common_value>
+							<common 		name="anchor_point" 	value="0_0"/>
+						</common_value>		
+						<pos 		origin = "600_0" 	/>
+						<Size 		origin = "300_1" 	/>
+						<rotate 	origin = "-90" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "600_300" 	/>					
+			</Widget>									
+</GAME>

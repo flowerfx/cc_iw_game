@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="2"  typeRes="layout"  name = "layout_friend_chat" 		idx_appear ="1" visible="0">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>	
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					
+					<Widget id="0"  typeRes="layout"  name = "chat_layout" 		idx_appear ="1" >		
+						<common_value>
+							<common			name="stick_screen"			value="1"/>	
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="list_view" name = "list_chat" 	idx_appear ="4" visible="1">		
+							<common_value>
+								<common 		name="inner_size" 			value="825_480"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->											
+								<common			name="stick_screen"			value="1"/>
+								<common			name="anchor_point"			value="0_0"/>
+								<common			name="bounce_enable"		value="1"/>
+								<common			name="Percent_Scroll"		value="0.25_0.25"/>
+							</common_value>
+							<Widget id="0" typeRes="layout" name = "layout_chat_me" 			idx_appear ="1" >		
+								<common_value>								
+									<common			name="anchor_point"		    value="0_0"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+									<Widget id="0" typeRes="panel" 	name = "bg" 	idx_appear ="1">		
+										<template_value>
+											<template name="scale9"/>
+										</template_value>
+										<common_value>
+											<common			name="source"			value="loginscreen/nine/chatright.9.png"/>			
+											<common			name="stick_screen"		value="1"/>
+											<common			name="anchor_point"		value="1_1"/>
+										</common_value>
+										<pos 		origin = "960_50" 		/>
+										<Size 		origin = "35_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 	name = "msg" 	idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_chat"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="text_chat"/>					
+											<common    		name="font_idx"			value="1"/>	
+											<common			name="anchor_point"		value="1_1"/>	
+											<common			name="aligneH"			value="2"/> <!-- 0 is left 1 is middle 2 is right-->
+											<common			name="aligneV"			value="0"/> <!-- 0 is top 1 is middle 2 is bot-->
+											<common			name="AreaSize"			value="480_0"/>
+											
+										</common_value>
+										<pos 		origin = "940_40" 	/>
+										<color		origin = "50_50_50_255"/>
+									</Widget>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "960_100" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout" name = "layout_chat_you" 			idx_appear ="1" >		
+								<common_value>								
+									<common			name="anchor_point"		    value="0_0"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+									<Widget id="0" typeRes="panel" 	name = "bg" 	idx_appear ="1">		
+										<template_value>
+										<template name="scale9"/>
+									</template_value>
+										<common_value>
+											<common			name="source"			value="loginscreen/nine/chatleft.9.png"/>			
+											<common			name="stick_screen"		value="1"/>
+											<common			name="anchor_point"		value="0_1"/>
+										</common_value>
+										<pos 		origin = "0_50" 		/>
+										<Size 		origin = "35_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 	name = "msg" 	idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_chat"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="text_chat"/>					
+											<common    		name="font_idx"			value="1"/>	
+											<common			name="anchor_point"		value="0_1"/>	
+											<common			name="aligneH"			value="0"/> <!-- 0 is left 1 is middle 2 is right-->
+											<common			name="aligneV"			value="0"/> <!-- 0 is top 1 is middle 2 is bot-->
+											<common			name="AreaSize"			value="480_0"/>
+										</common_value>
+										<pos 		origin = "20_40" 	/>
+										<color		origin = "50_50_50_255"/>
+									</Widget>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "960_50" 	/>
+							</Widget>
+							<Widget id="2" typeRes="layout" name = "layout_show_time" 			idx_appear ="1" >		
+								<common_value>								
+									<common			name="anchor_point"		    value="0_0"/>
+									<common			name="not_default_layout"	value="0"/>
+								</common_value>
+									<Widget id="2" typeRes="font" name = "title" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0_1"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="today"		/>					
+										</common_value>
+										<pos 		origin = "480_20" 		/>
+										<color 		origin = "150_150_150_255" />
+									</Widget>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "960_40" 	/>
+							</Widget>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_400" 	/>
+						</Widget>
+						
+						<pos 		origin = "0_80" 	/>
+						<Size 		origin = "960_400" 	/>
+					</Widget>
+					
+					<Widget id="1"  typeRes="layout"  name = "input_chat_layout" 		idx_appear ="1" >		
+						<common_value>
+							<common			name="stick_screen"			value="1"/>	
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" 	name = "panel_chat_friend" idx_appear ="1" >		
+							<common_value>
+								<common 		name="background_type" 		value="0"/>	
+								<common			name="stick_screen"			value="0"/>	
+								<common 		name="clipping_enable"	    value="0"/>
+								<common			name="anchor_point"			value="0_0"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 		name = "background_chat" 		idx_appear ="1" >		
+								<common_value>
+									<common			name="source"				value="loginscreen/nine/textfieldchat.9.png"/>
+									<common			name="scale_9"				value="1"/>
+									<common			name="use_nine_path"		value="1"/>
+									<common			name="stick_screen"			value="0"/>	
+									<common			name="anchor_point"			value="0_0"/>
+									<common			name="stage_scale9"			value="2"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "850_60" 	/>
+							</Widget>
+							<Widget id="2" typeRes="button" 	name = "btn_emo" 			idx_appear ="2"	>		
+								<common_value>
+											
+										<common 		name="source" 		value="otherscreen/friend-screen/smile.png"/>
+										<common 		name="press" 		value="otherscreen/friend-screen/smile.png"/>
+										<common 		name="disable" 		value="otherscreen/friend-screen/smile.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>	
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point"	value="1_0.5"/>	
+								</common_value>					
+								<pos 		origin = "840_30" 	/>
+								<Size 		origin = "42_42" 	/>					
+							</Widget>
+							<Widget id="3" typeRes="text_field" name = "chat_friend_input" 		idx_appear ="2"	>							
+								<template_value>
+									<template 		name="temp_textfield_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="share_with_friends"/>					
+									<common			name="anchor_point"			value="0_0.5"/>
+									<common			name="tint_place_holder" 	value="20_20_20_255"/>
+									<common			name="touch_zone"			value="750_40"/>
+									<common			name="text_area"			value="750_40"/>
+									<common 		name="panel"				value="loginscreen/nine/textfieldchat.9.png"/>
+								</common_value>
+								<pos 		origin = "10_30" 	/>
+								<color 		origin = "50_50_50_255" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 	name = "btn_clear" 	idx_appear ="2" 	visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "755_30" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+							
+							<Widget id="1" typeRes="button" 	name = "btn_send_friend_msg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="otherscreen/friend-screen/btn_red.9.png"/>
+									<common 		name="press" 		value="otherscreen/friend-screen/btn_red.9.png"/>
+									<common 		name="disable" 		value="otherscreen/friend-screen/btn_red.9.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0"/>
+									<common			name="scale_9"		value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="font"  name = "txt" idx_appear ="1" visible="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="send"/>					
+									</common_value>
+									<pos 		origin = "40_30" 			/>
+								</Widget>
+								
+										
+								<pos 		origin = "860_0" 	/>
+								<Size 		origin = "80_60 "	/>
+							</Widget>
+							
+							<pos 		origin = "10_10" 	/>
+							<Size 		origin = "850_60" 	/>
+						</Widget>
+
+						
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "960_80" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_480" 	/>
+					
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "1000_0",
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"SET_VISIBLE" : 1
+									},
+									{
+										"POSITION"     : "0_0",
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									}
+								]
+							}
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "0_0",
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"POSITION"     : "1000_0",
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									},
+									{
+										"SET_VISIBLE" : 0
+									}
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>
+				</Widget>
+																		
+</GAME>

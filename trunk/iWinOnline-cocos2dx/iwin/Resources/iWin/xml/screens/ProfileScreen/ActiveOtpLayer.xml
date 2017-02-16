@@ -1,0 +1,338 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="5" typeRes="layout"  name = "active_otp_layout" 	idx_appear="1" visible="0">
+						<common_value>
+							<common			name="stick_screen"			value="1"/>
+							<common 		name="swallow_touch" 		value="1"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="panel" 	name = "bg" 			idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="1"/>
+								</common_value>
+								<pos 		origin = "480_270" 	/>
+								<Size 		origin = "960_540" 	/>
+								<opacity	origin = "245"		/>
+						</Widget>
+				
+						<Widget id="1" typeRes="layout" name = "otp_layout" 	idx_appear="1" >
+							<common_value>
+								<common			name="casca_color"			value="0"/>
+							</common_value>
+						
+							<Widget id="0"  typeRes="panel"  name = "bg" 			idx_appear = "1">
+								<template_value>
+										<template name="scale9"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="default-window.9.png"/>
+									<common			name="casca_color"			value="0"/>
+									<common 		name="anchor_point" 		value="0_0"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "660_400"  />
+							</Widget>
+							<Widget id="1" 	typeRes="panel" name="hl_bg" 			idx_appear = "1">
+								<common_value>
+										<common 		name="source" 				value="bkg_high_light.png"/>
+										<common 		name="anchor_point" 		value="0.5_0"/>
+								</common_value>
+								<pos 		origin = "330_0" 	/>
+								<Size 		origin = "660_350"  />
+							</Widget>
+							<Widget id="2"  typeRes="font" 	name = "title" 			idx_appear = "1">		
+									<template_value>
+										<template name="temp_text_radi"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="notice"/>					
+										<common			name="anchor_point"	value="0.5_1"/>
+									</common_value>
+									<pos 		origin = "330_390" 	/>
+							</Widget>
+									
+							<Widget id="3" typeRes="font" 	name = "msg" 			idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="msg"/>					
+									<common			name="anchor_point"	value="0_1"/>
+									<common 		name="AreaSize" 	value="400_0"/>
+								</common_value>
+								<pos 		origin = "50_330" 	/>
+							</Widget>
+							
+							<!-- barcode -->
+							<Widget id="4" typeRes="layout" 	name = "layout_barcode" idx_appear ="1" visible="0">		
+								<common_value>
+									<common			name="anchor_point"			value="1_1"/>
+								</common_value>
+								<pos 		origin = "600_330" 	/>
+								<Size 		origin = "120_120" 	/>
+							</Widget>
+							<!-- secret key -->
+							<Widget id="5" typeRes="layout" 	name = "panel_otp_secrect_key" idx_appear ="1" visible="0">		
+								<common_value>
+									<common			name="anchor_point"			value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 	name = "title" 			idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="Secret key :"/>					
+											<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "10_20" 	/>
+								</Widget>
+								<Widget id="1" typeRes="panel" 	name = "panel_input_secrect_key" idx_appear ="1" visible="1">		
+									<common_value>
+										<common 		name="source" 				value="loadingscreen/textfieldbgbrow.9.png"/>
+										<common			name="scale_9"				value="1"/>
+										<common			name="use_nine_path" 		value="1"/>
+										<common			name="anchor_point"			value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "140_20" 	/>
+									<Size 		origin = "300_40" 	/>
+									<opacity	origin = "240" 		/>
+									
+									<Widget id="0" typeRes="text_field" name = "textfield_secret_otp" idx_appear ="2" visible="1">		
+										<template_value>
+											<template name="temp_textfield_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="0"/>
+											<common			name="anchor_point"			value="0_0.5"/>	
+											<common			name="text_area"			value="250_40"/>
+											<common			name="touch_zone"			value="250_40"/>
+										</common_value>
+										<pos 		origin = "5_20" 	/>
+										<color 		origin = "255_250_0_255" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" 	name = "btn_clear_text" 	  idx_appear ="2" visible="0">		
+										<common_value>
+											<common 		name="source" 		value="close_button.png"/>
+											<common 		name="press" 		value="close_button.png"/>
+											<common 		name="disable" 		value="close_button.png"/>
+											<common 		name="scale_press" 	value="-0.05"/>
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "290_20" 	/>
+										<Size 		origin = "30_30" 	/>
+										<opacity	origin = "128"		/>
+									</Widget>
+						
+								</Widget>
+
+								<Widget id="1" typeRes="panel" 	name = "ico_already_copy" 			  idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 				value="mainscreen/newgui-mainscreen/ico_check.png"/>
+										<common			name="anchor_point"			value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "480_20" 	/>
+									<Size 		origin = "30_32" 	/>
+								</Widget>
+								
+								<Widget id="2" typeRes="button" name = "btn_copy_secret_key" 	  idx_appear ="2" visible="1">		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+											<common 		name="press" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+											<common 		name="disable" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+											<common 		name="scale_press" 	value="-0.05"/>
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "480_20" 	/>
+										<Size 		origin = "33_38" 	/>
+								</Widget>
+
+								<pos 		origin = "330_130" 	/>
+								<Size 		origin = "540_40" 	/>
+							</Widget>		
+							
+							<!-- edit text: enter OTP -->
+							<Widget id="6" typeRes="layout" 	name = "panel_otp_input" idx_appear ="1" visible="1">		
+								<common_value>
+									<common 		name="background_type" 		value="3"/>	
+									<common 		name="source" 				value="loadingscreen/textfieldbgbrow.9.png"/>
+									<common			name="stick_screen"			value="1"/>
+									<common			name="scale_9"				value="1"/>
+									<common			name="use_nine_path" 		value="1"/>
+									<common			name="anchor_point"			value="0.5_0"/>
+								</common_value>
+								<pos 		origin = "330_70" 	/>
+								<Size 		origin = "540_40" 	/>
+								<opacity	origin = "240" 		/>
+								<Widget id="0" typeRes="text_field" name = "text_input_otp" idx_appear ="2" visible="1">		
+									<template_value>
+										<template name="temp_textfield_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 				value="enter_otp"/>
+										<common			name="anchor_point"			value="0_0.5"/>	
+										<common			name="text_area"			value="500_40"/>
+										<common			name="touch_zone"			value="500_40"/>
+									</common_value>
+									<pos 		origin = "10_20" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 	name = "btn_clear_text" idx_appear ="2" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="close_button.png"/>
+										<common 		name="press" 		value="close_button.png"/>
+										<common 		name="disable" 		value="close_button.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common			name="stick_screen"	value="0"/>
+										<common			name="anchor_point"	value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "530_20" 	/>
+									<Size 		origin = "30_30" 	/>
+									<opacity	origin = "128"		/>
+								</Widget>
+							</Widget>		
+							
+							<!-- button: btn OK to send otp to server -->
+							<Widget id="7" typeRes="button" 	name = "active_otp_btn" 		idx_appear ="1">		
+								<template_value>
+									<template name="temp_btn_yellow"/>
+								</template_value>
+								<common_value>							
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="1_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="agree"/>					
+										<common			name="anchor_point"	value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "130_20" 	/>
+									<color		origin = "10_10_10_255"/>
+								</Widget>
+								<pos 		origin = "320_10" 	/>						
+								<Size 		origin = "260_40" 	/>
+							</Widget>		
+							<!-- button: request otp from server again -->
+							<Widget id="8" typeRes="button" 	name = "resend_otp_btn" 		idx_appear ="1">		
+								<template_value>
+									<template name="temp_btn_red"/>
+								</template_value>
+								<common_value>		
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="0_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="resend_otp"/>					
+										<common			name="anchor_point"	value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "130_20" 	/>
+								</Widget>
+								
+								<pos 		origin = "340_10" 	/>						
+								<Size 		origin = "260_40" 	/>
+							</Widget>	
+							
+							<Widget id="9" typeRes="button" 	name = "download_otp_app_btn" 	idx_appear ="1" visible="0">		
+								<template_value>
+									<template name="temp_btn_blue"/>
+								</template_value>
+								<common_value>		
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="0_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="download"/>					
+										<common			name="anchor_point"	value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "130_20" 	/>
+								</Widget>
+								
+								<pos 		origin = "340_10" 	/>						
+								<Size 		origin = "260_40" 	/>
+							</Widget>	
+							
+							<Widget id="10" typeRes="button" 	name = "btn_close_layout_otp" 	idx_appear ="1">		
+									<common_value>
+										
+										<common 		name="source" 		value="new_close_button.png"/>
+										<common 		name="press" 		value="new_close_button.png"/>
+										<common 		name="disable" 		value="new_close_button.png"/>
+										
+										<common 		name="scale_press" 	value="-0.05"/>
+										
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="anchor_point"	value="1_1"/>
+
+									</common_value>
+									<pos 		origin = "640_385" 	/>
+									<Size 		origin = "30_30" 	/>
+							</Widget>							
+								
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "660_400" 	/>
+							<COMMAND>
+								<cmd id="0" name="ON_SHOW">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0
+											},
+											{
+												"SIZE":"680_420",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"660_400",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.12
+											}
+										]
+									}		
+								}					
+								</cmd>
+								<cmd id="1" name="ON_HIDE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SIZE":"680_420",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"0_0",
+												"DESIGN":"960_340",
+												"STICK": 0,
+												"TIME":0.15
+											}
+										]
+									}		
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+															
+</GAME>

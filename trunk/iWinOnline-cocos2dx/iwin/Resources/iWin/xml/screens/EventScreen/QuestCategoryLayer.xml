@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" typeRes="layout" name = "quest_catalogue" idx_appear ="3">		
+					<common_value>
+						<common 		name="background_type" 		value="3"/>	
+						<common			name="stick_screen"			value="1"/>	
+						<common			name="anchor_point"			value="0_0"/>
+						<common			name="source"				value="otherscreen/winfree-screen/bkg_cuocchap_phanloai_giai_tren.9.png"/>
+						<common			name="scale_9"				value="1"/>
+						<common			name="use_atlas"			value="1"/>
+					</common_value>
+														
+					<Widget id="0" typeRes="list_view" name = "list_quest_catalogue" idx_appear ="4">		
+						<common_value>
+							<common 		name="inner_size" 			value="135_480"/>
+							<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->										
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="bounce_enable"		value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" name = "layout_quest_catalogue_" idx_appear ="5" >		
+								<common_value>	
+									<common			name="anchor_point"		    value="0_1"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 	name = "panel_hl" 				idx_appear ="5" visible="0">		
+									<common_value>
+										<common			name="source"			value="loginscreen/nine/gray14.9.png"/>			
+										<common			name="scale_9"			value="1"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0_0"/>
+										<common			name="use_nine_path"	value="1"/>
+										
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "135_135" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" name = "btn_show_quest" 		idx_appear ="5">		
+									<common_value>
+										<common			name="press"			value="loginscreen/nine/gray14.9.png"/>			
+										<common 		name="scale_press" 		value="-0.00"/>
+										<common			name="scale_9"			value="1"/>
+										<common 		name="use_atlas" 		value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="no_add_event"		value="1"/>
+										<common			name="anchor_point"		value="0_0"/>
+										<common			name="use_nine_path"	value="1"/>
+										
+									</common_value>
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "135_135" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 	name = "title_id" 				idx_appear ="5">		
+									<template_value>
+										<template 		name="temp_text_0_2"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="quest_catalogue"/>					
+										<common			name="anchor_point"	value="0.5_0"/>
+										<common			name="AreaSize"		value="130_0"/>
+										<common			name="aligneH"		value="1"/>
+									</common_value>
+									<pos 		origin = "67_10" 	/>
+									<color		origin = "50_50_50_255"/>
+								</Widget>
+								<Widget id="3" typeRes="layout" name = "layout_" idx_appear ="5" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>
+										<common			name="clipping_enable"		value="0"/>
+										<common			name="stick_screen"			value="0"/>
+										<common			name="casca_color"			value="0"/>
+										<common			name="casca_opacity"		value="0"/>
+										<common			name="anchor_point"		    value="0.5_0"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 			name = "panel_cicle" idx_appear ="1">		
+										<common_value>
+											<common			name="source"			value="otherscreen/winfree-screen/bkg_circle.png"/>			
+											<common 		name="use_atlas" 		value="1"/>	
+											<common			name="stick_screen"		value="0"/>
+											<common			name="anchor_point"		value="0.5_0.5"/>
+										</common_value>
+										<pos 		origin = "40_40" 	/>
+										<Size 		origin = "80_80" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel_clipping" name = "panel_icon"  idx_appear ="1">		
+										<common_value>							
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point" value="0.5_0.5"/>
+										</common_value>
+										
+										<Widget id="0" typeRes="panel" name = "bg_default" idx_appear ="1">		
+											<common_value>							
+												<common 		name="source" 		value="otherscreen/winfree-screen/ico_banh_default.png"/>				
+												<common 		name="use_atlas" 	value="1"/>	
+												<common			name="stick_screen"	value="0"/>
+												<common			name="stencil"		value="1"/>
+												<common			name="anchor_point"		value="0.5_0.5"/>
+											</common_value>
+											<pos 		origin = "38_38" 	/>
+											<Size 		origin = "76_76" 	/>
+										</Widget>
+										
+										<pos 		origin = "40_40" 	/>
+										<Size 		origin = "76_76" 	/>
+									</Widget>		
+									<Widget id="2" typeRes="panel" 			name = "panel_cicle" idx_appear ="1">		
+										<common_value>
+											<common			name="source"			value="otherscreen/winfree-screen/ico_cam.png"/>			
+											<common 		name="use_atlas" 		value="1"/>	
+											<common			name="stick_screen"		value="0"/>
+											<common			name="anchor_point"		value="0_0"/>
+										</common_value>
+										<pos 		origin = "60_60" 	/>
+										<Size 		origin = "30_30" 	/>
+									</Widget>
+									<Widget id="2" typeRes="font" 			name = "number_quest" idx_appear ="1">		
+											<template_value>
+												<template 		name="temp_text_0_1"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="1"/>					
+											</common_value>
+											<pos 		origin = "75_75" 	/>
+									</Widget>
+										
+									<pos 		origin = "67_40" 	/>
+									<Size 		origin = "80_80" 	/>
+								</Widget>
+								
+								<pos 		origin = "0_480" 	/>
+								<Size 		origin = "135_135" 	/>
+						</Widget>								
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "135_480" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "135_540" 	/>
+			</Widget>
+																		
+</GAME>

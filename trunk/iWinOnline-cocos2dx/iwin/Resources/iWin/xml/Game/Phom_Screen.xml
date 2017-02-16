@@ -1,0 +1,373 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+
+				<!--
+											   ### - card free
+					car free				######### - card phom and eat
+					
+					|
+					| car phome and eat	
+					||		
+					|#
+					 #					 
+					##	
+					##
+					##
+					 #
+					 #		
+				
+				-->
+	<game id="16" name="PHOM" design="960_540">
+		<player id="0">
+			<common name="value_pos"	value="20_20"	/>
+			<common name="anchor_point" value="0_0"		/>
+			<common name="pos_tex1" 	value="10_-50"	/>
+			<common name="pos_text_bonus"	value="150_50"	/>
+			<common name="pos_chat"     value="100_10"	/>
+			<common name="pos_fire"     value="711_160"	/>
+		<!-- pos phom card and eat card will the same pos and define in code -->
+			<common name="pos_free"     value="517_31"	/>
+		</player>
+		<player id="1">
+			<common name="value_pos"	value="20_330"	/>
+			<common name="anchor_point" value="0_1"		/>
+			<common name="pos_tex1" 	value="10_-30"	/>
+			<common name="pos_text_bonus"	value="100_0"	/>
+			<common name="pos_chat"     value="100_10"	/>
+			<common name="pos_fire"     value="310_160"	/>
+		<!-- pos phom card and eat card will the same pos and define in code -->			
+			<common name="pos_free"     value="70_320"	/>
+		</player>
+		<player id="2">
+			<common name="value_pos"	value="400_465"	/>
+			<common name="anchor_point" value="0_1"		/>
+			<common name="pos_tex1" 	value="95_40"	/>
+			<common name="pos_text_bonus"	value="120_-50"	/>
+			<common name="pos_chat"     value="100_10"	/>
+			<common name="pos_fire"     value="310_435"	/>	
+		<!-- pos phom card and eat card will the same pos and define in code -->			
+			<common name="pos_free"     value="480_400"	/>		
+		</player>
+		<player id="3">
+			<common name="value_pos"	value="950_330"	/>
+			<common name="anchor_point" value="1_1"		/>
+			<common name="pos_tex1" 	value="100_-30"	/>
+			<common name="pos_text_bonus"	value="-100_0"/>
+			<common name="pos_chat"     value="-10_10"	/>
+			<common name="pos_fire"     value="721_435"	/>	
+				<!-- pos phom card and eat card will the same pos and define in code -->	
+			<common name="pos_free"     value="880_320"	/>				
+		</player>
+	</game>
+	
+	<MenuWidget name="Phom" designSize="960_540">
+			
+		<Widget id="0" typeRes="layout" name = "game_card_layer" idx_appear ="1">		
+			<common_value>
+				<common 		name="clipping_enable"	    value="0"/>
+				<common 		name="background_type" 		value="0"/>
+				<common			name="casca_color"			value="0"/>
+				<common			name="stick_screen"			value="1"/>
+				<common 		name="anchor_point"			value="0_0"/>
+			</common_value>
+			<pos 			origin="0_0" />
+			<Size 			origin="960_540" />
+		</Widget>
+		<Widget id="1" typeRes="panel" name = "back_panel_card" idx_appear ="1">		
+			<common_value>							
+				<common 		name="source" 		value="gamescreen-newgui-game-common/bkg_btn_bar.9.png"/>				
+				<common			name="scale_9"		value="1"/>
+				<common 		name="use_atlas" 	value="1"/>	
+				<common			name="stick_screen"	value="1"/>
+				<common			name="use_nine_path" value="1"/>
+				<common			name="anchor_point"	 value="0_1"/>
+				<common			name="swallow_touch"	value="1"/>
+			</common_value>
+					
+				<Widget id="1" typeRes="button" name = "btn_change_phom" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="layoff"/>
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>		
+				<Widget id="1" typeRes="button" name = "btn_get_card" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_red"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="get_card"/>
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>					
+
+				<Widget id="1" typeRes="button" name = "btn_eat_card" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="meld"/>
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>	
+
+				<Widget id="1" typeRes="button" name = "btn_fire_card" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_red"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="fire"/>	
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>
+
+				<Widget id="1" typeRes="button" name = "btn_down_phom" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="laydown"/>
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>
+				<Widget id="1" typeRes="button" name = "btn_send_card" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="send"/>
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>
+				<Widget id="1" typeRes="button" name = "btn_create_phom" idx_appear ="2">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"	value="1_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="make_rummy"/>					
+						</common_value>
+						<pos 		origin = "75_25" 	/>
+					</Widget>
+					
+					<pos 		origin = "200_33" 	/>
+					<Size 		origin = "150_50" 	/>
+				</Widget>
+
+				<Widget id="6" typeRes="button" name = "btn_invite_player" idx_appear ="2" visible="0">		
+					<template_value>
+						<template 		name="temp_btn_yellow"/>						
+					</template_value>
+					<common_value>
+						<common			name="anchor_point"		value="0_0.5"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="invite_other_people"/>					
+							</common_value>
+							<pos 		origin = "90_25" 	/>
+					</Widget>
+
+					<pos 		origin = "323_33" 	/>
+					<Size 		origin = "250_50" 	/>
+				</Widget>													
+							
+				<pos 		origin = "0_67" 	/>
+				<Size 		origin = "960_67" 	/>
+		</Widget>
+		
+		<Widget id="0" typeRes="layout" name = "result_0" idx_appear ="1" visible="1">		
+			<common_value>
+				<common 		name="anchor_point"			value="0.5_0"/>
+			</common_value>
+			<Widget id="0" typeRes="layout" name = "score_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="0.5_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel" >			
+				</Widget>
+				<pos 			origin="60_180" />
+				<Size 			origin="80_40" />
+			</Widget>		
+			<Widget id="1" typeRes="layout" name = "result_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="0.5_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel1" >			
+				</Widget>
+				<pos 			origin="60_0" />
+				<Size 			origin="120_50" />
+			</Widget>
+			<pos 			origin="480_10" />
+			<Size 			origin="120_50" />
+		</Widget>
+		<Widget id="1" typeRes="layout" name = "result_1" idx_appear ="1" visible="1">		
+			<common_value>
+				<common 		name="anchor_point"			value="0_0.5"/>
+			</common_value>
+			<Widget id="0" typeRes="layout" name = "score_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="0_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel" >			
+				</Widget>
+				<pos 			origin="0_55" />
+				<Size 			origin="80_40" />
+			</Widget>		
+			<Widget id="1" typeRes="layout" name = "result_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="0_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel1" >			
+				</Widget>
+				<pos 			origin="0_0" />
+				<Size 			origin="120_50" />
+			</Widget>
+			<pos 			origin="210_270" />
+			<Size 			origin="120_50" />
+		</Widget>
+		<Widget id="2" typeRes="layout" name = "result_2" idx_appear ="1" visible="1">		
+			<common_value>
+				<common 		name="anchor_point"			value="0.5_1"/>
+			</common_value>
+			<Widget id="0" typeRes="layout" name = "score_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="1_0.5"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel" >			
+				</Widget>
+				<pos 			origin="58_25" />
+				<Size 			origin="80_40" />
+			</Widget>		
+			<Widget id="1" typeRes="layout" name = "result_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="0_0.5"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel1" >			
+				</Widget>
+				<pos 			origin="62_25" />
+				<Size 			origin="120_50" />
+			</Widget>		
+			<pos 			origin="480_440" />
+			<Size 			origin="120_50" />
+		</Widget>
+		<Widget id="3" typeRes="layout" name = "result_3" idx_appear ="1" visible="1">		
+			<common_value>
+				<common 		name="anchor_point"			value="1_0.5"/>
+			</common_value>
+			<Widget id="0" typeRes="layout" name = "score_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="1_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel" >			
+				</Widget>
+				<pos 			origin="120_55" />
+				<Size 			origin="80_40" />
+			</Widget>		
+			<Widget id="1" typeRes="layout" name = "result_layout" idx_appear ="1" visible="1">		
+				<common_value>
+					<common 		name="anchor_point"			value="1_0"/>
+				</common_value>
+				<Widget id="0" name = "layout_result" com ="GameScreens.PhomResultPanel1" >			
+				</Widget>
+				<pos 			origin="120_0" />
+				<Size 			origin="120_50" />
+			</Widget>
+			<pos 			origin="740_270" />
+			<Size 			origin="120_50" />
+		</Widget>
+	
+		<Widget id="4" typeRes="panel" name = "star_phom" idx_appear ="1" visible="0">		
+			<common_value>
+				<common 		name="source"				value="mainscreen/icon/star.png"/>
+			</common_value>
+			<pos 			origin="0_0" />
+			<Size 			origin="28_28" />
+		</Widget>
+	</MenuWidget>
+</GAME>

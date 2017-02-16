@@ -1,0 +1,346 @@
+<?xml version="1.0" ?>
+<GAME>
+			<!-- this is login layout OTP -->
+				<Widget id="3" typeRes="layout"  name = "otp_login_layout" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+						<!-- title text: Login OTP -->
+						<Widget id="1" typeRes="font"   name = "title_" 			idx_appear ="1">
+							<template_value>
+								<template name="temp_text_radi"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="login_otp"/>					
+								<common			name="anchor_point"		value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "300_480" 	/>
+						</Widget>	
+						<!-- text: guilde enter OTP receive through email  -->
+						<Widget id="2" typeRes="font" 	name = "login_otp_desc" 	idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value=""/>					
+								<common			name="anchor_point"	value="0_0.5"/>
+								<common 		name="AreaSize" 	value="600_0"/>
+							</common_value>
+							<pos 		origin = "10_420" 	/>
+						</Widget>
+						<!-- edit text: enter OTP -->
+						<Widget id="3" typeRes="layout" 	name = "panel_otp_input" idx_appear ="1" visible="1">		
+							<common_value>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 				value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"			value="1"/>
+								<common			name="scale_9"				value="1"/>
+								<common			name="use_nine_path" 		value="1"/>
+								<common			name="anchor_point"			value="0_1"/>
+							</common_value>
+							<pos 		origin = "10_380" 	/>
+							<Size 		origin = "530_40" 	/>
+							<opacity	origin = "240" 		/>
+							<Widget id="0" typeRes="text_field" name = "text_input_otp" idx_appear ="2" visible="1">		
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="enter_otp"/>
+									<common			name="anchor_point"			value="0_0.5"/>	
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" 	name = "btn_clear_text" idx_appear ="2" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "520_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+						</Widget>		
+						<!-- check box: save on this device -->
+						<Widget id="4" typeRes="layout" 	name = "check_remember" idx_appear ="1" visible="1">		
+							<common_value>
+								<common			name="anchor_point"			value="0_1"/>
+							</common_value>
+							<Widget id="1" typeRes="check_box" name = "btn_check_save_on_device" 	idx_appear ="2">		
+								<template_value>
+									<template name="check_box_round"/>
+								</template_value>	
+								<common_value>					
+									<common			name="anchor_point"		value="0_0.5"/>
+									<common			name="touch_zone"		value="200_50"/>
+									<common 		name="touch_anchor"		value="0.5_0"/>
+								</common_value>
+								<Size 		origin = "30_30" 	/>
+							</Widget>
+							<Widget id="2" typeRes="font" name = "title_" idx_appear ="2">
+								<template_value>
+									<template name="temp_text_0_3"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="save_authen_on_device"/>					
+									<common			name="state_scale"		value="2"/>
+									<common			name="anchor_point"		value="0_0.5"/>	
+								</common_value>
+								<pos 		origin = "50_0" />
+							</Widget>
+							<pos 		origin = "10_300" 	/>
+						</Widget>
+						<!-- button: btn OK to send otp to server -->
+						<Widget id="5" typeRes="button" 	name = "active_authen_btn" 	idx_appear ="1">		
+							<template_value>
+								<template name="temp_btn_yellow"/>
+							</template_value>
+							<common_value>							
+								<common			name="stick_screen"	value="1"/>
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="ok"/>					
+									<common			name="anchor_point"	value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "130_20" 	/>
+								<color		origin = "10_10_10_255"/>
+							</Widget>
+							<pos 		origin = "10_260" 	/>						
+							<Size 		origin = "260_40" 	/>
+						</Widget>		
+						<!-- button: request otp from server again -->
+						<Widget id="6" typeRes="button" 	name = "request_otp_btn" 	idx_appear ="1">		
+							<template_value>
+								<template name="temp_btn_yellow"/>
+							</template_value>
+							<common_value>		
+								<common			name="stick_screen"	value="1"/>
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="resend_otp"/>					
+									<common			name="anchor_point"	value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "130_20" 	/>
+							</Widget>
+							
+							<pos 		origin = "280_260" 	/>						
+							<Size 		origin = "260_40" 	/>
+						</Widget>							
+						<Widget id="7" typeRes="layout" 	name = "list_btn_otp_other" idx_appear ="1" visible="1">		
+							<common_value>
+								<common			name="anchor_point"			value="0_1"/>
+							</common_value>
+							<!-- text: guilde enter OTP receive through others like : gg authenticator / sms  -->
+							<Widget id="7" typeRes="font" 	name = "alter_login_title" 	idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="change_type_otp"/>					
+									<common			name="anchor_point"	value="0_1"/>
+									<common			name="AreaSize"		value="500_0"/>
+								</common_value>
+								<pos 		origin = "10_150" 	/>
+							</Widget>
+							
+							<!-- button: authen by gg authenticator app -->
+							<Widget id="8" typeRes="button" 	name = "gg_authen_btn" idx_appear ="1">		
+								<template_value>
+									<template name="temp_btn_blue"/>
+								</template_value>
+								<common_value>								
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">	
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="gg_otp"/>					
+									</common_value>
+									<pos 		origin = "150_20" 	/>
+								</Widget>
+								<pos 		origin = "260_120" 	/>
+								<Size 		origin = "300_40" 	/>
+								<COMMAND>
+									<cmd name="SET_POS_1" id="0">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_120",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+									<cmd name="SET_POS_2" id="1">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_70",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							
+							<!-- button: authen by sms -->
+							<Widget id="9" typeRes="button" 	name = "sms_authen_btn" idx_appear ="1">		
+								<template_value>
+									<template name="temp_btn_blue"/>
+								</template_value>
+								<common_value>								
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">	
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="sms_otp"/>					
+									</common_value>
+									<pos 		origin = "150_20" 	/>
+								</Widget>
+								<pos 		origin = "260_70" 	/>
+								<Size 		origin = "300_40" 	/>
+								<COMMAND>
+									<cmd name="SET_POS_1" id="0">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_120",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+									<cmd name="SET_POS_2" id="1">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_70",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							
+							<!-- button: authen by email -->
+							<Widget id="10" typeRes="button" 	name = "email_authen_btn" idx_appear ="1" visible="0">		
+								<template_value>
+									<template name="temp_btn_blue"/>
+								</template_value>
+								<common_value>								
+									<common			name="stick_screen"	value="1"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">	
+									<template_value>
+										<template name="temp_text_0"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="email_otp"/>					
+										<common			name="anchor_point"	value="0.5_0.5"/>
+									</common_value>
+									<pos 		origin = "150_20" 	/>
+								</Widget>						
+								<pos 		origin = "260_70" 	/>
+								<Size 		origin = "300_40" 	/>
+								<COMMAND>
+									<cmd name="SET_POS_1" id="0">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_120",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+									<cmd name="SET_POS_2" id="1">
+									{
+										"act0" : 
+										{
+											"single" : {
+												"SET_POSITION" : "260_70",
+												"DESIGN"	   : "960_540"
+											}
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+								<pos 		origin = "10_210" 	/>
+								<Size 		origin = "300_180" 	/>
+						</Widget>
+						<!-- button: back to login screen -->
+						<Widget id="8" typeRes="button" 	name = "btn_back" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="anchor_point"		value="0_1"/>
+							</common_value>
+							<pos 		origin = "-300_515" 	/>
+							<Size 		origin = "22_34" 	/>
+						</Widget>
+						<pos 		origin = "640_0" 	/>
+						<Size 		origin = "640_540" 	/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0": {
+									"squence":[
+										{
+											"SET_POSITION"	:	"1000_0",
+											"DESIGN"		:	"960_540"
+										},
+										{
+											"SET_VISIBLE"	: 	1
+										}
+									]
+								},
+								"act1":{
+									"single_0" : {	
+										"POSITION":"640_0",
+										"DESIGN":"960_540",
+										"STYLE":0, 
+										"TIME":0.15
+									}	
+								}		
+							}
+							</cmd>		
+						</COMMAND>
+				</Widget>
+				<!-- end login layout OTP -->													
+</GAME>

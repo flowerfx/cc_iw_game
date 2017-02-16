@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" 	typeRes="layout" name = "scroll_item" idx_appear ="1" visible="0">		
+					<common_value>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					<Widget id="0" typeRes="panel" name = "bg_item" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/img_table.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "200_280" 	/>	
+						<color 		origin = "255_255_255_255" 	/>
+					</Widget>
+
+					<Widget id="1" typeRes="font" name = "top_lbl" idx_appear ="2">		
+						<template_value>
+							<template 		name="temp_text_iap"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="5000"/>					
+							<common			name="anchor_point"	value="1_0.5"/>
+						</common_value>
+						<pos 		origin = "190_255" 	/>
+						<color 		origin = "255_0_0_255" 	/>
+					</Widget>							
+					<Widget id="2" typeRes="panel" name = "icon_khoa_taikhoan" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/card_coin_done.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+						<Widget id="3" typeRes="panel" name = "icon_lock" idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="otherscreen/topup-screen/lock.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "55_47" 	/>
+							<Size 		origin = "67_80" 	/>	
+						</Widget>		
+						<pos 		origin = "100_140" 	/>
+						<Size 		origin = "110_94" 	/>	
+					</Widget>
+					<Widget id="3" typeRes="layout" name = "icon_card" idx_appear ="1">		
+						<common_value>
+							<common 		name="background_type" 		value="0"/>		
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="casca_opacity"		value="0"/>
+							<common			name="anchor_point"	value="0.5_0"/>
+						</common_value>
+		
+						<pos 		origin = "100_140" 	/>
+						<Size 		origin = "110_94" 	/>	
+					</Widget>
+					<Widget id="4" typeRes="panel" name = "icon_coin_bundle" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/coin.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+		
+						<pos 		origin = "100_140" 	/>
+						<Size 		origin = "110_94" 	/>	
+					</Widget>
+					<Widget id="5" typeRes="panel" name = "icon_ruby_bundle" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/ruby.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+		
+						<pos 		origin = "100_140" 	/>
+						<Size 		origin = "110_94" 	/>	
+					</Widget>
+					<Widget id="6" typeRes="panel" name = "icon_coin" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/ico_win.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+		
+						<pos 		origin = "31_255" 	/>
+						<Size 		origin = "43_42" 	/>	
+					</Widget>	
+					<Widget id="7" typeRes="panel" name = "icon_ruby" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="otherscreen/topup-screen/ruby_don.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+		
+						<pos 		origin = "31_255" 	/>
+						<Size 		origin = "43_42" 	/>	
+					</Widget>	
+								
+					<Widget id="8" typeRes="font" name = "bot_lbl" idx_appear ="2">		
+						<template_value>
+							<template 		name="temp_text_iap"/>						
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="50000"/>					
+						</common_value>
+						<pos 		origin = "100_25" 	/>
+					</Widget>							
+				
+					<Widget id="9" typeRes="button" name = "btn_item" idx_appear ="4">		
+						<common_value>
+							<common			name="press"		value="loginscreen/nine/whitepixel.png"/>
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common			name="scale_9"		value="1"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="1"/>
+							<common			name="anchor_point"	value="0_0"/>
+							
+							<common			name="no_add_event"	value="0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "200_280" 	/>
+						<opacity    origin = "0" />
+					</Widget>		
+
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "200_280" 	/>
+				</Widget>
+	
+</GAME>

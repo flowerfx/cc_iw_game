@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "442c8ef7-5f79-5f4b-afd1-69aa217892c8++3765",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++6961" : {
+
+    },
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++3765" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++6961" : 0,
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++3765" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F3082B8-DBAB-4C05-B168-186E53068527",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++6961" : "..",
+    "442c8ef7-5f79-5f4b-afd1-69aa217892c8++3765" : "iwin_mac.xcodeproj\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.mecorp.vn\/svn\/mecorp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "442c8ef7-5f79-5f4b-afd1-69aa217892c8++3765"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.mecorp.vn\/svn\/mecorp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "442c8ef7-5f79-5f4b-afd1-69aa217892c8++6961"
+    }
+  ]
+}

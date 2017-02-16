@@ -1,0 +1,270 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="9" 	typeRes="layout" name = "tutorial_layer" 		idx_appear ="1" visible ="0">		
+					<common_value>
+						<common			name="anchor_point"	value="0_0"/>
+						<common			name="stick_screen"	value="1"/>
+						<common			name="swallow_touch"	 value="1"/>
+					</common_value>
+
+					<Widget id="0" typeRes="panel" name = "background_1" idx_appear ="1">		
+						<common_value>
+							<common 		name="source" 		value="mainscreen/newgui-mainscreen/tutorial_bkg_full.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="1" typeRes="layout" name = "show_item" 	idx_appear ="1" >		
+						<common_value>
+							<common			name="anchor_point"	value="0_0"/>
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "960_540" 	/>					
+					</Widget>
+					
+					<Widget id="2" typeRes="layout" name = "stop_touch_layout" idx_appear ="1">		
+						<common_value>
+							<common			name="swallow_touch" value="1"/>
+							<common			name="stick_screen"	value="1"/>
+						</common_value>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="3" typeRes="button" name = "close_tutorial_btn" idx_appear ="2">						
+						<common_value>
+							<common 		name="source" 		value="mainscreen/newgui-mainscreen/tutorial_cancel.png"/>
+							<common 		name="press" 		value="mainscreen/newgui-mainscreen/tutorial_cancel.png"/>
+							<common 		name="disable" 		value="mainscreen/newgui-mainscreen/tutorial_cancel.png"/>
+								
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common 		name="scale_9" 		value="1"/>	
+							<common			name="anchor_point"	value="0_0"/>
+							
+							
+						</common_value>
+						<Widget id="0" typeRes="font" name = "txt" idx_appear ="2">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="close"/>					
+							</common_value>
+							<pos 		origin = "45_17" 	/>
+						</Widget>		
+					
+						<pos 		origin = "10_10" 	/>
+						<Size 		origin = "90_34" 	/>
+					</Widget>
+					
+					<Widget id="4" typeRes="button" name = "next_tutorial_btn"  idx_appear ="2">						
+						<common_value>
+							<common 		name="source" 		value="mainscreen/newgui-mainscreen/tutorial_continute.png"/>
+							<common 		name="press" 		value="mainscreen/newgui-mainscreen/tutorial_continute.png"/>
+							<common 		name="disable" 		value="mainscreen/newgui-mainscreen/tutorial_continute.png"/>
+								
+							<common 		name="scale_press" 	value="-0.05"/>
+							<common 		name="scale_9" 		value="1"/>	
+							<common			name="anchor_point"	value="1_0"/>
+						</common_value>
+						<Widget id="0" typeRes="font" name = "txt" idx_appear ="2">		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="cont"/>					
+							</common_value>
+							<pos 		origin = "45_17" 	/>
+						</Widget>
+						<pos 		origin = "950_10" 	/>
+						<Size 		origin = "90_34" 	/>
+					</Widget>
+					
+					<Widget id="5" typeRes="layout" name = "msg_layer" 	idx_appear ="2" >		
+						<common_value>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+						<Widget id="2" typeRes="layout" name = "msg_bg" 		idx_appear ="1" >		
+							<common_value>
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" name = "img_arrow" 	idx_appear ="1" >		
+								<common_value>
+									<common			name="source"			value="mainscreen/newgui-mainscreen/tutorial_arow.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common			name="anchor_point"		value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "5_0" 	/>
+								<Size 		origin = "15_15" 	/>					
+							</Widget>
+							<Widget id="1" typeRes="panel" name = "img_line" 	idx_appear ="1" >		
+								<common_value>
+									<common			name="source"			value="mainscreen/newgui-mainscreen/tutorial_img.9.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common			name="anchor_point"		value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "5_-15" 	/>
+								<Size 		origin = "220_10" 	/>					
+							</Widget>
+							<Widget id="2" typeRes="panel" name = "img_bg" 	idx_appear ="1" >		
+								<common_value>
+									<common			name="source"			value="mainscreen/newgui-mainscreen/tutorial_bkg.9.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common			name="anchor_point"		value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "5_-20" 	/>
+								<Size 		origin = "216_50" 	/>					
+							</Widget>
+							<pos 		origin = "5_5" 	/>
+							<Size 		origin = "10_10" 	/>					
+						</Widget>
+						<Widget id="1" 	typeRes="font" 	name = "text" 			idx_appear ="1" >		
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="text_tutorial"/>					
+								<common			name="anchor_point"		value="0.5_1"/>
+								<common			name="AreaSize" 		value="350_0"/>
+								<common			name="aligneH"			value="1"/>
+							</common_value>
+	
+							<pos 		origin = "5_-20" 	/>
+							<COMMAND>
+								<cmd id="0" name="STEP_0">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_1"
+											},
+											{
+												"SET_POSITION" : "5_-20",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text1"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="1" name="STEP_1">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_0"
+											},
+											{
+												"SET_POSITION" : "5_30",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text2"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="2" name="STEP_2">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_0"
+											},
+											{
+												"SET_POSITION" : "5_30",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text3"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="3" name="STEP_3">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_0"
+											},
+											{
+												"SET_POSITION" : "5_30",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text4"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="4" name="STEP_3_5">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_1"
+											},
+											{
+												"SET_POSITION" : "5_-20",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text4"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="5" name="STEP_4">
+								{
+									"act0" : {
+										"squence" :[
+											{
+												"SET_ANCHOR" : "0.5_0"
+											},
+											{
+												"SET_POSITION" : "5_30",
+												"DESIGN"	   : "960_540"	
+											},
+											{
+												"SET_TEXT" : "tuto_text5"
+											}
+										]
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "10_10" 	/>					
+					</Widget>
+
+					<Widget id="6" typeRes="font" name = "step_txt" 	idx_appear ="2">		
+						<template_value>
+								<template name="temp_text_0"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 		value="0/5"/>					
+							<common			name="anchor_point"	value="0.5_0"/>
+						</common_value>
+						<pos 		origin = "480_10" 	/>
+					</Widget>
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>					
+			</Widget>
+		
+</GAME>

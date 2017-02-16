@@ -1,0 +1,475 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="7" typeRes="layout"  name = "layout_crilce"			idx_appear="1"  visible="0"  >
+				<common_value>
+				  <common			name="anchor_point"			value="0_0"/>
+				  <common			name="swallow_touch"	 value="1"/>
+				  <common			name="stick_screen"	 value="1"/>
+				</common_value>
+				<pos 		origin = "0_0" 	/>
+				<Size 		origin = "960_540" 	/>
+					<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+						<common_value>
+							<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common 		name="anchor_point" value="0_0"/>
+							<common			name="stick_screen"	value="1"/>
+						</common_value>					
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					<Widget id="1" name ="cricle_main"  typeRes="layout" idx_appear="1" visible="1"  >
+					  <common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="3"/>
+						<common 		name="source" 				value="gamescreen-newgui-game-common/bkg_vongxoay.9.png"/>
+						<common			name="stick_screen"			value="0"/>
+						<common			name="scale_9"				value="1"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="use_nine_path" 		value="1"/>
+						<common			name="anchor_point"			value="0_0.5"/>
+					  </common_value>
+					  <pos 		origin = "300_270" 	/>
+					  <Size 	origin = "600_250" 	/>
+					  <Widget id="0" name ="cricle_img"  typeRes="layout" idx_appear="1" visible="1"  >
+						<common_value>
+								<common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>
+						<pos 		origin = "-50_125" 	/>
+						<Size 		origin = "430_430" 	/>
+					  </Widget>
+					  
+					  <Widget id="1" name ="layout_btn_action"  typeRes="layout" idx_appear="1" visible="1"  >
+						<pos 		origin = "-50_125" 	/>
+						<Size 		origin = "180_180" 	/>
+						<common_value>
+						  <common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="button" name = "btn_spin" 	idx_appear ="2">
+						  <common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/btn_quay.png"/>
+							<common 		name="press" 		value="gamescreen-newgui-game-common/btn_quay.png"/>
+							<common 		name="disable" 		value="gamescreen-newgui-game-common/btn_quay.png"/>
+							<common 		name="scale_press" 	value="0.00"/>
+							<common 		name="scale_press" 	value="-0.01"/>
+							<common 		name="use_atlas" 	value="1"/>
+						  </common_value>
+						  <pos 		origin = "90_90" 	/>
+						  <Size 	origin = "180_180" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font" 	name = "title" 		idx_appear ="2">
+							<template_value>
+								<template name="temp_text_1"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="spinnow"/>
+							</common_value>
+							<pos 		origin = "90_90" 	/>
+							<color 		origin = "246_0_0_255" 	/>
+						 </Widget>	
+					  </Widget>
+					  
+					  <Widget id="1" name ="luckycircle_result_layout"  typeRes="layout" idx_appear="1" visible="0"  >
+						<common_value>
+								<common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>
+						<Widget id="0" name ="icon_win_2"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win2.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "450_225" 	/>
+					    </Widget>
+						<Widget id="1" name ="icon_win_4"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win4.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "387_225" 	/>
+					    </Widget>
+						<Widget id="2" name ="icon_win_6"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win6.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "225_225" 	/>
+					    </Widget>
+						<Widget id="3" name ="icon_win_8"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win8.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "180_225" 	/>
+					    </Widget>
+						<Widget id="4" name ="icon_win_10"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win10.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "162_225" 	/>
+					    </Widget>
+						<Widget id="5" name ="icon_win_12"  typeRes="panel" idx_appear="1" visible="0"  >
+							<common_value>
+							  <common 		name="source" 				value="gamescreen-newgui-game-common/luckycircle_win12.png"/>
+							  <common		name="anchor_point"			value="0.5_0"/>
+							</common_value>
+							<pos 		origin = "215_215" 	/>
+							<Size 		origin = "135_225" 	/>
+					    </Widget>
+						<pos 		origin = "-50_125" 	/>
+						<Size 		origin = "430_430" 	/>
+						<COMMAND>
+							<cmd id="0" name="HL">
+							{
+								"act0" : {
+									"repeat" : -1,
+									"squence" : [
+										{
+											"COLOR" : "10_10_10_255",
+											"TIME"	: 1.0f
+										},
+										{
+											"COLOR" : "255_255_255_255",
+											"TIME"	: 1.0f
+										}
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+						
+						
+					  </Widget>
+					  
+					  <Widget id="2" name ="img_arow"  typeRes="layout" idx_appear="1" visible="1"  >
+						<common_value>
+						  <common 		name="clipping_enable"	    value="0"/>
+						  <common 		name="background_type" 		value="3"/>
+						  <common 		name="source" 				value="gamescreen-newgui-game-common/ico_mui_ten.png"/>
+						  <common			name="anchor_point"			value="0.5_0.8"/>
+						</common_value>
+						<pos 		origin = "-50_360" 	/>
+						<Size 		origin = "20_70" 	/>
+					  </Widget>
+
+					  <Widget id="3" name ="bg_result"  typeRes="layout" idx_appear="1" visible="1"  >
+						<pos 		origin = "200_125" 	/>
+						<Size 		origin = "390_170" 	/>
+						<common_value>
+						  <common 		name="background_type" 		value="3"/>
+						  <common 		name="source" 				value="otherscreen/pickroom-screen/bkg_mainbar.9.png"/>
+						  <common			name="scale_9"				value="1"/>
+						  <common			name="use_nine_path" 		value="1"/>
+						  <common			name="anchor_point"			value="0_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="font" 		name = "title_" idx_appear ="2">
+						  <template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							  <common_value>
+								<common 		name="source" 			value="history"/>
+								<common			name="anchor_point"		value="0_1"/>
+							  </common_value>
+						  <pos 		origin = "2_168" 		/>
+						</Widget>
+
+						<Widget id="1" typeRes="list_view" name = "scroll_content" idx_appear ="2" visible="1">
+						  <common_value>
+							<common 		name="inner_size" 			value="390_150"/>
+							<common 		name="direction" 			value="1"/>
+							<!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+							<common 		name="background_type" 		value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+							<common			name="scrollbar_enable"		value="1"/>
+							<common			name="clipping_enable"		value="1"/>
+							<common			name="bounce_enable"		value="1"/>
+						  </common_value>
+						   <Widget id="1" name ="layout_result"  typeRes="layout" idx_appear="1" visible="1"  >
+							  <common_value>
+								<common			name="anchor_point"			value="0_0.5"/>
+							  </common_value>
+							  <pos 		origin = "5_0" 	/>
+							  <Size 	origin = "390_30" 	/>
+							    <Widget id="0" typeRes="font" 		name = "notice_content" idx_appear ="1" >
+									<template_value>
+										<template name="temp_text_0_1"/>
+									</template_value>
+									<common_value>
+										<common 			name="source" 			value="result recieve"/>
+										<common			name="anchor_point"		value="0_1"/>
+										<common			name="aligneH"			value="0"/>
+										<common			name="aligneV"			value="0"/>
+										<common			name="AreaSize"			value="380_0"/>
+									</common_value>
+									<pos 		origin = "10_3" 	/>
+								</Widget>
+						   </Widget>
+						 
+						  <pos 		origin = "0_0" 	/>
+						  <Size 		origin = "390_150" 	/>
+						</Widget>
+					  </Widget>
+
+					  <Widget id="4" typeRes="button" name = "btn_close" idx_appear ="2" visible="1">
+						<common_value>
+						  <common 		name="source" 		value="gamescreen-newgui-game-common/ico_close_vongxoay.png"/>
+						  <common 		name="press" 		value="gamescreen-newgui-game-common/ico_close_vongxoay.png"/>
+						  <common 		name="disable" 		value="gamescreen-newgui-game-common/ico_close_vongxoay.png"/>
+						  <common 		name="use_atlas" 	value="1"/>
+
+						  <common 		name="scale_press" 	value="-0.05"/>
+						  <common		name="anchor_point"	value="0_0"/>
+						</common_value>
+						<pos 		origin = "580_240" 	/>
+						<Size 		origin = "30_30" 	/>
+					  </Widget>
+
+					  <Widget id="5" typeRes="layout" name = "btn_purchase_win" 	idx_appear ="1">
+						<common_value>
+						  <common			name="stick_screen"		value="0"/>
+						  <common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="button" name = "btn_purchase_win" 	idx_appear ="1">
+						   <template_value>
+							<template name="scale9"/>
+						  </template_value>
+						  <common_value>
+							<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_napwin.9.png"/>
+							<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_napwin.9.png"/>
+							<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_napwin.9.png"/>
+
+							<common 		name="scale_press" 		value="-0.00"/>
+							<common			name="anchor_point"		value="0_0"/>
+							<common			name="stage_scale9"		value="2"/>
+						  </common_value>
+						  <pos 		origin = "0_0" 			/>
+						  <Size 	origin = "250_30" 			/>
+						</Widget>
+
+						<Widget id="0" typeRes="font" name = "title_" 		idx_appear ="1">
+						 <template_value>
+								<template name="temp_text_0"/>
+						</template_value>
+						 <common_value>
+							<common 		name="source" 		value=""/>
+						  </common_value>
+						  <pos 		origin = "125_15" 	/>
+						</Widget>
+
+						
+						<pos 		origin = "180_215" 			/>
+						<Size 		origin = "250_30" 			/>
+					  </Widget>
+
+					  <Widget id="6" typeRes="layout" name = "btn_ticket" 	idx_appear ="1">
+						<common_value>
+						  <common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="button" name = "btn_ticket" 	idx_appear ="1">
+						  <template_value>
+							<template name="scale9"/>
+						  </template_value>
+						  <common_value>
+							<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_napve.9.png"/>
+							<common 		name="press" 			value="mainscreen/newgui-mainscreen/bkg_napve.9.png"/>
+							<common 		name="disable" 			value="mainscreen/newgui-mainscreen/bkg_napve.9.png"/>
+
+							<common 		name="scale_press" 		value="-0.00"/>
+							<common			name="anchor_point"		value="0_0"/>
+							<common			name="stage_scale9"		value="2"/>
+						  </common_value>
+						  <pos 		origin = "0_0" 			/>
+						  <Size 	origin = "150_30" 			/>
+						</Widget>
+
+						<Widget id="0" typeRes="font" name = "title_" 		idx_appear ="1">
+							<template_value>
+								<template name="temp_text_0"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value=""/>
+							</common_value>
+							<pos 		origin = "75_15" 	/>
+						</Widget>
+
+						
+						<pos 		origin = "435_215" 			/>
+						<Size 		origin = "150_30" 			/>
+					  </Widget>
+					
+					  <Widget id="7" typeRes="layout" name = "layout_check_auto_spin" 	idx_appear ="1" visible="0">
+						<common_value>
+						  <common			name="anchor_point"		value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="check_box" 	name = "check_box_auto" 	idx_appear ="2">
+								<common_value>
+								  <common 		name="source" 					value="loginscreen/login-screen/check_normal.png"/>
+								  <common 		name="select" 					value="loginscreen/login-screen/check_normal.png"/>
+								  <common 		name="cross" 					value="loginscreen/login-screen/check_active.png"/>
+								  <common 		name="backgrounddisable" 		value="loginscreen/login-screen/check_normal.png"/>
+								  <common 		name="frontCrossDisabled" 		value="loginscreen/login-screen/check_active.png"/>
+								  <common 		name="use_atlas" 	value="1"/>
+								  <common			name="anchor_point"		value="0_0"/>
+								</common_value>
+								<pos 		origin = "20_0" 	/>
+								<Size 		origin = "30_30" 	/>
+						</Widget>
+						<Widget id="1" typeRes="font" 		name = "lb_auto" 		idx_appear ="1">
+								<template_value>
+									<template name="temp_text_1"/>
+								</template_value>
+								<common_value>
+								  <common 		name="source" 		value="auto_spin"/>
+								  <common		name="anchor_point"	value="0_0"/>
+								</common_value>
+								<pos 		origin = "55_0" 	/>
+						</Widget>
+						<pos 		origin = "200_5" 			/>
+						<Size 		origin = "150_30" 			/>
+					  </Widget>
+					  <Widget id="8" typeRes="layout" name = "layout_captcha" 	idx_appear ="1" visible="0">
+						<common_value>
+						  <common			name="anchor_point"		value="0_0"/>
+						</common_value>
+							<Widget id = "0" typeRes="panel" 	name = "panel_input" 						idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 			value="loadingscreen/textfieldbgbrow.9.png"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+									<common			name="anchor_point" 	value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "0_15" 	/>
+								<Size 		origin = "200_30" 	/>
+								<Widget id="0" typeRes="text_field" name = "captcha_input" 			idx_appear ="2">							
+									<template_value>
+										<template 		name="temp_textfield_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 				value="nhập mã"/>					
+										<common			name="anchor_point"			value="0_0.5"/>
+										<common			name="touch_zone"			value="180_30"/>
+										<common			name="text_area"			value="180_30"/>
+										<common			name="max_lenght"			value="10"/>
+									</common_value>
+									<pos 		origin = "5_15" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 	name = "btn_clear" 				idx_appear ="2" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="close_button.png"/>
+										<common 		name="press" 		value="close_button.png"/>
+										<common 		name="disable" 		value="close_button.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common			name="anchor_point"	value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "195_20" 	/>
+									<Size 		origin = "25_25" 	/>
+									<opacity	origin = "128"		/>
+								</Widget>
+							</Widget>
+							<Widget id = "1" typeRes="panel" 	name = "panel_captcha" 						idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 			value="loginscreen/login-screen/ico_captcha_default.png"/>
+									<common			name="anchor_point" 	value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "210_15" 	/>
+								<Size 		origin = "110_30" 	/>
+							</Widget>
+							<Widget id = "2" typeRes="button" 	name = "btn_refesh_captcha" 				idx_appear ="2">		
+								<common_value>
+									<common 		name="source" 		value="loginscreen/login-screen/ico_refresh.png"/>
+									<common 		name="press" 		value="loginscreen/login-screen/ico_refresh.png"/>
+									<common 		name="disable" 		value="loginscreen/login-screen/ico_refresh.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "330_15" 	/>
+								<Size 		origin = "30_30" 	/>
+							</Widget>
+							
+						<pos 		origin = "200_5" 			/>
+						<Size 		origin = "350_30" 			/>
+					  </Widget>
+					  
+					  <Widget id="9" typeRes="button" name = "btn_help" idx_appear ="2" visible="0">
+							<common_value>
+							  <common 		name="source" 		value="mainscreen/icon/ico_question.png"/>
+							  <common 		name="press" 		value="mainscreen/icon/ico_question.png"/>
+							  <common 		name="disable" 		value="mainscreen/icon/ico_question.png"/>
+							  <common 		name="use_atlas" 	value="1"/>
+							  <common			name="stick_screen"	value="0"/>
+							  <common			name="scale_9"		value="0"/>
+
+							  <common 		name="scale_press" 	value="-0.05"/>
+							  <common			name="use_nine_path"	value="1"/>
+							  <common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "560_5" 	/>
+							<Size 		origin = "30_30" 	/>
+							<COMMAND>
+								<cmd id="0" name="SET_POS_AUTO">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_POSITION" : "560_5",
+												"DESIGN" : "960_540"
+											},
+											{
+												"SET_SIZE" : "30_30",
+												"DESIGN" : "960_540"
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="1" name="SET_POS_CAPTCHA">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_POSITION" : "165_210",
+												"DESIGN" : "960_540"
+											},
+											{
+												"SET_SIZE" : "35_35",
+												"DESIGN" : "960_540"
+											}
+										]
+									}
+								}
+								</cmd>
+							</COMMAND>
+					  </Widget>
+					
+					</Widget>
+					<Widget id="2" name ="layout_result"  typeRes="layout" idx_appear="1" visible="0"  >
+						  <common_value>
+							<common 		name="background_type" 		value="3"/>
+							<common 		name="source" 				value="loginscreen/nine/bkg_toast.9.png"/>
+							<common			name="scale_9"				value="1"/>
+							<common			name="use_nine_path" 		value="1"/>
+							 <common   name="casca_opacity"  value="0"/>
+							
+						  </common_value>
+						  <pos 		origin = "480_270" 	/>
+						  <Size 	origin = "960_120" 	/>
+						  <Widget id="0" typeRes="font" name = "title" idx_appear ="2">
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value=""/>
+								</common_value>
+								<pos 		origin = "480_60" 	/>
+						  </Widget>
+						 
+					</Widget>
+
+			</Widget>
+												
+</GAME>

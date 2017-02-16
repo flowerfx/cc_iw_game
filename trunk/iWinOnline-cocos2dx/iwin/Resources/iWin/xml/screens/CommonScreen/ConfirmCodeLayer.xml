@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="5" typeRes="layout"  name = "confirm_layout" 		idx_appear="1" 	visible="0">
+				<common_value>
+					<common			name="stick_screen"			value="1"/>
+					<common			name="casca_color"			value="0"/>
+					<common 		name="clipping_enable"	    value="0"/>
+					<common 		name="background_type" 		value="0"/>
+					<common			name="swallow_touch"	 value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" 	name = "bg" idx_appear ="1" >		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+					<opacity	origin = "245"		/>
+				</Widget>
+				
+				<Widget id="8" typeRes="layout" name=  "confirm_code" idx_appear="4" >
+					<common_value>
+						<common			name="stick_screen"			value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+					</common_value>
+						
+					<Widget id = "1" typeRes="layout" name="confirm_code_panel" idx_appear = "1">
+						<common_value>
+							<common 		name="anchor_point" 		value="0.5_0.5"/>
+						</common_value>
+								<Widget id = "0" typeRes="panel" name="confirm_code_panel" idx_appear = "1">
+									<template_value>
+										<template name="scale9"/>
+									</template_value>
+									<common_value>
+										<common 		name="source" 				value="default-window.9.png"/>
+										<common 		name="anchor_point" 		value="0_0"/>
+									</common_value>	
+									<pos 				origin = "0_0" 	/>
+									<Size 				origin = "700_285"  />
+								</Widget>
+								<Widget id="0" typeRes="panel"  name="hl_bg" idx_appear = "1">
+									<common_value>
+										<common 		name="source" 				value="bkg_high_light.png"/>
+										<common 		name="use_atlas" 			value="1"/>	
+										<common			name="stick_screen"			value="0"/>
+										<common 		name="anchor_point" 		value="0.5_0"/>
+									</common_value>
+									<pos 		origin = "350_0" 	/>
+									<Size 		origin = "700_270"  />
+								</Widget>							
+								
+								<Widget id = "0" typeRes="font" 	name = "title_" 					idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_radi"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="notice"/>					
+											<common			name="anchor_point"	value="0.5_1"/>
+										</common_value>
+										<pos 		origin = "350_265" 	/>
+								</Widget>
+								
+								<Widget id="1" typeRes="font" 	name = "title_contain" 					idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="confirm_by_phone"/>					
+											<common			name="anchor_point"	value="0.5_1"/>
+										</common_value>
+										<pos 		origin = "350_195" 	/>
+								</Widget>
+								
+								<Widget id="2" typeRes="panel" 	name = "layput_current_code" idx_appear ="1">		
+										<common_value>
+											<common 		name="source" 			value="loginscreen/nine/white.9.png"/>
+											<common 		name="use_atlas" 		value="1"/>	
+											<common			name="stick_screen"		value="0"/>
+											<common			name="scale_9"			value="1"/>
+											<common			name="use_nine_path"	value="1"/>
+											<common			name="casca_color"		value="0"/>
+											<common			name="use_nine_path"	value="1"/>
+											<common			name="anchor_point" 	value="0.5_1"/>
+										</common_value>
+										<pos 		origin = "350_130" 	/>
+										<Size 		origin = "640_40" 	/>
+										<Widget id="0" typeRes="text_field" name = "code_confirm_input" 		idx_appear ="2">							
+											<template_value>
+												<template name="temp_textfield_0"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 				value="input_code"/>					
+												<common			name="anchor_point"			value="0_0.5"/>
+												<common			name="touch_zone"			value="600_50"/>
+												<common			name="text_area"			value="600_50"/>
+											</common_value>
+											<pos 		origin = "10_20" 	/>
+											<color 		origin = "5_5_5_255" 	/>
+										</Widget>
+										<Widget id="1" typeRes="button" 	name = "btn_clear_code_confirm" 	idx_appear ="2" visible="0">		
+											<common_value>
+												<common 		name="source" 		value="close_button.png"/>
+												<common 		name="press" 		value="close_button.png"/>
+												<common 		name="disable" 		value="close_button.png"/>
+												<common 		name="scale_press" 	value="-0.05"/>
+												<common			name="stick_screen"	value="0"/>
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "630_20" 	/>
+											<Size 		origin = "30_30" 	/>
+											<opacity	origin = "128"		/>
+										</Widget>
+								</Widget>
+								
+								<Widget id="3" typeRes="button" name = "btn_close_confirm_box" 				idx_appear ="1">		
+									<common_value>
+										
+										<common 		name="source" 		value="new_close_button.png"/>
+										<common 		name="press" 		value="new_close_button.png"/>
+										<common 		name="disable" 		value="new_close_button.png"/>
+										
+										<common 		name="scale_press" 	value="-0.05"/>
+										
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="anchor_point"	value="1_1"/>
+									</common_value>
+									<pos 		origin = "675_275" 	/>
+									<Size 		origin = "30_30" 	/>
+								</Widget>							
+								<Widget id="4" typeRes="button" name = "btn_cancel_confirm" 		idx_appear ="2">		
+									<template_value>
+											<template name="temp_btn_red"/>
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"		value="0_1"/>
+									</common_value>
+									
+									<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="cancel"/>					
+										</common_value>
+										<pos 		origin = "155_30" 	/>
+									</Widget>
+									
+									<pos 		origin = "360_70" 	/>
+									<Size 		origin = "310_60" 	/>
+									
+								</Widget>
+								<Widget id="5" typeRes="button" name = "btn_confirm" 		idx_appear ="2">		
+									<template_value>
+											<template name="temp_btn_yellow"/>
+									</template_value>
+									<common_value>
+										<common			name="anchor_point"		value="1_1"/>
+									</common_value>
+									
+									<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="confirm"/>					
+										</common_value>
+										<pos 		origin = "155_30" 		/>
+										<color 		origin = "10_10_10_255" 	/>
+									</Widget>
+									
+									<pos 		origin = "340_70" 	/>
+									<Size 		origin = "310_60" 	/>
+
+								</Widget>
+																				
+						<pos 		origin = "350_150" 	/>
+						<Size 		origin = "700_285"  />
+					</Widget>						
+							
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "700_285" 	/>
+					<COMMAND>
+								<cmd id="0" name="ON_SHOW">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0
+											},
+											{
+												"SIZE":"720_300",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"700_285",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.12
+											}
+										]
+									}		
+								}					
+								</cmd>
+								<cmd id="1" name="ON_HIDE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SIZE":"720_300",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.15
+											}
+										]
+									}		
+								}
+								</cmd>
+					</COMMAND>
+				</Widget>
+						
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>
+			</Widget>
+								
+</GAME>

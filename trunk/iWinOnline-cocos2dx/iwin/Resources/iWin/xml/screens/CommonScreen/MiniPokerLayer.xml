@@ -1,0 +1,2025 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="0" typeRes="layout"  name = "mini_poker_layout" 		idx_appear="1" 	visible="0">
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="swallow_touch"	 	value="1"/>
+					</common_value>
+					
+					<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+							<opacity 	origin = "230" 	/>
+					</Widget>
+
+					<Widget id="1" typeRes="layout"  		name = "poker_panel" 					idx_appear="1"  visible="0">
+						<common_value>
+							<common 		name="anchor_point" 		value="0.5_0.5"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="panel" 			name = "logo" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/name.png"/>
+								<common 		name="anchor_point" 	value="0.5_0"/>
+							</common_value>					
+							<pos 		origin = "375_400" 	/>
+							<Size 		origin = "257_68" 	/>
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="ON_SHOW" id="1">
+								{
+									"act0" : {
+										"squence_0" : [
+											{
+												"SET_OPACITY" : 0
+											},
+											{
+												"SET_POSITION" : "375_300",
+												"DESIGN" : "960_540"
+											}
+										]	
+									},
+									"act1" : {
+										"single_0" : 
+										{
+											"OPACITY" : 255,
+											"TIME"	  : 0.1
+										},
+										"single_1" : 
+										{
+											"POSITION" : "375_400",
+											"DESIGN"	 : "960_540",
+											"TIME"	  : 0.1
+										}
+									}
+								}
+								</cmd>
+								<cmd name="ON_HIDE" id="1">
+								{
+									"act0" : {
+										"squence_0" : [
+											{
+												"SET_OPACITY" : 0
+											},
+											{
+												"SET_POSITION" : "375_300",
+												"DESIGN" : "960_540"
+											}
+										]	
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						
+						<Widget id="1" typeRes="panel" 			name = "panel_bg" 					idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/bg_win.png"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "750_357" 	/>
+						</Widget>
+						<Widget id="2" typeRes="panel" 			name = "panel_bg_ruby" 					idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/bg_ruby.png"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "750_357" 	/>
+						</Widget>
+						<Widget id="3" typeRes="layout" 		name = "rotate_card_layer" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" 	value="0.5_0"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "bg" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/khung_bai.png"/>
+								</common_value>	
+								<pos 		origin = "245_69" 	/>
+								<Size 		origin = "490_138" 	/>
+							</Widget>
+							
+							<Widget id="1" typeRes="layout" 		name = "card_1_layer" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+									<common 		name="clipping_enable"  value="1"/>
+								</common_value>
+								<Widget id="0" typeRes="list_view_table" name = "list_detail" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="96_126"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										
+										<common			name="anchor_point_list"	value="0_0"/>				
+										<common			name="anchor_point"			value="0_0"/>									
+										<common			name="size_child"			value="96_126"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="52"/>
+										
+										
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="panel" name = "blank_card" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/card.png"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "96_126" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" name = "ico_big" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/kb.png"/>
+												<common			name="anchor_point"	value="1_0"/>
+											</common_value>
+											<pos 		origin = "93_3" 	/>
+											<Size 		origin = "64_87" 	/>
+										</Widget>	
+										<Widget id="2" typeRes="panel" name = "ico_small" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/mb.png"/>
+												<common			name="anchor_point"	value="0_1"/>
+											</common_value>
+											<pos 		origin = "2_95" 	/>
+											<Size 		origin = "25_25" 	/>
+										</Widget>
+										<Widget id="3" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="K"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0_3"/>						
+											</template_value>	
+											<color 		origin = "255_0_0_255" 	/>
+											<pos 		origin = "7_97" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "96_126" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "96_126" 	/>
+								</Widget>
+								
+								<Size 		origin = "96_126" 	/>
+								<pos 		origin = "53_5" 	/>
+							</Widget>
+							<Widget id="2" typeRes="layout" 		name = "card_2_layer" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+									<common 		name="clipping_enable"  value="1"/>
+								</common_value>
+								<Widget id="0" typeRes="list_view_table" name = "list_detail" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="96_126"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+														
+										<common			name="anchor_point"			value="0_0"/>									
+										<common			name="size_child"			value="96_126"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="52"/>
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="panel" name = "blank_card" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/card.png"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "96_126" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" name = "ico_big" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/kb.png"/>
+												<common			name="anchor_point"	value="1_0"/>
+											</common_value>
+											<pos 		origin = "93_3" 	/>
+											<Size 		origin = "64_87" 	/>
+										</Widget>	
+										<Widget id="2" typeRes="panel" name = "ico_small" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/mb.png"/>
+												<common			name="anchor_point"	value="0_1"/>
+											</common_value>
+											<pos 		origin = "2_95" 	/>
+											<Size 		origin = "25_25" 	/>
+										</Widget>
+										<Widget id="3" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="K"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0_3"/>						
+											</template_value>	
+											<color 		origin = "255_0_0_255" 	/>
+											<pos 		origin = "7_97" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "96_126" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "96_126" 	/>
+								</Widget>
+								
+								<Size 		origin = "96_126" 	/>
+								<pos 		origin = "149_5" 	/>
+							</Widget>
+							<Widget id="3" typeRes="layout" 		name = "card_3_layer" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+									<common 		name="clipping_enable"  value="1"/>
+								</common_value>
+								<Widget id="0" typeRes="list_view_table" name = "list_detail" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="96_126"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+														
+										<common			name="anchor_point"			value="0_0"/>									
+										<common			name="size_child"			value="96_126"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="52"/>
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="panel" name = "blank_card" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/card.png"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "96_126" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" name = "ico_big" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/kb.png"/>
+												<common			name="anchor_point"	value="1_0"/>
+											</common_value>
+											<pos 		origin = "93_3" 	/>
+											<Size 		origin = "64_87" 	/>
+										</Widget>	
+										<Widget id="2" typeRes="panel" name = "ico_small" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/mb.png"/>
+												<common			name="anchor_point"	value="0_1"/>
+											</common_value>
+											<pos 		origin = "2_95" 	/>
+											<Size 		origin = "25_25" 	/>
+										</Widget>
+										<Widget id="3" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="K"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0_3"/>						
+											</template_value>	
+											<color 		origin = "255_0_0_255" 	/>
+											<pos 		origin = "7_97" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "96_126" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "96_126" 	/>
+								</Widget>
+								
+								<Size 		origin = "96_126" 	/>
+								<pos 		origin = "245_5" 	/>
+							</Widget>
+							<Widget id="4" typeRes="layout" 		name = "card_4_layer" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+									<common 		name="clipping_enable"  value="1"/>
+								</common_value>
+								<Widget id="0" typeRes="list_view_table" name = "list_detail" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="96_126"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+														
+										<common			name="anchor_point"			value="0_0"/>									
+										<common			name="size_child"			value="96_126"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="52"/>
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="panel" name = "blank_card" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/card.png"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "96_126" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" name = "ico_big" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/kb.png"/>
+												<common			name="anchor_point"	value="1_0"/>
+											</common_value>
+											<pos 		origin = "93_3" 	/>
+											<Size 		origin = "64_87" 	/>
+										</Widget>	
+										<Widget id="2" typeRes="panel" name = "ico_small" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/mb.png"/>
+												<common			name="anchor_point"	value="0_1"/>
+											</common_value>
+											<pos 		origin = "2_95" 	/>
+											<Size 		origin = "25_25" 	/>
+										</Widget>
+										<Widget id="3" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="K"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0_3"/>						
+											</template_value>	
+											<color 		origin = "255_0_0_255" 	/>
+											<pos 		origin = "7_97" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "96_126" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "96_126" 	/>
+								</Widget>
+								
+								<Size 		origin = "96_126" 	/>
+								<pos 		origin = "341_5" 	/>
+							</Widget>
+							<Widget id="5" typeRes="layout" 		name = "card_5_layer" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+									<common 		name="clipping_enable"  value="1"/>
+								</common_value>
+								<Widget id="0" typeRes="list_view_table" name = "list_detail" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="96_126"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+														
+										<common			name="anchor_point"			value="0_0"/>									
+										<common			name="size_child"			value="96_126"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="52"/>
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="panel" name = "blank_card" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/card.png"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "96_126" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" name = "ico_big" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/kb.png"/>
+												<common			name="anchor_point"	value="1_0"/>
+											</common_value>
+											<pos 		origin = "93_3" 	/>
+											<Size 		origin = "64_87" 	/>
+										</Widget>	
+										<Widget id="2" typeRes="panel" name = "ico_small" idx_appear ="1">		
+											<common_value>
+												<common 		name="source" 		value="gamescreen-Cards/mb.png"/>
+												<common			name="anchor_point"	value="0_1"/>
+											</common_value>
+											<pos 		origin = "2_95" 	/>
+											<Size 		origin = "25_25" 	/>
+										</Widget>
+										<Widget id="3" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="K"/>
+												<common			name="anchor_point"	value="0_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0_3"/>						
+											</template_value>	
+											<color 		origin = "255_0_0_255" 	/>
+											<pos 		origin = "7_97" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "96_126" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "96_126" 	/>
+								</Widget>
+								
+								<Size 		origin = "96_126" 	/>
+								<pos 		origin = "437_5" 	/>
+							</Widget>
+							
+							<pos 		origin = "375_10" 	/>
+							<Size 		origin = "490_138" 	/>
+						</Widget>
+						
+						<Widget id="3" typeRes="layout" 		name = "swallow_touch" idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 		value="0_0"/>
+									<common 		name="swallow_touch" 		value="1"/>
+								</common_value>	
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "750_357" 	/>
+						</Widget>
+						
+						<Widget id="4" typeRes="layout" 		name = "center_top_bg" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0.5_1"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			name = "bg" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/bang_ten.png"/>
+								</common_value>	
+								<pos 		origin = "292_89" 	/>
+								<Size 		origin = "584_178" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout" 		name = "title_top_layout" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_1"/>
+								</common_value>
+								<Widget id="1" typeRes="font" 			name = "tx_total_money" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_tx_nohu_lon"/>						
+									</template_value>	
+									<pos 		origin = "255_20" 	/>
+								</Widget>							
+								<Widget id="2" typeRes="panel" 			name = "icon_win" 				idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "70_20" 	/>
+									<Size 		origin = "34_34" 	/>
+								</Widget>
+								<Widget id="3" typeRes="panel" 			name = "icon_ruby" 				idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "70_20" 	/>
+									<Size 		origin = "34_29" 	/>
+								</Widget>
+								
+								<Widget id="4" typeRes="panel" 			name = "effect_icon" idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/chart_node.png"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>									
+									<pos 		origin = "70_20" 	/>
+									<Size 		origin = "32_32" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+									<COMMAND>
+											<cmd id="0" name="RUN_EFFECT">
+											{
+												"act0" : {
+													"squence" : [
+														{
+															"SET_VISIBLE" : 1
+														},
+														{
+															"SET_OPACITY" : 255
+														},
+														{
+															"SET_SIZE" : 	"32_32",
+															"DESIGN" 	   : "960_540"
+														}
+													]
+												},
+												"act1" : {
+													"single" : 
+													{
+														"SIZE" : "48_48",
+														"DESIGN"   : "960_540",
+														"TIME"     : 0.5
+													},
+													"single_1" : 
+													{
+														"OPACITY" : 0,
+														"TIME"     : 0.5
+													}
+												}
+											}
+											</cmd>
+									</COMMAND>
+									
+								</Widget>
+								<pos 		origin = "292_172" 	/>
+								<Size 		origin = "510_40" 	/>
+							</Widget>						
+							<Widget id="2" typeRes="animate"  		name = "round_light" 			idx_appear ="1" >
+										<common_value>
+											<common			name="source"				value="
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_0.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_1.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_2.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_3.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_4.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_5.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_6.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_7.png#
+											gamescreen-newgui-game-common/nohu/action/nohu_choose_8.png"/>
+											<common			name="split"				value="#"/>
+											<common			name="multi_sprite"			value="1"/>
+											<common			name="begin_idx"			value="0"/>
+											<common			name="end_idx"				value="8"/>
+											<common			name="sprite_idx"			value="0"/>
+											<common			name="loop"					value="-1"/>
+											<common			name="delay"				value="0.15"/>
+											<common			name="anchor_point"			value="0.5_0"/>
+										</common_value>
+										<pos 		origin = "292_-10" 	/>
+										<Size 		origin = "140_222" 	/>
+							</Widget>
+							<Widget id="3" typeRes="layout" 		name = "list_scroll_jar" 		idx_appear ="4">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_0"/>
+										<common			name="clipping_enable"		value="1"/>
+									</common_value>
+									<pos 		origin = "292_-20" 	/>
+									<Size 		origin = "474_145" 	/>
+							</Widget>
+							<Widget id="4" typeRes="layout" 		name = "list_scroll_jar_ruby" 		idx_appear ="4">		
+									<common_value>
+										<common			name="anchor_point"			value="0.5_0"/>
+										<common			name="clipping_enable"		value="1"/>
+									</common_value>
+									<pos 		origin = "292_-20" 	/>
+									<Size 		origin = "474_145" 	/>
+							</Widget>
+							<Widget id="5" typeRes="layout" name = "layout_" idx_appear ="5" visible="0">		
+										<common_value>	
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="layout" name = "icon" idx_appear ="1">		
+											<common_value>
+												<common			name="anchor_point"	value="0.5_0"/>
+											</common_value>
+											<pos 		origin = "79_-10" 	/>
+											<Size 		origin = "85_87" 	/>
+										</Widget>
+										<Widget id="1" typeRes="font"  name = "tx_num" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="100"/>
+												<common			name="anchor_point"	value="0.5_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_tx_nohu"/>						
+											</template_value>	
+											<pos 		origin = "79_25" 	/>
+										</Widget>
+										<Widget id="2" typeRes="font"  name = "tx" idx_appear ="1" >		
+											<common_value>
+												<common 		name="source" 		value="0"/>
+												<common			name="anchor_point"	value="0.5_0"/>
+											</common_value>
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>	
+											<color 		origin = "255_255_0_255" 	/>
+											<pos 		origin = "79_5" 	/>
+										</Widget>		
+										<pos 		origin = "0_0" 	/>
+										<Size 		origin = "158_135" 	/>
+							</Widget>													
+									
+								
+							<Widget id="10" typeRes="button" 			name = "jar_backward_btn" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>	
+									</common_value>					
+									<pos 		origin = "30_70" 	/>
+									<Size 		origin = "28_33" 	/>
+									<rotate 	origin = "180" 	/>
+							</Widget>
+							<Widget id="11" typeRes="button" 			name = "jar_forward_btn" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/phai.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>	
+									</common_value>					
+									<pos 		origin = "554_70" 	/>
+									<Size 		origin = "28_33" 	/>
+							</Widget>
+							<pos 		origin = "375_340" 	/>
+							<Size 		origin = "584_178" 	/>
+						</Widget>
+						<Widget id="5" typeRes="layout" 		name = "panel_left" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0_0.5"/>
+								</common_value>	
+								<Widget id="0" typeRes="button" 			name = "poker_btn_leaderboard"  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/xep_hang.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/xep_hang.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/xep_hang.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="anchor_point" value="0.5_1"/>
+									</common_value>					
+									<pos 		origin = "30_212" 	/>
+									<Size 		origin = "55_55" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 			name = "poker_btn_myhistory" 	idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/info.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/info.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/info.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>	
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>					
+									<pos 		origin = "30_106" 	/>
+									<Size 		origin = "55_55" 	/>
+								</Widget>
+								<Widget id="2" typeRes="button" 			name = "poker_btn_help" 		idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/huong_dan.png"/>
+										<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/huong_dan.png"/>
+										<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/huong_dan.png"/>
+										<common 		name="scale_press" 	value="-0.05"/>
+										<common 		name="anchor_point" value="0.5_0"/>
+									</common_value>					
+									<pos 		origin = "30_0" 	/>
+									<Size 		origin = "55_55" 	/>
+								</Widget>
+								
+								<pos 		origin = "10_179" 	/>
+								<Size 		origin = "60_212" 	/>
+						</Widget>
+						<Widget id="6" typeRes="layout" 		name = "panel_right" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="1_0.5"/>
+								</common_value>	
+								<Widget id="0" typeRes="panel" 		name = "otruc_panel"  		idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/otruc.png"/>
+										<common 		name="anchor_point" value="0.5_0"/>
+										<common			name="content_size"	value="1"/>
+									</common_value>
+									<Widget id="0" typeRes="panel" 			name = "taytruc_panel"  idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/truc.png"/>
+											<common 		name="anchor_point" value="0.5_0"/>
+											<common			name="content_size"	value="0"/>
+										</common_value>					
+										<pos 		origin = "14_65" 	/>
+										<Size 		origin = "18_55" 	/>
+									</Widget>
+									<Widget id="1" typeRes="panel" 			name = "taycan_panel"  idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/tay_cam.png"/>
+											<common 		name="anchor_point" value="0.5_0.5"/>
+											<common			name="content_size"	value="0"/>
+										</common_value>					
+										<pos 		origin = "14_130" 	/>
+										<Size 		origin = "65_65" 	/>
+									</Widget>
+									<pos 		origin = "30_70" 	/>
+									<Size 		origin = "28_130" 	/>
+								</Widget>
+								<Widget id="1" typeRes="check_box"  name = "check_box_auto_play" idx_appear ="2">		
+									<common_value>
+										<common 		name="source" 					value="gamescreen-newgui-game-common/nohu/auto_noncheck.png"/>
+										<common 		name="select" 					value="gamescreen-newgui-game-common/nohu/auto_noncheck.png"/>
+										<common 		name="cross" 					value="gamescreen-newgui-game-common/nohu/auto_check.png"/>
+										<common 		name="backgrounddisable" 		value="gamescreen-newgui-game-common/nohu/auto_noncheck.png"/>
+										<common 		name="frontCrossDisabled" 		value="gamescreen-newgui-game-common/nohu/auto_check.png"/>
+										<common 		name="use_atlas" 	value="1"/>
+									</common_value>
+									<pos 		origin = "30_40" 	/>
+									<Size 		origin = "32_32" 	/>
+															
+								</Widget>
+								<Widget id="2" typeRes="font" 		name = "tx" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="auto"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0_1"/>						
+									</template_value>	
+									<pos 		origin = "30_15" 	/>
+								</Widget>							
+								
+								<pos 		origin = "740_179" 	/>
+								<Size 		origin = "60_212" 	/>
+						</Widget>
+						<Widget id="7" typeRes="button" 		name = "btn_close_poker_panel" 		idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+								<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+								<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+								<common 		name="scale_press" 		value="-0.05"/>	
+								<common 		name="anchor_point" 	value="0_0"/>
+							</common_value>					
+							<pos 		origin = "680_350" 	/>
+							<Size 		origin = "40_40" 	/>
+						</Widget>
+
+						<Widget id="8" typeRes="layout"  		name = "poker_top_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="button" 		name = "left_panel_btn" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/left_none.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/left_none.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/left_none.png"/>
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common 		name="anchor_point" value="1_0"/>
+								</common_value>	
+
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "150" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" 		name = "right_panel_btn" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/right_none.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/nohu/right_none.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/nohu/right_none.png"/>
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "150" 	/>
+							</Widget>
+							
+							<Widget id="2" typeRes="panel" 			name = "left_panel_act" 		idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/left_active.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "150" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			name = "right_panel_act" 		idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/nohu/right_active.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0"/>
+								</common_value>					
+								<pos 		origin = "250_0" 	/>
+								<Size 		origin = "250_42" 	/>
+								<opacity 	origin = "150" 	/>
+							</Widget>
+							
+							<Widget id="4" typeRes="panel" 			name = "icon_win" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>					
+								<pos 		origin = "30_22" 	/>
+								<Size 		origin = "34_34" 	/>
+							</Widget>
+							<Widget id="5" typeRes="panel" 			name = "icon_ruby" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>					
+								<pos 		origin = "470_22" 	/>
+								<Size 		origin = "34_29" 	/>
+							</Widget>
+							
+							<Widget id="8" typeRes="font" 			name = "poker_mymoney_txt" 	idx_appear ="1" >		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="0_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "80_22" 			/>
+								<color 		origin = "250_210_50_255" 	/>
+							</Widget>
+							
+							<Widget id="9" typeRes="font" 			name = "poker_myruby_txt" 		idx_appear ="1" >		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0"/>
+									<common 		name="anchor_point" value="1_0.5"/>
+								</common_value>
+									
+								<pos 		origin = "420_22" 			/>
+								<color 		origin = "250_210_50_255" 	/>
+							</Widget>
+							
+							<pos 		origin = "375_357" 	/>
+							<Size 		origin = "500_42" 	/>
+						</Widget>
+						
+						
+						<pos 		origin = "480_280" 	/>
+						<Size 		origin = "750_357" 	/>
+						<opacity 	origin = "0" 	/>
+						<COMMAND>
+							<cmd name="ON_SHOW" id="0">
+							{
+								"act0" : {
+									"squence" : [
+										{
+											"SET_POSITION" : "480_400",
+											"DESIGN"	   : "960_540"
+										},
+										{
+											"SET_SIZE" : "0_0",
+											"DESIGN"	   : "960_540"
+										},
+										{
+											"SET_OPACITY" : 0
+										},
+										{
+											"SET_VISIBLE" : 1
+										}
+									]			
+								},
+								"act1" : {
+									"squence_0" : [
+										{
+											"SIZE" 		: "600_300",
+											"DESIGN"	 : "960_540",
+											"TIME"		: 0.5
+										},
+										{
+											"SET_SIZE" : "600_300",
+											"DESIGN"   : "960_540"
+										}	
+									],
+									"squence_1" : [
+										{
+											"POSITION" 	: "480_100",
+											"DESIGN"	 : "960_540",
+											"TIME"		: 0.3
+										},
+										{
+											"POSITION" : "480_280",
+											"DESIGN"	: "960_540",
+											"TIME"		: 0.1
+										},
+										{
+											"SET_POSITION" : "480_280",
+											"DESIGN"	   : "960_540"
+										}
+									],
+									"single_0" : 
+									{
+											"OPACITY" : 255,
+											"TIME"	  : 0.5
+									}
+									
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+
+					<Widget id="2" typeRes="layout"  		name = "poker_user_bet_money" 			idx_appear="1"  visible="0">
+						<common_value>
+							<common 		name="anchor_point" 		value="0.5_0.5"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" 			name = "icon" 	  idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_0"/>
+							</common_value>	
+							<Widget id="0" typeRes="panel" 			name = "icon_win" 	  idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/win.png"/>
+								</common_value>	
+									
+								<pos 		origin = "20_20" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>	
+							<Widget id="1" typeRes="panel" 			name = "icon_ruby" 	  idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/taixiu/ruby.png"/>
+								</common_value>	
+								<pos 		origin = "20_20" 	/>
+								<Size 		origin = "40_35" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "40_40" 	/>
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="SHOW" id="0">
+								{
+									"act0" : 
+									{
+										"single":
+										{
+											"OPACITY" : 255,
+											"TIME" 	  : 1.0
+										}
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<Widget id="1" typeRes="layout"  		name = "layout_txt" idx_appear="1"  >
+							<common_value>
+								<common 		name="anchor_point" 		value="0_0"/>
+							</common_value>
+								<Widget id="1" typeRes="font" 			name = "txt_name" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="1_0"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "-5_22" 	/>
+									<color 		origin = "255_250_0_255" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt_money" idx_appear ="1" >						
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="1_1"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<pos 		origin = "-5_18" 	/>
+								</Widget>
+							<pos 		origin = "0_0" 	 />
+							<Size 		origin = "40_40" />
+							<opacity 	origin = "0" 	/>
+							<COMMAND>
+								<cmd name="SHOW" id="0">
+								{
+									"act0" : 
+									{
+										"squence":
+										[
+											{
+												"OPACITY" : 255,
+												"TIME" 	  : 0.2
+											},
+											{
+												"DELAY" : 0.6
+											},
+											{
+												"OPACITY" : 0,
+												"TIME" 	  : 0.2
+											}
+										]
+									}
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "40_40" 	/>
+					</Widget>
+					
+					<Widget id="3" typeRes="layout" 		name = "layout_fly_user" 				idx_appear ="1" >		
+							<common_value>
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="4" typeRes="layout" 		name = "effect_result_layer" 			idx_appear ="1" visible="0">		
+							<common_value>
+								<common 		name="stick_screen" value="1"/>
+							</common_value>	
+							<Widget id="0" typeRes="particle"   name = "small_particle" 			idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/effect_sao2.png"/>
+									<common			name="plist"			value="Anims/small_nohu_particle.plist"/>	
+									<common 		name="use_atlas" 		value="1"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+									<common			name="source_position"	value="480_200"/>
+								</common_value>
+								<pos 		origin = "480_200" 	/>
+								<Size 		origin = "960_540" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout" 		name = "effect_result_layout" 	idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" value="0.5_0"/>
+								</common_value>	
+								<Widget id="0" typeRes="panel" 	name = "bg_do" 	 	 idx_appear ="1" >		
+									<common_value>
+										<common 		name="anchor_point" value="0_0"/>
+										<common 		name="source" value="gamescreen-newgui-game-common/nohu/bg_do.png"/>
+									</common_value>	
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "410_76" 	/>
+								</Widget>	
+								<Widget id="1" typeRes="panel" 	name = "bg_xanh" 	 idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="anchor_point" value="0_0"/>
+										<common 		name="source" value="gamescreen-newgui-game-common/nohu/bg_xanh.png"/>
+									</common_value>	
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "410_76" 	/>
+								</Widget>
+								<Widget id="2" typeRes="layout" name = "layout_text" idx_appear ="1" visible="0">		
+									
+									<Widget id="0" typeRes="font" 			name = "txt_name" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value=""/>
+											<common 		name="anchor_point" value="0.5_0"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_tx_nohu_xanh"/>						
+										</template_value>
+										<pos 		origin = "205_40" 	/>
+									</Widget>
+									<Widget id="1" typeRes="font" 			name = "txt_money" idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 		value=""/>
+											<common 		name="anchor_point" value="0.5_1"/>
+										</common_value>
+										<template_value>
+											<template 		name="temp_tx_nohu"/>						
+										</template_value>
+										<pos 		origin = "205_45" 	/>
+									</Widget>
+									
+									<pos 		origin = "205_38" 	/>
+									<Size 		origin = "410_76" 	/>
+									<COMMAND>
+										<cmd id="0" name="ON_SHOW">
+										{
+											"act0" : 
+											{
+												"squence_0" : [
+													{
+														"SET_SIZE" : "2050_380",
+														"DESIGN" : "960_540"
+													},
+													{
+														"SET_VISIBLE" : 1
+													},
+													{
+														"SIZE" : "410_76",
+														"DESIGN" : "960_540",
+														"TIME" : 0.2
+													},
+													{
+														"DELAY" : 2
+													}
+												]
+											}
+										}
+										</cmd>
+									
+									</COMMAND>
+									
+								</Widget>
+								<pos 		origin = "480_130" 	/>
+								<Size 		origin = "410_76" 	/>
+							</Widget>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="5" typeRes="layout"  		name = "poker_list_player_layout" 		idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"			value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+						<Widget id="1" typeRes="layout"  		name = "poker_list_player_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			 name = "bg" 								idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/nohu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_0" 	/>
+								<Size 		origin = "920_320" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "top_bg" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/nohu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="time"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "110_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt1" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="account"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "320_20" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="nohu_hu"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "460_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "txt3" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="nohu_money_win"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "560_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "txt4" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="card"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "770_20" 	/>
+								</Widget>
+								<pos 		origin = "460_320" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="layout" 		 name = "bot_bg" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 		 name = "line" 							idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0.5_1"/>
+									</common_value>
+									<pos 		origin = "460_40" 	/>
+									<Size 		origin = "920_1" 	/>						
+								</Widget>
+								<Widget id="1" typeRes="font" 			name = "cur_txt" 		  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="1"/>
+										<common 		name="anchor_point" value="1_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>
+									</template_value>	
+									<pos 		origin = "450_20" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>							
+								<Widget id="2" typeRes="font" 			name = "txt1" 			  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="/"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>											
+									</template_value>	
+									<pos 		origin = "460_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "max_txt" 		  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="16"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "470_20" 	/>
+								</Widget>
+								
+								<Widget id="4" typeRes="layout" 		name = "forward_layout"   idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="button" 		 name = "btn_forward_next" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "10_8" 	/>
+										<Size 		origin = "9_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" 		 name = "btn_forward_end" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "85_8" 	/>
+										<Size 		origin = "21_15" 	/>
+									</Widget>
+									<pos 		origin = "520_20" 	/>
+									<Size 		origin = "100_16" 	/>						
+								</Widget>
+								<Widget id="5" typeRes="layout" 		name = "backward_layout"  idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="button" 		 name = "btn_backward_next" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "10_8" 	/>
+										<Size 		origin = "9_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" 		 name = "btn_backward_end" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "85_8" 	/>
+										<Size 		origin = "21_15" 	/>
+									</Widget>
+									<pos 		origin = "400_20" 	/>
+									<Size 		origin = "100_16" 	/>	
+									<rotate 	origin = "180" 		/>
+								</Widget>
+								<pos 		origin = "460_0" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="list_view_table" name = "nohu_list_player" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="inner_size" 			value="920_240"/>
+									<common 		name="direction" 			value="1"/> <!-- -1 none 0 is horizol 1 is vertical 3 is both -->
+									<common			name="anchor_point_list"	value="0.5_0"/>
+												
+									<common			name="anchor_point"			value="0.5_0"/>
+									<common			name="clipping_enable"		value="1"/>
+									<common			name="Percent_Scroll"		value="0_0.15"/>
+												
+									<common			name="size_child"			value="920_30"/>									
+									<common			name="no_add_event"			value="1"/>
+									<common			name="number_cell"			value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" name = "layout_player" idx_appear ="2" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>		
+										<common			name="stick_screen"			value="0"/>
+										<common			name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="font" 	name = "time_txt" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+										</common_value>
+										<pos 		origin = "110_15" 	/>
+										<color 		origin = "225_137_30_255" 	/>
+									</Widget>								
+									<Widget id="1" typeRes="font"	name = "acc_txt" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="player_name"/>					
+										</common_value>
+										<pos 		origin = "320_15" 	/>
+										<color 		origin = "255_250_10_255" 	/>
+									</Widget>										
+									<Widget id="2" typeRes="font" 	name = "jar_txt" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+										</common_value>
+										<pos 		origin = "460_15" 	/>
+										<color 		origin = "255_250_10_255" 	/>
+									</Widget>										
+									<Widget id="3" typeRes="font" 	name = "money_txt" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+										</common_value>
+										<pos 		origin = "560_15" 	/>
+										<color 		origin = "255_250_10_255" 	/>
+									</Widget>
+									<Widget id="4" typeRes="layout" 	name = "card_layout" 	idx_appear ="2">			
+										<common_value>		
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<Widget id="0" typeRes="font" 	name = "txt_0" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "30_15" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" 	name = "icon_0" idx_appear ="2">
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "31_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="2" typeRes="font" 	name = "txt_1" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "83_15" 	/>
+										</Widget>
+										<Widget id="3" typeRes="panel" 	name = "icon_1" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "84_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="4" typeRes="font" 	name = "txt_2" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>		
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "136_15" 	/>
+										</Widget>
+										<Widget id="5" typeRes="panel" 	name = "icon_2" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "137_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="6" typeRes="font" 	name = "txt_3" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "189_15" 	/>
+										</Widget>
+										<Widget id="7" typeRes="panel" 	name = "icon_3" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "190_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="8" typeRes="font" 	name = "txt_4" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "242_15" 	/>
+										</Widget>
+										<Widget id="9" typeRes="panel" 	name = "icon_4" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "243_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										
+										<pos 		origin = "780_15" 	/>
+										<Size 		origin = "300_30" 	/>
+									</Widget>
+																				
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "920_30" 	/>
+								</Widget>					
+										
+								<pos 		origin = "460_40" 	/>
+								<Size 		origin = "920_240" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/user_reward.png"/>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "288_76" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_lb_poker" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+								</common_value>					
+								<pos 		origin = "920_320" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="font" 			 name = "txt0" 								idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="no_record"/>
+								</common_value>		
+								<pos 		origin = "460_160" 	/>
+							</Widget>
+							<Widget id="6" typeRes="panel" 			 name = "loading_circle" 	 				idx_appear ="1" visible="1">		
+								<common_value>	
+									<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "460_160" 	/>
+								<Size 		origin = "60_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_340",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "920_320",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "920_320",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_340",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "920_320" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					<Widget id="6" typeRes="layout"  		name = "poker_myhistory_layout" 		idx_appear="1"  visible="0">
+						<common_value>
+							<common			name="swallow_touch"	 	value="1"/>
+							<common			name="stick_screen"			value="1"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 			name = "bg" 							idx_appear ="1" >		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/blackpixel.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common 		name="anchor_point" value="0_0"/>
+								<common			name="stick_screen"	value="1"/>
+							</common_value>					
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_540" 	/>
+						</Widget>
+						<Widget id="1" typeRes="layout"  		name = "poker_myhistory_layout" 		idx_appear="1" >
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id="0" typeRes="panel" 			 name = "bg" 								idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/nohu_bkghistory.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_0" 	/>
+								<Size 		origin = "920_320" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 			 name = "top_bg" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/nohu_bkgmenu.9.png"/>
+									<common 		name="use_nine_path" 	value="1"/>
+									<common 		name="scale_9" 			value="1"/>
+									<common 		name="anchor_point" 	value="0.5_1"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 			name = "txt0" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="time"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "110_20" 	/>
+								</Widget>							
+								<Widget id="1" typeRes="font" 			name = "txt2" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="nohu_hu"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "300_20" 	/>
+								</Widget>
+								<Widget id="2" typeRes="font" 			name = "txt3" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="nohu_money_win"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "500_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "txt4" idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="card"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "720_20" 	/>
+								</Widget>
+								<pos 		origin = "460_320" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="layout" 		 name = "bot_bg" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>
+								<Widget id="0" typeRes="panel" 		 name = "line" 							idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0.5_1"/>
+									</common_value>
+									<pos 		origin = "460_40" 	/>
+									<Size 		origin = "920_1" 	/>						
+								</Widget>
+								<Widget id="1" typeRes="font" 			name = "cur_txt" 		  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="0"/>
+										<common 		name="anchor_point" value="1_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>
+									</template_value>	
+									<pos 		origin = "450_20" 	/>
+									<color 		origin = "255_250_10_255" 	/>
+								</Widget>							
+								<Widget id="2" typeRes="font" 			name = "txt1" 			  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="/"/>
+										<common 		name="anchor_point" value="0.5_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>											
+									</template_value>	
+									<pos 		origin = "460_20" 	/>
+								</Widget>
+								<Widget id="3" typeRes="font" 			name = "max_txt" 		  idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 		value="15"/>
+										<common 		name="anchor_point" value="0_0.5"/>
+									</common_value>
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>	
+									<pos 		origin = "470_20" 	/>
+								</Widget>
+								
+								<Widget id="4" typeRes="layout" 		name = "forward_layout"   idx_appear ="1" >		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="button" 		 name = "btn_forward_next_his" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "10_8" 	/>
+										<Size 		origin = "9_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" 		 name = "btn_forward_end_his" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "85_8" 	/>
+										<Size 		origin = "21_15" 	/>
+									</Widget>
+									<pos 		origin = "520_20" 	/>
+									<Size 		origin = "100_16" 	/>						
+								</Widget>
+								<Widget id="5" typeRes="layout" 		name = "backward_layout"  idx_appear ="1" visible="0">		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/line.png"/>
+										<common 		name="anchor_point" 	value="0_0.5"/>
+									</common_value>
+									<Widget id="0" typeRes="button" 		 name = "btn_backward_next_his" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_nho.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "10_8" 	/>
+										<Size 		origin = "9_15" 	/>
+									</Widget>
+									<Widget id="1" typeRes="button" 		 name = "btn_backward_end_his" 				idx_appear ="1" >		
+										<common_value>
+											<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/muiten_lon.png"/>
+											<common 		name="scale_press" 		value="-0.05"/>	
+										</common_value>					
+										<pos 		origin = "85_8" 	/>
+										<Size 		origin = "21_15" 	/>
+									</Widget>
+									<pos 		origin = "400_20" 	/>
+									<Size 		origin = "100_16" 	/>	
+									<rotate 	origin = "180" 		/>
+								</Widget>
+								<pos 		origin = "460_0" 	/>
+								<Size 		origin = "920_40" 	/>						
+							</Widget>
+							<Widget id="2" typeRes="list_view_table" name = "nohu_list_myhistory" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="inner_size" 			value="920_240"/>
+									<common 		name="direction" 			value="1"/> <!-- -1 none 0 is horizol 1 is vertical 3 is both -->
+									<common			name="anchor_point_list"	value="0.5_0"/>
+												
+									<common			name="anchor_point"			value="0.5_0"/>
+									<common			name="clipping_enable"		value="1"/>
+									<common			name="Percent_Scroll"		value="0_0.15"/>
+												
+									<common			name="size_child"			value="920_30"/>									
+									<common			name="no_add_event"			value="1"/>
+									<common			name="number_cell"			value="0"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="layout" name = "layout_player" idx_appear ="2" >		
+									<common_value>
+										<common 		name="background_type" 		value="0"/>		
+										<common			name="stick_screen"			value="0"/>
+										<common			name="anchor_point" 		value="0_0"/>
+									</common_value>
+									<Widget id="0" typeRes="font" 	name = "time_txt" 		idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="1."/>					
+										</common_value>
+										<pos 		origin = "110_15" 	/>
+										<color 		origin = "225_137_30_255" 	/>
+									</Widget>								
+									<Widget id="2" typeRes="font" 	name = "jar_txt" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+										</common_value>
+										<pos 		origin = "300_15" 	/>
+										<color 		origin = "255_250_10_255" 	/>
+									</Widget>										
+									<Widget id="3" typeRes="font" 	name = "money_txt" 	idx_appear ="2">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="10.000"/>					
+										</common_value>
+										<pos 		origin = "500_15" 	/>
+										<color 		origin = "255_250_10_255" 	/>
+									</Widget>
+									<Widget id="4" typeRes="layout" 	name = "card_layout" 	idx_appear ="2">			
+										<common_value>		
+											<common			name="anchor_point"	value="0.5_0.5"/>
+										</common_value>
+										<Widget id="0" typeRes="font" 	name = "txt_0" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "30_15" 	/>
+										</Widget>
+										<Widget id="1" typeRes="panel" 	name = "icon_0" idx_appear ="2">
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "31_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="2" typeRes="font" 	name = "txt_1" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "83_15" 	/>
+										</Widget>
+										<Widget id="3" typeRes="panel" 	name = "icon_1" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "84_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="4" typeRes="font" 	name = "txt_2" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>		
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "136_15" 	/>
+										</Widget>
+										<Widget id="5" typeRes="panel" 	name = "icon_2" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "137_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="6" typeRes="font" 	name = "txt_3" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "189_15" 	/>
+										</Widget>
+										<Widget id="7" typeRes="panel" 	name = "icon_3" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "190_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										<Widget id="8" typeRes="font" 	name = "txt_4" 	idx_appear ="2">		
+											<template_value>
+												<template 		name="temp_text_0"/>						
+											</template_value>
+											<common_value>
+												<common 		name="source" 		value="A"/>	
+												<common			name="anchor_point"	value="1_0.5"/>
+											</common_value>
+											<pos 		origin = "242_15" 	/>
+										</Widget>
+										<Widget id="9" typeRes="panel" 	name = "icon_4" idx_appear ="2">		
+											<common_value>
+												<common			name="anchor_point"	value="0_0.5"/>
+											</common_value>
+											<pos 		origin = "243_15" 	/>
+											<Size 		origin = "22_22" 	/>
+										</Widget>
+										
+										<pos 		origin = "720_15" 	/>
+										<Size 		origin = "300_30" 	/>
+									</Widget>
+																				
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "920_30" 	/>
+								</Widget>					
+										
+								<pos 		origin = "460_40" 	/>
+								<Size 		origin = "920_240" 	/>
+							</Widget>
+							<Widget id="3" typeRes="panel" 			 name = "title_lb" 							idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/history.png"/>
+									<common 		name="anchor_point" 	value="0.5_0"/>
+								</common_value>					
+								<pos 		origin = "460_340" 	/>
+								<Size 		origin = "229_68" 	/>
+							</Widget>
+							<Widget id="4" typeRes="button" 		 name = "btn_close_history_poker" 				idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="press" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="disable" 			value="gamescreen-newgui-game-common/nohu/close.png"/>
+									<common 		name="scale_press" 		value="-0.05"/>	
+								</common_value>					
+								<pos 		origin = "920_320" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>
+							<Widget id="5" typeRes="font" 			 name = "txt0" 								idx_appear ="1" visible="0">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="no_record"/>
+								</common_value>		
+								<pos 		origin = "460_160" 	/>
+							</Widget>
+							<Widget id="6" typeRes="panel" 			 name = "loading_circle" 	 				idx_appear ="1" visible="1">		
+								<common_value>	
+									<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+									<common			name="stick_screen"		value="0"/>
+									<common			name="anchor_point"		value="0.5_0.5"/>
+								</common_value>
+								<pos 		origin = "460_160" 	/>
+								<Size 		origin = "60_60" 	/>
+								<COMMAND>
+									<cmd id="0" name="ROTATE">
+									{
+										"act0" : {
+											"repeat" : -1,
+											"squence":[
+											{
+												"ROTATE" : 360,
+												"TIME"	 : 0.5,
+												"STYLE"	 : 1
+											}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+							<COMMAND>
+								<cmd id = "0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "0_0",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_340",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "920_320",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+								<cmd id = "1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_SIZE" : "920_320",
+												"DESIGN"   : "960_540"
+											},
+											{
+												"SIZE" 	   : "940_340",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.1,
+												"STYLE"	   : 0
+											},
+											{
+												"SIZE" 	   : "0_0",
+												"DESIGN"   : "960_540",
+												"TIME"	   : 0.12,
+												"STYLE"	   : 0
+											}
+										]
+										
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "480_270" 	/>
+							<Size 		origin = "920_320" 	/>
+						</Widget>
+					
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "960_540" 	/>
+					</Widget>
+					
+					
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>													
+</GAME>

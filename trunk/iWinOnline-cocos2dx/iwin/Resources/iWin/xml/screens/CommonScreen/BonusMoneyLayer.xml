@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<GAME>
+
+		<Widget id="8"  typeRes="layout" 	name = "layout_bonus" 	idx_appear ="1" visible="0">		
+			<common_value>
+				<common			name="stick_screen"			value="1"/>
+				<common			name="anchor_point"			value="0_0"/>
+			</common_value>
+				<Widget id="0" typeRes="animate"   	name = "animate_effect_bonus" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source" 		value="sao_win"/>
+						<common 		name="list_tex"		value="frame_sheet"/>
+						<common			name="loop"			value="1"/>
+						<common			name="delay"		value="0.025"/>
+					</common_value>
+					
+					<pos 		origin = "480_150" 	/>
+					<Size 		origin = "300_300" 	/>
+				</Widget>	
+				<Widget id="1" typeRes="layout" 	name = "layout_bonus" 			idx_appear ="1" >		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="stick_screen"			value="0"/>
+								<common			name="anchor_point"			value="0.5_0.5"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font" 	name = "bonus_iwin_add" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="+1000"/>					
+									<common    		name="font_idx"		value="3"/>	
+									<common			name="anchor_point"	value="0.5_0.5"/>
+									<common			name="bitmap_font"  value="1"/>
+								</common_value>
+								<pos 		origin = "5_5" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 	name = "bonus_iwin_div" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="-1000"/>					
+									<common    		name="font_idx"		value="12"/>	
+									<common			name="anchor_point"	value="0.5_0.5"/>
+									<common			name="bitmap_font"  value="1"/>
+								</common_value>
+								<pos 		origin = "5_5" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<pos 		origin = "480_150" 	/>
+							<Size 		origin = "10_10" 	/>
+							<COMMAND>
+								<cmd id="0" name="ACTION_DIV">
+								{
+									"act0" : 
+									{
+										"squence" :
+										[
+											{
+												"SET_OPACITY" : 255
+											},
+											{
+												"SET_POSITION" : "480_200",
+												"DESIGN"	   : "960_540",
+												"FORCE"		   : 1	
+											},
+											{
+												"SET_SCALE" : "1.0_1.0",
+												"FORCE"		: 1	
+											}
+										]	
+									},
+									"act1" :
+									{
+										"squence" :
+										[
+											{
+												"POSITION" 	: "0_20",
+												"DESIGN"	: "960_540",
+												"TIME"		: 0.5,
+												"STYLE"		: 2
+											},
+											{
+												"POSITION" 	: "0_-80",
+												"DESIGN"	: "960_540",
+												"TIME"		: 2,
+												"STYLE"		: 2
+											}
+										],
+										"squence_1" :
+										[
+											{
+												"SCALE" 	: "2.0_2.0",
+												"FORCE"		: 1,
+												"TIME"		: 0.5
+											},
+											{
+												"SCALE" 	: "1.0_1.0",
+												"FORCE"		: 1,
+												"TIME"		: 2
+											}
+										],
+										"squence_2" :
+										[
+											{
+												"DELAY" : 2
+											},
+											{
+												"OPACITY" : 0 ,
+												"TIME"    : 0.5
+											}
+										]
+									}	
+								}
+								</cmd>
+								<cmd id="1" name="ACTION_ADD">
+								{
+									"act0" : 
+									{
+										"squence" :
+										[
+											{
+												"SET_OPACITY" : 255
+											},
+											{
+												"SET_POSITION" : "480_200",
+												"DESIGN"	   : "960_540",
+												"FORCE"		   : 1	
+											},
+											{
+												"SET_SCALE" : "1.0_1.0",
+												"FORCE"		: 1	
+											}
+										]	
+									},
+									"act1" :
+									{
+										"squence" :
+										[
+											{
+												"POSITION" 	: "0_-10",
+												"DESIGN"	: "960_540",
+												"TIME"		: 0.5,
+												"STYLE"		: 2
+											},
+											{
+												"POSITION" 	: "0_100",
+												"DESIGN"	: "960_540",
+												"TIME"		: 2,
+												"STYLE"		: 2
+											}
+										],
+										"squence_1" :
+										[
+											{
+												"SCALE" 	: "0.85_0.85",
+												"FORCE"		: 1,
+												"TIME"		: 0.5
+											},
+											{
+												"SCALE" 	: "2.0_2.0",
+												"FORCE"		: 1,
+												"TIME"		: 2
+											}
+										],
+										"squence_2" :
+										[
+											{
+												"DELAY" : 2
+											},
+											{
+												"OPACITY" : 0 ,
+												"TIME"    : 0.5
+											}
+										]
+									}	
+								}
+								</cmd>
+							</COMMAND>
+				</Widget>
+			<pos 		origin = "0_0" 	/>
+			<Size 		origin = "960_540" 	/>
+		</Widget>	
+</GAME>

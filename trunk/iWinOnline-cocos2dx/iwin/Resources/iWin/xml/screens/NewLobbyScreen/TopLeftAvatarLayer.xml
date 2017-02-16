@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="9" name="panel_user_info" 	typeRes="layout">
+                <common_value>
+                    <common name="stick_screen" value="1"/>
+                    <common name="anchor_point" value="0_1"/>
+                </common_value>
+
+                <Widget id="0" name="Image_12" 		typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" value="1"/>
+                        <common name="use_nine_path" value="1"/>
+                        <common name="background_type" value="3"/>
+                        <common name="anchor_point" value="0.0_0.0"/>
+                        <common name="source" value="otherscreen/new-lobby/lobby_user_info.9.png"/>
+                    </common_value>
+                    <Widget id="0" name="Image_13" typeRes="panel">
+                        <common_value>
+                            <common name="background_type" value="3"/>
+                            <common name="anchor_point" value="1_0.5"/>
+                            <common name="source" value="otherscreen/topup-screen/ruby_don.png"/>
+                        </common_value>
+                        <Size origin="24_23"/>
+                        <pos origin="30_18"/>
+                    </Widget>
+                    <Widget id="1" name="Image_13_0" typeRes="panel">
+                        <common_value>
+                            <common name="background_type" value="3"/>
+                            <common name="anchor_point" value="1_0.5"/>
+                            <common name="source" value="otherscreen/topup-screen/ico_win.png"/>
+                        </common_value>
+                        <Size origin="24_23"/>
+                        <pos origin="30_18"/>
+                    </Widget>
+                    <Widget id="2" name="lbl_money" typeRes="font">
+                        <template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+                            <common name="source" value="999.999"/>
+							<common name="anchor_point" value="0_0.5"/>
+                        </common_value>
+                        <pos origin="35_18"/>
+                    </Widget>
+                    <pos origin="90_0"/>
+					<Size origin="210_36"/>
+                </Widget>
+                <Widget id="1" name="lbl_username" 	typeRes="font">
+                   <template_value>
+						<template 		name="temp_text_name"/>						
+					</template_value>
+				   <common_value>
+                        <common name="source" value="nakedchicken"/>
+                        <common name="anchor_point" value="0_0"/>
+                    </common_value>
+                    <pos origin="90_45"/>
+                </Widget>
+                <Widget id="2" name="btn_avatar" 	typeRes="layout">
+                    <common_value>
+                        <common name="anchor_point" value="1_0"/>
+                    </common_value>		
+					<Widget id="0" name="bg_avatar" typeRes="panel">
+						<common_value>
+							<common name="anchor_point" value="0.5_0.5"/>
+							<common name="source" value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>
+						</common_value>
+						<Size   origin="80_80"/>
+						<pos 	origin="40_40"/>
+					</Widget>
+					
+					<Widget id="1" typeRes="panel_clipping" name = "panel_avatar" 	idx_appear ="1">		
+						<common_value>							
+							<common			name="stick_screen"	value="0"/>
+							<common			name="anchor_point" value="0.5_0.5"/>
+							<common			name="state_scale"	value="0"/>		
+						</common_value>
+								
+						<Widget id="0" typeRes="panel" name = "bg_avatar" idx_appear ="1">		
+							<common_value>							
+								<common 		name="source" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>				
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								<common			name="stencil"		value="1"/>
+								<common			name="state_scale"	value="0"/>
+							</common_value>
+							<pos 		origin = "38_38" 	/>
+							<Size 		origin = "76_76" 	/>
+						</Widget>
+								
+						<Widget id="1" typeRes="panel" name = "avatar_default" idx_appear ="1">		
+							<common_value>							
+								<common 		name="source" 		value="mainscreen/icon/avatar_default.png"/>				
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								<common			name="state_scale"	value="0"/>
+							</common_value>
+							<pos 		origin = "38_38" 	/>
+							<Size 		origin = "50_60" 	/>
+						</Widget>
+								
+						<pos 		origin = "40_40" 	/>
+						<Size 		origin = "76_76" 	/>
+					</Widget>
+					
+					<Size origin="80_80"/>				
+                    <pos origin="85_0"/>
+                </Widget>
+                <Size 	origin="290_80"/>
+				<pos 	origin="10_480"/>
+            </Widget>
+            																
+</GAME>

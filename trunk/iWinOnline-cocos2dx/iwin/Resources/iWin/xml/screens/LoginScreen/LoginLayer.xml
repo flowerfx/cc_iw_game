@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="1" typeRes="layout"  name = "login_layout" 			idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+						<Widget id="1" typeRes="layout" 	name = "panel_check_name" idx_appear ="1" visible="0">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>	
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="anchor_point"			value="0_1"/>
+							</common_value>
+							<pos 		origin = "510_345" 	/>
+							<Size 		origin = "30_30" 	/>
+							
+							<Widget id="0" typeRes="button" name = "btn_icon_warning_name_input_1" 	idx_appear ="2">		
+								<common_value>
+											
+									<common 		name="source" 		value="mainscreen/icon/ico_canhbao.png"/>
+									<common 		name="press" 		value="mainscreen/icon/ico_canhbao.png"/>
+									<common 		name="disable" 		value="mainscreen/icon/ico_canhbao.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "30_30" 	/>
+							</Widget>
+							<Widget id="1" typeRes="panel" 	name = "layout_check_name_input_1" 		idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 		value="mainscreen/newgui-mainscreen/layer_checkpass_ngang.9.png"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0"/>
+									<common			name="scale_9"		value="1"/>
+									<common			name="use_nine_path" value="1"/>
+									<common			name="anchor_point" value="1_0"/>
+								</common_value>
+								<Widget id="0" typeRes="font" 	name = "text_msg" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0_1"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="username_only_allowed_to"/>					
+										<common			name="anchor_point"	value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "10_33" 	/>
+								</Widget>			
+										
+								<pos 		origin = "30_32" 	/>
+								<Size 		origin = "457_67" 	/>
+							</Widget>
+						</Widget>
+						<Widget id="2" typeRes="layout" 	name = "panel_name_input" idx_appear ="1" visible="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 				value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"			value="1"/>
+								<common			name="scale_9"				value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="use_nine_path" 		value="1"/>
+								<common			name="anchor_point"			value="0_1"/>
+							</common_value>
+							<pos 		origin = "0_350" 	/>
+							<Size 		origin = "500_40" 	/>
+							<opacity	origin = "240" 		/>
+							<Widget id="0" typeRes="text_field" name = "text_input_1" idx_appear ="2" visible="1">		
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="nick_email_or_phone"/>
+									<common			name="anchor_point"			value="0_0.5"/>	
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "clear_text_input_name_btn" 	idx_appear ="2" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "490_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+						</Widget>
+						<Widget id="3" typeRes="layout" 	name = "panel_pass_input" idx_appear ="1" visible="1">		
+							<common_value>
+								
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_1"/>
+							</common_value>
+							<pos 		origin = "0_300" 	/>
+							<Size 		origin = "500_40" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "title_1" idx_appear ="2">							
+								<template_value>
+									<template name="temp_textfield_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="password"/>					
+									<common			name="anchor_point"	value="0_0.5"/>
+									<common			name="pass_input"	value="1"/>
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "clear_text_input_pass_btn" idx_appear ="2" visible="0">		
+								<common_value>
+								
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "490_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>			
+						</Widget>
+						<Widget id="4" typeRes="button" 	name = "forget_pass_title" 	idx_appear ="1">		
+							<common_value>
+								<common 		name="disable" 			value="default-round-blue.9.png"/>
+								<common			name="stick_screen"		value="1"/>
+								<common 		name="scale_press" 		value="-0.15"/>
+								<common			name="scale_9"			value="1"/>
+								<common			name="anchor_point"		value="1_1"/>
+								<common			name="use_nine_path"	value="1"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font"   name = "title_" 	idx_appear ="1">
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 			value="forgot_password"/>					
+									<common			name="anchor_point"		value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "100_15" 	/>
+							</Widget>
+							
+							<pos 		origin = "500_250" 	/>
+							<Size 		origin = "100_30" 	/>
+						</Widget>
+						<Widget id="5" typeRes="button" 	name = "create_account_btn" idx_appear ="1">		
+							<template_value>
+								<template name="temp_btn_blue"/>
+							</template_value>
+							<common_value>								
+								<common			name="stick_screen"	value="1"/>
+								<common			name="anchor_point"	value="0_1"/>
+							</common_value>
+							<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">	
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="create_account"/>					
+								</common_value>
+								<pos 		origin = "120_30" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_215" 	/>
+							<Size 		origin = "240_60" 	/>
+						</Widget>	
+						<Widget id="6" typeRes="button" 	name = "login_game_btn" 	idx_appear ="1">		
+							<template_value>
+								<template name="temp_btn_yellow"/>
+							</template_value>
+							<common_value>							
+								<common			name="stick_screen"	value="1"/>
+								<common			name="anchor_point"	value="1_1"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font" 		name = "title" idx_appear ="1">
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="login"/>					
+								</common_value>
+								<pos 		origin = "120_30" 	/>
+								<color		origin = "10_10_10_255"/>
+							</Widget>
+							
+							<pos 		origin = "500_215" 	/>						
+							<Size 		origin = "240_60" 	/>
+						</Widget>
+						<Widget id="7" typeRes="font" 		name = "alter_login_title" idx_appear ="1">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="or_login_with"/>					
+								<common			name="anchor_point"	value="0.5_1"/>
+							</common_value>
+							<pos 		origin = "256_140" 	/>
+						</Widget>
+						<Widget id="8" typeRes="layout" 	name = "alter_login_layout" idx_appear ="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>	
+								<common			name="stick_screen"			value="1"/>
+								<common			name="anchor_point"			value="0.5_1"/>		
+							</common_value>
+							
+							<Widget id="0" typeRes="button" name = "fb_btn" idx_appear ="2">		
+								<common_value>
+								
+									<common 		name="source" 		value="mainscreen/logindialog/btn_facebook.png"/>
+									<common 		name="press" 		value="mainscreen/logindialog/btn_facebook.png"/>
+									<common 		name="disable" 		value="mainscreen/logindialog/btn_facebook.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "40_90" 	/>
+								<Size 		origin = "80_80" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "gg_btn" idx_appear ="2">		
+								<common_value>
+								
+									<common 		name="source" 		value="mainscreen/logindialog/btn_ggs.png"/>
+									<common 		name="press" 		value="mainscreen/logindialog/btn_ggs.png"/>
+									<common 		name="disable" 		value="mainscreen/logindialog/btn_ggs.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "145_90" 	/>
+								<Size 		origin = "80_80" 	/>
+							</Widget>
+							<Widget id="2" typeRes="button" name = "game_center_btn" idx_appear ="2">		
+								<common_value>
+								
+									<common 		name="source" 		value="mainscreen/logindialog/btn_gamecenter.png"/>
+									<common 		name="press" 		value="mainscreen/logindialog/btn_gamecenter.png"/>
+									<common 		name="disable" 		value="mainscreen/logindialog/btn_gamecenter.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="anchor_point"	value="0.5_1"/>
+								</common_value>
+								<pos 		origin = "250_90" 	/>
+								<Size 		origin = "80_80" 	/>
+							</Widget>
+							
+							<pos 		origin = "256_110" 	/>
+							<Size 		origin = "290_90" 	/>
+							<COMMAND>
+								<cmd name="SHOW_3" id="0">
+								{
+									"act0" : 
+									{
+										"single" : {
+											"SET_POSITION" : "256_110",
+											"DESIGN"	   : "960_540"
+										}
+									}
+								}
+								</cmd>
+								<cmd name="SHOW_2" id="1">
+								{
+									"act0" : 
+									{
+										"single" : {
+											"SET_POSITION" : "316_110",
+											"DESIGN"	   : "960_540"
+										}
+									}
+								}
+							</cmd>	
+						</COMMAND>
+						</Widget>
+						<Widget id="9" typeRes="button" 	name = "btn_back" 		idx_appear ="1">		
+							<common_value>
+								<common 		name="source" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/back_vien.png"/>
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="anchor_point"		value="0_1"/>
+							</common_value>
+							<pos 		origin = "-370_515" 	/>
+							<Size 		origin = "22_34" 	/>
+						</Widget>
+						<pos 		origin = "640_0" 	/>
+						<Size 		origin = "512_540" 	/>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0": {
+									"squence":[
+										{
+											"SET_POSITION"	:	"1000_0",
+											"DESIGN"		:	"960_540"
+										},
+										{
+											"SET_VISIBLE"	: 	1
+										}
+									]
+								},
+								"act1":{
+									"single_0" : {	
+										"POSITION":"640_0",
+										"DESIGN":"960_540",
+										"STYLE":0, 
+										"TIME":0.15
+									}	
+								}		
+							}
+							</cmd>		
+						</COMMAND>
+				</Widget>
+																
+</GAME>

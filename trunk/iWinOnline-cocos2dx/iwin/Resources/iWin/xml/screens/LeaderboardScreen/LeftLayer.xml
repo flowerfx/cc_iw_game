@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<GAME>
+		<Widget id="1" typeRes="layout" name = "left_layout" idx_appear ="1">		
+						<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						
+						<Widget id="0" 	typeRes="panel" 		name = "bg_avatar" 			idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+									</common_value>
+									<pos 		origin = "110_298" 	/>
+									<Size 		origin = "125_125" 	/>
+						</Widget>								
+						<Widget id="1" 	typeRes="panel_clipping" name = "panel_avatar" 		idx_appear ="1">		
+								<common_value>							
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point" value="0.5_0.5"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="panel" name = "bg_avatar" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="stencil"		value="1"/>
+									</common_value>
+									<pos 		origin = "60_60" 	/>
+									<Size 		origin = "120_120" 	/>
+								</Widget>
+								
+								<Widget id="1" typeRes="panel" name = "avatar_default" idx_appear ="1">		
+									<common_value>							
+										<common 		name="source" 		value="mainscreen/icon/avatar_default.png"/>				
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+									</common_value>
+									<pos 		origin = "60_60" 	/>
+									<Size 		origin = "92_108" 	/>
+								</Widget>
+								
+								<pos 		origin = "110_298" 	/>
+								<Size 		origin = "120_120" 	/>
+						</Widget>			
+						
+						<Widget id="2" 	typeRes="font"   		name = "title_id" 			idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_name"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="nick_name"/>					
+							</common_value>
+							<pos 		origin = "110_212" 	/>
+						</Widget>		
+						<Widget id="3" 	typeRes="font"   		name = "title_win_number" 	idx_appear ="1">		
+							<template_value>
+								<template name="temp_text_yellow_1"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="10.000 Win"/>					
+							</common_value>
+							<pos 		origin = "110_103" 	/>
+						</Widget>
+						<Widget id="4" 	typeRes="font"   		name = "title_ruby_number" 	idx_appear ="1" visible="0">		
+							<template_value>
+								<template name="temp_text_yellow_1"/>
+							</template_value>
+							<common_value>
+								<common 		name="source" 		value="10.000 Ruby"/>					
+							</common_value>
+							<pos 		origin = "110_83" 	/>
+						</Widget>
+						
+						<Widget id="5" 	typeRes="panel"  		name = "progress_bar_panel" idx_appear ="1">		
+							<common_value>
+									<common			name="source"			value="loginscreen/nine/progress_bg.9.png"/>					
+									<common			name="anchor_point"		value="0.5_0.5"/>
+									<common			name="use_atlas"		value="1"/>
+									<common			name="stick_screen"	 	value="0"/>
+									<common			name="scale_9"			value="1"/>
+									<common			name="use_nine_path"	value="1"/>
+							</common_value>
+							<Widget id="0" typeRes="font" name = "title_level" idx_appear ="1">		
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Cấp độ"/>					
+									<common			name="anchor_point"	value="0.5_0"/>
+								</common_value>
+								<pos 		origin = "85_27" 	/>
+							</Widget>		
+						
+							<Widget id="1" typeRes="loading_bar" name = "progress_bar_value" idx_appear ="1">		
+								<common_value>
+										<common			name="source"			value="loginscreen/nine/progress_value.9.png"/>					
+										<common			name="anchor_point"		value="0_0"/>
+										<common			name="use_atlas"		value="1"/>
+										<common			name="stick_screen"	 	value="0"/>
+										<common			name="percent"			value="10.0"/>
+										<common			name="scale_9"			value="1"/>
+										<common			name="use_nine_path"	value="1"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "170_25" 	/>
+							</Widget>
+							
+							<Widget id="2" typeRes="font" name = "title_percent_value" idx_appear ="1">		
+								<template_value>
+									<template name="temp_text_0"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="0%"/>					
+								</common_value>
+								<pos 		origin = "85_12" 	/>
+								<color 		origin = "50_50_50_255" 	/>
+							</Widget>
+							
+							<pos 		origin = "110_134" 	/>
+							<Size 		origin = "170_25" 	/>
+						</Widget>
+						
+						<Widget id="6" 	typeRes="panel"  		name =  "panel_spec" 		idx_appear ="1">		
+							<common_value>		
+								<common 		name="source" 		value="mainscreen/newgui-mainscreen/doc.png"/>	
+								<common			name="scale_9"		value="0"/>
+								<common			name="use_nine_path" value="0"/>	
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="0"/>
+								<common			name="anchor_point"	value="1_0.5"/>
+							</common_value>
+							<pos 		origin = "222_240" 	/>
+							<Size 		origin = "3_300" 	/>
+						</Widget>
+						
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "220_480" 	/>
+					</Widget>
+																					
+</GAME>

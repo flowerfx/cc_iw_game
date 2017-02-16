@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" typeRes="layout"  name = "layout_anoun_server" 	idx_appear="1" 	visible="0"> 		
+				<common_value>
+					<common 		name="clipping_enable"	    value="1"/>
+					<common 		name="background_type" 		value="0"/>
+					<common			name="stick_screen"			value="1"/>
+					<common			name="anchor_point"			value="0.5_1"/>
+				</common_value>
+						
+					<Widget id="0" 	typeRes="panel" name = "panel_" 				idx_appear ="1" >		
+						<common_value>
+							<common			name="source"				value="loginscreen/nine/blackpixel.png"/>
+							<common 		name="scale_9" 				value="1"/>	
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "800_30" 	/>
+						<opacity 	origin = "160" 	/>
+					</Widget>
+					<Widget id="1" 	typeRes="font" 	name = "text_anounce" 			idx_appear ="1" >		
+						<template_value>
+							<template name="temp_text_0"/>
+						</template_value>
+						<common_value>
+							<common 		name="source" 			value="text_anounce"/>					
+							<common			name="anchor_point"		value="0_0.5"/>
+						</common_value>
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											{
+												"SET_POSITION" : "850_15",	
+												"DESIGN"       : "960_540"
+											}
+										]
+									}
+								}
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+								{
+									"act0":
+									{
+										"single":
+										{
+											"SET_POSITION" : "850_15",										
+											"DESIGN"       : "960_540"
+										}
+									}
+								}
+							</cmd>
+						</COMMAND>
+						<pos 		origin = "850_15" 	/>
+					</Widget>
+					<Widget id="2" typeRes="button" name = "close_annouce_panel" 	idx_appear ="1" >		
+						<common_value>					
+							<common 		name="source" 				value="close_button.png"/>
+							<common 		name="press" 				value="close_button.png"/>
+							<common 		name="disable" 				value="close_button.png"/>
+							<common 		name="scale_press" 			value="-0.05"/>
+							<common			name="stick_screen"			value="0"/>
+							<common 		name="use_atlas" 			value="1"/>	
+							<common			name="anchor_point"			value="1_0.5"/>
+						</common_value>
+						<pos 		origin = "795_15" 	/>
+						<Size 		origin = "25_25" 	/>
+						<opacity	origin = "128"		/>
+					</Widget>	
+					
+				<pos 		origin = "480_600" 	/>
+				<Size 		origin = "800_30" 	/>
+				
+				<COMMAND>
+					<cmd id="0" name="ON_SHOW">
+						{
+							"act0":
+									{
+										"squence":
+										[
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_POSITION" : "480_600",
+												
+												"DESIGN"       : "960_540"
+											},
+											{
+												"POSITION" : "480_540",										
+												"DESIGN"   : "960_540",
+												"STYLE"	   : 0,
+												"TIME"	   : 0.2
+											},
+											{
+												"SET_POSITION" : "480_540",
+												"DESIGN"       : "960_540"
+											}
+										]
+									}
+						}
+					</cmd>
+					<cmd id="1" name="ON_HIDE">
+								{
+									"act0":
+									{
+										"squence":
+										[
+											
+											{
+												"SET_POSITION" : "480_540",
+												
+												"DESIGN"       : "960_540"
+											},
+											{
+												"POSITION" : "480_600",
+												
+												"DESIGN"   : "960_540",
+												"STYLE"	   : 0,
+												"TIME"	   : 0.2
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										]
+									}
+								}
+					</cmd>
+				</COMMAND>
+			</Widget>
+						
+</GAME>

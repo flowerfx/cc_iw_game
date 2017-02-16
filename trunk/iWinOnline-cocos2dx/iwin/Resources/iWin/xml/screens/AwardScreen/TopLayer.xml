@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="2" name="top_panel" 		typeRes="layout">
+                <common_value>
+					<common	name="stick_screen"	value="1"/>
+                    <common name="anchor_point" value="0_0"/>
+                </common_value>
+                <Widget id="0" name="Image_2" 		typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" value="1"/>
+                        <common name="use_nine_path" value="1"/>
+                        <common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0_0"/>
+                        <common name="source" value="loginscreen/nine/red6.9.png"/>
+                    </common_value>
+                    <Size origin="960_60"/>
+                    <pos origin="0_0"/>
+                </Widget>
+                <Widget id="1" name="group_reward" 	typeRes="layout">
+                    <common_value>
+                        <common name="anchor_point" value="1_0.5"/>
+                    </common_value>
+                    <Widget id="0" name="btn_reward" 	typeRes="button">
+						<common_value>
+							<common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+							<common name="scale_press" 		value="-0.05"/>                   
+							<common name="anchor_point" 	value="1_0.5"/>
+							<common name="disable" 			value="otherscreen/winfree-screen/bg_btn_tab_left_on.9.png"/>
+							<common name="press" 			value="otherscreen/winfree-screen/bg_btn_tab_left_on.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+						</common_value>
+						<Size origin="230_50"/>
+						<pos origin="230_25"/>
+					</Widget>
+					<Widget id="1" name="Image_3" 		typeRes="panel">
+                        <common_value>
+							<common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+                            <common name="anchor_point"	 	value="1_0.5"/>
+                            <common name="source" 			value="otherscreen/winfree-screen/bg_btn_tab_left_off.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+                        </common_value>
+                        <Size origin="230_50"/>
+                        <pos origin="230_25"/>
+                    </Widget>
+                    <Widget id="2" name="icon_select" 	typeRes="panel">
+                        <common_value>
+                            <common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+                            <common name="anchor_point" 	value="1_0.5"/>
+                            <common name="source" 			value="otherscreen/winfree-screen/bg_btn_tab_left_on.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+                        </common_value>
+                        <Size origin="230_50"/>
+                        <pos origin="230_25"/>
+                    </Widget>
+                    <Widget id="3" name="Text_2" 		typeRes="font">
+                       <template_value>
+							<template 		name="temp_text_0_3"/>						
+						</template_value>
+						<common_value>
+                            <common name="source" value="REWARD"/>
+							<common name="anchor_point" value="1_0.5"/>
+                        </common_value>
+                        <pos origin="210_25"/>
+                    </Widget>
+                    <Size origin="230_50"/>
+					<pos origin="480_30"/>
+                </Widget>
+                <Widget id="2" name="group_history" typeRes="layout">
+                    <common_value>
+                        <common name="anchor_point" value="0_0.5"/>
+                    </common_value>
+                    <Widget id="0" name="btn_history" 	typeRes="button">
+						<common_value>
+							<common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+							<common name="scale_press" 		value="-0.05"/>                   
+							<common name="anchor_point" 	value="0_0.5"/>
+							<common name="disable" 			value="otherscreen/winfree-screen/bg_btn_tab_right_on.9.png"/>
+							<common name="press" 			value="otherscreen/winfree-screen/bg_btn_tab_right_on.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+						</common_value>
+						<Size origin="230_50"/>
+						<pos origin="0_25"/>
+					</Widget>
+					<Widget id="1" name="Image_3_0" 	typeRes="panel">
+                        <common_value>
+                            <common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+                            <common name="anchor_point"	 	value="0_0.5"/>
+                            <common name="source" 			value="otherscreen/winfree-screen/bg_btn_tab_right_off.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+                        </common_value>
+                        <Size origin="230_50"/>
+                        <pos origin="0_25"/>
+                    </Widget>
+                    <Widget id="2" name="icon_select" 	typeRes="panel">
+                        <common_value>
+                            <common name="scale_9" 			value="1"/>
+							<common name="use_nine_path" 	value="0"/>
+                            <common name="anchor_point"	 	value="0_0.5"/>
+                            <common name="source" 			value="otherscreen/winfree-screen/bg_btn_tab_right_on.9.png"/>
+							<common name="stage_scale9" 	value="1"/>
+                        </common_value>
+                        <Size origin="230_50"/>
+                        <pos origin="0_25"/>
+                    </Widget>
+                    <Widget id="3" name="Text_2" 		typeRes="font">
+                        <template_value>
+							<template 		name="temp_text_0_3"/>						
+						</template_value>
+					   <common_value>
+                            <common name="source" 			value="HISTO"/>
+							<common name="anchor_point"	 	value="0_0.5"/>
+                        </common_value>
+                        <pos origin="20_25"/>
+                    </Widget>
+                    <Size origin="230_50"/>
+					<pos origin="480_30"/>
+                </Widget>
+                <Widget id="4" name="btn_back" 		typeRes="button">
+                    <common_value>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="disable" value="otherscreen/pickroom-screen/back.png"/>
+                        <common name="press" value="otherscreen/pickroom-screen/back.png"/>
+                        <common name="source" value="otherscreen/pickroom-screen/back.png"/>
+						<common	name="touch_zone"	value="50_50"/>
+                    </common_value>
+                    <Size origin="28_43"/>
+                    <pos origin="28_30"/>
+                </Widget>
+                <Widget id="6" name="btn_help" 		typeRes="button">
+                    <common_value>
+						<common name="anchor_point" value="1_0.5"/>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="disable" value="mainscreen/icon/ico_question.png"/>
+                        <common name="press" value="mainscreen/icon/ico_question.png"/>
+                        <common name="source" value="mainscreen/icon/ico_question.png"/>
+                    </common_value>
+                    <Size origin="33_33"/>
+                    <pos origin="950_30"/>
+                </Widget>
+                <pos origin="0_480"/>
+				<size origin="960_60"/>
+			</Widget>
+			
+</GAME>

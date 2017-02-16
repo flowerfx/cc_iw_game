@@ -1,0 +1,117 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<template_widget_dec>
+		<widget name="CommonScreen.LeaderboardLayer" 	value="xml\screens\CommonScreen\LeaderboardLayer.xml"/>
+		<widget name="CommonScreen.EmotionBoard" 		value="xml\screens\CommonScreen\EmotionBoard.xml"/>
+		<widget name="CommonScreen.ChangePassLayer" 	value="xml\screens\CommonScreen\ChangePassLayer.xml"/>
+		<widget name="CommonScreen.AnnouceServerLayer" 	value="xml\screens\CommonScreen\AnnouceServerLayer.xml"/>
+		<widget name="CommonScreen.InfoPlayerLayer" 	value="xml\screens\CommonScreen\InfoPlayerLayer.xml"/>
+		<widget name="CommonScreen.ConfirmCodeLayer" 	value="xml\screens\CommonScreen\ConfirmCodeLayer.xml"/>
+		<widget name="CommonScreen.BannerInviteLayer" 	value="xml\screens\CommonScreen\BannerInviteLayer.xml"/>
+		<widget name="CommonScreen.LuckyCircleLayer" 	value="xml\screens\CommonScreen\LuckyCircleLayer.xml"/>
+		<widget name="CommonScreen.TaiXiuLayer" 		value="xml\screens\CommonScreen\TaiXiuLayer.xml"/>
+		<widget name="CommonScreen.TutorialLayer" 		value="xml\screens\CommonScreen\TutorialLayer.xml"/>
+		<widget name="CommonScreen.ToastLayer" 			value="xml\screens\CommonScreen\ToastLayer.xml"/>
+		<widget name="CommonScreen.BonusLayer" 			value="xml\screens\CommonScreen\BonusMoneyLayer.xml"/>
+		<widget name="CommonScreen.DialogLayer" 		value="xml\screens\CommonScreen\DialogLayer.xml"/>
+		<widget name="CommonScreen.MiniBtnLayer" 		value="xml\screens\CommonScreen\MiniBtnLayer.xml"/>
+		<widget name="CommonScreen.MiniPokerLayer" 		value="xml\screens\CommonScreen\MiniPokerLayer.xml"/>
+		<widget name="CommonScreen.LoadingCircleLayer" 	value="xml\screens\CommonScreen\LoadingCircleLayer.xml"/>
+		
+		<widget name="MainScreen.SettingLayer" 			value="xml\screens\MainScreen\SettingLayer.xml"/>
+		<widget name="MainScreen.ChangeServerLayer" 	value="xml\screens\MainScreen\ChangeServerLayer.xml"/>
+		<widget name="MainScreen.BottomLayer" 			value="xml\screens\MainScreen\BottomLayer.xml"/>
+		<widget name="MainScreen.TopLayer" 				value="xml\screens\MainScreen\TopLayer.xml"/>
+		
+		<widget name="ProfileScreen.ActiveOtpLayer" 		value="xml\screens\ProfileScreen\ActiveOtpLayer.xml"/>
+		<widget name="ProfileScreen.TransferWinLayer" 		value="xml\screens\ProfileScreen\TransferWinLayer.xml"/>
+		<widget name="ProfileScreen.ShopAvatarLayer" 		value="xml\screens\ProfileScreen\ShopAvatarLayer.xml"/>
+		<widget name="ProfileScreen.PurchaseAvatarLayer" 	value="xml\screens\ProfileScreen\PurchaseAvatarLayer.xml"/>
+		<widget name="ProfileScreen.EditProfileLayer" 		value="xml\screens\ProfileScreen\EditProfileLayer.xml"/>
+		<widget name="ProfileScreen.TopLayer" 				value="xml\screens\ProfileScreen\TopLayer.xml"/>
+		<widget name="ProfileScreen.ProfilePage" 			value="xml\screens\ProfileScreen\ProfilePage.xml"/>
+		<widget name="ProfileScreen.AchievementPage" 		value="xml\screens\ProfileScreen\AchievementPage.xml"/>
+		<widget name="ProfileScreen.HistoryPage" 			value="xml\screens\ProfileScreen\HistoryPage.xml"/>
+		<widget name="ProfileScreen.OTPPage" 				value="xml\screens\ProfileScreen\OTPPage.xml"/>
+		<widget name="ProfileScreen.LeftDetailUser" 		value="xml\screens\ProfileScreen\LeftDetailUser.xml"/>
+		
+		<widget name="LeaderboardScreen.ListLeadboardLayer" 		value="xml\screens\LeaderboardScreen\ListLeadboardLayer.xml"/>
+		<widget name="LeaderboardScreen.LeaderboardPlayerLayer" 	value="xml\screens\LeaderboardScreen\LeaderboardPlayerLayer.xml"/>
+		<widget name="LeaderboardScreen.LeaderboardFriendLayer" 	value="xml\screens\LeaderboardScreen\LeaderboardFriendLayer.xml"/>
+		<widget name="LeaderboardScreen.TopLayer" 					value="xml\screens\LeaderboardScreen\TopLayer.xml"/>
+		<widget name="LeaderboardScreen.LeftLayer" 					value="xml\screens\LeaderboardScreen\LeftLayer.xml"/>
+		
+		<widget name="LoginScreen.FirstLoginLayer" 					value="xml\screens\LoginScreen\FirstLoginLayer.xml"/>
+		<widget name="LoginScreen.LoginLayer" 						value="xml\screens\LoginScreen\LoginLayer.xml"/>
+		<widget name="LoginScreen.RegisterLayer" 					value="xml\screens\LoginScreen\RegisterLayer.xml"/>
+		<widget name="LoginScreen.ForgetPassLayer" 					value="xml\screens\LoginScreen\ForgetPassLayer.xml"/>
+		<widget name="LoginScreen.OTPLayer" 						value="xml\screens\LoginScreen\OTPLayer.xml"/>
+		
+		<widget name="EventScreen.TopLayer" 						value="xml\screens\EventScreen\TopLayer.xml"/>
+		<widget name="EventScreen.CaptchaLayer" 					value="xml\screens\EventScreen\CaptchaLayer.xml"/>
+		<widget name="EventScreen.QuestLayer" 						value="xml\screens\EventScreen\QuestLayer.xml"/>
+		<widget name="EventScreen.QuestCategoryLayer" 				value="xml\screens\EventScreen\QuestCategoryLayer.xml"/>
+		<widget name="EventScreen.FBInviteDialog" 					value="xml\screens\EventScreen\FBInviteDialog.xml"/>
+		
+		<widget name="FriendScreen.TopLayer" 						value="xml\screens\FriendScreen\TopLayer.xml"/>
+		<widget name="FriendScreen.SearchFriendLayer" 				value="xml\screens\FriendScreen\SearchFriendLayer.xml"/>
+		<widget name="FriendScreen.ListPlayerMainLayer" 			value="xml\screens\FriendScreen\ListPlayerMainLayer.xml"/>
+		<widget name="FriendScreen.ListFriendChatLayer" 			value="xml\screens\FriendScreen\ListFriendChatLayer.xml"/>
+		<widget name="FriendScreen.ChatLayer" 						value="xml\screens\FriendScreen\ChatLayer.xml"/>
+		
+		<widget name="LobbyScreen.TopLayer" 						value="xml\screens\LobbyScreen\TopLayer.xml"/>
+		<widget name="LobbyScreen.ProfileLayer" 					value="xml\screens\LobbyScreen\ProfileLayer.xml"/>
+		<widget name="LobbyScreen.ListRoomLayer" 					value="xml\screens\LobbyScreen\ListRoomLayer.xml"/>
+		<widget name="LobbyScreen.CreateRoomLayer" 					value="xml\screens\LobbyScreen\CreateRoomLayer.xml"/>
+		
+		<widget name="NewLobbyScreen.TopLayer" 						value="xml\screens\NewLobbyScreen\TopLayer.xml"/>
+		<widget name="NewLobbyScreen.TopLeftAvatarLayer" 			value="xml\screens\NewLobbyScreen\TopLeftAvatarLayer.xml"/>
+		<widget name="NewLobbyScreen.InputChatLayer" 				value="xml\screens\NewLobbyScreen\InputChatLayer.xml"/>
+		<widget name="NewLobbyScreen.ChatListLayer" 				value="xml\screens\NewLobbyScreen\ChatListLayer.xml"/>
+		<widget name="NewLobbyScreen.ListRoomLayer" 				value="xml\screens\NewLobbyScreen\ListRoomLayer.xml"/>
+		<widget name="NewLobbyScreen.ListLobbyLayer" 				value="xml\screens\NewLobbyScreen\ListLobbyLayer.xml"/>
+		<widget name="NewLobbyScreen.RightHistoryLayer" 			value="xml\screens\NewLobbyScreen\RightHistoryLayer.xml"/>
+		
+		<widget name="IAPScreen.TopLayer" 							value="xml\screens\IAPScreen\TopLayer.xml"/>
+		<widget name="IAPScreen.IAPMethodLayer" 					value="xml\screens\IAPScreen\IAPMethodLayer.xml"/>
+		<widget name="IAPScreen.LayoutCard" 						value="xml\screens\IAPScreen\LayoutCard.xml"/>
+		<widget name="IAPScreen.ScrollItem" 						value="xml\screens\IAPScreen\ScrollItem.xml"/>
+		<widget name="IAPScreen.ScrollItemTelco" 					value="xml\screens\IAPScreen\ScrollItemTelco.xml"/>
+		<widget name="IAPScreen.ScrollItemCardValue" 				value="xml\screens\IAPScreen\ScrollItemCardValue.xml"/>
+		<widget name="IAPScreen.LayoutSMS" 							value="xml\screens\IAPScreen\LayoutSMS.xml"/>
+		<widget name="IAPScreen.LayoutBanking" 						value="xml\screens\IAPScreen\LayoutBanking.xml"/>
+		<widget name="IAPScreen.LayoutIAP" 							value="xml\screens\IAPScreen\LayoutIAP.xml"/>
+		<widget name="IAPScreen.LayoutVerify" 						value="xml\screens\IAPScreen\LayoutVerify.xml"/>
+		
+		<widget name="AwardScreen.TopLayer" 						value="xml\screens\AwardScreen\TopLayer.xml"/>
+		<widget name="AwardScreen.DetailDialogLayer" 				value="xml\screens\AwardScreen\DetailDialogLayer.xml"/>
+		<widget name="AwardScreen.RubyLayout" 						value="xml\screens\AwardScreen\RubyLayout.xml"/>
+		<widget name="AwardScreen.BodyLayout" 						value="xml\screens\AwardScreen\BodyPanel.xml"/>
+		<widget name="AwardScreen.BodyHistory" 						value="xml\screens\AwardScreen\BodyHistory.xml"/>
+		
+		<widget name="HUDScreen.TableGameLayer" 					value="xml\screens\HUDScreen\TableGameLayer.xml"/>
+		<widget name="HUDScreen.ResultLayer" 						value="xml\screens\HUDScreen\ResultLayer.xml"/>
+		<widget name="HUDScreen.ProcessBarLayer" 					value="xml\screens\HUDScreen\ProcessBarLayer.xml"/>
+		<widget name="HUDScreen.InvitePlayLayout" 					value="xml\screens\HUDScreen\InvitePlayLayout.xml"/>
+		<widget name="HUDScreen.InGameSettingLayer" 				value="xml\screens\HUDScreen\InGameSettingLayer.xml"/>
+		<widget name="HUDScreen.InGameMenuLayer" 					value="xml\screens\HUDScreen\InGameMenuLayer.xml"/>
+		<widget name="HUDScreen.HUDScreenLayout" 					value="xml\screens\HUDScreen\HUDScreenLayout.xml"/>
+		<widget name="HUDScreen.HighLightLayer" 					value="xml\screens\HUDScreen\HighLightLayer.xml"/>
+		<widget name="HUDScreen.GiftItemLayer" 						value="xml\screens\HUDScreen\GiftItemLayer.xml"/>
+		<widget name="HUDScreen.CountDownTimerLayer"				value="xml\screens\HUDScreen\CountDownTimerLayer.xml"/>
+		<widget name="HUDScreen.ChatPanelLayer" 					value="xml\screens\HUDScreen\ChatPanelLayer.xml"/>
+		<widget name="HUDScreen.ChatListLayer"						value="xml\screens\HUDScreen\ChatListLayer.xml"/>
+		
+		<widget name="GeneralWidget.BtnServer" 						value="xml\screens\GeneralWidget\BtnServer.xml"/>
+		<widget name="GeneralWidget.ChooseServerLayer" 				value="xml\screens\GeneralWidget\ChooseServerLayer.xml"/>
+		<widget name="GeneralWidget.DrigNormal" 					value="xml\screens\GeneralWidget\DrigNormal.xml"/>
+		<widget name="GeneralWidget.DrigBig" 						value="xml\screens\GeneralWidget\DrigBig.xml"/>
+		
+		<widget name="GameScreens.PanelCardInfo" 					value="xml\Game\GameScreens\PanelCardInfo.xml"/>
+		<widget name="GameScreens.SliderBet" 						value="xml\Game\GameScreens\SliderBet.xml"/>
+		<widget name="GameScreens.BetMoneyLayout" 					value="xml\Game\GameScreens\BetMoneyLayout.xml"/>
+		<widget name="GameScreens.PhomResultPanel" 					value="xml\Game\GameScreens\PhomResultPanel.xml"/>
+		<widget name="GameScreens.PhomResultPanel1" 				value="xml\Game\GameScreens\PhomResultPanel1.xml"/>
+		
+	</template_widget_dec>
+</GAME>

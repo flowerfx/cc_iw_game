@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<GAME>
+	<Widget id="0" 	typeRes="layout" name = "scroll_item_telco" idx_appear ="1" visible="0">		
+					<common_value>
+							<common 		name="clipping_enable"	    value="1"/>
+							<common 		name="background_type" 		value="1"/>
+							<common 		name="tint" 				value="255_255_255_0"/>
+							<common			name="stick_screen"			value="1"/>
+							<common			name="casca_color"			value="0"/>
+							<common			name="anchor_point"			value="0.5_0.5"/>
+					</common_value>
+					
+					<Widget id="0" 	typeRes="layout" name = "icon_telco" idx_appear ="1" >		
+						<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="1"/>
+								<common 		name="tint" 		value="255_255_255_128"/>
+								<common			name="stick_screen"	value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>
+						<pos 		origin = "75_63" 	/>
+						<Size 		origin = "140_120" 	/>
+					</Widget>
+					<Widget id="2" typeRes="layout" 	name = "hl_telco" idx_appear ="1">		
+							<common_value>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="otherscreen/topup-screen/hight_light_nha_mang.png"/>					
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "75_63" 	/>
+							<Size 		origin = "140_120" 	/>
+					</Widget>
+
+					<Widget id="5" typeRes="button" name = "btn_telco" idx_appear ="5">		
+								<common_value>
+									<common			name="press"		value="loginscreen/nine/whitepixel.png"/>
+									
+									<common 		name="scale_press" 	value="-0.00"/>
+									<common			name="scale_9"		value="1"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="1"/>
+									<common			name="no_add_event"	value="1"/>
+									<common			name="anchor_point"	value="0_0"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "150_125" 	/>
+								<opacity 	origin="0"/>
+					</Widget>	
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "150_125" 	/>
+				</Widget>
+							
+</GAME>

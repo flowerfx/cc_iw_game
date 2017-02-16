@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<GAME>
+    <MenuWidget designSize="960_540" name="ui_changeaward">
+        <fade_process max_idx_first="0">
+			<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+			<time_process id="0" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+		</fade_process>
+
+        <Widget id="0" name="changeaward_ui" typeRes="layer_widget">
+            <common_value>
+                <common name="root" value="1"/>
+                <common name="stick_screen" value="1"/>
+            </common_value>
+			
+            
+            <Widget id="1" name="Image_1" 			typeRes="panel">
+                <common_value>
+                    <common name="stick_screen" value="1"/>
+                    <common name="source" value="background/mainbg.png"/>
+                </common_value>
+                <Size origin="960_540"/>
+                <pos origin="480_270"/>
+            </Widget>
+            <Widget id="2" name="top_panel" 		com="AwardScreen.TopLayer">		
+			</Widget>
+			<Widget id="3" name="ruby_layout" 		com="AwardScreen.RubyLayout">
+            </Widget>
+            <Widget id="4" name="body_panel" 		com="AwardScreen.BodyLayout" visible="0">
+            </Widget>
+            <Widget id="5" name="body_history" 		com="AwardScreen.BodyHistory">
+            </Widget>
+			
+			<Widget id="9" name = "detail_dialog" 	com="AwardScreen.DetailDialogLayer" 	visible="0">
+			</Widget>	
+			<pos 		origin = "480_270" 	/>
+			<Size 		origin = "960_540" 	/>	
+		</Widget>
+    </MenuWidget>
+</GAME>

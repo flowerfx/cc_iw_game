@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" 	typeRes="layout" name = "layout_verify" idx_appear="1" visible="0">
+					<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					<Widget id="0" typeRes="button" name = "btn_verify" idx_appear ="2">		
+						<template_value>
+							<template 		name="temp_btn_yellow"/>						
+						</template_value>
+						<common_value>
+							<common			name="anchor_point"	value="0.5_0.5"/>
+						</common_value>					
+						<Widget id="1" typeRes="font" name = "text" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="reward"/>					
+								<common			name="anchor_point"	value="0.5_0.5"/>
+							</common_value>
+							<pos 		origin = "75_25" 	/>
+						</Widget>							
+
+						<pos 		origin = "480_310" 	/>
+						<Size 		origin = "150_50" 	/>					
+					</Widget>	
+					<Widget id="1" typeRes="font" name = "verify_content" idx_appear ="2">		
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 			value="reward"/>					
+								<common 		name="anchor_point" 			value="0.5_0.5"/>					
+							</common_value>
+							<pos 		origin = "480_270" 	/>
+					</Widget>
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>	
+				</Widget>	
+</GAME>

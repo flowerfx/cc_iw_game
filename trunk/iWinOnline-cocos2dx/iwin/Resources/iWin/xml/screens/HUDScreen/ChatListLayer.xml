@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="1" typeRes="layout" name = "layout_gen_chat" idx_appear ="1" visible="0">		
+						<common_value>
+							<common			name="casca_opacity"		value="1"/>
+							<common			name="stick_screen"			value="1"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						<Widget id="1" name="bg" 				typeRes="panel">
+							<common_value>
+								<common name="scale_9" 			value="1"/>
+								<common name="use_nine_path" 	value="1"/>
+								<common name="stick_screen" 	value="1"/>
+								<common name="anchor_point" 	value="0.0_0.0"/>
+								<common name="source" 			value="gamescreen-newgui-game-common/nenchat.9.png"/>
+							</common_value>
+							<Size 	origin="350_540"/>
+							<pos 	origin="0_0"/>
+						</Widget>              
+						<Widget id="2" name="scrollview_chat" 	typeRes="list_view">
+							<common_value>
+								<common 	name="direction" 		value="1"/>
+								<common 	name="anchor_point" 	value="0_0"/>
+								<common 	name="inner_size" 		value="320_270"/>
+								<common		name="bounce_enable"	value="1"/>
+								<common		name="casca_opacity"		value="0"/>
+							</common_value>
+							<Size origin="320_240"/>
+							<pos origin="0_300"/>
+						</Widget>
+						<pos 		origin = "0_0" 	/>
+						<Size 		origin = "350_540" 	/>					
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_VISIBLE" : 1
+										},
+										{
+											"SET_OPACITY"  : 0
+										},
+										{
+											"OPACITY"      : 180,
+											"TIME"	  		: 0.2
+										}
+									]
+								}
+							}
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_OPACITY"  : 180
+										},
+										{
+											"OPACITY"      : 0,
+											"TIME"	  		: 0.2
+										},
+										{
+											"SET_VISIBLE" : 0
+										}
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+					
+			</Widget>
+					
+</GAME>

@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<GAME>
+    <MenuWidget designSize="960_540" name="new_lobby_screen">
+        <fade_process max_idx_first="0">
+			<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+			<time_process id="0" val="0.0">
+				<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+			</time_process>
+		</fade_process>
+
+        <Widget id="0" name="lobby_ui" typeRes="layer_widget">
+            <common_value>
+                <common name="root" value="1"/>
+                <common name="stick_screen" value="1"/>
+            </common_value>
+
+            <Widget id="0" typeRes="panel" name = "background_1" idx_appear ="1">		
+				<common_value>
+						<common 		name="source" 		value="background/mainbg.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+				</common_value>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>
+			</Widget>
+			<Widget id="1" typeRes="panel" name = "background_2" idx_appear ="1" visible="0">		
+				<common_value>
+						<common 		name="source" 		value="mainscreen/newgui-game-icon/bgnew.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+				</common_value>
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>
+			</Widget>
+				
+            <Widget id="2" name="top_panel" 		com="NewLobbyScreen.TopLayer">
+            </Widget>
+            
+            <Widget id="4" name="panel_right_lobby" com="NewLobbyScreen.ListLobbyLayer" 	visible="0">
+            </Widget>
+			
+            <Widget id="5" name="panel_right_board" com="NewLobbyScreen.ListRoomLayer" 		visible="0">
+            </Widget>
+			
+            <Widget id="6" name="panel_right_history" com="NewLobbyScreen.RightHistoryLayer" visible="0">
+            </Widget>
+
+			<Widget id="8" name="panel_left" 		com="NewLobbyScreen.ChatListLayer">
+            </Widget>
+			<Widget id="9" name="panel_user_info" 	com="NewLobbyScreen.TopLeftAvatarLayer">
+            </Widget>
+            
+			<Widget id="10" name="chat_text" 		typeRes="layout" visible="0">
+				<common_value>
+					<common name="anchor_point" 	value="0_0"/>
+				</common_value>
+				<Widget id="0" name="chat_text" 		typeRes="font">
+					<template_value>
+							<template 		name="temp_text_chat"/>						
+					</template_value>
+					<common_value>
+							<common name="source" 			value="Text Label"/>
+							<common name="anchor_point" 	value="0_1"/>
+							<common name="AreaSize" 		value="270_0"/>
+							<common	name="line_break"		value="0"/>
+					</common_value>
+					<pos origin="0_0"/>
+				</Widget>
+                <pos origin="5_0"/>
+				<Size origin="300_20"/>
+            </Widget>
+		
+			
+			<Size origin="960_540"/>
+            <pos origin="480_270"/>
+	   </Widget>
+    </MenuWidget>
+</GAME>

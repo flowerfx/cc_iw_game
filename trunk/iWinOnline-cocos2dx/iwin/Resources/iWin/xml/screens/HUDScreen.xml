@@ -1,0 +1,567 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+		<MenuWidget name="hud_screen" 		designSize="960_540">
+			<fade_process max_idx_first="0">
+				<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+				<time_process id="0" val="0.0">
+					<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+				</time_process>
+			</fade_process>
+			
+			<Widget id="0" typeRes="layer_widget" name="main_background" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" typeRes="panel" name = "background_texture" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="background/newbgwin.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>		
+			<Widget id="1" typeRes="layer_widget" name="HUD_screen" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"		value="0"/>
+					<common			name="casca_opacity"	value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+				
+				<Widget id="0"  name = "panel_game_screen" 		com ="HUDScreen.TableGameLayer">		
+				</Widget>										
+								
+				<Widget id="1" name = "progress_bar_panel" com ="HUDScreen.ProcessBarLayer" visible="0">		
+				</Widget>	
+				
+				<Widget id="3"  typeRes="layout" 	name = "layout_list_user" 	idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+				
+					<pos 		origin = "480_65" 	/>
+					<Size 		origin = "960_480" 	/>
+				</Widget>
+	
+				<Widget id="4"  typeRes="layout" 	name = "panel_game_card" 		idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+			
+				<Widget id="2"  typeRes="layout" 	name = "panel_custom_menu" 		idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="5"  typeRes="layout" 	name = "layout_list_card_hold" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="6" name = "hud_screen_layout" com ="HUDScreen.HUDScreenLayout">				
+				</Widget>
+
+				<Widget id="7"  typeRes="layout" 	name = "layout_list_user_rank" 	idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+				
+					<Widget id="0" typeRes="animate" name = "1st_effect" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="ico_nhat"/>
+							<common 		name="list_tex"		value="frame_sheet"/>
+							<common			name="loop"			value="1"/>
+							<common			name="delay"		value="0.03"/>
+						</common_value>
+						<pos 		origin = "39_39" 	/>
+						<Size 		origin = "200_260" 	/>
+					</Widget>
+					<Widget id="1" typeRes="animate" name = "2nd_effect" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="ico_nhi"/>
+							<common 		name="list_tex"		value="frame_sheet"/>
+							<common			name="loop"			value="1"/>
+							<common			name="delay"		value="0.03"/>
+						</common_value>
+						<pos 		origin = "39_39" 	/>
+						<Size 		origin = "200_250" 	/>
+					</Widget>
+					<Widget id="2" typeRes="animate" name = "3rd_effect" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="ico_ba"/>
+							<common 		name="list_tex"		value="frame_sheet"/>
+							<common			name="loop"			value="1"/>
+							<common			name="delay"		value="0.03"/>
+						</common_value>
+						<pos 		origin = "39_39" 	/>
+						<Size 		origin = "198_229" 	/>
+					</Widget>
+					<Widget id="3" typeRes="animate" name = "4th_effect" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="ico_tu"/>
+							<common 		name="list_tex"		value="frame_sheet"/>
+							<common			name="loop"			value="1"/>
+							<common			name="delay"		value="0.03"/>
+						</common_value>
+						<pos 		origin = "39_39" 	/>
+						<Size 		origin = "197_227" 	/>
+					</Widget>
+
+					<pos 		origin = "480_65" 	/>
+					<Size 		origin = "960_480" 	/>
+				</Widget>
+				
+				<Widget id="8"  typeRes="layout" 	name = "layout_list_user_com" 	idx_appear ="1">		
+					<common_value>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					
+					<Widget id="0"  typeRes="layout" 	name = "player_group_com_" 	idx_appear ="1" visible="0">		
+						<common_value>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="anchor_point"			value="0.5_0"/>
+						</common_value>
+						<Widget id="0" typeRes="layout" name = "panel_display_chat" idx_appear ="1" visible="0">		
+							<common_value>
+								<common 		name="source" 				value="loginscreen/nine/popupchat.9.png"/>
+								<common 		name="clipping_enable"	    value="1"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="use_atlas" 			value="1"/>	
+								<common			name="scale_9"				value="1"/>
+								<common			name="use_nine_path"		value="1"/>
+								<common			name="anchor_point"			value="0_0.5"/>
+							</common_value>
+									
+							<Widget id="1" typeRes="font" 	name = "text_chat" idx_appear ="1" visible="0">		
+									<template_value>
+										<template 		name="temp_text_chat"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="text"/>					
+										<common			name="anchor_point"	value="0_0"/>
+										<common			name="AreaSize" 	value="200_0"/>
+										<common			name="line_break" 	value="0"/>
+									</common_value>
+									<pos 		origin = "5_5" 		/>
+									<COMMAND>
+										<cmd id="0" name="ON_SHOW">
+										{
+											"act0": {
+												"squence":[
+													{
+														"SET_VISIBLE" : 1
+													},
+													{
+														"SET_OPACITY":0
+													},
+													{
+														"SET_POSITION":"5_-10",
+														"DESIGN":"960_540"
+													}
+												]
+											},
+											"act1":{
+												"single_0":
+												{
+													"POSITION" :	"5_5",
+													"DESIGN"   : 	"960_540",
+													"STYLE"	   : 	0,
+													"TIME"	   : 	0.2
+												},
+												"single_1":
+												{
+													"OPACITY"  : 	255,
+													"TIME"	   :	0.2
+												}
+											},
+											"act2":{
+												"squence":
+												[
+													{
+														"DELAY" : 2.0
+													},
+													{
+														"POSITION" : "5_20"		,
+														"DESIGN"   : "960_540"	,
+														"STYLE"	   : 0			,
+														"TIME"	   : 0.2
+													},
+													{
+														"SET_VISIBLE" : 0
+													}
+												]
+												
+											}								
+
+										}
+										</cmd>
+									</COMMAND>
+							</Widget>
+								
+							<COMMAND>
+								<cmd id="0" name="ON_SHOW">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SET_VISIBLE" 	: 1
+											},
+											{
+												"SIZE" 			: "200_30",
+												"DESIGN" 		: "960_540",
+												"9SCALE"		: 1,
+												"TIME"			: 0.1,
+												"ORIGIN_SIZE" 	: "0_30" 
+											}
+										]
+									}
+								}
+								</cmd>
+								<cmd id="1" name="ON_HIDE">
+								{
+									"act0" : {
+										"squence" : [
+											{
+												"SIZE" 			: "0_30",
+												"DESIGN" 		: "960_540",
+												"9SCALE"		: 1,
+												"TIME"			: 0.1,
+												"ORIGIN_SIZE" 	: "200_30" 
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										]
+									}
+								}
+								</cmd>
+							</COMMAND>
+							
+							<pos 		origin = "100_10" 	/>
+							<Size 		origin = "50_60" 	/>					
+						</Widget>
+						<Widget id="1" typeRes="layout" name = "layout_bonus" idx_appear ="1" visible="0">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="stick_screen"			value="0"/>
+								<common			name="anchor_point"			value="0.5_0.5"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font" 	name = "bonus_iwin_add" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="+1000"/>					
+									<common    		name="font_idx"		value="3"/>	
+									<common			name="anchor_point"	value="0.5_0.5"/>
+									<common			name="bitmap_font"  value="1"/>
+								</common_value>
+								<pos 		origin = "5_5" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<Widget id="1" typeRes="font" 	name = "bonus_iwin_div" 	idx_appear ="1" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="-1000"/>					
+									<common    		name="font_idx"		value="12"/>	
+									<common			name="anchor_point"	value="0.5_0.5"/>
+									<common			name="bitmap_font"  value="1"/>
+								</common_value>
+								<pos 		origin = "5_5" 	/>
+								<Size 		origin = "25_25" 	/>
+							</Widget>
+							<pos 		origin = "100_50" 	/>
+							<Size 		origin = "10_10" 	/>
+							<COMMAND>
+								<cmd id="0" name="ACTION_DIV">
+								{
+									"act0" : 
+									{
+										"squence" :
+										[
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_OPACITY" : 255
+											},
+											{
+												"SET_POSITION" : "100_50",
+												"DESIGN"	   : "960_540",
+												"FORCE"		   : 1	
+											},
+											{
+												"SET_SCALE" : "1.0_1.0",
+												"FORCE"		: 1	
+											}
+										]	
+									},
+									"act1" :
+									{
+										"squence" :
+										[
+											{
+												"POSITION" 	: "0_20",
+												"DESIGN"	: "960_540",
+												"TIME"		: 0.5,
+												"STYLE"		: 2
+											},
+											{
+												"POSITION" 	: "0_-40",
+												"DESIGN"	: "960_540",
+												"TIME"		: 2,
+												"STYLE"		: 2
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										],
+										"squence_1" :
+										[
+											{
+												"SCALE" 	: "2.0_2.0",
+												"FORCE"		: 1,
+												"TIME"		: 0.5
+											},
+											{
+												"SCALE" 	: "1.0_1.0",
+												"FORCE"		: 1,
+												"TIME"		: 2
+											}
+										],
+										"squence_2" :
+										[
+											{
+												"DELAY" : 2
+											},
+											{
+												"OPACITY" : 0 ,
+												"TIME"    : 0.5
+											}
+										]
+									}	
+								}
+								</cmd>
+								<cmd id="1" name="ACTION_ADD">
+								{
+									"act0" : 
+									{
+										"squence" :
+										[
+											{
+												"SET_VISIBLE" : 1
+											},
+											{
+												"SET_OPACITY" : 255
+											},
+											{
+												"SET_POSITION" : "100_50",
+												"DESIGN"	   : "960_540",
+												"FORCE"		   : 1	
+											},
+											{
+												"SET_SCALE" : "1.0_1.0",
+												"FORCE"		: 1	
+											}
+										]	
+									},
+									"act1" :
+									{
+										"squence" :
+										[
+											{
+												"POSITION" 	: "0_-20",
+												"DESIGN"	: "960_540",
+												"TIME"		: 0.5,
+												"STYLE"		: 2
+											},
+											{
+												"POSITION" 	: "0_40",
+												"DESIGN"	: "960_540",
+												"TIME"		: 2,
+												"STYLE"		: 2
+											},
+											{
+												"SET_VISIBLE" : 0
+											}
+										],
+										"squence_1" :
+										[
+											{
+												"SCALE" 	: "0.85_0.85",
+												"FORCE"		: 1,
+												"TIME"		: 0.5
+											},
+											{
+												"SCALE" 	: "2.0_2.0",
+												"FORCE"		: 1,
+												"TIME"		: 2
+											}
+										],
+										"squence_2" :
+										[
+											{
+												"DELAY" : 2
+											},
+											{
+												"OPACITY" : 0 ,
+												"TIME"    : 0.5
+											}
+										]
+									}	
+								}
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<pos 		origin = "39_39" 	/>
+						<Size 		origin = "78_78" 	/>
+					</Widget>
+					
+					<pos 		origin = "480_65" 	/>
+					<Size 		origin = "960_480" 	/>
+				</Widget>
+				
+				<Widget id="9" typeRes="animate"   			name = "animate_effect_bonus" 	idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="source" 		value="sao_win"/>
+						<common 		name="list_tex"		value="frame_sheet"/>
+						<common			name="loop"			value="1"/>
+						<common			name="delay"		value="0.025"/>
+					</common_value>
+					
+					<pos 		origin = "200_100" 	/>
+					<Size 		origin = "300_300" 	/>
+				</Widget>
+			
+				<Widget id="10"  typeRes="layout" 	name = "panel_custom_slider_bet" idx_appear ="1">		
+					<common_value>
+						<common 		name="clipping_enable"	    value="0"/>
+						<common 		name="background_type" 		value="0"/>
+						<common			name="casca_color"			value="0"/>
+						<common			name="stick_screen"			value="1"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="11" name = "panel_in_game_menu" 	com ="HUDScreen.InGameMenuLayer" visible="0">		
+				</Widget>
+				
+				<Widget id="12" name = "panel_in_game_setting" 	com ="HUDScreen.InGameSettingLayer" visible="0">		
+				</Widget>	
+				
+				<Widget id="13" name = "invite_play_layout" com ="HUDScreen.InvitePlayLayout" visible="0">		
+				</Widget>
+				
+				<Widget id="14" name = "gift_player_layout" com="HUDScreen.GiftItemLayer" visible="0">
+				</Widget>
+				
+				<Widget id="15" typeRes="layout" 	name = "layout_chat" 			idx_appear ="1" visible="0">		
+					<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="stick_screen"			value="1"/>
+								<common			name="anchor_point"			value="0_0"/>
+								<common			name="swallow_touch"	value="1"/>
+					</common_value>
+					
+					<Widget id="0" name="chat_text" 		typeRes="layout" visible="0">
+						<common_value>
+							<common name="anchor_point" 	value="0_0"/>
+						</common_value>
+						<Widget id="0" name="chat_text" 		typeRes="font">
+							<template_value>
+									<template 		name="temp_text_chat"/>						
+							</template_value>
+							<common_value>
+									<common name="source" 			value="Text Label"/>
+									<common name="anchor_point" 	value="0_1"/>
+									<common name="AreaSize" 		value="300_0"/>
+									<common	name="line_break"		value="1"/>
+							</common_value>
+							<pos origin="0_0"/>
+						</Widget>
+						<pos origin="5_0"/>
+						<Size origin="300_20"/>
+					</Widget>
+					
+					<Widget id="1" name = "layout_gen_chat" com ="HUDScreen.ChatListLayer" visible="0">		
+					</Widget>
+					
+					<Widget id="2" name = "panel_chat" 	 	com ="HUDScreen.ChatPanelLayer">		
+					</Widget>
+					
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0" : {
+								"single_0" :{
+									"SET_VISIBLE" : 1
+								}
+							}
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0" : {
+								"single_0" :{
+									"SET_VISIBLE" : 0
+								}
+							}
+						}
+						</cmd>
+					</COMMAND>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_540" 	/>					
+				</Widget>
+				
+				
+				<Widget id="16" name = "countdown_timer" 		com ="HUDScreen.CountDownTimerLayer" visible="0">						
+				</Widget>
+
+				<Widget id="17" name=  "result_layout" 		com="HUDScreen.ResultLayer" visible="0">
+				</Widget>
+
+				<Widget id="18" typeRes="font" 	name = "text_msg_popup" idx_appear ="1" visible="0">		
+					<template_value>
+						<template 		name="temp_text_1_1"/>						
+					</template_value>
+					<common_value>
+						<common    		name="font_idx"		value="5"/>	
+						<common 		name="source" 		value="text"/>
+					</common_value>
+					<pos 		origin = "480_270" 		/>
+				</Widget>
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+				
+		</MenuWidget>
+</GAME>

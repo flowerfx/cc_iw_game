@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" name="top_panel" 		typeRes="layout">
+                <common_value>
+                    <common name="anchor_point" value="0.0_1.0"/>
+					<common name="stick_screen" value="1"/>
+                </common_value>
+                <Size origin="960_60"/>
+                <Widget id="0" name="Image_2" 			typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" value="1"/>
+                        <common name="use_nine_path" value="1"/>
+                        <common name="background_type" value="3"/>
+                        <common name="anchor_point" value="0.0_0.0"/>
+						<common name="stick_screen" value="1"/>
+                        <common name="source" value="loginscreen/nine/red6.9.png"/>
+                    </common_value>
+                    <Size 		origin="960_60"/>
+                    <pos 		origin="0_0"/>
+					<opacity 	origin="170"/>
+                </Widget>
+                <Widget id="1" name="lbl_title" 		typeRes="font">
+                    <template_value>
+							<template 		name="temp_text_menu"/>						
+					</template_value>
+					<common_value>
+                        <common name="source" 		value="Kim Chau - 13S Solo"/>
+                        <common name="anchor_point" value="0.0_0.5"/>
+                    </common_value>
+                    <pos origin="53_29"/>
+                </Widget>
+                <Widget id="2" name="btn_back" 			typeRes="button">
+                    <common_value>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="anchor_point" value="0.5_0.5"/>
+                        <common name="disable" value="otherscreen/pickroom-screen/back.png"/>
+                        <common name="press" value="otherscreen/pickroom-screen/back.png"/>
+                        <common name="source" value="otherscreen/pickroom-screen/back.png"/>
+						<common	name="touch_zone"	value="50_50"/>
+                    </common_value>
+                    <Size origin="28_43"/>
+                    <pos origin="28_30"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+				<Widget id="3" name="layout_history"      	typeRes="layout">
+                    <common_value>
+						<common name="anchor_point" 	value="0.5_0.5"/>
+					</common_value>
+					<Widget id="0" name="btn_history"      	typeRes="button">
+						<common_value>
+							<common name="scale_press" 		value="-0.05"/>
+							<common name="title_size" 		value="20_20"/>
+							<common name="title_font_idx" 	value="0"/>
+							<common name="title_alige" 		value="1"/>
+							<common name="anchor_point" 	value="0.5_0.5"/>
+							<common name="title_color" 		value="0_0_0_255"/>
+							<common name="disable" 			value="gamescreen-newgui-game-common/history_copho_normal.png"/>
+							<common name="press" 			value="gamescreen-newgui-game-common/history_copho_normal.png"/>
+							<common name="source" 			value="gamescreen-newgui-game-common/history_copho_normal.png"/>
+						</common_value>
+						<Size origin="50_40"/>
+						<pos origin="25_20"/>
+					</Widget>
+					<Widget id="1" name="history_normal"    typeRes="panel">
+						<common_value>
+							<common name="background_type"          value="3"/>
+							<common name="anchor_point"             value="0_0"/>
+							<common name="source"                   value="gamescreen-newgui-game-common/history_copho_normal.png"/>
+							<common name="anchor_point" value="0.5_0.5"/>
+						</common_value>
+						<Size origin="50_40"/>
+						<pos origin="25_20"/>                   
+					</Widget>
+					<Widget id="2" name="history_active"    typeRes="panel" visible="0">
+						<common_value>
+							<common name="background_type"          value="3"/>
+							<common name="anchor_point"             value="0_0"/>
+							<common name="source"                   value="gamescreen-newgui-game-common/history_copho_active.png"/>
+							<common name="anchor_point" value="0.5_0.5"/>
+						</common_value>
+						<Size origin="50_40"/>
+						<pos origin="25_20"/>                   
+					</Widget>                
+                
+					<Size origin="50_40"/>
+                    <pos origin="660_31"/>                   
+                </Widget>
+				<Widget id="3" name="btn_rich" 			typeRes="button">
+                    <common_value>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="title_size" value="20_20"/>
+                        <common name="title_font_idx" value="0"/>
+                        <common name="title_alige" value="1"/>
+                        <common name="anchor_point" value="0.5_0.5"/>
+                        <common name="title_color" value="0_0_0_255"/>
+                        <common name="disable" value="otherscreen/new-lobby/btn_toprich.png"/>
+                        <common name="press" value="otherscreen/new-lobby/btn_toprich.png"/>
+                        <common name="source" value="otherscreen/new-lobby/btn_toprich.png"/>
+                    </common_value>
+                    <Size origin="83_39"/>
+                    <pos origin="740_31"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+                <Widget id="4" name="btn_strong" 		typeRes="button">
+                    <common_value>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="title_size" value="20_20"/>
+                        <common name="title_font_idx" value="0"/>
+                        <common name="title_alige" value="1"/>
+                        <common name="anchor_point" value="0.5_0.5"/>
+                        <common name="title_color" value="0_0_0_255"/>
+                        <common name="disable" value="otherscreen/new-lobby/btn_topstrong.png"/>
+                        <common name="press" value="otherscreen/new-lobby/btn_topstrong.png"/>
+                        <common name="source" value="otherscreen/new-lobby/btn_topstrong.png"/>
+                    </common_value>
+                    <Size origin="83_39"/>
+                    <pos origin="827_31"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+                <Widget id="5" name="btn_listlobby" 	typeRes="button">
+                    <common_value>
+                        <common name="scale_press" value="-0.05"/>
+                        <common name="title_size" value="14_14"/>
+                        <common name="title_alige" value="1"/>
+                        <common name="anchor_point" value="0.5_0.5"/>
+                        <common name="title_color" value="65_65_70_255"/>
+                        <common name="disable" value="otherscreen/new-lobby/btn_listlobby.png"/>
+                        <common name="press" value="otherscreen/new-lobby/btn_listlobby.png"/>
+                        <common name="source" value="otherscreen/new-lobby/btn_listlobby.png"/>
+                    </common_value>
+                    <Size origin="83_39"/>
+                    <pos origin="915_31"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+                <Widget id="6" name="btn_listboard" 	typeRes="button">
+                    <common_value>
+                        <common name="scale_press" 	value="-0.05"/>
+                        <common name="title_size" 	value="14_14"/>
+                        <common name="title_alige" 	value="1"/>
+                        <common name="anchor_point" value="0.5_0.5"/>
+                        <common name="title_color" 	value="65_65_70_255"/>
+                        <common name="disable" 		value="otherscreen/new-lobby/btn_listboard.png"/>
+                        <common name="press" 		value="otherscreen/new-lobby/btn_listboard.png"/>
+                        <common name="source" 		value="otherscreen/new-lobby/btn_listboard.png"/>
+                    </common_value>
+                    <Size origin="83_39"/>
+                    <pos origin="915_31"/>
+                    <color origin="255_255_255_255"/>
+                </Widget>
+                <pos origin="0_540"/>
+                <color origin="255_255_255_255"/>
+            </Widget>
+            																
+</GAME>

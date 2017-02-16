@@ -1,0 +1,353 @@
+<?xml version="1.0" ?>
+<GAME>
+				<Widget id="1" typeRes="layout" name = "page_profile_achieve" idx_appear ="3" visible="0">		
+								<common_value>
+									<common 		name="background_type" 		value="0"/>	
+									<common			name="stick_screen"			value="1"/>	
+									<common 		name="clipping_enable"	    value="0"/>
+									<common			name="anchor_point"			value="0_0"/>
+								</common_value>
+								
+								<Widget id="1" typeRes="list_view_table" name = "list_detail_achieve" idx_appear ="4">		
+									<common_value>
+										<common 		name="inner_size" 			value="700_450"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+														
+										<common			name="stick_screen"			value="1"/>
+										<common			name="anchor_point"			value="0_0"/>
+										<common 		name="clipping_enable"	    value="1"/>
+										
+										<common			name="size_child"			value="680_150"/>
+										<common			name="no_add_event"			value="1"/>
+										<common			name="number_cell"			value="0"/>
+										<common			name="circle_scroll"		value="1"/>
+									</common_value>
+									<Widget id="0" typeRes="layout" name = "layout_" idx_appear ="5">		
+										<common_value>
+											<common 		name="background_type" 		value="0"/>		
+											<common			name="stick_screen"			value="1"/>
+											<common			name="casca_color"			value="0"/>
+											<common			name="casca_opacity"		value="0"/>
+											<common			name="anchor_point"			value="0_0"/>
+										</common_value>
+										<Widget id="0" typeRes="font" 	name = "title" idx_appear ="6">		
+											<template_value>
+												<template name="temp_text_1"/>
+											</template_value>
+											<common_value>
+												<common 		name="source" 			value="Tiến Lên MN"/>					
+												<common			name="anchor_point"		value="0_1"/>
+											</common_value>
+											<pos 		origin = "10_130" 	/>
+										</Widget>				
+											
+										<Widget id="1" typeRes="layout" name = "layout_" idx_appear ="5">		
+											<common_value>
+												<common			name="source"				value="loginscreen/nine/bkg_capdo.9.png"/>
+												<common 		name="background_type" 		value="3"/>		
+												<common			name="stick_screen"			value="1"/>
+												<common			name="anchor_point"			value="0_0"/>
+												<common			name="scale_9"				value="1"/>
+												<common			name="use_nine_path"		value="1"/>
+												<common			name="casca_opacity"		value="0"/>
+											</common_value>
+											<Widget id="1" typeRes="panel" 	name = "panel_exp_score" idx_appear ="6">		
+												<common_value>
+													<common 		name="source" 		value="loginscreen/nine/green6.9.png"/>
+													<common 		name="use_atlas" 	value="1"/>	
+													<common			name="stick_screen"	value="1"/>
+													<common			name="scale_9"		value="1"/>
+													<common			name="use_nine_path" value="1"/>
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "10_35" 	/>
+												<Size 		origin = "210_60" 	/>
+												<Widget id="0" typeRes="font" 	name = "title" idx_appear ="6">		
+													<template_value>
+														<template name="temp_text_radi"/>
+													</template_value>
+													<common_value>
+														<common 		name="source" 		value="3728"/>						
+														<common			name="anchor_point"	value="0.5_0"/>
+													</common_value>
+													<pos 		origin = "105_20" 	/>
+												</Widget>
+												<Widget id="1" typeRes="font" 	name = "title_1" idx_appear ="6">		
+													<template_value>
+														<template name="temp_text_0_2"/>
+													</template_value>
+													<common_value>
+														<common 		name="source" 		value="exp"/>					
+														<common			name="anchor_point"	value="0.5_0"/>
+													</common_value>
+													<pos 		origin = "105_2" 	/>
+												</Widget>
+											</Widget>
+											<Widget id="2" typeRes="font" 	name = "title_1" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="leve"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "250_50" 	/>
+											</Widget>		
+											<Widget id="3" typeRes="font" 	name = "title_2" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="rank"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "250_20" 	/>
+											</Widget>
+											<Widget id="2" typeRes="font" 	name = "title_1_sep" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value=":"/>					
+													<common			name="anchor_point"	value="0_0.5"/>										
+												</common_value>
+												<pos 		origin = "357_50" 	/>
+											</Widget>		
+											<Widget id="3" typeRes="font" 	name = "title_2_sep" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value=":"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "357_20" 	/>
+											</Widget>		
+											<Widget id="4" typeRes="font" 	name = "txt_level_number" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="100"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "365_50" 	/>
+											</Widget>		
+											<Widget id="5" typeRes="font" 	name = "txt_level" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="Bình dân"/>						
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "365_20" 	/>
+											</Widget>
+													
+											<Widget id="6" typeRes="font" 	name = "txt_win_number" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="10"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "525_50" 	/>
+											</Widget>		
+											<Widget id="7" typeRes="font" 	name = "txt_lose_number" idx_appear ="6">		
+												<template_value>
+														<template name="temp_text_0_2"/>
+													</template_value>
+												<common_value>
+													<common 		name="source" 		value="15"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "605_50" 	/>
+											</Widget>
+											<Widget id="8" typeRes="font" 	name = "txt_draw_number" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="20"/>					
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "525_20" 	/>
+											</Widget>		
+											<Widget id="9" typeRes="font" 	name = "txt_leave_number" idx_appear ="6">		
+												<template_value>
+													<template name="temp_text_0_2"/>
+												</template_value>
+												<common_value>
+													<common 		name="source" 		value="25"/>						
+													<common			name="anchor_point"	value="0_0.5"/>
+												</common_value>
+												<pos 		origin = "605_20" 	/>
+											</Widget>
+													
+											<Widget id="10" typeRes="panel" name = "symbol_win" idx_appear ="1">		
+															<common_value>
+																<common 		name="source" 		value="otherscreen/pickroom-screen/ico_thang.png"/>
+																<common 		name="use_atlas" 	value="1"/>	
+																<common			name="stick_screen"	value="0"/>
+																<common			name="anchor_point"	value="0_0.5"/>
+															</common_value>
+															<pos 		origin = "505_50" 	/>
+															<Size 		origin = "15_17" 	/>
+											</Widget>
+											<Widget id="11" typeRes="panel" name = "symbol_lose" idx_appear ="1">		
+															<common_value>
+																<common 		name="source" 		value="otherscreen/pickroom-screen/ico_thua.png"/>
+																<common 		name="use_atlas" 	value="1"/>	
+																<common			name="stick_screen"	value="0"/>	
+																<common			name="anchor_point"	value="0_0.5"/>	
+															</common_value>
+															<pos 		origin = "585_50" 	/>
+															<Size 		origin = "15_17" 	/>
+													</Widget>
+											<Widget id="12" typeRes="panel" name = "symbol_draw" idx_appear ="1">		
+															<common_value>
+																<common 		name="source" 		value="otherscreen/pickroom-screen/ico_hoa.png"/>
+																<common 		name="use_atlas" 	value="1"/>	
+																<common			name="stick_screen"	value="0"/>
+																<common			name="anchor_point"	value="0_0.5"/>
+															</common_value>
+															<pos 		origin = "505_20" 	/>
+															<Size 		origin = "15_17" 	/>
+													</Widget>
+											<Widget id="13" typeRes="panel" name = "symbol_leave" idx_appear ="1">		
+															<common_value>
+																<common 		name="source" 		value="otherscreen/pickroom-screen/ico_dauhang.png"/>
+																<common 		name="use_atlas" 	value="1"/>	
+																<common			name="stick_screen"	value="0"/>
+																<common			name="anchor_point"	value="0_0.5"/>
+															</common_value>
+															<pos 		origin = "585_20" 	/>
+															<Size 		origin = "15_17" 	/>
+													</Widget>
+													
+											<pos 		origin = "0_20" 		/>
+											<Size 		origin = "680_70" 	/>
+											<opacity	origin = "180"		/>
+										</Widget>
+												
+										<pos 		origin = "10_0" 	/>
+										<Size 		origin = "680_150" 	/>
+									</Widget>													
+									<pos 		origin = "0_0" 	/>
+									<Size 		origin = "700_450" 	/>
+								</Widget>
+												
+								<pos 		origin = "0_0" 	first="1000_0"/>
+								<Size 		origin = "700_480" 	/>
+								
+								<COMMAND>
+									<cmd id="0" name="MOVE_LEFT">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"0_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"-1000_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												},
+												{
+													"SET_VISIBLE" : 0 
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="1" name="MOVE_RIGHT">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"0_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"1000_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												},
+												{
+													"SET_VISIBLE" : 0 
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="2" name="MOVE_MIDDLE_FROM_LEFT">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"-1000_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"0_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="3" name="MOVE_MIDDLE_FROM_RIGHT">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"1000_0",
+													"DESIGN"	  :	"960_540"
+												},
+												{
+													"POSITION"	  :	"0_0",
+													"DESIGN"	  :	"960_540",
+													"STYLE"		  : 0	,
+													"TIME"		  : 0.3
+												}
+											]
+										}
+									}
+									</cmd>
+									<cmd id="4" name="SET_POS">
+									{
+										"act0":{
+											"squence" : [
+												{
+													"SET_VISIBLE" : 1 
+												},
+												{
+													"SET_POSITION":	"0_0",
+													"DESIGN"	  :	"960_540"
+												}
+											]
+										}
+									}
+									</cmd>
+								</COMMAND>
+							</Widget>
+																	
+</GAME>

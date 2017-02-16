@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="2" typeRes="panel" 	name = "panel_chat" 	 idx_appear ="6">		
+						<common_value>
+							<common 		name="source" 		value="gamescreen-newgui-game-common/bkg_chat.9.png"/>
+							<common 		name="use_atlas" 	value="1"/>	
+							<common			name="stick_screen"	value="1"/>
+							<common			name="scale_9"		value="1"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						
+						<Widget id="0" typeRes="button" name = "btn_recent_chat" idx_appear ="1">		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/time.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/time.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/time.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="panel" 	name = "icon" idx_appear ="6" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/chatdo.png"/>
+										<common			name="anchor_point"	value="0.5_0.5"/>
+										<common			name="zorder"		value="-1"/>
+									</common_value>
+									<pos 		origin = "25_25" 	/>
+									<Size 		origin = "50_50" 	/>	
+								</Widget>
+								
+								<pos 		origin = "60_268" 	/>
+								<Size 		origin = "50_50" 	/>					
+						</Widget>
+						<Widget id="1" typeRes="button" name = "btn_emotion" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/emoticon.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/emoticon.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/emoticon.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="panel" 	name = "icon" idx_appear ="6" visible="0">		
+									<common_value>
+										<common 		name="source" 		value="gamescreen-newgui-game-common/chatdo.png"/>
+										<common			name="anchor_point"	value="0.5_0.5"/>
+										<common			name="zorder"		value="-1"/>
+									</common_value>
+									<pos 		origin = "18_18" 	/>
+									<Size 		origin = "50_50" 	/>	
+								</Widget>
+								
+								<pos 		origin = "75_268" 	/>
+								<Size 		origin = "36_36" 	/>					
+						</Widget>				
+						<Widget id="2" typeRes="layout" name = "panel_input_chat" idx_appear ="6">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="1"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common 		name="use_atlas" 	value="1"/>	
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="use_nine_path"	value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+							<pos 		origin = "125_268" 	/>
+							<Size 		origin = "775_36" />
+							<opacity 	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_chat" idx_appear ="2">		
+								<common_value>
+									<common 		name="source" 		value="chat"/>					
+									<common    		name="font_idx"		value="1"/>	
+									<common			name="anchor_point"	value="0_0.5"/>
+									<common			name="pass_input"	value="0"/>
+									<common			name="max_lenght"	value="62"/>
+									
+									<common			name="tint_place_holder" value="133_125_125_255"/>
+									<common			name="touch_zone"	value="750_36"/>
+								</common_value>
+								<pos 		origin = "10_18" 	/>
+								<Size 		origin = "20_20" 	/>
+							</Widget>
+							<Widget id="2" typeRes="button" name = "clear_text_input_chat_btn" idx_appear ="2" visible="0">		
+								<common_value>
+								
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"			value="0"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "770_18" 	/>
+								<Size 		origin = "32_32" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+						</Widget>	
+						<Widget id="3" typeRes="button" name = "btn_send_message" idx_appear ="1" >		
+								<common_value>
+									<common 		name="source" 		value="gamescreen-newgui-game-common/sendding.png"/>
+									<common 		name="press" 		value="gamescreen-newgui-game-common/sendding.png"/>
+									<common 		name="disable" 		value="gamescreen-newgui-game-common/sendding.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								
+								
+								<pos 		origin = "910_268" 	/>
+								<Size 		origin = "36_36" 	/>					
+						</Widget>				
+						
+						<Widget id="4" typeRes="list_view" name = "list_btn_recent_chat" idx_appear ="4">		
+							<common_value>
+								<common 		name="inner_size" 			value="960_290"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										
+								<common 		name="background_type" 		value="0"/>			
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="clipping_enable"		value="1"/>
+								<common			name="anchor_point"			value="0_0"/>
+								
+								<common			name="bounce_enable"		value="1"/>
+							</common_value>
+									
+							<Widget id="0" typeRes="layout" name = "layout_recent_chat_" idx_appear ="5" >		
+								<common_value>
+									<common 		name="background_type" 		value="0"/>		
+									<common			name="stick_screen"			value="1"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="clipping_enable"		value="0"/>
+									<common			name="anchor_point"			value="0_1"/>
+								</common_value>
+								<Widget id="0" typeRes="button" name = "btn_chat_0" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>
+										<common 		name="disable" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>
+										<common 		name="press" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>							
+										<common 		name="scale_press" 		value="-0.05"/>
+										<common 		name="use_atlas" 		value="1"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common 		name="use_nine_path" 	value="1"/>	
+										<common			name="anchor_point"		value="1_0.5"/>
+										<common			name="no_add_event"		value="1"/>
+									</common_value>
+									
+									<Widget id="1" typeRes="font" 	name = "notice_content" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="test_WIP"/>					
+											<common			name="AreaSize"			value="400_30"/>
+											<common			name="overflow"			value="1"/>
+										</common_value>
+										<pos 		origin = "225_23" 	/>
+									</Widget>
+									<pos 		origin = "464_33" 	/>
+									<Size 		origin = "450_46" 	/>
+									
+								</Widget>
+															
+								<Widget id="1" typeRes="button" name = "btn_chat_1" idx_appear ="6">		
+									<common_value>
+										<common 		name="source" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>
+										<common 		name="disable" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>
+										<common 		name="press" 			value="gamescreen-newgui-game-common/btn_wincuoc.9.png"/>							
+										<common 		name="scale_press" 		value="-0.05"/>
+										<common 		name="scale_9" 			value="1"/>	
+										<common 		name="use_nine_path" 	value="1"/>	
+										<common			name="stick_screen"		value="0"/>
+										<common			name="anchor_point"		value="0_0.5"/>
+										<common			name="no_add_event"		value="1"/>
+									</common_value>
+									
+									<Widget id="1" typeRes="font" 	name = "notice_content" idx_appear ="1">		
+										<template_value>
+											<template name="temp_text_0"/>
+										</template_value>
+										<common_value>
+											<common 		name="source" 			value="test_WIP"/>					
+											<common			name="AreaSize"			value="400_30"/>
+											<common			name="overflow"			value="1"/>
+										</common_value>
+										<pos 		origin = "225_23" 	/>
+										<Size 		origin = "25_25" 	/>
+									</Widget>
+									<pos 		origin = "498_33" 	/>
+									<Size 		origin = "450_46" 	/>
+								</Widget>
+								
+								<pos 		origin = "0_240" 	/>
+								<Size 		origin = "960_66" 	/>
+							</Widget>
+							
+							
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_240" 	/>
+						</Widget>
+						
+						<Widget id="5" typeRes="list_view" name = "list_btn_emoticon_chat" idx_appear ="4" visible="0">		
+							<common_value>
+								<common 		name="inner_size" 			value="960_290"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										
+								<common 		name="background_type" 		value="0"/>			
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="clipping_enable"		value="1"/>
+								<common			name="anchor_point"			value="0_0"/>
+								
+								<common			name="bounce_enable"		value="1"/>
+							</common_value>
+									
+							<Widget id="0" typeRes="layout" name = "layout_emoticon_chat_" idx_appear ="5" >		
+								<common_value>
+									<common 		name="background_type" 		value="0"/>		
+									<common			name="stick_screen"			value="1"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="casca_opacity"		value="0"/>
+									<common			name="clipping_enable"		value="0"/>
+									<common			name="anchor_point"			value="0_1"/>
+								</common_value>
+								
+								<pos 		origin = "0_240" 	/>
+								<Size 		origin = "960_66" 	/>
+							</Widget>
+							
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_240" 	/>
+						</Widget>
+						
+						<pos 		origin = "0_0" 	first="0_-500"/>
+						<Size 		origin = "960_300" />
+						
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_POSITION" : "0_-500",
+											"DESIGN"   	   : "960_540"
+										},
+										{
+											"POSITION" : "0_0",
+											"DESIGN"   : "960_540",
+											"STYLE"    :  0,
+											"TIME"     :  0.15
+										}
+									]
+								}
+							}
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+							{
+								"act0" : {
+									"squence" :[
+										{
+											"SET_POSITION" : "0_0",
+											"DESIGN"   	   : "960_540"
+										},
+										{
+											"POSITION" : "0_-500",
+											"DESIGN"   : "960_540",
+											"STYLE"    :  0,
+											"TIME"     :  0.15
+										}
+									]
+								}
+							}
+							</cmd>
+						</COMMAND>
+					</Widget>
+					
+</GAME>

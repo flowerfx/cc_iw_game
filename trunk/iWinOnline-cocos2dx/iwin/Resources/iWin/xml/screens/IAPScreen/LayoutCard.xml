@@ -1,0 +1,377 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="0" 	typeRes="layout" name = "layout_card" idx_appear ="1" visible="0" >		
+					<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+					</common_value>
+					<Widget id="2" typeRes="layout" 	name = "panel_bin_input" idx_appear ="1">		
+							<common_value>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "0_353" 	/>
+							<Size 		origin = "785_125" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "50" />
+					</Widget>
+
+					<Widget id="0" 	typeRes="layout" name = "scrollview_choose_telco" idx_appear ="1">		
+						<common_value>
+								<common 		name="clipping_enable"	    value="0"/>
+								<common 		name="background_type" 		value="0"/>
+								<common			name="stick_screen"	value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+
+						<pos 		origin = "0_353" 	/>
+						<Size 		origin = "785_125" 	/>
+					</Widget>
+
+					<Widget id="0" 	typeRes="layout" name = "input_cards" idx_appear ="1" >		
+						<common_value>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+							<common			name="stick_screen"	value="1"/>
+							<common			name="casca_color"	value="0"/>
+							<common			name="anchor_point"	value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" name = "value_bar" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+
+							<Widget id="1" typeRes="font" name = "lbl_type" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Type card"/>					
+									<common			name="anchor_point"	value="0_0.5"/>
+								</common_value>
+								<pos 		origin = "5_20" 	/>
+								<color      origin = "255_255_0_255"/>
+							</Widget>	
+							<Widget id="1" typeRes="font" name = "lbl_win" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="Win"/>					
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "375_20" 	/>
+								<color      origin = "255_255_0_255"/>
+							</Widget>
+							<pos 		origin = "0_286" 	/>
+							<Size 		origin = "385_40" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "50"		/>
+						</Widget>
+						<Widget id="2" typeRes="layout" 	name = "bg1" idx_appear ="1">		
+							<common_value>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common			name="stick_screen"	value="1"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "380_280" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "50" />
+						</Widget>
+						<Widget id="1" typeRes="scroll_view" name = "scrollview_card_value" idx_appear ="2">		
+							<common_value>
+								<common 		name="inner_size" 			value="380_280"/>
+								<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+								
+								<common 		name="background_type" 		value="1"/>			
+								<common			name="stick_screen"			value="1"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common			name="anchor_point"		value="0_0"/>
+								<common			name="clipping_enable"		value="1"/>
+								<common			name="bounce_enable"		value="1"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "380_280" 	/>
+						</Widget>
+
+						<Widget id="2" typeRes="layout" 	name = "panel_bin_input" idx_appear ="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="1"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "400_273" 	/>
+							<Size 		origin = "350_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_bin" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_textfield_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="recharge_code"/>
+									<common			name="anchor_point"	value="0_0.5"/>	
+									<common			name="max_lenght"	value="30"/>
+									<common			name="touch_zone"	value="385_50"/>
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+								<color		origin = "255_255_255_255"/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "clear_text_input_bin_btn" 	idx_appear ="2" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "345_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+							
+						</Widget>	
+						<Widget id="3" typeRes="layout" 	name = "panel_serial_input" idx_appear ="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="1"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "400_203" 	/>
+							<Size 		origin = "350_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_serial" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_textfield_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="serial_number"/>
+									<common			name="anchor_point"	value="0_0.5"/>	
+									<common			name="max_lenght"	value="30"/>
+									<common			name="touch_zone"	value="385_50"/>
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "clear_text_input_serial_btn" 	idx_appear ="2" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "345_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+							
+						</Widget>	
+						<Widget id="4" typeRes="layout" 	name = "panel_captcha_input" idx_appear ="1">		
+							<common_value>
+								<common 		name="clipping_enable"	    value="1"/>
+								<common 		name="background_type" 		value="3"/>	
+								<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="scale_9"		value="1"/>
+								<common			name="casca_color"	value="0"/>
+								<common			name="use_nine_path" value="1"/>
+								<common			name="anchor_point"	value="0_0"/>
+							</common_value>
+							<pos 		origin = "400_144" 	/>
+							<Size 		origin = "190_50" 	/>
+							<opacity	origin = "240" />
+							<Widget id="0" typeRes="text_field" name = "text_input_captcha" idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_textfield_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="captcha_input"/>
+									<common			name="anchor_point"	value="0_0.5"/>	
+									<common			name="max_lenght"	value="30"/>
+									<common			name="touch_zone"	value="190_50"/>
+								</common_value>
+								<pos 		origin = "10_20" 	/>
+							</Widget>
+							<Widget id="1" typeRes="button" name = "clear_text_input_captcha_btn" 	idx_appear ="2" visible="0">		
+								<common_value>
+									<common 		name="source" 		value="close_button.png"/>
+									<common 		name="press" 		value="close_button.png"/>
+									<common 		name="disable" 		value="close_button.png"/>
+									<common 		name="scale_press" 	value="-0.05"/>
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_0.5"/>
+								</common_value>
+								<pos 		origin = "160_20" 	/>
+								<Size 		origin = "30_30" 	/>
+								<opacity	origin = "128"		/>
+							</Widget>
+							
+						</Widget>
+						<Widget id="5" typeRes="panel" name = "img_captcha" idx_appear ="1" >					
+							<common_value>
+								<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>					
+								<common 		name="background_type" 		value="3"/>		
+								<common			name="stick_screen"			value="0"/>
+								<common			name="casca_color"			value="0"/>
+								<common			name="casca_opacity"		value="0"/>
+								<common 		name="scale_9"	    		value="1"/>
+								<common			name="anchor_point" 		value="0_0"/>
+								<common			name="not_default_layout"	value="1"/>
+							</common_value>
+							<pos 		origin = "595_144" 	/>
+							<Size 		origin = "122_50" 	/>
+							<color 		origin = "0_0_0_255" />
+							<opacity	origin = "120"		/>
+						</Widget>
+						<Widget id="6" typeRes="button" 	name = "btn_refresh_captcha" idx_appear ="1">		
+							<common_value>
+							
+								<common 		name="source" 		value="loginscreen/login-screen/ico_refresh.png"/>
+								<common 		name="press" 		value="loginscreen/login-screen/ico_refresh.png"/>
+								<common 		name="disable" 		value="loginscreen/login-screen/ico_refresh.png"/>
+
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "722_144" 	/>
+							<Size 		origin = "60_60" 	/>
+						
+						</Widget>
+						<Widget id="6" typeRes="button" 	name = "buy_btn" idx_appear ="1">		
+							<common_value>
+							
+								<common 		name="source" 		value="loginscreen/nine/white.9.png"/>
+								<common 		name="press" 		value="loginscreen/nine/white.9.png"/>
+								<common 		name="disable" 		value="loginscreen/nine/white.9.png"/>
+
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="scale_9"			value="1"/>
+								<common			name="use_nine_path"	value="1"/>
+								<common			name="anchor_point"		value="0_0"/>
+							</common_value>
+							
+							<Widget id="0" typeRes="font" 	name = "title_" idx_appear ="1">		
+								<template_value>
+									<template 		name="temp_text_0"/>						
+								</template_value>
+								<common_value>
+									<common 		name="source" 		value="iap_topup"/>					
+								</common_value>
+								<pos 		origin = "194_30" 	/>
+								<color		origin = "0_0_0_255" />
+							</Widget>
+							
+							
+							<pos 		origin = "400_79" 	/>
+							<Size 		origin = "386_60" 	/>
+							<color		origin = "255_167_38_255"/>
+							<COMMAND>
+								<cmd id="0" name="SET_DISABLE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_OPACITY":128
+											},
+											{
+												"SET_COLOR":"255_255_255_255"
+											}
+										]
+									}		
+								}	
+								</cmd>
+								<cmd id="1" name="SET_ENABLE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_OPACITY":255
+											},
+											{
+												"SET_COLOR":"255_167_38_255"
+											}
+										]
+									}		
+								}	
+								</cmd>
+							</COMMAND>
+						</Widget>
+						<Widget id="6" typeRes="button" 	name = "btn_paste_bin" idx_appear ="1">		
+							<common_value>
+							
+								<common 		name="source" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+								<common 		name="press" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+								<common 		name="disable" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "755_273" 	/>
+							<Size 		origin = "33_38" 	/>
+						
+						</Widget>
+						<Widget id="6" typeRes="button" 	name = "btn_paste_serial" idx_appear ="1">		
+							<common_value>
+							
+								<common 		name="source" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+								<common 		name="press" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+								<common 		name="disable" 		value="gamescreen-newgui-game-common/ico_paste.png"/>
+
+								<common 		name="scale_press" 		value="-0.05"/>
+								<common			name="stick_screen"		value="0"/>
+								<common			name="anchor_point"		value="0_0"/>
+							</common_value>
+							
+							
+							<pos 		origin = "755_203" 	/>
+							<Size 		origin = "33_38" 	/>
+						
+						</Widget>
+						<pos 		origin = "0_17" 	/>
+						<Size 		origin = "785_320" 	/>
+					</Widget>
+					<pos 		origin = "160_0" 	/>
+					<Size 		origin = "800_480" 	/>
+				</Widget>
+				
+</GAME>

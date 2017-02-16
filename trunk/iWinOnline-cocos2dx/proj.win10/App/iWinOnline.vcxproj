@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{187d3e60-961a-41ee-bc18-c510a431d22e}</ProjectGuid>
+    <RootNamespace>CocosAppWinRT</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.2</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10.props" />
+    <Import Project="..\..\cocos2dx-lib\cocos\2d\win10_props\cocos2d_win10_app.props" />
+    <Import Project="resources.props" />
+    <Import Project="$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props" Condition="exists('$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformExtensionSDKLocation(`WindowsMobile, Version=10.0.10240.0`, $(TargetPlatformIdentifier), $(TargetPlatformVersion),  $(SDKReferenceDirectoryRoot), $(SDKExtensionDirectoryRoot), $(SDKReferenceRegistryRoot)))\DesignTime\CommonConfiguration\Neutral\WindowsMobile.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>iWinOnline_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>27FAC7E1534AB43A55BDECB03ED5AA8BBECF9B4D</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>F:\ShareFile\BuildWindowphone\iWin Online Game\win10\</AppxPackageDir>
+    <AppxBundle>Never</AppxBundle>
+    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>GAME_WIN32;OS_W10;WIN10_ARM;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(MobileExtSdkDir)LIB\um\$(LIB_Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\OggDecoder\prebuilt\$(Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\winrt\10\src\$(Configuration)_$(Platform)\lib;$(EngineRoot)external\curl\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\websockets\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\chipmunk\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\zlib\prebuilt\$(Platform);$(EngineRoot)external\sqlite3\libraries\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\freetype2\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources" "$(AppxPackageDirInProjectDir).." /D /E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>GAME_WIN32;OS_W10;WIN10_ARM;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources" "$(AppxPackageDirInProjectDir).." /D /E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalLibraryDirectories>$(MobileExtSdkDir)LIB\um\$(LIB_Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\OggDecoder\prebuilt\$(Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\winrt\10\src\$(Configuration)_$(Platform)\lib;$(EngineRoot)external\curl\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\websockets\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\chipmunk\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\zlib\prebuilt\$(Platform);$(EngineRoot)external\sqlite3\libraries\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\freetype2\prebuilt\$(COCOS2D_PLATFORM)\$(Platform);$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251;4018</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WINDOWS;GAME_WIN32;OS_W10;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources"  "$(ProjectDir)" /D/E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WINDOWS;GAME_WIN32;OS_W10;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources"  "$(ProjectDir)" /D/E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>libogg.lib;libvorbis.lib;libvorbisfile.lib;libGLESv2.lib;libEGL.lib;ws2_32.lib;libwebsockets.lib;libcurl.lib;chipmunk.lib;zlib.lib;freetype.lib;sqlite3.lib;d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;dxguid.lib;xaudio2.lib;mfcore.lib;mfplat.lib;mfreadwrite.lib;mfuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\OggDecoder\prebuilt\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>GAME_WIN32;OS_W10;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources" "$(AppxPackageDirInProjectDir).." /D /E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\iwin\Classes;$(ProjectDir)..\..\lib\RKUtils\Code;$(ProjectDir)..\..\lib\Utility\Code;$(EngineRoot)cocos\platform\win8.1-universal;$(ProjectDir)..\..\lib\WinRTAPIsEmul;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>GAME_WIN32;OS_W10;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\iwin\Resources" "$(AppxPackageDirInProjectDir).." /D /E /I /F /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>copyfile</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\iwin\Classes\AnimUtils.h" />
+    <ClInclude Include="..\..\iwin\Classes\AppDelegate.h" />
+    <ClInclude Include="..\..\iwin\Classes\AppMacros.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\BannerInvite.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\ChatBoard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\ChipParticle.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\Common.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\CoPhoMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\CustomSelectedBox.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\EmotionBoard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\FlyMoney.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\FocusScrollView.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\GameController.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\IwinListView.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\IwinListViewTable.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\IwinScale9Sprite.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\IwinScrollView.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\IwinTextfield.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\SpriteIap.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\SpriteIapMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Common\SpriteUrl.h" />
+    <ClInclude Include="..\..\iwin\Classes\Constants.h" />
+    <ClInclude Include="..\..\iwin\Classes\Features\DataChatMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Features\FacebookMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Features\GCSignInMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Features\GGSignInMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Features\IapMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\MainGame.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Achievement.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Board.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Category.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\ChatMessage.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Item.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\iWinPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\OTPStatus.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Player.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\Province.h" />
+    <ClInclude Include="..\..\iwin\Classes\Models\User.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\BufferStream.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\DataInputStream.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\DataOutputStream.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\DataReader.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\DataWriter.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\IMessagehandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\JsonMessage.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\Message.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\MobileClient.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\NetworkMacros.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\ServerMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Core\TEA.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Game\GameLogicHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Game\GameMessageHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Game\GameService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Global\GlobalLogicHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Global\GlobalMessageHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Global\Globalservice.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\IwinCommand.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\IwinProtocol.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JSONMessageHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\AuthorizeOTP.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\OTP.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\RequireAuthenOTP.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\ResponseAuthorizeOTP.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\AppleReviewObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\Avatar.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarCat.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarCatList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\BuyingAvatar.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\avatar\ImageLinkContainerObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaAnswer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CancelGetCard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CancelResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CardTelco.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\ChargeRate.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentHistory.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentHistoryList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\RequestHistoryCharge.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\RubyToVNDInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\clientui\ServerControlButtonObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\clientui\ServerControlDialogObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\BetMatch.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\GetMatchWinMoney.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\League.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\LeagueList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\Match.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MatchList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MyMatch.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MyMatchList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\Team.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\TicketPrice.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\UserRanking.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\UserRankingList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\dice\BetStars.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\BaseResultObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventAward.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventAwardList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventItemId.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventItemList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\EventType.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\ShopId.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\UpgrageItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\UserInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\event\UserReceiveEventItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriend.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendListPage.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendListPageCursor.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookIdsList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookMyInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPicture.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPictureData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPostWallData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookRequestResponse.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\Contact.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\FacebookRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\Friend.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\FriendContact.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\InviteUser.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\Location.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\OpenFacebookRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFacebookRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromContact.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromFacebook.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromLocation.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFacebookRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromContact.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromFacebook.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromLocation.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\BoardOwner.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\ClientInforObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\CreateBoard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GameEvent.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GameEventList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GameList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GameState.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GetMinMaxBoard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GetOnwerBoardListResponse.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\game\GetOwnerBoardListRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Guides.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\heartbeat\HeartBeatConfiguration.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\heartbeat\NetworkStrength.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\JsonHeader.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\ChatLobbyItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\ChatLobbyList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\DoPlayNow.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyChatMessage.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\lobby\RequestLobbyList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\AppleVerify.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\Guest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\InvalidLoginToken.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\LoginWithToken.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\LoginWithTokenSuccess.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\MustRegisterWithToken.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\login\RegisterWithToken.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleQuestList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleQuestListItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleResultList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleResultListItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewCircleInfoRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewCircleTurnRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewLuckyGetTiketsObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\mobo\APIResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\mobo\IwinUser.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\mobo\MoboData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\mobo\MoboMap.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\CardResultData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuBetRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuBetResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuGameInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuHistoryRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuJar.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuListUser.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUnsupportedList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUser.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistory.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryDetail.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryServer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\CardID.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\ChargeType.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\GoogleCallbackData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\GoogleCallbackPurchaseData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\GooglePurchaseData.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\Payment.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\payment\Type.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\promotion\ActionType.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionGetWin.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\ConfirmBox.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\GetQuestList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\OptionItem.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\OptionList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\Quest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\QuestCategory.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\QuestCategoryList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\RequestQuest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\ResponseQuestList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\quest\ScreenID.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ReviewApp.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ServiceSocial\GoogleUser.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\ServiceSocial\ResponseGoogle.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\ButtonFeature.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\ErrorInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\GetGui.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\RegisterInfor.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\RequestFeature.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\smartphone\StickerInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\BuyingStock.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\GetStockDividend.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\MyStock.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\MyStockList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\Stock.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\StockCommand.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\stock\StockList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\MoneyObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuBetRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuBetResult.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuGameInfo.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuInfoRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatch.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatchList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatchRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUnsupportedList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserBet.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserHistory.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserHistoryList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserOrder.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserOrderList.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistory.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistoryDetail.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistoryRequest.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Socket\ISocket.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Socket\Socket.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Socket\SocketConfig.h" />
+    <ClInclude Include="..\..\iwin\Classes\Network\Socket\SocketConnect.h" />
+    <ClInclude Include="..\..\iwin\Classes\Platform\Platform.h" />
+    <ClInclude Include="..\..\iwin\Classes\Platform\WindowsPhone\UI\CtrWebOverlay.xaml.h">
+      <DependentUpon>..\..\iwin\Classes\Platform\WindowsPhone\UI\CtrWebOverlay.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="..\..\iwin\Classes\Platform\WindowsPhone\WPPlatform.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\BaseScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ChangeAwardScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\AnnouceServerLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\BonusMoneyLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\ChangePassLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\CommonLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\ConfirmCodeLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\DialogLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\EmoBoardLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\InviteLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\LeaderboardLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\LuckyCircleScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\MiniBtnLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\MiniPokerLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\PlayerInfoLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\TaiXiuLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\ToastLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\CommonScreens\TutorialLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\DialogScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\EventScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\FriendScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GamePlayMgr.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\FlopCardUI.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongBoard.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongPiece.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\DealCardLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\GameScreens.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\LabelBG.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\Result.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Phom\CardPhomBox.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomUtils.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachMsgHandler.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachPlayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\HUDScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\IAPScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LeaderboardScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoadingScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LobbyScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoginScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoginScreens\ForgetPassLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoginScreens\LoginLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoginScreens\OTPLoginLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\LoginScreens\RegisterLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\MainScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\NewLobbyScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\Card.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\CardUtils.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\GameObject.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\ObjectEntity.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\PlayerGroup.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\RectProcessTime.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\SliderBet.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\SpecialCardsBound.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\Object\TimeBarProcess.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreen.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\LeftUserProfileLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\MainUserProfileLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\OTPPageLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\ShopAvatarLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\TransactionHistoryLayer.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ProfileScreens\TransferMoneyLayout.h" />
+    <ClInclude Include="..\..\iwin\Classes\Screens\ScreenManager.h" />
+    <ClInclude Include="..\..\iwin\Classes\Services\DatabaseService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Services\GuideService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Services\ImageService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Services\ReviewService.h" />
+    <ClInclude Include="..\..\iwin\Classes\Utils.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Cocos2dEngine\Cocos2dRenderer.h" />
+    <ClInclude Include="Cocos2dEngine\OpenGLES.h" />
+    <ClInclude Include="Cocos2dEngine\OpenGLESPage.xaml.h">
+      <DependentUpon>Cocos2dEngine\OpenGLESPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="iWinOnline_StoreKey.pfx" />
+    <None Include="iWinOnline_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\iwin\Classes\AnimUtils.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\BannerInvite.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\ChatBoard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\ChipParticle.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\CoPhoMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\CustomSelectedBox.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\EmotionBoard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\FlyMoney.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\FocusScrollView.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\GameController.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\IwinListView.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\IwinListViewTable.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\IwinScale9Sprite.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\IwinScrollView.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\IwinTextfield.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\SpriteIap.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\SpriteIapMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Common\SpriteUrl.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Features\DataChatMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Features\FacebookMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Features\GCSignInMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Features\GGSignInMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Features\IapMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\MainGame.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Achievement.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Board.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Category.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\ChatMessage.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Item.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\iWinPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\OTPStatus.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Player.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\Province.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Models\User.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\BufferStream.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\DataInputStream.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\DataOutputStream.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\DataReader.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\DataWriter.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\IMessagehandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\JsonMessage.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\Message.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\MobileClient.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\ServerMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Core\TEA.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Game\GameLogicHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Game\GameMessageHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Game\GameService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Global\GlobalLogicHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Global\GlobalMessageHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Global\Globalservice.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\IwinCommand.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JSONMessageHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\AuthorizeOTP.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\RequireAuthenOTP.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ActiveOTP\ResponseAuthorizeOTP.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\AppleReviewObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\Avatar.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarCat.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarCatList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\AvatarList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\BuyingAvatar.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\avatar\ImageLinkContainerObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaAnswer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\captcha\CaptchaResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CancelGetCard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CancelResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\CardTelco.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\ChargeRate.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentHistory.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentHistoryList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\PaymentResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\RequestHistoryCharge.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cashoutruby\RubyToVNDInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\clientui\ServerControlButtonObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\clientui\ServerControlDialogObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\BetMatch.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\GetMatchWinMoney.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\League.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\LeagueList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\Match.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MatchList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MyMatch.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\MyMatchList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\Team.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\TicketPrice.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\UserRanking.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\cuocchaua\UserRankingList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\dice\BetStars.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\BaseResultObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventAward.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventAwardList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventItemId.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventItemList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\EventType.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\ShopId.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\UpgrageItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\UserInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\event\UserReceiveEventItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriend.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendListPage.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookFriendListPageCursor.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookIdsList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookMyInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPicture.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPictureData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookPostWallData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\facebook\FacebookRequestResponse.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\Contact.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\FacebookRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\Friend.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\FriendContact.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\InviteUser.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\Location.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\OpenFacebookRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFacebookRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromContact.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromFacebook.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\RequestFriendFromLocation.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFacebookRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromContact.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromFacebook.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\friend\ResponseFriendFromLocation.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\BoardOwner.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\ClientInforObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\CreateBoard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GameEvent.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GameEventList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GameList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GameState.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GetMinMaxBoard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GetOnwerBoardListResponse.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\game\GetOwnerBoardListRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Guides.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\heartbeat\HeartBeatConfiguration.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\heartbeat\NetworkStrength.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\ChatLobbyItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\ChatLobbyList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\DoPlayNow.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyChatMessage.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\LobbyList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\lobby\RequestLobbyList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\AppleVerify.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\Guest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\InvalidLoginToken.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\LoginWithToken.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\LoginWithTokenSuccess.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\MustRegisterWithToken.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\login\RegisterWithToken.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleQuestList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleQuestListItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleResultList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\LuckyCircleResultListItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewCircleInfoRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewCircleTurnRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\luckycircle\NewLuckyGetTiketsObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\mobo\APIResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\mobo\IwinUser.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\mobo\MoboData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\mobo\MoboMap.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\CardResultData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuBetRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuBetResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuGameInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuHistoryRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuJar.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuListUser.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUnsupportedList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUser.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistory.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryDetail.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\Nohu\NoHuUserHistoryServer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\CardID.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\ChargeType.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\GoogleCallbackData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\GoogleCallbackPurchaseData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\GooglePurchaseData.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\Payment.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\payment\Type.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\promotion\ActionType.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionGetWin.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\promotion\PromotionList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\ConfirmBox.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\GetQuestList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\OptionItem.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\OptionList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\Quest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\QuestCategory.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\QuestCategoryList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\RequestQuest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\ResponseQuestList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\quest\ScreenID.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ReviewApp.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ServiceSocial\GoogleUser.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\ServiceSocial\ResponseGoogle.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\ButtonFeature.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\ErrorInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\GetGui.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\RegisterInfor.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\RequestFeature.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\smartphone\StickerInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\BuyingStock.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\GetStockDividend.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\MyStock.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\MyStockList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\Stock.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\StockCommand.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\stock\StockList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\MoneyObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuBetRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuBetResult.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuGameInfo.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuInfoRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatch.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatchList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuMatchRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUnsupportedList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserBet.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserHistory.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserHistoryList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserOrder.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\taixiu\TaiXiuUserOrderList.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistory.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistoryDetail.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\JsonObject\TransactionHistory\TransactionHistoryRequest.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Socket\Socket.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Network\Socket\SocketConnect.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Platform\Platform.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Platform\WindowsPhone\UI\CtrWebOverlay.xaml.cpp">
+      <DependentUpon>..\..\iwin\Classes\Platform\WindowsPhone\UI\CtrWebOverlay.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="..\..\iwin\Classes\Platform\WindowsPhone\WPPlatform.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\BaseScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ChangeAwardScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\AnnouceServerLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\BonusMoneyLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\ChangePassLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\CommonLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\ConfirmCodeLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\DialogLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\EmoBoardLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\InviteLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\LeaderboardLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\LuckyCircleScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\MiniBtnLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\MiniPokerLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\PlayerInfoLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\TaiXiuLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\ToastLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\CommonScreens\TutorialLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\DialogScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\EventScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\FriendScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GamePlayMgr.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\BaiCaoScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\BaiCao\FlopCardUI.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongBoard.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongPiece.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\CoTuong\CoTuongScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\DealCardLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\GameScreens.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\LabelBG.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\MauBinh\MauBinhService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Phom\CardPhomBox.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Phom\PhomUtils.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\TienLen\TienLenService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\Xam\XamService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachMsgHandler.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachPlayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\GameScreens\XiZach\XiZachScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\HUDScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\IAPScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LeaderboardScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoadingScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LobbyScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoginScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoginScreens\ForgetPassLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoginScreens\LoginLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoginScreens\OTPLoginLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\LoginScreens\RegisterLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\MainScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\NewLobbyScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\Card.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\CardUtils.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\GameObject.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\ObjectEntity.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\PlayerGroup.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\RectProcessTime.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\SliderBet.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\SpecialCardsBound.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\Object\TimeBarProcess.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreen.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\LeftUserProfileLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\MainUserProfileLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\OTPPageLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\ShopAvatarLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\TransactionHistoryLayer.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ProfileScreens\TransferMoneyLayout.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Screens\ScreenManager.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Services\DatabaseService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Services\GuideService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Services\ImageService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Services\ReviewService.cpp" />
+    <ClCompile Include="..\..\iwin\Classes\Utils.cpp" />
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Cocos2dEngine\Cocos2dRenderer.cpp" />
+    <ClCompile Include="Cocos2dEngine\OpenGLES.cpp" />
+    <ClCompile Include="Cocos2dEngine\OpenGLESPage.xaml.cpp">
+      <DependentUpon>Cocos2dEngine\OpenGLESPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\json\project\vs2015_w10\jsoncpp.vcxproj">
+      <Project>{42abb4f7-ae8a-3393-b7a2-be6923019af4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\RKUtils\Proj\Win10\RKUtils.vcxproj">
+      <Project>{f7dccfec-d7f8-4977-bb07-a3ade2aab85f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Utility\Proj\Utility.Win10\Utility.Win10.vcxproj">
+      <Project>{19972077-aafc-447c-bb69-0512ea92d79f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\WinRTAPIsEmul\WinRTAPIsEmul_w10\WinRTAPIsEmul_w10.vcxproj">
+      <Project>{41f7f754-7b23-4704-b9d7-8cf9cc366fbe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libcocos2d.vcxproj">
+      <Project>{07c2895d-720c-487d-b7b4-12c293ea533f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.10240.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\close button.png" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\iwin\Classes\Platform\WindowsPhone\UI\CtrWebOverlay.xaml" />
+    <Page Include="Cocos2dEngine\OpenGLESPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="iWin\xml\screens\ChangeAward.xml" />
+    <Xml Include="iWin\xml\screens\CommonScreen.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="iWin\xml\screens\DialogScreen.xml" />
+    <Xml Include="iWin\xml\screens\EventScreen.xml" />
+    <Xml Include="iWin\xml\screens\FriendScreen.xml" />
+    <Xml Include="iWin\xml\screens\HUDScreen.xml" />
+    <Xml Include="iWin\xml\screens\IAPScreen.xml" />
+    <Xml Include="iWin\xml\screens\LeaderboardScreen.xml" />
+    <Xml Include="iWin\xml\screens\LoadingScreen.xml" />
+    <Xml Include="iWin\xml\screens\LobbyScreen.xml" />
+    <Xml Include="iWin\xml\screens\LoginScreen.xml" />
+    <Xml Include="iWin\xml\screens\MainScreen.xml" />
+    <Xml Include="iWin\xml\screens\NewLobbyScreen.xml" />
+    <Xml Include="iWin\xml\screens\ProfileScreen.xml" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <_CustomResource Include="$(MSBuildThisFileDirectory)..\..\iwin\Resources\iWin\**\*">
+      <Link>iWin\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </_CustomResource>
+  </ItemGroup>
+  <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
+    <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />
+    <ItemGroup>
+      <None Include="@(_CustomResource)" />
+    </ItemGroup>
+  </Target>
+</Project>

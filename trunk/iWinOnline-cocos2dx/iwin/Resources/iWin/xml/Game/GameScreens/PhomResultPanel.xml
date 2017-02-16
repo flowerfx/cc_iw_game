@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<GAME>
+		<Widget id="1" typeRes="layout" name = "score" idx_appear ="1"  visible="0">		
+				<common_value>
+					<common 		name="anchor_point"			value="0_0"/>
+				</common_value>
+				<Widget id="0" typeRes="panel" name = "bg" idx_appear ="1">		
+					<common_value>
+						<common 		name="source"				value="loginscreen/nine/thanh_dangcap.9.png"/>
+						<common 		name="scale_9"				value="1"/>
+						<common 		name="use_nine_path"		value="1"/>
+						<common 		name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					<pos 			origin="40_0" />
+					<Size 			origin="80_40" />
+					<opacity 		origin="150" />
+				</Widget>
+				<Widget id="1" typeRes="font" 	name = "title_" idx_appear ="1">		
+					<template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+						<common 		name="source" 		value="0"/>
+					</common_value>
+					<pos 		origin = "40_20" 	/>
+				</Widget>
+				<pos 			origin="0_0" />
+				<Size 			origin="80_40" />
+		</Widget>
+</GAME>

@@ -1,0 +1,12 @@
+
+lg.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+loading_logo
+  rotate: false
+  xy: 1, 1
+  size: 108, 110
+  orig: 108, 110
+  offset: 0, 0
+  index: -1

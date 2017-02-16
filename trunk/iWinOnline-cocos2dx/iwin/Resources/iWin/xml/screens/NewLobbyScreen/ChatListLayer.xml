@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="8" name="panel_left" 		typeRes="layout">
+                <common_value>
+                    <common name="anchor_point" value="0.0_0.0"/>
+					<common name="stick_screen" value="1"/>
+                </common_value>
+                
+                <Widget id="0" name="Image_3" 			typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" value="1"/>
+                        <common name="use_nine_path" value="1"/>
+                        <common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0.0_0.0"/>
+                        <common name="source" value="otherscreen/new-lobby/chat_bg.9.png"/>
+                    </common_value>
+                    <Size origin="300_306"/>
+                    <pos origin="0_77"/>
+                </Widget>
+                <Widget id="1" name="scrollview_chat" 	typeRes="list_view">
+                    <common_value>
+                        <common name="direction" 			value="1"/>
+                        <common name="anchor_point" 		value="0.0_0.0"/>
+                        <common name="inner_size" 			value="280_300"/>
+						<common name="stick_screen" 		value="1"/>
+						<common name="clipping_enable" 		value="1"/>
+						<common	name="bounce_enable"		value="1"/>
+                    </common_value>
+                    <Size origin="300_300"/>
+                    <pos origin="0_80"/>
+                </Widget>
+				<Widget id="2" name="Image_5" 			typeRes="panel">
+                    <common_value>
+                        <common name="scale_9" value="1"/>
+                        <common name="use_nine_path" value="1"/>
+                        <common name="stick_screen" value="1"/>
+                        <common name="anchor_point" value="0.5_0"/>
+                        <common name="source" value="white.png"/>
+                    </common_value>
+                    <Size origin="300_1"/>
+                    <pos origin="150_67"/>
+                </Widget>
+				
+				<Widget id="3" name="Image_4" 			com="NewLobbyScreen.InputChatLayer">
+                </Widget>
+
+				<pos origin="10_10"/>
+				<Size origin="300_355"/>
+            </Widget>																
+</GAME>

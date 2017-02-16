@@ -1,0 +1,193 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<MenuWidget name="friend_screen" 	designSize="960_540">
+			<fade_process max_idx_first="0">
+				<sound_click value="SFX_CLICK" delayTime="0.1" loop ="1"/>
+				<time_process id="0" val="0.0">
+					<sound FadeIn="" FadeOut="" delayTime="0.0" loop ="1"/>
+				</time_process>
+			</fade_process>
+			<Widget id="0" typeRes="layer_widget" name="back" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+				</common_value>
+						
+				<Widget id="0" name = "layout_list_friend_chat" 	com ="FriendScreen.ListFriendChatLayer" >		
+				</Widget>
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+			<Widget id="1" typeRes="layer_widget" name="friend_ui" idx_appear ="0">
+				<common_value>
+					<common			name="stick_screen"		value="1"/>
+					<common			name="casca_color"		value="0"/>
+					<common			name="root"				value="1"/>
+				</common_value>
+
+				<Widget id="0" typeRes="panel" 	  name = "main_bg" idx_appear ="1">		
+					<common_value>
+						<common 		name="source" 		value="loginscreen/nine/whitepixel.png"/>
+						<common 		name="use_atlas" 	value="1"/>	
+						<common			name="stick_screen"	value="1"/>
+					</common_value>
+					<pos 		origin = "480_270" 	/>
+					<Size 		origin = "960_540" 	/>
+				</Widget>
+				
+				<Widget id="1"  typeRes="layout"  name = "layout_main_friend_list" 	idx_appear ="1" >		
+					<common_value>
+						<common 		name="background_type" 		value="0"/>	
+						<common			name="stick_screen"			value="1"/>	
+						<common 		name="clipping_enable"	    value="0"/>
+						<common			name="anchor_point"			value="0_0"/>
+					</common_value>
+					
+					<Widget id="0" name = "panel_list_friend" com ="FriendScreen.ListPlayerMainLayer" >		
+					</Widget>
+					
+					<Widget id="1" typeRes="layout" name = "panel_search_friend" idx_appear ="1" >		
+						<common_value>
+							<common 		name="background_type" 		value="0"/>	
+							<common			name="stick_screen"			value="1"/>	
+							<common 		name="clipping_enable"	    value="0"/>
+							<common			name="anchor_point"			value="0_0"/>
+						</common_value>
+						<Widget id="0" typeRes="panel" 		name = "background" 			idx_appear ="1" >		
+							<common_value>
+								<common			name="source"				value="otherscreen/friend-screen/search_bg.png"/>
+								<common			name="scale_9"				value="1"/>
+								<common			name="use_nine_path"		value="1"/>
+								<common			name="stick_screen"			value="1"/>	
+								<common			name="anchor_point"			value="0_0"/>
+							</common_value>
+							<pos 		origin = "0_0" 	/>
+							<Size 		origin = "960_65" 	/>
+						</Widget>
+						<Widget id="1" typeRes="panel" 		name = "background_search" 		idx_appear ="1" >		
+							<common_value>
+								<common			name="source"				value="loginscreen/nine/gray2.9.png"/>
+								<common			name="scale_9"				value="1"/>
+								<common			name="use_nine_path"		value="1"/>
+								<common			name="stick_screen"			value="1"/>	
+								<common			name="anchor_point"			value="0.5_0.5"/>
+								<common			name="stage_scale9"			value="2"/>
+							</common_value>
+							<pos 		origin = "480_25" 	/>
+							<Size 		origin = "920_40" 	/>
+						</Widget>
+						<Widget id="2" typeRes="panel" 		name = "ico_search" 			idx_appear ="2"	>		
+							<common_value>
+										
+									<common 		name="source" 		value="otherscreen/friend-screen/search1.png"/>
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="0_0.5"/>	
+							</common_value>					
+							<pos 		origin = "30_25" 	/>
+							<Size 		origin = "28_28" 	/>					
+						</Widget>
+						<Widget id="3" typeRes="text_field" name = "name_search_input" 		idx_appear ="2"	>							
+							<template_value>
+									<template 		name="temp_textfield_0"/>						
+							</template_value>
+							<common_value>
+								<common 		name="source" 				value="search_nick_nam"/>					
+								<common			name="anchor_point"			value="0_0.5"/>
+								<common			name="tint_place_holder" 	value="20_20_20_25"/>
+								<common			name="touch_zone"			value="800_30"/>
+								<common			name="text_area"			value="800_30"/>
+								<common 		name="panel"				value="loginscreen/nine/gray2.9.png"/>
+							</common_value>
+							<pos 		origin = "60_25" 	/>
+							<color 		origin = "10_10_10_255" 	/>
+						</Widget>
+						<Widget id="4" typeRes="button" 	name = "btn_clear_name_search" 	idx_appear ="2" 	visible="0">		
+							<common_value>
+								<common 		name="source" 		value="close_button.png"/>
+								<common 		name="press" 		value="close_button.png"/>
+								<common 		name="disable" 		value="close_button.png"/>
+								<common 		name="scale_press" 	value="-0.05"/>
+								<common			name="stick_screen"	value="0"/>
+								<common			name="anchor_point"	value="0_0.5"/>
+							</common_value>
+								
+							<pos 		origin = "890_25" 	/>
+							<Size 		origin = "25_25" 	/>
+							<opacity	origin = "128"		/>
+						</Widget>
+						
+						<pos 		origin = "0_430" 	/>
+						<Size 		origin = "960_50" 	/>
+					</Widget>
+					
+					<pos 		origin = "0_0" 	/>
+					<Size 		origin = "960_480" 	/>
+					
+					<COMMAND>
+						<cmd id="0" name="ON_SHOW">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "-1000_0",
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"SET_VISIBLE" : 1
+									},
+									{
+										"POSITION"     : "0_0",
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									}
+								]
+							}
+						}
+						</cmd>
+						<cmd id="1" name="ON_HIDE">
+						{
+							"act0" :
+							{
+								"squence" : [
+									{
+										"SET_POSITION" : "0_0",
+										"DESIGN"	   : "960_540"
+									},
+									{
+										"POSITION"     : "-1000_0",
+										"DESIGN"	   : "960_540",
+										"STYLE"	       : 0,
+										"TIME"	       : 0.2
+									},
+									{
+										"SET_VISIBLE" : 0
+									}
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>
+					
+				</Widget>
+				
+				<Widget id="2"  name = "layout_friend_chat" 	com ="FriendScreen.TopLayer" visible="0">		
+				</Widget>
+				
+				<Widget id="10" name = "top_panel" 				com ="FriendScreen.ChatLayer"	>		
+				</Widget>
+				
+				<Widget id="11" name = "search_player_layout" 	com="FriendScreen.SearchFriendLayer" visible="0">
+				</Widget>
+			
+				
+				
+				<pos 		origin = "480_270" 	/>
+				<Size 		origin = "960_540" 	/>	
+			</Widget>
+			
+	</MenuWidget>
+</GAME>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" name="ruby_layout" 		typeRes="layout">
+                <common_value>
+					<common name="stick_screen" value="1"/>
+                    <common name="anchor_point" value="0.5_1"/>
+                </common_value>
+				<Widget id="0" name="lbl_ruby" 			typeRes="font">
+					<template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+						<common name="source" 		value="NUMBER_HAVE_RUBY"/>
+						<common name="anchor_point" value="1_0.5"/>
+					</common_value>
+					
+					<pos origin="530_20"/>
+					<color origin="255_236_0_255"/>
+				</Widget>
+				<Widget id="1" name="number_ruby" 		typeRes="font">
+					<template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+						<common name="source" value="0"/>
+						<common name="anchor_point" value="0_0.5"/>
+					</common_value>
+					
+					<pos origin="534_20"/>
+					<color origin="255_236_0_255"/>
+				</Widget>
+				<Widget id="2" name="icon_ruby"			typeRes="panel">
+					<common_value>
+						<common name="anchor_point" value="0_0.5"/>
+						<common name="source" value="otherscreen/topup-screen/ruby_don.png"/>
+					</common_value>
+					<Size origin="29_23"/>
+					<pos origin="507_20"/>
+				</Widget>
+            
+				<Widget id="3" name="icon_line"			typeRes="panel">
+					<common_value>
+						<common name="anchor_point" value="0.5_0"/>
+						<common name="source" value="mainscreen/newgui-game-icon/linemain.png"/>
+					</common_value>
+					<Size origin="670_3"/>
+					<pos origin="480_0"/>
+				</Widget>
+				<pos 	origin="480_480"/>
+				<Size 	origin="960_40"/>
+            </Widget>
+            
+</GAME>

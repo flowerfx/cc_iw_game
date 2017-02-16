@@ -1,0 +1,9 @@
+			const rapidjson::Value& c = arr|field_name|[i];	
+			rapidjson::StringBuffer buffer;
+			buffer.Clear();
+			rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+			c.Accept(writer);
+			const char* json = buffer.GetString();
+			|field_type| d;
+			d.toData(json);
+			|field_name|.push_back(d);

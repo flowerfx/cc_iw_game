@@ -1,0 +1,4 @@
+		if(document.HasMember("%s"))
+		{
+			set%s(document["%s"].%s());
+		}

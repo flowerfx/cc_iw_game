@@ -1,0 +1,841 @@
+<?xml version ='1.0' encoding='UTF-8'?>
+<GAME>
+	<!-- root template is the template that all widget will load it although define or note -->
+	<root_template>
+		<template id="0" name="temp_root">
+			<common_value>				
+				<common    		name="anchor_point"	value="0.5_0.5"/>	
+				<common			name="use_atlas"   	value="1"/>
+			</common_value>
+		</template>
+	</root_template>
+	<!-- default template is the template that use in all res screen -->
+	<default_template>
+		<template id="0" name="temp_text_default">
+			<common_value>				
+				<common    		name="font_idx"			value="0"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="1" name="temp_text_bold">
+			<common_value>				
+				<common    		name="font_idx"			value="2"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="2" name="temp_text_emo">
+			<common_value>				
+				<common    		name="font_idx"			value="1"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="3" name="temp_text_big">
+			<common_value>				
+				<common    		name="font_idx"			value="13"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="4" name="temp_text_small_size">
+			<common_value>				
+				<common    		name="font_idx"			value="9"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="5" name="temp_text_field">
+			<common_value>
+				<common			name="tint_place_holder" 	value="150_150_150_255"/>
+				<common    		name="font_idx"				value="0"/>	
+				<common			name="bitmap_font"   		value="0"/>
+				<common			name="touch_zone"			value="500_50"/>
+			</common_value>
+		</template>
+		<template id="6" name="temp_scale9_custom">
+			<common_value>
+				<common name="scale_9" 			value="1"/>
+				<common name="use_nine_path" 	value="1"/>
+				<common name="stage_scale9" 	value="3"/>
+			</common_value>
+		</template>
+		<template id="4" name="temp_text_bet">
+			<common_value>				
+				<common    		name="font_idx"			value="4"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="20" name="temp_btn_blue">
+			<common_value>
+				<common 		name="source" 		value="default-round-blue.9.png"/>
+				<common 		name="press" 		value="default-round-blue.9.png"/>
+				<common 		name="disable" 		value="button_dis.9.png"/>
+				<common			name="scale_9"		value="1"/>
+				<common			name="use_nine_path" value="1"/>
+				<common 		name="scale_press" 	value="-0.05"/>
+			</common_value>
+		</template>
+		<template id="21" name="temp_btn_yellow">
+			<common_value>
+				<common 		name="source" 		value="default-round-yellow.9.png"/>
+				<common 		name="press" 		value="default-round-yellow.9.png"/>
+				<common 		name="disable" 		value="button_dis.9.png"/>
+				<common			name="scale_9"		value="1"/>
+				<common			name="use_nine_path" value="1"/>
+				<common 		name="scale_press" 	value="-0.05"/>
+			</common_value>
+		</template>
+		<template id="22" name="temp_btn_red">
+			<common_value>
+				<common 		name="source" 		value="default-round.9.png"/>
+				<common 		name="press" 		value="default-round.9.png"/>
+				<common 		name="disable" 		value="button_dis.9.png"/>
+				<common			name="scale_9"		value="1"/>
+				<common			name="use_nine_path" value="1"/>
+				<common 		name="scale_press" 	value="-0.05"/>
+			</common_value>
+		</template>
+		<template id="23" name="temp_default_slider">
+			<common_value>
+				<common 		name="source" 				value="default-slider.png"/>
+				<common 		name="normal_ball" 			value="default-slider-knob.png"/>
+				<common 		name="press_ball" 			value="default-slider-knob.png"/>
+				<common 		name="disable_ball" 		value="default-slider-knob.png"/>
+				<common 		name="bar_progress" 		value="default-slider-value.png"/>
+				<common 		name="use_atlas" 			value="1"/>
+				<common			name="scale_9"				value="1"/>
+				<common			name="size_ball"			value="40_40"/>
+				<common			name="origin_size_ball"		value="44_44"/>
+			</common_value>
+		</template>
+		
+		<template id="24" name="check_box_history">
+			<common_value>
+				<common			name="source"					value="gamescreen-newgui-game-common/btn_tab_off.png"/>
+				<common			name="select"					value="gamescreen-newgui-game-common/btn_tab_off.png"/>
+				<common			name="cross"					value="gamescreen-newgui-game-common/btn_tab_on.png"/>
+				<common			name="backgrounddisable"		value="gamescreen-newgui-game-common/btn_tab_off.png"/>
+				<common			name="frontCrossDisabled"		value="gamescreen-newgui-game-common/btn_tab_on.png"/>
+				<common			name="content_size"				value="1"/>
+			</common_value>
+		</template>
+		<template id="25" name="check_box_def">
+			<common_value>
+				<common			name="source"					value="loginscreen/login-screen/radio_ogran_off.png"/>
+				<common			name="select"					value="loginscreen/login-screen/radio_ogran_off.png"/>
+				<common			name="cross"					value="loginscreen/login-screen/radio_ogran_on.png"/>
+				<common			name="backgrounddisable"		value="loginscreen/login-screen/radio_ogran_off.png"/>
+				<common			name="frontCrossDisabled"		value="loginscreen/login-screen/radio_ogran_on.png"/>							
+			</common_value>
+		</template>
+		<template id="26" name="check_box_round">
+			<common_value>
+				<common			name="source"					value="loginscreen/login-screen/check_normal_login_new.png"/>
+				<common			name="select"					value="loginscreen/login-screen/check_normal_login_new.png"/>
+				<common			name="cross"					value="loginscreen/login-screen/check_active_login_new.png"/>
+				<common			name="backgrounddisable"		value="loginscreen/login-screen/check_normal_login_new.png"/>
+				<common			name="frontCrossDisabled"		value="loginscreen/login-screen/check_active_login_new.png"/>							
+			</common_value>
+		</template>
+		<template id="27" name="drig_line">
+			<common_value>
+				<common 		name="source" 				value="gamescreen-newgui-game-common/taixiu/taixiu_itemline.png"/>	
+				<common			name="scale_9"				value="1"/>
+			</common_value>
+		</template>
+		<template id="28" name="temp_text_no_hu">
+			<common_value>				
+				<common    		name="font_idx"			value="17"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="29" name="temp_text_no_hu_lon">
+			<common_value>				
+				<common    		name="font_idx"			value="18"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+		<template id="30" name="temp_text_no_hu_xanh">
+			<common_value>				
+				<common    		name="font_idx"			value="19"/>	
+				<common			name="bitmap_font"   	value="1"/>
+			</common_value>
+		</template>
+	</default_template>
+	
+	
+	<!-- list template is the template that use in specific res screen -->
+	<template_list range_size_x="-1_399" 	design_size="320_240">
+		<template id="0" name="temp_text_0">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "42_42" 	/>
+		</template>
+		<template id="1" name="temp_text_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "42_42" 	/>
+		</template>
+		<template id="2" name="temp_text_small">
+			<template_value>				
+				<template    		name="temp_text_small_size"/>	
+			</template_value>
+			<Size 		origin = "36_36" 	/>
+		</template>
+		<template id="3" name="temp_text_radi">
+			<template_value>				
+				<template    		name="temp_text_big"/>	
+			</template_value>
+			<Size 		origin = "20_20" 	/>
+		</template>
+		<template id="4" name="temp_text_chat">
+			<template_value>				
+				<template    		name="temp_text_emo"/>	
+			</template_value>
+			<Size 		origin = "38_38" 			/>
+		</template>
+		
+		<template id="5" name="temp_text_0_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "39_39" 	/>
+		</template>
+		<template id="10" name="temp_text_0_2">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "36_36" 	/>
+		</template>
+		<template id="12" name="temp_text_0_3">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "46_46" 	/>
+		</template>
+		<template id="12" name="temp_text_0_4">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "62_62" 	/>
+		</template>
+		<template id="6" name="temp_text_iap">
+			<template_value>				
+				<template    		name="temp_text_0_1"/>	
+			</template_value>
+		</template>
+		<template id="7" name="temp_text_black">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "10_10_10_255" 	/>
+		</template>
+		<template id="8" name="temp_text_yellow">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "255_250_10_255" 	/>
+		</template>
+		
+		<template id="9" name="temp_text_name">
+			<template_value>				
+				<template    		name="temp_text_1"/>	
+			</template_value>
+			<color 		origin = "255_200_20_255" 	/>
+		</template>
+		<template id="11" name="temp_text_yellow_1">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "210_180_10_225" 	/>
+		</template>
+		<template id="13" name="temp_text_1_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "46_46" 	/>
+		</template>
+		<template id="14" name="temp_text_1_2">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "38_38" 	/>
+		</template>
+		<template id="15" name="temp_text_menu">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "46_46" 			/>
+		</template>
+
+		<template id="16" name="temp_textfield_0">
+			<template_value>				
+				<template    		name="temp_text_field"/>	
+			</template_value>
+			<Size 		origin = "40_40" 			/>
+		</template>
+
+		<template id="17" name="scale9">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="480_320"/>
+			</common_value>
+		</template>
+		<template id="18" name="temp_text_bet_money">
+			<template_value>				
+				<template    		name="temp_text_bet"/>	
+			</template_value>
+			<Size 		origin = "40_40" 			/>
+			<color 		origin = "255_210_50_255" 	/>
+		</template>
+		<template id="19" name="HL">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="480_320"/>
+				<common name="source" 		 value="gamescreen-tienlen-screen/highlight_quan_bai.9.png"/>
+			</common_value>
+		</template>
+		<template id="20" name="temp_text_co_tuong">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<common_value>			
+				<common    		name="font_idx"		value="11"/>	
+			</common_value>
+			<color		origin = "50_50_50_255"/>
+			<opacity    origin = "100" />
+		</template>
+		<template id="21" name="temp_tx_nohu">
+			<template_value>				
+				<template    		name="temp_text_no_hu"/>	
+			</template_value>
+			<Size 		origin = "35_35" 	/>
+		</template>
+				<template id="19" name="temp_tx_nohu_lon">
+			<template_value>				
+				<template    		name="temp_text_no_hu_lon"/>	
+			</template_value>
+			<Size 		origin = "60_60" 	/>
+		</template>
+		<template id="20" name="temp_tx_nohu_xanh">
+			<template_value>				
+				<template    		name="temp_text_no_hu_xanh"/>	
+			</template_value>
+			<Size 		origin = "45_45" 	/>
+		</template>
+	</template_list>
+	<template_list range_size_x="400_639" 	design_size="480_320">
+		<template id="0" name="temp_text_0">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<common_value>				
+				<common    		name="state_scale" value="0"/>	
+			</common_value>
+			<Size 		origin = "30_30" 	/>
+		</template>
+		<template id="1" name="temp_text_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "30_30" 	/>
+		</template>
+		<template id="2" name="temp_text_small">
+			<template_value>				
+				<template    		name="temp_text_small_size"/>	
+			</template_value>
+			<Size 		origin = "28_28" 	/>
+		</template>
+		<template id="3" name="temp_text_radi">
+			<template_value>				
+				<template    		name="temp_text_big"/>	
+			</template_value>
+			<Size 		origin = "16_16" 	/>
+		</template>
+		<template id="4" name="temp_text_chat">
+			<template_value>				
+				<template    		name="temp_text_emo"/>	
+			</template_value>
+			<Size 		origin = "30_30" 			/>
+		</template>
+		
+		<template id="5" name="temp_text_0_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="10" name="temp_text_0_2">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "23_23" 	/>
+		</template>
+		<template id="12" name="temp_text_0_3">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "34_34" 	/>
+		</template>
+		<template id="12" name="temp_text_0_4">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "52_52" 	/>
+		</template>
+		<template id="6" name="temp_text_iap">
+			<template_value>				
+				<template    		name="temp_text_0_1"/>	
+			</template_value>
+		</template>
+		<template id="7" name="temp_text_black">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "10_10_10_255" 	/>
+		</template>
+		<template id="8" name="temp_text_yellow">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "255_250_10_255" 	/>
+		</template>
+		
+		<template id="9" name="temp_text_name">
+			<template_value>				
+				<template    		name="temp_text_1"/>	
+			</template_value>
+			<color 		origin = "255_200_20_255" 	/>
+		</template>
+		<template id="11" name="temp_text_yellow_1">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<color 		origin = "210_180_10_225" 	/>
+		</template>
+		<template id="13" name="temp_text_1_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "42_42" 	/>
+		</template>
+		<template id="14" name="temp_text_1_2">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="15" name="temp_text_menu">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "34_34" 			/>
+		</template>
+
+		<template id="16" name="temp_textfield_0">
+			<template_value>				
+				<template    		name="temp_text_field"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+		</template>
+
+		<template id="17" name="scale9">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="480_320"/>
+			</common_value>
+		</template>
+		<template id="18" name="temp_text_bet_money">
+			<template_value>				
+				<template    		name="temp_text_bet"/>	
+			</template_value>
+			<Size 		origin = "30_30" 			/>
+			<color 		origin = "255_210_50_255" 	/>
+		</template>
+		<template id="19" name="HL">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="480_320"/>
+				<common name="source" 		 value="gamescreen-tienlen-screen/highlight_quan_bai.9.png"/>
+			</common_value>
+		</template>
+		<template id="20" name="temp_text_co_tuong">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<common_value>			
+				<common    		name="font_idx"		value="11"/>	
+			</common_value>
+			<color		origin = "50_50_50_255"/>
+			<opacity    origin = "100" />
+		</template>
+		<template id="21" name="temp_tx_nohu">
+			<template_value>				
+				<template    		name="temp_text_no_hu"/>	
+			</template_value>
+			<Size 		origin = "30_30" 	/>
+		</template>
+		<template id="22" name="temp_tx_nohu_lon">
+			<template_value>				
+				<template    		name="temp_text_no_hu_lon"/>	
+			</template_value>
+			<Size 		origin = "50_50" 	/>
+		</template>
+		<template id="23" name="temp_tx_nohu_xanh">
+			<template_value>				
+				<template    		name="temp_text_no_hu_xanh"/>	
+			</template_value>
+			<Size 		origin = "38_38" 	/>
+		</template>
+	</template_list>
+	<template_list range_size_x="640_879" 	design_size="960_640">
+		<template id="0" name="temp_text_0_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="1" name="temp_text_iap">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "23_23" 	/>
+		</template>
+		<template id="2" name="temp_text_0">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "28_28" 	/>
+		</template>
+		<template id="3" name="temp_text_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "28_28" 	/>
+		</template>
+		<template id="4" name="temp_text_black">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+			<color 		origin = "10_10_10_255" 	/>
+		</template>
+		<template id="5" name="temp_text_yellow">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+			<color 		origin = "255_250_10_255" 	/>
+		</template>
+		
+		<template id="6" name="temp_text_name">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+			<color 		origin = "255_200_20_255" 	/>
+		</template>
+		<template id="7" name="temp_text_0_2">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "22_22" 	/>
+		</template>
+		<template id="8" name="temp_text_yellow_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+			<color 		origin = "210_180_10_225" 	/>
+		</template>
+		<template id="9" name="temp_text_chat">
+			<template_value>				
+				<template    		name="temp_text_emo"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+		</template>
+		<template id="10" name="temp_text_0_3">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "35_35" 	/>
+		</template>
+		<template id="12" name="temp_text_0_4">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "40_40" 	/>
+		</template>
+		<template id="11" name="temp_text_1_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "39_39" 	/>
+		</template>
+		<template id="12" name="temp_text_1_2">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "23_23" 	/>
+		</template>
+		<template id="50" name="temp_text_small">
+			<template_value>				
+				<template    		name="temp_text_small_size"/>	
+			</template_value>
+			<Size 		origin = "23_23" 	/>
+		</template>
+		<template id="51" name="temp_text_radi">
+			<template_value>				
+				<template    		name="temp_text_big"/>	
+			</template_value>
+			<Size 		origin = "18_18" 	/>
+		</template>
+		<template id="52" name="temp_text_menu">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "32_32" 			/>
+		</template>
+
+		<template id="13" name="temp_textfield_0">
+			<template_value>				
+				<template    		name="temp_text_field"/>	
+			</template_value>
+			<Size 		origin = "28_28" 			/>
+		</template>
+
+		<template id="14" name="scale9">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="800_480"/>
+			</common_value>
+		</template>
+		<template id="15" name="temp_text_bet_money">
+			<template_value>				
+				<template    		name="temp_text_bet"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "255_210_50_255" 	/>
+		</template>
+		<template id="16" name="HL">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="800_480"/>
+				<common name="source" 		 	value="gamescreen-tienlen-screen/highlight_quan_bai.9.png"/>
+			</common_value>
+		</template>
+		<template id="17" name="temp_text_co_tuong">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<common_value>			
+				<common    		name="font_idx"		value="11"/>	
+			</common_value>
+			<color		origin = "50_50_50_255"/>
+			<opacity    origin = "100" />
+		</template>
+		<template id="18" name="temp_tx_nohu">
+			<template_value>				
+				<template    		name="temp_text_no_hu"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="19" name="temp_tx_nohu_lon">
+			<template_value>				
+				<template    		name="temp_text_no_hu_lon"/>	
+			</template_value>
+			<Size 		origin = "45_45" 	/>
+		</template>
+		<template id="20" name="temp_tx_nohu_xanh">
+			<template_value>				
+				<template    		name="temp_text_no_hu_xanh"/>	
+			</template_value>
+			<Size 		origin = "32_32" 	/>
+		</template>
+	</template_list>
+	<template_list range_size_x="880_-1" 	design_size="960_640">
+		<template id="0" name="temp_text_0_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "20_20" 	/>
+		</template>
+		<template id="1" name="temp_text_iap">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "20_20" 	/>
+		</template>
+		<template id="2" name="temp_text_0">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="3" name="temp_text_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "25_25" 	/>
+		</template>
+		<template id="4" name="temp_text_black">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "10_10_10_255" 	/>
+		</template>
+		<template id="5" name="temp_text_yellow">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "255_250_10_255" 	/>
+		</template>
+		
+		<template id="6" name="temp_text_name">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "255_200_20_255" 	/>
+		</template>
+		<template id="7" name="temp_text_0_2">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "18_18" 	/>
+		</template>
+		<template id="8" name="temp_text_yellow_1">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "210_180_10_225" 	/>
+		</template>
+		<template id="9" name="temp_text_chat">
+			<template_value>				
+				<template    		name="temp_text_emo"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+		</template>
+		<template id="10" name="temp_text_0_3">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "28_28" 	/>
+		</template>
+		<template id="12" name="temp_text_0_4">
+			<template_value>				
+				<template    		name="temp_text_default"/>	
+			</template_value>
+			<Size 		origin = "40_40" 	/>
+		</template>
+		<template id="11" name="temp_text_1_1">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "36_36" 	/>
+		</template>
+		<template id="12" name="temp_text_1_2">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "20_20" 	/>
+		</template>
+		<template id="50" name="temp_text_small">
+			<template_value>				
+				<template    		name="temp_text_small_size"/>	
+			</template_value>
+			<Size 		origin = "20_20" 	/>
+		</template>
+		<template id="51" name="temp_text_radi">
+			<template_value>				
+				<template    		name="temp_text_big"/>	
+			</template_value>
+			<Size 		origin = "16_16" 	/>
+		</template>
+		<template id="52" name="temp_text_menu">
+			<template_value>				
+				<template    		name="temp_text_bold"/>	
+			</template_value>
+			<Size 		origin = "30_30" 			/>
+		</template>
+
+		<template id="13" name="temp_textfield_0">
+			<template_value>				
+				<template    		name="temp_text_field"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+		</template>
+
+		<template id="14" name="scale9">
+		
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="960_640"/>
+			</common_value>
+		</template>
+		
+		<template id="15" name="temp_text_bet_money">
+			<template_value>				
+				<template    		name="temp_text_bet"/>	
+			</template_value>
+			<Size 		origin = "25_25" 			/>
+			<color 		origin = "255_210_50_255" 	/>
+		</template>
+		<template id="16" name="HL">
+			<template_value>				
+				<template    		name="temp_scale9_custom"/>	
+			</template_value>
+			<common_value>
+				<common name="design_scale9" 	value="960_640"/>
+				<common name="source" 		 value="gamescreen-tienlen-screen/highlight_quan_bai.9.png"/>
+			</common_value>
+		</template>
+		<template id="17" name="temp_text_co_tuong">
+			<template_value>				
+				<template    		name="temp_text_0"/>	
+			</template_value>
+			<common_value>			
+				<common    		name="font_idx"		value="11"/>	
+			</common_value>
+			<color		origin = "50_50_50_255"/>
+			<opacity    origin = "100" />
+		</template>
+		<template id="18" name="temp_tx_nohu">
+			<template_value>				
+				<template    		name="temp_text_no_hu"/>	
+			</template_value>
+			<Size 		origin = "22_22" 	/>
+		</template>
+		<template id="19" name="temp_tx_nohu_lon">
+			<template_value>				
+				<template    		name="temp_text_no_hu_lon"/>	
+			</template_value>
+			<Size 		origin = "40_40" 	/>
+		</template>
+		<template id="20" name="temp_tx_nohu_xanh">
+			<template_value>				
+				<template    		name="temp_text_no_hu_xanh"/>	
+			</template_value>
+			<Size 		origin = "28_28" 	/>
+		</template>
+	</template_list>
+	
+	
+	
+</GAME>

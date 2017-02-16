@@ -1,0 +1,270 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="6" name="panel_right_history" typeRes="layout" visible="0">
+                <common_value>
+                    <common name="stick_screen" value="1"/>
+                    <common name="anchor_point" value="0_0"/>
+                </common_value>
+               
+
+				<Widget id="0" typeRes="layout"  name = "layout_pull_update" 	  idx_appear ="1" visible="0">		
+					<common_value>
+						<common 		name="background_type" 		value="0"/>	
+						<common			name="stick_screen"			value="1"/>	
+						<common 		name="clipping_enable"	    value="0"/>
+						<common			name="anchor_point"			value="0.5_0"/>
+					</common_value>
+					<Widget id="0" typeRes="font"  name = "txt_pull_update" idx_appear ="1" visible="1">		
+						<common_value>
+							<common 		name="source" 		value="pull_down_to_refresh"/>					
+							<common    		name="font_idx"		value="0"/>	
+							<common			name="anchor_point"	value="0_0.5"/>
+							<common			name="bitmap_font"  value="1"/>
+						</common_value>
+						<pos 		origin = "40_15" 			/>
+						<Size 		origin = "17_17" 			/>
+						<color 		origin = "200_200_200_255" 	/>
+					</Widget>
+					<Widget id="1" typeRes="font"  name = "txt_release_update" idx_appear ="1" visible="0">		
+						<common_value>
+							<common 		name="source" 		value="release_to_refresh"/>					
+							<common    		name="font_idx"		value="0"/>	
+							<common			name="anchor_point"	value="0_0.5"/>
+							<common			name="bitmap_font"  value="1"/>
+						</common_value>
+						<pos 		origin = "40_15" 			/>
+						<Size 		origin = "17_17" 			/>
+						<color 		origin = "200_200_200_255" 	/>
+					</Widget>
+					<Widget id="2" typeRes="panel" 	name = "arrow" idx_appear ="1" >		
+						<common_value>
+							<common			name="source"				value="gamescreen-game-common/arrow.png"/>
+							<common			name="anchor_point"			value="0.5_0.5"/>
+						</common_value>
+						<pos 		origin = "15_15" 	/>
+						<Size 		origin = "30_30" 	/>
+						<color 		origin = "230_230_230_255" 	/>
+					</Widget>
+										
+					<COMMAND>
+						<cmd id="0" name="ORIGIN_POS">
+						{
+							"act0" : {
+								"single_0":{
+									"SET_POSITION" : "315_410",								
+									"DESIGN"	   : "960_540"
+								}
+							}
+						}
+						</cmd>
+					</COMMAND>
+										
+					<pos 		origin = "315_410" 	/>
+					<Size 		origin = "100_30" 	/>
+				</Widget>
+
+				<Widget id="1" name="top_panel" typeRes="layout">
+                    <common_value>
+                        <common name="stick_screen" 		value="1"/>
+                        <common name="anchor_point" 		value="0_1"/>
+                    </common_value>
+					<Widget id="0" name="bg" typeRes="panel">
+						<common_value>
+							<common name="scale_9" 				value="1"/>
+							<common name="use_nine_path" 		value="1"/>
+							<common name="stick_screen" 		value="1"/>
+							<common name="anchor_point" 		value="0_0"/>
+							<common name="source" 				value="otherscreen/new-lobby/chat_bg.9.png"/>
+						</common_value>
+						<Size origin="630_40"/>
+						<pos origin="0_0"/>
+					</Widget>
+					<Widget id="1" name="tx1" 		typeRes="font" visible="1">
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common name="source" value="rivals"/>
+						</common_value>
+						<pos 		origin = "150_20" 			/>
+					</Widget>
+					<Widget id="2" name="tx2" 		typeRes="font" visible="1">
+						<template_value>
+							<template 		name="temp_text_0"/>						
+						</template_value>
+						<common_value>
+							<common name="source" value="about"/>
+						</common_value>
+						<pos 		origin = "500_20" 			/>
+					</Widget>
+                    <Size origin="630_40"/>
+                    <pos origin="0_450"/>
+                </Widget>
+				
+                <Widget id="2" name="tableview_board" 	typeRes="list_view_table" idx_appear="4">
+                    <common_value>         
+                        <common name="inner_size" 			value="630_400"/>          
+                        <common name="direction" 			value="1"/>                         
+                       
+					   <common name="anchor_point_list" 	value="0_0"/>                 
+                        <common name="stick_screen" 		value="1"/>
+                        <common name="anchor_point" 		value="0_0"/>
+                        <common name="clipping_enable" 		value="1"/>                               
+                        
+						<common name="size_child" 			value="630_100"/>
+                        <common name="no_add_event" 		value="1"/>
+                        <common name="number_cell" 			value="0"/> 
+						<common	name="Percent_Scroll"		value="0_0.15"/>
+                    </common_value>
+					
+                    <Widget id="7" name="panel_board_item" typeRes="layout">
+                        <common_value>
+                            <common name="anchor_point" value="0.0_0.0"/>
+                        </common_value>
+                            
+                        <Widget id="0" name="Image_10" typeRes="panel">
+                            <common_value>
+                                <common name="source" value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>
+                            </common_value>        
+                            <Size origin="70_70"/>                                     
+                            <pos origin="50_50"/>                           
+                        </Widget>
+                        
+                        <Widget id="1" typeRes="panel_clipping" name = "panel_avatar" idx_appear ="1">      
+                            <common_value>                          
+                                <common         name="stick_screen" value="0"/>
+                                <common         name="anchor_point" value="0.5_0.5"/>
+                            </common_value>         
+                            <Widget id="0" typeRes="panel" name = "bg_avatar_stencil" 	idx_appear ="1">      
+                                <common_value>                          
+                                    <common         name="source"       value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>              
+                                    <common         name="use_atlas"    value="1"/> 
+                                    <common         name="stick_screen" value="0"/>
+                                    <common         name="stencil"      value="1"/>
+                                    <common         name="state_scale"  value="2"/>
+                                </common_value>
+                                <pos        origin = "34_34"    />
+                                <Size       origin = "68_68"    />
+                            </Widget>             
+                            <Widget id="1" typeRes="panel" name = "avatar_default" 		idx_appear ="1">     
+                                <common_value>                          
+                                    <common         name="source"       value="mainscreen/newgui-mainscreen/khung_avatar_mainscreen.png"/>              
+                                    <common         name="use_atlas"    value="1"/> 
+                                    <common         name="stick_screen" value="0"/>
+                                    <common         name="state_scale"  value="2"/>
+                                </common_value>
+                                <pos        origin = "34_34"    />
+                                <Size       origin = "68_70"    />
+                            </Widget>               
+                            <pos        origin = "50_50"    />
+                            <Size       origin = "68_68"    />
+                        </Widget>                       
+                        <Widget id="2" name="lbl_name" 		typeRes="font">
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>
+                                <common name="source" value="name"/>                             
+                                <common name="anchor_point" value="0_0"/>
+                            </common_value>
+                            <pos origin="93_55"/>
+                        </Widget>
+                        <Widget id="3" name="lbl_money" 	typeRes="font">
+                            
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>
+                                <common name="source" value="1.000 Win"/>
+                                <common name="anchor_point" value="0_1"/>
+                            </common_value>
+                            <pos origin="92_45"/>
+                            <color origin="255_250_10_255"/>
+                        </Widget>                       
+                        <Widget id="4" name="lbl_status" 	typeRes="font">
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>
+                            <common_value>
+                                <common name="source" value="Win"/>
+								<common name="anchor_point" value="0.5_0"/>
+                            </common_value>
+                            <pos origin="500_55"/> 
+                        </Widget>
+                        <Widget id="5" name="lbl_bet" 		typeRes="font">                          
+							<template_value>
+								<template 		name="temp_text_0"/>						
+							</template_value>	
+                            <common_value>                                                   
+                                <common name="source" value="1.000 Win"/>
+								<common name="anchor_point" value="0.5_1"/>
+                            </common_value>                                                                       
+                            <pos origin="500_45"/>
+                            <color origin="255_255_0_255"/>
+                        </Widget> 
+						
+                       <Widget id="6" typeRes="panel" name = "bottom_line" idx_appear ="1">     
+                            <common_value>                          
+                                <common         name="source"       value="otherscreen/pickroom-screen/bottomline.png"/>              
+                                <common         name="anchor_point" value="0_0"/>
+                            </common_value>
+                            <pos        origin = "0_0"    />
+                            <Size       origin = "630_1"    />
+                        </Widget> 
+                       <Widget id="7" typeRes="panel" name = "bkg_trongsuot" idx_appear ="1">     
+                            <common_value>                          
+                                <common         name="source"       value="mainscreen/newgui-mainscreen/bkg_trongsuot.png"/>              
+                                <common         name="scale_9"      value="1"/>
+                                <common         name="anchor_point" value="0_0"/>
+                            </common_value>
+                            <pos        origin = "0_0"    />
+                            <Size       origin = "630_100"    />
+                        </Widget>            
+                        <pos origin="0_0"/>
+						<Size origin="630_100"/>
+                    </Widget>
+                    <pos origin="0_10"/>      
+					<Size origin="630_400"/>
+                </Widget>
+				
+				<Widget id="3" typeRes="panel" 		name = "loading_circle" 	 	 idx_appear ="1" visible="0">		
+					<common_value>	
+						<common 		name="source" 			value="loginscreen/login-screen/loading.png"/>
+						<common			name="stick_screen"		value="0"/>
+						<common			name="anchor_point"		value="0.5_0.5"/>
+					</common_value>
+					<pos 		origin = "315_230" 	/>
+					<Size 		origin = "60_60" 	/>
+					<COMMAND>
+						<cmd id="0" name="ROTATE">
+						{
+							"act0" : {
+								"repeat" : -1,
+								"squence":[
+									{
+										"ROTATE" : 360,
+										"TIME"	 : 0.5,
+										"STYLE"	 : 1
+									}
+								]
+							}
+						}
+						</cmd>
+					</COMMAND>
+				</Widget>
+
+                <Widget id="4" name="lbl_no_board" 	typeRes="font" visible="0">
+                    <template_value>
+						<template 		name="temp_text_0"/>						
+					</template_value>
+					<common_value>
+                        <common name="source" value="no_table_found"/>
+                    </common_value>
+                    <pos 		origin = "315_230" 			/>
+					<color 		origin = "200_200_200_255" 	/>
+                </Widget>
+ 
+				<Size origin="630_450"/>
+				<pos origin="322_10"/>
+            </Widget>
+</GAME>

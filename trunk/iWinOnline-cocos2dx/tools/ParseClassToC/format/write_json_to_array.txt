@@ -1,0 +1,8 @@
+		if(document.HasMember("%s") && !document["%s"].IsNull() && document["%s"].IsArray() )
+		{
+			const rapidjson::Value& arr|field_name| = document["%s"];
+			for (rapidjson::SizeType i = 0; i < arr|field_name|.Size(); i++)
+			{
+				%s
+			}
+		}

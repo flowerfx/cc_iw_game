@@ -1,0 +1,11 @@
+#include "|classname|.h"
+namespace iwinmesage
+{
+	|static_field|
+	|classname|:: |classname| ()
+	{
+	}
+	|classname|::~|classname|()
+	{
+	}
+}

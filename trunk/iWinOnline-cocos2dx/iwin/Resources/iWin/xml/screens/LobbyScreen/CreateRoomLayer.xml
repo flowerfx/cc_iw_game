@@ -1,0 +1,469 @@
+<?xml version="1.0" ?>
+<GAME>
+			<Widget id="3" typeRes="layout" name=  "create_room_layout" idx_appear="4" visible="0">
+						<common_value>
+							<common			name="stick_screen"			value="0"/>
+							<common			name="casca_color"			value="0"/>
+							<common 		name="clipping_enable"	    value="0"/>
+							<common 		name="background_type" 		value="0"/>
+						</common_value>
+						
+						
+						<Widget id = "0" typeRes="layout" name="create_room_panel" idx_appear = "1">
+							<common_value>
+								<common 		name="anchor_point" 		value="0.5_0.5"/>
+							</common_value>
+							<Widget id = "0" typeRes="panel" name="create_room_panel" idx_appear = "1">
+								<template_value>
+									<template name="scale9"/>
+								</template_value>
+								<common_value>
+									<common 		name="source" 				value="default-window.9.png"/>
+									<common			name="casca_color"			value="0"/>
+									<common 		name="anchor_point" 		value="0_0"/>
+								</common_value>
+								<pos 		origin = "0_0" 	/>
+								<Size 		origin = "700_350"  />
+							</Widget>
+							<Widget id ="0" typeRes="panel" name="hl_bg" idx_appear = "1">
+								<common_value>
+									<common 		name="source" 				value="bkg_high_light.png"/>
+									<common 		name="use_atlas" 			value="1"/>	
+									<common			name="stick_screen"			value="0"/>
+									<common 		name="anchor_point" 		value="0.5_0"/>
+								</common_value>
+								<pos 		origin = "350_0" 	/>
+								<Size 		origin = "700_270"  />
+							</Widget>
+							<Widget id ="0" typeRes="font" 	name = "_title" 				idx_appear ="1">		
+									<template_value>
+											<template 		name="temp_text_radi"/>						
+									</template_value>
+									<common_value>
+											<common 		name="source" 		value="create_new_board"/>						
+											<common			name="anchor_point"	value="0.5_1"/>
+									</common_value>
+									<pos 		origin = "350_335" 	/>
+							</Widget>
+							<Widget id="1" typeRes="layout" name = "layout_number_bet" 		idx_appear ="1">		
+								<common_value>
+									<common 		name="clipping_enable"	    value="0"/>
+									<common 		name="background_type" 		value="0"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="anchor_point"			value="1_1"/>
+								</common_value>						
+								<Widget id="0" typeRes="font" 	name = "bet_title" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+											<common 		name="source" 		value="bet"/>					
+											<common			name="anchor_point"	value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "5_27" 	/>
+								</Widget>
+								<Widget id="1" typeRes="panel" 	name = "panel_bet_number_input" idx_appear ="1">		
+									<common_value>
+										<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="casca_color"	value="0"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="0_0"/>
+										
+									</common_value>
+									<pos 		origin = "200_0" 	/>
+									<Size 		origin = "428_40" 	/>
+									<Widget id="0" typeRes="text_field" name = "bet_number_input_create_game" idx_appear ="2">							
+										<template_value>
+											<template 		name="temp_textfield_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 				value="0"/>					
+											<common			name="anchor_point"			value="0_0.5"/>
+											<common			name="max_lenght"			value="32"/>
+											<common			name="touch_zone"			value="428_50"/>
+											<common			name="type_text"			value="2"/> <!-- 0 is number and text, 1 is text only 2 is number only-->
+											<common			name="text_area"			value="400_40"/>
+										</common_value>
+										<pos 		origin = "10_20" 	/>
+									</Widget>
+									<Widget id="2" typeRes="button" name = "btn_clear_bet_create_game" idx_appear ="2" visible="0">		
+										<common_value>
+										
+											<common 		name="source" 		value="close_button.png"/>
+											<common 		name="press" 		value="close_button.png"/>
+											<common 		name="disable" 		value="close_button.png"/>
+											<common 		name="scale_press" 	value="-0.05"/>
+											<common			name="stick_screen"	value="0"/>
+											<common			name="anchor_point"	value="1_0.5"/>
+										</common_value>
+										<pos 		origin = "420_20" 	/>
+										<Size 		origin = "30_30" 	/>
+										<opacity	origin = "128"		/>
+									</Widget>
+								</Widget>
+								<pos 		origin = "680_280" 	/>
+								<Size 		origin = "647_50" 	/>
+							</Widget>
+							<Widget id="2" typeRes="layout" name = "layout_slider_bet" 		idx_appear ="1">		
+								<common_value>
+									<common 		name="clipping_enable"	    value="0"/>
+									<common 		name="background_type" 		value="0"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="anchor_point"			value="1_1"/>
+								</common_value>						
+								<Widget id="0" typeRes="font" name = "bet_title_begin" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="0"/>					
+										<common			name="anchor_point"	value="1_0.5"/>
+									</common_value>
+									<pos 		origin = "90_25" 	/>
+									<color		origin = "250_180_10_255" />
+								</Widget>
+								<Widget id="1" typeRes="font" name = "bet_title_end" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="10000"/>					
+										<common			name="anchor_point"	value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "580_25" 	/>
+									<color		origin = "250_180_10_255" />
+								</Widget>
+								<Widget id="2" typeRes="slider" name = "slider_bet_array_create_game" idx_appear ="2">		
+									<template_value>
+										<template name="temp_default_slider"/>
+									</template_value>
+									<pos 		origin = "325_25" 	/>
+									<Size 		origin = "400_1" 	/>			
+								</Widget>
+								
+								<pos 		origin = "680_230" 	/>
+								<Size 		origin = "647_50" 	/>
+							</Widget>
+							<Widget id="3" typeRes="layout" name = "layout_number_player" 	idx_appear ="1">		
+								<common_value>
+									<common 		name="clipping_enable"	    value="0"/>
+									<common 		name="background_type" 		value="0"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="anchor_point"			value="1_1"/>
+								</common_value>						
+								<Widget id="0" typeRes="font"		name = "_title" 					idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="number_player"/>					
+										<common			name="anchor_point"		value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "5_25" 	/>
+								</Widget>
+								<Widget id="1" typeRes="button" 	name = "choose_number_player_btn" 	idx_appear ="1">		
+									<common_value>
+										<common 		name="source" 		value="default-select.9.png"/>
+										<common 		name="press" 		value="default-select.9.png"/>
+										<common 		name="disable" 		value="default-select.9.png"/>
+										<common 		name="scale_press" 	value="0.00"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point" value="0_0"/>
+										<common			name="stage_scale9" value="2"/>
+									</common_value>
+									<pos 		origin = "200_0" 	/>
+									<Size 		origin = "428_40" 	/>
+								</Widget>
+								<Widget id="0" typeRes="font" name = "_title_number" idx_appear ="1">		
+										<template_value>
+											<template 		name="temp_text_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="0"/>					
+											<common			name="anchor_point"	value="0_0.5"/>
+										</common_value>
+										<pos 		origin = "210_20" 	/>
+								</Widget>
+								<Widget id="2" typeRes="list_view" 	name = "list_choose" 				idx_appear ="1" visible="0">		
+									<common_value>							
+										<common 		name="inner_size" 			value="428_150"/>
+										<common 		name="direction" 			value="1"/> <!-- 0 none 1 is vertical 2 is horizol 3 is both -->
+										<common 		name="not_use_bounce" 		value="0"/>
+										<common 		name="not_use_pool" 		value="0"/>
+										<common 		name="Percent_Scroll" 		value="0_0"/>
+										
+										<common 		name="background_type" 		value="0"/>	
+										<common 		name="clipping_enable" 		value="1"/>	
+										<common			name="stick_screen"			value="0"/>
+										<common			name="casca_color"			value="0"/>
+										<common			name="casca_opacity"		value="0"/>
+										<common			name="anchor_point"			value="0_0"/>
+										<common			name="bounce_enable"		value="1"/>
+									</common_value>
+										<Widget id="0" typeRes="layout" name = "layout_choose" idx_appear ="3">		
+											<common_value>
+												<common 		name="background_type" 		value="0"/>		
+												<common			name="stick_screen"			value="0"/>
+												<common			name="casca_color"			value="0"/>
+												<common			name="casca_opacity"		value="0"/>
+												<common			name="anchor_point"			value="0_0"/>
+												<common			name="clipping_enable"		value="0"/>
+											</common_value>
+											<Widget id="0" typeRes="panel" name = "bg" idx_appear ="6" visible="0">		
+												<common_value>
+														<common 		name="source" 			value="loginscreen/nine/red11.9.png"/>																																
+														<common 		name="use_atlas" 		value="1"/>
+														<common 		name="scale_9" 			value="1"/>	
+														<common			name="stick_screen"		value="0"/>
+														<common			name="anchor_point"		value="0_0"/>
+												</common_value>
+												
+												<pos 		origin = "0_0" 		/>
+												<Size 		origin = "328_40" 	/>
+											</Widget>
+											<Widget id="1" typeRes="button" name = "choose_btn" idx_appear ="6">		
+												<common_value>
+														<common 		name="source" 			value="mainscreen/newgui-mainscreen/bkg_chat_field.9.png"/>
+														<common 		name="press" 			value="mainscreen/shop-avatar/bkg_vang.png"/>																				
+														<common			name="casca_color"		value="0"/>
+														<common			name="casca_opacity"	value="0"/>										
+														<common 		name="scale_press" 		value="0.00"/>								
+														<common 		name="use_atlas" 		value="1"/>
+														<common 		name="scale_9" 			value="1"/>	
+														<common			name="stick_screen"		value="0"/>
+														<common			name="anchor_point"		value="0_0"/>
+												</common_value>
+												
+												<pos 		origin = "0_0" 		/>
+												<Size 		origin = "328_40" 	/>
+											</Widget>
+											<Widget id="2" typeRes="panel" name = "hight_light" idx_appear ="6" visible="0">		
+												<common_value>
+														<common 		name="source" 			value="mainscreen/shop-avatar/bkg_vang.png"/>																																
+														<common 		name="use_atlas" 		value="1"/>
+														<common 		name="scale_9" 			value="1"/>	
+														<common			name="stick_screen"		value="0"/>
+														<common			name="anchor_point"		value="0_0"/>
+												</common_value>
+												
+												<pos 		origin = "0_0" 		/>
+												<Size 		origin = "328_40" 	/>
+											</Widget>
+											<Widget id="3" typeRes="font" name = "title" idx_appear ="2">		
+													<template_value>
+														<template 		name="temp_text_0"/>						
+													</template_value>
+													<common_value>
+														<common 		name="source" 			value="0"/>					
+														<common			name="anchor_point"		value="0_0.5"/>
+													</common_value>
+													<pos 		origin = "20_20" 	/>
+											</Widget>
+											<pos 		origin = "0_0" 	/>
+											<Size 		origin = "328_40" 	/>
+										</Widget>	
+									<pos 		origin = "200_40" 	/>
+									<Size 		origin = "428_150" 	/>
+									<COMMAND>
+										<cmd id="0" name="ON_SHOW">
+											{
+												"act0": {
+													"squence":[
+														{
+															"SET_VISIBLE":1
+														},
+														{
+															"SET_SIZE":"428_0",
+															"DESIGN":"960_540",
+															"STICK": 0
+														},
+														{
+															"SIZE":"428_150",
+															"DESIGN":"960_540",
+															"STICK": 0,
+															"TIME":0.12
+														}
+													]
+												}		
+											}					
+										</cmd>
+										<cmd id="1" name="ON_HIDE">
+											{
+												"act0": {
+													"squence":[
+														{
+															"SET_SIZE":"428_150",
+															"DESIGN":"960_540",
+															"STICK": 0
+														},
+														{
+															"SIZE":"428_0",
+															"DESIGN":"960_540",
+															"STICK": 0,
+															"TIME":0.12
+														},
+														{
+															"SET_VISIBLE":0
+														}
+													]
+												}		
+											}
+										</cmd>
+									</COMMAND>
+								</Widget>
+								<pos 		origin = "680_180" 	/>
+								<Size 		origin = "647_50" 	/>
+							</Widget>
+							<Widget id="4" typeRes="layout" name = "layout_password" 		idx_appear ="1">		
+								<common_value>
+									<common 		name="clipping_enable"	    value="0"/>
+									<common 		name="background_type" 		value="0"/>
+									<common			name="stick_screen"			value="0"/>
+									<common			name="casca_color"			value="0"/>
+									<common			name="anchor_point"			value="1_1"/>
+								</common_value>						
+								<Widget id="0" typeRes="font" name = "bet_title" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 		value="password"/>					
+										<common			name="anchor_point"	value="0_0.5"/>
+									</common_value>
+									<pos 		origin = "5_25" 	/>
+								</Widget>
+								<Widget id="1" typeRes="panel" 	name = "panel_pass_number_input" idx_appear ="1">		
+									<common_value>
+										<common 		name="source" 		value="loadingscreen/textfieldbgbrow.9.png"/>
+										<common 		name="use_atlas" 	value="1"/>	
+										<common			name="stick_screen"	value="0"/>
+										<common			name="scale_9"		value="1"/>
+										<common			name="casca_color"	value="0"/>
+										<common			name="use_nine_path" value="1"/>
+										<common			name="anchor_point"	value="0_0"/>
+									</common_value>
+									<pos 		origin = "200_0" 	/>
+									<Size 		origin = "428_40" 	/>
+									<Widget id="0" typeRes="text_field" name = "title_pasword_input_text" idx_appear ="2">							
+										<template_value>
+											<template 		name="temp_textfield_0"/>						
+										</template_value>
+										<common_value>
+											<common 		name="source" 		value="password"/>					
+											<common			name="anchor_point"	value="0_0.5"/>
+											<common			name="max_lenght"	value="32"/>
+											<common			name="touch_zone"	value="428_50"/>
+											<common			name="pass_input"	value="1"/>									
+										</common_value>
+										<pos 		origin = "10_20" 	/>
+									</Widget>
+								</Widget>
+								<pos 		origin = "680_130" 	/>
+								<Size 		origin = "647_50" 	/>
+							</Widget>							
+							<Widget id="5" typeRes="button" name = "close_create_room_btn" 	idx_appear ="1">		
+								<common_value>
+									
+									<common 		name="source" 		value="new_close_button.png"/>
+									<common 		name="press" 		value="new_close_button.png"/>
+									<common 		name="disable" 		value="new_close_button.png"/>
+									
+									<common 		name="scale_press" 	value="-0.05"/>
+									
+									<common 		name="use_atlas" 	value="1"/>	
+									<common			name="stick_screen"	value="0"/>
+									<common			name="anchor_point"	value="1_1"/>
+									
+								</common_value>
+								<pos 		origin = "670_345" 	/>
+								<Size 		origin = "40_40" 	/>
+							</Widget>							
+							<Widget id="6" typeRes="button" name = "btn_create_room" 		idx_appear ="2">		
+								<template_value>
+									<template 		name="temp_btn_yellow"/>						
+								</template_value>
+								<common_value>
+									<common			name="anchor_point"	value="1_1"/>
+								</common_value>
+								
+								<Widget id="0" typeRes="font" name = "_title" idx_appear ="1">		
+									<template_value>
+										<template 		name="temp_text_0"/>						
+									</template_value>
+									<common_value>
+										<common 		name="source" 			value="create_board"/>					
+									</common_value>
+									<pos 		origin = "100_25" 	/>
+								</Widget>
+								
+								<pos 		origin = "660_70" 	/>
+								<Size 		origin = "200_50" 	/>
+							</Widget>
+							
+							<pos 		origin = "350_200" 	/>
+							<Size 		origin = "700_350"  />
+						</Widget>						
+						
+						
+						<pos 		origin = "480_270" 	/>
+						<Size 		origin = "700_400" 	/>
+
+						<COMMAND>
+							<cmd id="0" name="ON_SHOW">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SET_SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0
+											},
+											{
+												"SIZE":"720_415",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"700_400",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.12
+											}
+										]
+									}		
+								}					
+							</cmd>
+							<cmd id="1" name="ON_HIDE">
+								{
+									"act0": {
+										"squence":[
+											{
+												"SIZE":"720_415",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.1
+											},
+											{
+												"SIZE":"0_0",
+												"DESIGN":"960_540",
+												"STICK": 0,
+												"TIME":0.15
+											}
+										]
+									}		
+								}
+							</cmd>
+						</COMMAND>
+				</Widget>
+																			
+</GAME>
