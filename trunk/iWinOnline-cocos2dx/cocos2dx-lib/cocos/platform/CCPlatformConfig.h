@@ -153,7 +153,7 @@ THE SOFTWARE.
 // Ark
 //#if defined WP8 || defined OS_IOS || defined OS_ANDROID || defined OS_W8
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-#define USE_ZIP
+//#define USE_ZIP
 #endif
 
 /// @endcond
